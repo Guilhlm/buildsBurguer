@@ -1,0 +1,125 @@
+* {
+    margin: 0;
+}
+
+.menu ul li {
+    list-style-type: none;
+
+    display: inline-block;
+    margin-right: 3vh;
+}
+
+.menu ul li a {
+
+    padding: 10px;
+
+    border-radius: 15px;
+
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+    font-family: "Croissant One", serif;
+
+    transition: 1s;
+    font-size: 20px;
+}
+
+.menu a:hover {
+
+    padding: 10px 35px;
+    border-radius: 15px;
+    background-color: rgb(0, 0, 0);
+    transition: 0.5s;
+    color: rgb(255, 255, 255);
+}
+
+header {
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+    margin-bottom: 10px;
+}
+
+/* menuzin */
+
+
+#banner {
+    background-image: url(../img/kratos.png);
+    height: 60vh;
+    width: 100%;
+    background-repeat: no-repeat;
+    background-position: top;
+    margin-bottom: 70px;
+
+}
+
+#produtos {
+    height: 100vh;
+}
+
+#produtos .titulo {
+    display: flex;
+    justify-content: center;
+    font-family: "Inter", sans-serif;
+    font-weight: bold;
+    font-size: 50px;
+    color: rgb(0, 0, 0);
+
+    margin-bottom: 50px;
+
+    /* força tudo maiusculo */
+    text-transform: uppercase;
+}
+
+.foto-produto {
+    width: 100%;
+    max-width: 280px;
+    border-radius: 20px;
+    max-height: 380px;
+    height: 380px;
+    object-fit: cover;
+    object-position: top;
+}
+
+#produtos figure {
+    background-color: rgb(46, 27, 2);
+    text-align: center;
+    padding: 15px 0;
+    border-radius: 20px;
+    width: 100%;
+    max-width: 400px;
+}
+
+#produtos figure figcaption {
+    padding: 0 10%;
+    display: flex;
+    flex-direction: column;
+    max-width: 100%;
+    height: 110px;
+}
+
+#produtos figure figcaption h4 {
+    font-size: auto;
+    margin-bottom: 0;
+    font-weight: 700;
+    text-align: start;
+    margin-top: 10px;
+    color: aliceblue;
+}
+
+#produtos figure figcaption span.preco {
+    color: rgb(80, 206, 21);
+    font-weight: 900;
+    font-size: 1.2rem;
+    text-align: end;
+}
+
+.avaliacao {
+    padding: 10px;
+    font-size: 1.3rem;
+    color: yellow;
+}
+
+.carrinho{
+    display: flex;
+    font-size: 30px;
+}

@@ -1,0 +1,110 @@
+* {
+    margin: 0;
+}
+
+.caixa {
+
+    display: flex;
+    width: 500px;
+    height: 500px;
+    border-radius: 20px;
+    background-color: rgba(255, 255, 255, 0.6);
+}
+
+body {
+
+    display: flex;
+    margin-top: 200px;
+    justify-content: center;
+    background-color: rgba(0, 0, 0, 0.4);
+    background-image: url(../img/foto\(fundo\).png);
+    width: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+input[type="submit"] {
+
+    color: white;
+    background-color: rgb(91, 144, 243);
+    padding: 15px 130px;
+    border: none;
+    cursor: pointer;
+    margin-top: 10px;
+    margin-left: 100px;
+}
+
+input[type="email"] {
+
+    padding: 10px 90px 10px 10px;
+    border-radius: 5px;
+    border: none;
+    width: 250px;
+    cursor: pointer;
+    margin-top: 25px;
+    margin-left: 75px;
+}
+
+input[type="password"] {
+
+    padding: 10px 90px 10px 10px;
+    border-radius: 5px;
+    border: none;
+    width: 250px;
+    cursor: pointer;
+    margin-top: 25px;
+    margin-left: 75px;
+}
+
+h1 {
+
+    display: flex;
+    padding: 20px 0px 0px 25px;
+    margin: 30px;
+    font-size: 40px;
+}
+
+h2 {
+    display: flex;
+    padding: 0px 0px 0px 25px;
+    margin: 30px;
+    font-size: 15px;
+    color: rgba(0, 0, 0, 0.6);
+    font: italic;
+}
+
+
+
+.senha {
+
+    display: flex;
+    padding: 0px 0px 0px 110px;
+    margin: 30px;
+    font-size: 18px;
+    color: rgba(0, 0, 0, 0.6);
+    font: italic;
+}
+
+.apple {
+
+    height: 40px;
+    background-color: rgb(247, 247, 247);
+    padding: 0px 31px;
+    margin-left: 1px;
+}
+
+.google {
+
+    height: 40px;
+    background-color: rgb(247, 247, 247);
+    padding: 0px 25px;
+    margin-left: 90px;
+}
+
+.meta {
+
+    height: 40px;
+    background-color: rgb(247, 247, 247);
+    padding: 0px 25px;
+    margin-left: 2px;
+}
