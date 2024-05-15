@@ -3,6 +3,7 @@
 }
 
 .menu ul li {
+    margin-top: 40px;
     list-style-type: none;
 
     display: inline-block;
@@ -43,11 +44,12 @@ header {
 
 
 #banner {
-    background-image: url(../img/kratos.png);
+    background-image: url(../img/kratos.png );
     height: 60vh;
     width: 100%;
     background-repeat: no-repeat;
     background-position: top;
+    justify-content: center;
     margin-bottom: 70px;
 
 }
@@ -119,7 +121,48 @@ header {
     color: yellow;
 }
 
-.carrinho{
+.carrinho {
     display: flex;
+    margin-left: 50px;
     font-size: 30px;
+    margin-top: -10px;
+
+}
+
+.carrinho :hover{
+    display: flex;
+}
+
+#logo {
+    display: flex;
+    margin-top: 10px;
+    margin-left: -100px;
+}
+
+#titulo {
+    display: flex;  
+}
+
+.pesquisa {
+    display: flex;
+    margin-top: 50px;
+    font-size: 20px;
+    cursor: pointer;
+}   
+
+.pesquisa :hover{
+    display: flex;
+    color: rgb(0, 136, 255);
+    cursor: pointer;
+}
+
+.temaEscuro{
+    display: flex;
+    margin-left: 50px;
+    font-size: 30px;
+    margin-top: -8px;
+}
+
+.temaEscuro :hover{
+    display: flex;
 }

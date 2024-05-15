@@ -2,6 +2,17 @@
     margin: 0;
 }
 
+body {
+    display: flex;
+    margin-top: 150px;
+    background-image: linear-gradient(rgba(130, 61, 12, 0.3), rgba(0, 0, 0, 0.7)), url(../img/final\(login\).png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 626px;
+    width: 100%;
+    background-position: center;
+}
+
 .caixa {
 
     display: flex;
@@ -11,21 +22,9 @@
     background-color: rgba(255, 255, 255, 0.6);
 }
 
-body {
-
-    display: flex;
-    margin-top: 200px;
-    justify-content: center;
-    background-color: rgba(0, 0, 0, 0.4);
-    background-image: url(../img/foto\(fundo\).png);
-    width: 100%;
-    background-repeat: no-repeat;
-    background-size: cover;
-}
-
 input[type="submit"] {
 
-    color: white;
+    color: rgb(255, 255, 255);
     background-color: rgb(91, 144, 243);
     padding: 15px 130px;
     border: none;
@@ -39,7 +38,7 @@ input[type="email"] {
     padding: 10px 90px 10px 10px;
     border-radius: 5px;
     border: none;
-    width: 250px;
+    width: 340px;
     cursor: pointer;
     margin-top: 25px;
     margin-left: 75px;
@@ -73,8 +72,6 @@ h2 {
     font: italic;
 }
 
-
-
 .senha {
 
     display: flex;
@@ -85,26 +82,22 @@ h2 {
     font: italic;
 }
 
-.apple {
+.voltar{
+    display: flex;
+    height: 100px;
+    width: 100%;
+    max-width: 100px;
+    background-color: rgba(255, 255, 255, 0.6);
+    border-radius: 600px;
 
-    height: 40px;
-    background-color: rgb(247, 247, 247);
-    padding: 0px 31px;
-    margin-left: 1px;
-}
+    margin-right: 350px;
+    margin-left: 100px;
+    margin-top: -70px;
 
-.google {
+    font-size: 100px;
 
-    height: 40px;
-    background-color: rgb(247, 247, 247);
-    padding: 0px 25px;
-    margin-left: 90px;
-}
-
-.meta {
-
-    height: 40px;
-    background-color: rgb(247, 247, 247);
-    padding: 0px 25px;
-    margin-left: 2px;
+    align-items: center;
+    justify-content: center;
+    font-size: 50px;
+    cursor: pointer;
 }

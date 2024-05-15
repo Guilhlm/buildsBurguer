@@ -6,7 +6,7 @@
 
 body {
     background-color: rgb(124, 124, 124);
-    background: linear-gradient(rgba(130, 61, 12, 0.3), rgba(0, 0, 0, 0.7)), url(../img/foto\(fundo\).png);
+    background: linear-gradient(rgba(130, 61, 12, 0.3), rgba(0, 0, 0, 0.7)), url(../img/foto\(fundo\).jpg);
     background-repeat: no-repeat;
     background-size: cover;
     height: 100vh;
@@ -15,7 +15,8 @@ body {
 
 .logo{
     margin-top: 30px;
-    width: 300px;
+    width: 220px;
+
 }
 
 .menu{
@@ -26,18 +27,15 @@ body {
     display: flex;
     width: 100%;
     font-size: 130px;
-    color: tomato;
     font-family: cursive;
-
+    margin-top: 130px;
     justify-content: center;
-    margin-top: 180px;
-    
-    
+    text-shadow: rgba(240, 151, 17, 0.8) 7px 0 15px; 
+    color: rgb(255, 169, 40);
 }
 
 .menu ul li {
     list-style-type: none;
-
     display: inline-block;
     margin-right: 3vh;
     
