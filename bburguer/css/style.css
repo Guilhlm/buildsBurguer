@@ -13,32 +13,30 @@ body {
     width: 100%;
 }
 
-.logo{
+.logo {
     margin-top: 30px;
     width: 220px;
 
 }
 
-.menu{
-
-}
+.menu {}
 
 .titulo {
     display: flex;
     width: 100%;
-    font-size: 130px;
-    font-family: cursive;
     margin-top: 130px;
+    font-size: 140px;
     justify-content: center;
-    text-shadow: rgba(240, 151, 17, 0.8) 7px 0 15px; 
+    text-shadow: rgba(240, 151, 17, 0.8) 7px 0 15px;
     color: rgb(255, 169, 40);
+    font-family: "Calisto MT", "Bookman Old Style", Bookman, "Goudy Old Style", Garamond, "Hoefler Text", "Bitstream Charter", Georgia, serif;
 }
 
 .menu ul li {
     list-style-type: none;
     display: inline-block;
     margin-right: 3vh;
-    
+
 }
 
 .menu ul li a {
@@ -46,14 +44,14 @@ body {
     padding: 10px;
 
     border-radius: 15px;
-    
+
     transition: 1s;
 
     color: white;
     text-decoration: none;
     font-family: "Croissant One", serif;
     font-size: 20px;
-    
+
 }
 
 
@@ -71,5 +69,5 @@ header {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    
+
 }

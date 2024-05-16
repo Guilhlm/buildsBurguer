@@ -44,7 +44,7 @@ header {
 
 
 #banner {
-    background-image: url(../img/kratos.png );
+    background-image: url(../img/banner\(home\).png );
     height: 60vh;
     width: 100%;
     background-repeat: no-repeat;
@@ -67,8 +67,6 @@ header {
     color: rgb(0, 0, 0);
 
     margin-bottom: 50px;
-
-    /* força tudo maiusculo */
     text-transform: uppercase;
 }
 
@@ -89,6 +87,7 @@ header {
     border-radius: 20px;
     width: 100%;
     max-width: 400px;
+    margin-top: 50px;
 }
 
 #produtos figure figcaption {
@@ -106,6 +105,7 @@ header {
     text-align: start;
     margin-top: 10px;
     color: aliceblue;
+
 }
 
 #produtos figure figcaption span.preco {
@@ -139,10 +139,6 @@ header {
     margin-left: -100px;
 }
 
-#titulo {
-    display: flex;  
-}
-
 .pesquisa {
     display: flex;
     margin-top: 50px;
@@ -165,4 +161,18 @@ header {
 
 .temaEscuro :hover{
     display: flex;
+}
+
+.titulobebida{
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+    font-family: "Inter", sans-serif;
+    font-weight: bold;
+    font-size: 50px;
+    color: rgb(0, 0, 0);
+
+    margin-bottom: 70px;
+    text-transform: uppercase;
+    margin-bottom: 70px;
 }
