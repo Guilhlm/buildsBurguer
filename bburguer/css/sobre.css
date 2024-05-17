@@ -92,7 +92,7 @@ header {
     margin-top: -10px;
 }
 
-.carrinho :hover{
+.carrinho :hover {
     display: flex;
 }
 
@@ -107,21 +107,55 @@ header {
     margin-top: 50px;
     font-size: 20px;
     cursor: pointer;
-}   
+}
 
-.pesquisa :hover{
+.pesquisa :hover {
     display: flex;
     color: rgb(0, 136, 255);
     cursor: pointer;
 }
 
-.temaEscuro{
+.temaEscuro {
     display: flex;
     margin-left: 50px;
     font-size: 30px;
     margin-top: -8px;
 }
 
-.temaEscuro :hover{
+.temaEscuro :hover {
     display: flex;
+}
+
+.fundinho {
+    display: flex;
+    margin-left: 150px;
+    height: 1300px;
+    width: 100%;
+    max-width: 1300px;
+    background-color: rgb(189, 153, 106);
+    border-radius: 20px;
+    border: 10px solid rgb(0, 0, 0);
+}
+
+h2 {
+    display: flex;
+    margin-top: 20px;
+    margin-left: 50px;
+    color: rgb(0, 0, 0);
+}
+
+h3 {
+    display: flex;
+    margin-top: 70px;
+    justify-content: center;
+    font-size: 50px;
+    color: rgb(0, 0, 0);
+}
+
+p {
+    display: flex;
+    margin-top: 50px;
+    margin-right: 60px;
+    margin-left: 60px;
+    color: rgb(0, 0, 0);
 }

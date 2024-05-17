@@ -27,8 +27,8 @@ input[type="submit"] {
     padding: 15px 130px;
     border: none;
     cursor: pointer;
-    margin-top: 10px;
     margin-left: 100px;
+    margin-top: -30px;
 }
 
 input[type="email"] {
@@ -67,6 +67,10 @@ h2 {
     font: italic;
 }
 
+.conta{
+    display: flex;
+    margin-left: 120px;
+}
 .senha {
     display: flex;
     padding: 0px 0px 0px 110px;
@@ -74,6 +78,7 @@ h2 {
     font-size: 18px;
     color: rgba(0, 0, 0, 0.6);
     font: italic;
+    margin-top: 10px;
 }
 
 .voltar{
