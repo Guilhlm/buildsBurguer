@@ -1,0 +1,98 @@
+* {
+    margin: 0;
+}
+
+body {
+    display: flex;
+    margin-top: 150px;
+    background-image: linear-gradient(rgba(130, 61, 12, 0.3), rgba(0, 0, 0, 0.7)), url(../img/final\(login\).png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 626px;
+    width: 100%;
+    background-position: center;
+}
+
+.caixa {
+    display: flex;
+    width: 500px;
+    height: 500px;
+    border-radius: 20px;
+    background-color: rgba(255, 255, 255, 0.6);
+}
+
+input[type="submit"] {
+    color: rgb(255, 255, 255);
+    background-color: rgba(138, 67, 2, 0.8);
+    padding: 15px 130px;
+    border: none;
+    cursor: pointer;
+    margin-left: 100px;
+    margin-top: 68px;
+}
+
+input[type="email"] {
+    padding: 10px 90px 10px 10px;
+    border-radius: 5px;
+    border: none;
+    width: 340px;
+    cursor: pointer;
+    margin-top: 25px;
+    margin-left: 75px;
+}
+
+input[type="password"] {
+    padding: 10px 90px 10px 10px;
+    border-radius: 5px;
+    border: none;
+    width: 340px;
+    cursor: pointer;
+    margin-top: 25px;
+    margin-left: 75px;
+}
+
+h1 {
+    display: flex;
+    padding: 20px 0px 0px 25px;
+    margin: 30px;
+    font-size: 40px;
+}
+
+h2 {
+    display: flex;
+    padding: 0px 0px 0px 25px;
+    margin: 30px;
+    font-size: 15px;
+    color: rgba(0, 0, 0, 0.6);
+    font: italic;
+}
+
+.conta{
+    display: flex;
+    margin-left: 120px;
+}
+
+
+.voltar{
+    display: flex;
+    height: 100px;
+    width: 100%;
+    max-width: 100px;
+    background-color: rgba(255, 255, 255, 0.6);
+    border-radius: 600px;
+    margin-right: 350px;
+    margin-left: 100px;
+    margin-top: -70px;
+    font-size: 100px;
+    align-items: center;
+    justify-content: center;
+    font-size: 50px;
+    cursor: pointer;
+}
+
+.voltar :hover {
+    Text-decoration: none;
+    display: flex;
+    padding-top: -10px;
+    color: rgb(170, 94, 22) !important;
+}
