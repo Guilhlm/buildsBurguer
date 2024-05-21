@@ -146,10 +146,11 @@ header {
 .fundinho {
     display: flex;
     margin-left: 150px;
-    height: 1500px;
+    height: 1550px;
     width: 100%;
     max-width: 1300px;
-    background: linear-gradient(rgba(185, 132, 63, 0.6), rgba(90, 39, 7, 0.8));
+    background: linear-gradient(rgba(185, 132, 63, 0.3), rgba(90, 39, 7, 0.8)), url(../img/hambuerguerzinhos.png);
+    background-position: center;
     background-color: rgb(170, 137, 94);
     border-radius: 20px;
     border: 10px solid rgb(0, 0, 0);
@@ -159,10 +160,11 @@ header {
     display: flex;
     margin-top: 40PX;
     margin-left: 150px;
-    height: 2400px;
+    height: 2500px;
     width: 100%;
     max-width: 1300px;
-    background: linear-gradient(rgba(185, 132, 63, 0.6), rgba(90, 39, 7, 0.8));
+    background: linear-gradient(rgba(185, 132, 63, 0.3), rgba(90, 39, 7, 0.8)), url(../img/hambuerguerzinhos.png);
+    background-position: center;
     background-color: rgb(170, 137, 94);
     border-radius: 20px;
     border: 10px solid rgb(0, 0, 0);

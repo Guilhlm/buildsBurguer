@@ -6,7 +6,7 @@
 
 body {
     background-color: rgb(124, 124, 124);
-    background: linear-gradient(rgba(55, 23, 1, 0.8), rgba(0, 0, 0, 0.8)), url(../img/foto\(fundo\).jpg);
+    background: linear-gradient(rgba(55, 23, 1, 0.7), rgba(0, 0, 0, 0.6)), url(../img/foto\(fundo\).jpg);
     background-repeat: no-repeat;
     background-size: cover;
     height: 100vh;
