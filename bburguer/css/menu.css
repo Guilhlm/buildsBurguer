@@ -86,7 +86,19 @@ header {
     margin-bottom: 70px;
 }
 
-#produtos .titulo {
+#banner2 {
+    background-image: url(../img/banner04.png );
+    height: 60vh;
+    width: 100%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: top;
+    justify-content: center;
+    margin-bottom: 70px;
+}
+
+#produtos .titulo,
+#bebidas .titulo  {
     display: flex;
     justify-content: center;
     font-family: "Inter", sans-serif;
@@ -99,6 +111,7 @@ header {
 
 .foto-produto {
     width: 100%;
+    border: 2px solid rgba(233, 136, 57, 0.4);
     max-width: 280px;
     border-radius: 20px;
     max-height: 380px;
@@ -107,8 +120,11 @@ header {
     object-position: top;
 }
 
-#produtos figure {
-    background-color: rgb(46, 27, 2);
+#produtos figure,
+#bebidas figure {
+    /* background-color: rgb(116, 68, 5); */
+    background: linear-gradient(to top, rgb(54, 31, 1), rgb(0, 0, 0));
+    border: 4px solid rgba(233, 136, 57, 0.6);
     text-align: center;
     padding: 15px 0;
     border-radius: 20px;
@@ -117,7 +133,8 @@ header {
     margin-top: 50px;
 }
 
-#produtos figure figcaption {
+#produtos figure figcaption,
+#bebidas figure figcaption {
     padding: 0 10%;
     display: flex;
     flex-direction: column;
@@ -125,7 +142,8 @@ header {
     height: 110px;
 }
 
-#produtos figure figcaption h4 {
+#produtos figure figcaption h4
+#bebidas figure figcaption h4 {
     font-size: auto;
     margin-bottom: 0;
     font-weight: 700;
@@ -134,7 +152,9 @@ header {
     color: aliceblue;
 }
 
-#produtos figure figcaption span.preco {
+#produtos figure figcaption span.preco,
+#bebidas figure figcaption span.preco
+ {
     color: rgb(80, 206, 21);
     font-weight: 900;
     font-size: 1.2rem;
@@ -216,4 +236,41 @@ header {
     margin-bottom: 70px;
     text-transform: uppercase;
     margin-bottom: 70px;
+}
+
+footer{
+    background-color: #000000;
+    color: rgb(233, 136, 57);
+    padding: 40px 0;
+    border-top: 5px solid rgb(233, 136, 57);;
+}
+
+footer h5{
+    
+    margin-left: 60px;
+    font-weight: bold;
+}
+
+footer a{
+    
+    margin-left: 60px;
+    color: white;
+    text-decoration: none;
+}
+
+footer a:hover{
+    text-decoration: underline;
+    color:  rgb(122, 121, 121);
+}
+
+.footer-bottom{
+    text-align: center;
+    padding: 5px 0;
+    border-top: 1px solid #ccc;
+    margin-top: 40px;
+}
+
+.footer-bottom p{
+    color: white;
+    font-weight: 300;
 }
