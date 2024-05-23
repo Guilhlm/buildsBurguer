@@ -1,106 +1,209 @@
-* {
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap');
+
+*{
     margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
 }
 
-body {
+body{
     display: flex;
-    margin-top: 150px;
-    background-image: linear-gradient(rgba(130, 61, 12, 0.3), rgba(0, 0, 0, 0.7)), url(../img/final\(login\).png);
+    background-image: url(img/final\(login\).png);
     background-repeat: no-repeat;
     background-size: cover;
-    height: 626px;
-    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background-image: linear-gradient(rgba(130, 61, 12, 0.3), rgba(0, 0, 0, 0.7)), url(../img/final\(login\).png);
     background-position: center;
 }
 
-.caixa {
-    display: flex;
-    width: 500px;
-    height: 500px;
-    border-radius: 20px;
-    background-color: rgba(255, 255, 255, 0.6);
+.container{
+    background-color: #ffffff;
+    border-radius: 40px;
+    position: relative;
+    width: 800px;
+    max-width: 100%;
+    min-height: 480px;
 }
 
-input[type="submit"] {
-    color: rgb(255, 255, 255);
-    background-color: rgba(138, 67, 2, 0.8);
-    padding: 15px 130px;
-    border: none;
-    cursor: pointer;
-    margin-left: 100px;
-    margin-top: -30px;
+.container p{
+    font-size: 14px;
+    line-height: 20px;
+    letter-spacing: 0.3px;
+    margin: 20px 0;
 }
 
-input[type="email"] {
-    padding: 10px 90px 10px 10px;
-    border-radius: 5px;
-    border: none;
-    width: 340px;
-    cursor: pointer;
-    margin-top: 25px;
-    margin-left: 75px;
+.container span{
+    font-size: 12px;
 }
 
-input[type="password"] {
-    padding: 10px 90px 10px 10px;
-    border-radius: 5px;
-    border: none;
-    width: 340px;
-    cursor: pointer;
-    margin-top: 25px;
-    margin-left: 75px;
+.container a{
+    color: #333;
+    font-size: 13px;
+    margin: 15px 0 10px;
 }
 
-h1 {
-    display: flex;
-    padding: 20px 0px 0px 25px;
-    margin: 30px;
-    font-size: 40px;
-}
-
-h2 {
-    display: flex;
-    padding: 0px 0px 0px 25px;
-    margin: 30px;
-    font-size: 15px;
-    color: rgba(0, 0, 0, 0.6);
-    font: italic;
-}
-
-.conta{
-    display: flex;
-    margin-left: 120px;
-}
-.senha {
-    display: flex;
-    padding: 0px 0px 0px 110px;
-    margin: 30px;
-    font-size: 18px;
-    color: rgba(0, 0, 0, 0.6);
-    font: italic;
+.container button{
+    background-color: #a8812d;
+    color: #ffffff;
+    font-size: 12px;
+    padding: 10px 45px;
+    border: 1px solid transparent;
+    border-radius: 10px;
+    font-weight: 600;
     margin-top: 10px;
+    cursor: pointer;
 }
 
-.voltar{
+.container button.botao{
+    background-color: transparent;
+    border-color: #ffffff;
+}
+
+.container button.botao:hover{
+    border-color: #a8812d;
+}
+
+.container form{
+    background-color: #ffffff;
     display: flex;
-    height: 100px;
-    width: 100%;
-    max-width: 100px;
-    background-color: rgba(255, 255, 255, 0.6);
-    border-radius: 600px;
-    margin-right: 350px;
-    margin-left: 100px;
-    margin-top: -70px;
-    font-size: 100px;
     align-items: center;
     justify-content: center;
-    font-size: 50px;
-    cursor: pointer;
+    flex-direction: column;
+    padding: 0 40px;
+    width: 370px;
+    height: 100%;
+    border-radius: 20px;
 }
 
-.voltar :hover {
-    Text-decoration: none;
+.container input{
+    background-color: #eee;
+    border: none;
+    margin: 8px 0;
+    padding: 10px 15px;
+    font-size: 13px;
+    border-radius: 8px;
+    width: 100%;
+    outline: none;
+}
+
+.form-container{
+    position: absolute;
+    top: 0;
+    height: 100%;
+    transition: all 0.6s ease-in-out;
+}
+
+.logar{
+    left: 0;
+    width: 50%;
+    z-index: 2;
+}
+
+.criar{
+    left: 0;
+    width: 50%;
+    opacity: 0;
+    z-index: 1;
+}
+
+.container .criar{
+    transform: translateX(100%);
+    opacity: 1;
+    z-index: 5;
+    animation: move 0.6s;
+}
+
+.icone-redesocial{
+    margin: 20px 0;
+}
+
+.icone-redesocial a{
+    border: 1px solid #ccc;
+    border-radius: 20%;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 3px;
+    width: 40px;
+    height: 40px;
+}
+
+.icone-redesocial a:hover{
+    border: 2px solid #795005;
+    border-radius: 20%;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 3px;
+    width: 40px;
+    height: 40px;
+}
+
+.alternar-container{
+    position: absolute;
+    top: 0;
+    left: 50%;
+    width: 50%;
+    height: 100%;
+    overflow: hidden;
+    transition: all 0.6s ease-in-out;
+    border-radius: 150px 0 0 100px;
+    z-index: 1000;
+}
+
+.container.active .alternar-container{
+    transform: translateX(-100%);
+    border-radius: 0 150px 100px 0;
+}
+
+.alternar{
+    height: 100%;
+    background: linear-gradient(to top, #000000, #684005);
+    color: #fff;
+    position: relative;
+    left: -100%;
+    height: 100%;
+    width: 200%;
+    transform: translateX(0);
+    transition: all 0.6s ease-in-out;
+}
+
+.container.active .alternar{
+    transform: translateX(50%);
+}
+
+.alternar-panel{
+    position: absolute;
+    width: 50%;
+    height: 100%;
     display: flex;
-    padding-top: -10px;
-    color: rgb(170, 94, 22) !important;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 0 30px;
+    text-align: center;
+    top: 0;
+    transform: translateX(0);
+    transition: all 0.6s ease-in-out;
+}
+
+.alternar-esquerda{
+    transform: translateX(-200%);
+}
+
+.container.active .alternar-esquerda{
+    transform: translateX(0);
+}
+
+.alternar-direita{
+    right: 0;
+    transform: translateX(0);
+}
+
+.container.active .alternar-direita{
+    transform: translateX(200%);
 }
