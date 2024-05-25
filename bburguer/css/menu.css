@@ -1,0 +1,300 @@
+* {
+    margin: 0;
+}
+
+h4 {
+    margin-top: 20px;
+    margin-bottom: 65px;
+    font-size: 18.2px;
+    color: rgb(255, 255, 255);
+}
+
+p {
+    font-size: 19px;
+    margin-top: -40px;
+}
+
+.oi{
+    color: rgb(180, 72, 0);
+    margin-right: 100px;
+}
+
+.menu ul li {
+    margin-top: 40px;
+    list-style-type: none;
+    display: inline-block;
+    margin-right: 3vh;
+}
+
+.menu ul li a {
+    padding: 10px;
+    border-radius: 15px;
+    color: rgba(233, 136, 57, 0.6);
+    text-decoration: none;
+    font-family: "Croissant One", serif;
+    transition: 1s;
+    font-size: 20px;
+}
+
+.menu a:hover {
+    padding: 10px 35px;
+    border-radius: 15px;
+    background-color: rgb(75, 36, 0);
+    transition: 0.5s;
+    color: rgba(233, 136, 57, 0.6);
+}
+
+header {
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+    margin-bottom: 10px;
+    
+}
+
+/* menuzin */
+
+.icones {
+    display: flex;
+    margin-top: 80px;
+    margin-left: 1230px;
+    font-size: 35px;
+}
+
+.icones #insta {
+    display: flex;
+    margin-top: 15px;
+    margin-left: 20px;
+    cursor: pointer;
+}
+
+.icones a {
+    Text-decoration: none
+}
+
+.icones a :hover {
+    Text-decoration: none;
+    display: flex;
+    padding-top: 10px;
+    color: rgba(233, 136, 57, 0.6) !important;
+}
+
+
+.icones #youtube {
+    display: flex;
+    margin-top: 15px;
+    margin-left: 20px;
+    cursor: pointer;
+}
+
+.icones #twt {
+    display: flex;
+    margin-top: 15px;
+    margin-left: 20px;
+    cursor: pointer;
+}
+
+.risco{
+    border-bottom: 1.5px solid rgba(233, 136, 57, 0.6);
+    margin-bottom: 50px;
+}
+
+.home{
+    background-color: rgba(0, 0, 0, 0.719);
+}
+
+#banner {
+    background-image: url(../img/banner\(home\).png );
+    height: 60vh;
+    width: 100%;
+    background-repeat: no-repeat;
+    background-position: top;
+    justify-content: center;
+    margin-bottom: 70px;
+}
+
+#banner2 {
+    background-image: url(../img/banner\(home\).png);
+    height: 60vh;
+    width: 100%;
+    background-repeat: no-repeat;
+    background-position: top;
+    justify-content: center;
+    margin-bottom: 70px;
+}
+
+#produtos .titulo,
+#bebidas .titulobebida {
+    display: flex;
+    justify-content: center;
+    font-family: "Inter", sans-serif;
+    font-weight: bold;
+    font-size: 50px;
+    color: rgb(255, 255, 255);
+    margin-bottom: 50px;
+    text-transform: uppercase;
+    background-color: rgb(0, 0, 0);
+    height: 100px;
+    border: 4px solid rgba(233, 136, 57, 0.6);
+    padding-top: 15px;
+}
+
+.foto-produto {
+    width: 100%;
+    max-width: 280px;
+    border-radius: 20px;
+    max-height: 380px;
+    height: 380px;
+    object-fit: cover;
+    object-position: top;
+}
+
+#produtos figure,
+#bebidas figure {
+    /* background-color: rgb(116, 68, 5); */
+    background: linear-gradient(to top, rgb(54, 31, 1), rgb(0, 0, 0));
+    border: 4px solid rgba(233, 136, 57, 0.6);
+    text-align: center;
+    padding: 15px 0;
+    border-radius: 20px;
+    width: 100%;
+    max-width: 400px;
+    margin-top: 50px;
+}
+
+#produtos figure figcaption,
+#bebidas figure figcaption {
+    padding: 0 10%;
+    display: flex;
+    flex-direction: column;
+    max-width: 100%;
+    height: 110px;
+}
+
+#produtos figure figcaption h4 
+#bebidas figure figcaption h4 {
+    font-size: auto;
+    margin-bottom: 0;
+    font-weight: 700;
+    text-align: start;
+    margin-top: 10px;
+    color: aliceblue;
+}
+
+#produtos figure figcaption span.preco,
+#bebidas figure figcaption span.preco {
+    color: rgb(233, 136, 57);
+    font-weight: 900;
+    font-size: 1.2rem;
+    text-align: end;
+}
+
+
+.carrinho {
+    display: flex;
+    margin-left: 35px;
+    font-size: 30px;
+    margin-top: -10px;
+}
+
+.carrinho :hover {
+    display: flex;
+}
+
+#logo {
+    display: flex;
+    margin-top: 10px;
+    margin-left: -100px;
+}
+
+.pesquisa {
+    display: flex;
+    margin-left: -15px;
+    margin-top: 45px;
+    font-size: 23px;
+    cursor: pointer;
+}
+
+.pesquisa :hover {
+    display: flex;
+    color: rgb(255, 255, 255) !important;
+    cursor: pointer;
+}
+
+.temaEscuro {
+    display: flex;
+    margin-right: 30px;
+    margin-left: 40px;
+    font-size: 30px;
+    margin-top: -8px;
+}
+
+.temaEscuro :hover {
+    display: flex;
+}
+
+.pessoaLogin {
+    display: flex;
+    font-size: 35px;
+    margin-top: -9px;
+    margin-left: 5px;
+    cursor: pointer;
+}
+
+.pessoaLogin :hover {
+    display: flex;
+    margin-top: -2px;
+    text-decoration: none;
+    color: rgba(255, 255, 255, 1) !important;
+}
+
+.titulobebida {
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+    font-family: "Inter", sans-serif;
+    font-weight: bold;
+    font-size: 50px;
+    color: rgb(0, 0, 0);
+    margin-bottom: 70px;
+    text-transform: uppercase;
+    margin-bottom: 70px;
+}
+
+footer {
+    background-color: #000000;
+    color: rgb(233, 136, 57);
+    padding: 40px 0;
+    border-top: 5px solid rgba(233, 136, 57, 0.6);
+    ;
+}
+
+footer h5 {
+
+    margin-left: 60px;
+    font-weight: bold;
+}
+
+footer a {
+
+    margin-left: 60px;
+    color: white;
+    text-decoration: none;
+}
+
+footer a:hover {
+    text-decoration: underline;
+    color: rgb(122, 121, 121);
+}
+
+.footer-bottom {
+    text-align: center;
+    padding: 5px 0;
+    border-top: 1px solid #ccc;
+    margin-top: 40px;
+}
+
+.footer-bottom div {
+    color: white;
+    font-weight: 300;
+}
