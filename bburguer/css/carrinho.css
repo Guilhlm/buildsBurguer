@@ -1,0 +1,117 @@
+@import url('https://fonts.googleapis.com/css2?family=Croissant+One&display=swap');
+
+* {
+    margin: 0;
+}
+
+h4 {
+    margin-top: 20px;
+    margin-bottom: 65px;
+    font-size: 18.2px;
+    color: rgb(255, 255, 255);
+}
+
+p {
+    font-size: 19px;
+    margin-top: -40px;
+}
+
+.oi{
+    color: rgb(180, 72, 0);
+    margin-right: 100px;
+}
+
+.menu ul li {
+    margin-top: 40px;
+    list-style-type: none;
+    display: inline-block;
+    margin-right: 3vh;
+}
+
+.menu ul li a {
+    padding: 10px;
+    border-radius: 15px;
+    color: rgba(233, 136, 57, 0.6);
+    text-decoration: none;
+    font-family: "Croissant One", serif;
+    transition: 1s;
+    font-size: 20px;
+}
+
+.menu a:hover {
+    padding: 10px 35px;
+    border-radius: 15px;
+    background-color: rgb(75, 36, 0);
+    transition: 0.5s;
+    color: rgba(233, 136, 57, 0.6);
+}
+
+header {
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+    margin-bottom: 10px;
+}
+
+.risco{
+    border-bottom: 1.5px solid rgba(233, 136, 57, 0.6);
+    margin-bottom: 50px;
+}
+.carrinho {
+    display: flex;
+    margin-left: 35px;
+    font-size: 30px;
+    margin-top: -10px;
+}
+
+
+#logo {
+    display: flex;
+    margin-top: 10px;
+    margin-left: -100px;
+}
+
+.pesquisa {
+    display: flex;
+    margin-left: -15px;
+    margin-top: 45px;
+    font-size: 23px;
+    cursor: pointer;
+}
+
+.pesquisa :hover {
+    display: flex;
+    color: rgb(255, 255, 255) !important;
+    cursor: pointer;
+}
+
+.temaEscuro {
+    display: flex;
+    margin-right: 30px;
+    margin-left: 40px;
+    font-size: 30px;
+    margin-top: -8px;
+}
+
+.temaEscuro :hover {
+    display: flex;
+}
+
+.pessoaLogin {
+    display: flex;
+    font-size: 35px;
+    margin-top: -9px;
+    margin-left: 5px;
+    cursor: pointer;
+}
+
+.pessoaLogin :hover {
+    display: flex;
+    margin-top: -2px;
+    text-decoration: none;
+    color: rgba(255, 255, 255, 1) !important;
+}
+
+.home{
+    background-color: rgba(0, 0, 0, 0.719);
+}

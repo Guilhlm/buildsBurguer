@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Croissant+One&display=swap');
+
 * {
     margin: 0;
 }
@@ -105,6 +107,7 @@ header {
 .carrinho :hover {
     display: flex;
     color: aliceblue;
+    text-decoration: none;
 }
 
 #logo {
@@ -205,42 +208,44 @@ p {
     margin-right: 60px;
     margin-left: 60px;
     color: rgb(0, 0, 0);
+    
 }
 
 
-footer{
+footer {
     background-color: #000000;
     color: rgb(233, 136, 57);
     padding: 40px 0;
-    border-top: 5px solid rgb(233, 136, 57);;
+    border-top: 5px solid rgba(233, 136, 57, 0.6);
+    ;
 }
 
-footer h5{
-    
+footer h5 {
+
     margin-left: 60px;
     font-weight: bold;
 }
 
-footer a{
-    
+footer a {
+
     margin-left: 60px;
     color: white;
     text-decoration: none;
 }
 
-footer a:hover{
+footer a:hover {
     text-decoration: underline;
-    color:  rgb(122, 121, 121);
+    color: rgb(122, 121, 121);
 }
 
-.footer-bottom{
+.footer-bottom {
     text-align: center;
     padding: 5px 0;
     border-top: 1px solid #ccc;
     margin-top: 40px;
 }
 
-.footer-bottom p{
+.footer-bottom div {
     color: white;
     font-weight: 300;
 }
