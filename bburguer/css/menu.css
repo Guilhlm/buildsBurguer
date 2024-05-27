@@ -44,7 +44,7 @@ p {
 .menu a:hover {
     padding: 10px 35px;
     border-radius: 15px;
-    background-color: rgb(75, 36, 0);
+    background-color: rgb(88, 51, 2);
     transition: 0.5s;
     color: rgba(233, 136, 57, 0.6);
 }
