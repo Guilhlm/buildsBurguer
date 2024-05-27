@@ -13,22 +13,10 @@ body {
     width: 100%;
 }
 
-.titulo {
-    display: flex;
-    width: 100%;
-    margin-top: 130px;
-    font-size: 140px;
-    justify-content: center;
-    text-shadow: rgba(240, 151, 17, 0.8) 7px 0 15px;
-    color: rgb(189, 153, 106);
-    font-family: "Calisto MT", "Bookman Old Style", Bookman, "Goudy Old Style", Garamond, "Hoefler Text", "Bitstream Charter", Georgia, serif;
-}
-
 .menu ul li {
     list-style-type: none;
     display: inline-block;
-    margin-right: 3vh;
-    
+    margin-right: 3vh;  
 }
 
 .menu ul li a {
@@ -38,17 +26,14 @@ body {
     text-decoration: none;
     font-family: "Croissant One", serif;
     transition: 1s;
-    font-size: 20px;
-    
-
+    font-size: 20px;  
 }
 
 .menu a:hover {
     padding: 10px 35px;
     border-radius: 15px;
     background-color: rgb(88, 51, 2);
-    transition: 0.5s;
-    
+    transition: 0.5s; 
 }
 
 header {
@@ -56,4 +41,15 @@ header {
     margin-top: 100px;
     margin-bottom: 200px;
     justify-content: center;
+}
+
+.titulo {
+    display: flex;
+    width: 100%;
+    margin-top: 130px;
+    font-size: 140px;
+    justify-content: center;
+    text-shadow: rgba(240, 151, 17, 0.8) 7px 0 15px;
+    color: rgb(189, 153, 106);
+    font-family: "Calisto MT", "Bookman Old Style", Bookman, "Goudy Old Style", Garamond, "Hoefler Text", "Bitstream Charter", Georgia, serif;
 }

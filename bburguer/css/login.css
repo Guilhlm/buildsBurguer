@@ -1,10 +1,17 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap');
 
 *{
-    margin: 0;
+     margin: 0;
     padding: 0;
     box-sizing: border-box;
     font-family: 'Montserrat', sans-serif;
+}
+
+p{
+    font-size: 14px;
+    line-height: 20px;
+    letter-spacing: 0.3px;
+    margin: 20px 0;
 }
 
 body{
@@ -20,13 +27,30 @@ body{
     background-position: center;
 }
 
-.container{
-    background-color: #ffffff;
-    border-radius: 40px;
-    position: relative;
-    width: 800px;
-    max-width: 100%;
-    min-height: 480px;
+.icone-redesocial{
+    margin: 20px 0;
+}
+
+.icone-redesocial a{
+    border: 1px solid #ccc;
+    border-radius: 20%;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 3px;
+    width: 40px;
+    height: 40px;
+}
+
+.icone-redesocial a:hover{
+    border: 2px solid #795005;
+    border-radius: 20%;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 3px;
+    width: 40px;
+    height: 40px;
 }
 
 form a.voltardireita{
@@ -42,11 +66,26 @@ form a.voltardireita:hover{
     cursor: pointer;
 }
 
-.container p{
-    font-size: 14px;
-    line-height: 20px;
-    letter-spacing: 0.3px;
-    margin: 20px 0;
+.logar{
+    left: 0;
+    width: 50%;
+    z-index: 2;
+}
+
+.criar{
+    left: 0;
+    width: 50%;
+    opacity: 0;
+    z-index: 1;
+}
+
+.container{
+    background-color: #ffffff;
+    border-radius: 40px;
+    position: relative;
+    width: 800px;
+    max-width: 100%;
+    min-height: 480px;
 }
 
 .container span{
@@ -57,6 +96,31 @@ form a.voltardireita:hover{
     color: #333;
     font-size: 13px;
     margin: 15px 0 10px;
+}
+
+.form-container{
+    position: absolute;
+    top: 0;
+    height: 100%;
+    transition: all 0.6s ease-in-out;
+}
+
+.container .criar{
+    transform: translateX(100%);
+    opacity: 1;
+    z-index: 5;
+    animation: move 0.6s;
+}
+
+.container input{
+    background-color: #eee;
+    border: none;
+    margin: 8px 0;
+    padding: 10px 15px;
+    font-size: 13px;
+    border-radius: 8px;
+    width: 100%;
+    outline: none;
 }
 
 .container button{
@@ -90,70 +154,6 @@ form a.voltardireita:hover{
     width: 370px;
     height: 100%;
     border-radius: 20px;
-}
-
-.container input{
-    background-color: #eee;
-    border: none;
-    margin: 8px 0;
-    padding: 10px 15px;
-    font-size: 13px;
-    border-radius: 8px;
-    width: 100%;
-    outline: none;
-}
-
-.form-container{
-    position: absolute;
-    top: 0;
-    height: 100%;
-    transition: all 0.6s ease-in-out;
-}
-
-.logar{
-    left: 0;
-    width: 50%;
-    z-index: 2;
-}
-
-.criar{
-    left: 0;
-    width: 50%;
-    opacity: 0;
-    z-index: 1;
-}
-
-.container .criar{
-    transform: translateX(100%);
-    opacity: 1;
-    z-index: 5;
-    animation: move 0.6s;
-}
-
-.icone-redesocial{
-    margin: 20px 0;
-}
-
-.icone-redesocial a{
-    border: 1px solid #ccc;
-    border-radius: 20%;
-    display: inline-flex;
-    justify-content: center;
-    align-items: center;
-    margin: 0 3px;
-    width: 40px;
-    height: 40px;
-}
-
-.icone-redesocial a:hover{
-    border: 2px solid #795005;
-    border-radius: 20%;
-    display: inline-flex;
-    justify-content: center;
-    align-items: center;
-    margin: 0 3px;
-    width: 40px;
-    height: 40px;
 }
 
 .alternar-container{

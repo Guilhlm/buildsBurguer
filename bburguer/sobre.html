@@ -14,7 +14,7 @@
     <link rel="stylesheet" href="css/sobre.css">
 </head>
 
-<body style="background-color: #303030;">
+<body>
     <main>
         <section class="home">
             <div class="container text-center">
@@ -32,21 +32,26 @@
                         </nav>
                     </div>
                     <div class="col-lg-1">
-                        <span>
-                            <div class="pesquisa">
-                                <i class="bi bi-search" style="color: rgba(233, 136, 57, 0.6);"></i>
-
-                                <span class="carrinho">
-                                    <a href="carrinho.html"><i class="bi bi-cart3" style="color: rgba(233, 136, 57, 0.6);"></i></a>
-                                </span>
-                                <span class="temaEscuro">
-                                    <i class="bi bi-moon-stars" style="color: rgba(233, 136, 57, 0.6);"></i>
-                                </span>
-                                <span class="pessoaLogin">
-                                    <a href="login.html"><i class="bi bi-person-fill"
-                                            style="color: rgba(233, 136, 57, 0.6);"></i></a>
-                                </span>
-                            </div>
+                        <span class="pesquisa">
+                            <i class="bi bi-search" style="color: rgba(233, 136, 57, 0.6);"></i>
+                        </span>
+                    </div>
+                    <div class="col-lg-1">
+                        <span class="carrinho">
+                            <a href="carrinho.html"><i class="bi bi-cart3"
+                                    style="color: rgba(233, 136, 57, 0.6);"></i></a>
+                        </span>
+                    </div>
+                    <div class="col-lg-1">
+                        <label for="ChangeTheme" id="lua">
+                            <input type="checkbox" id="ChangeTheme" />
+                            <span> <i class="bi bi-moon-stars" style="color: rgba(233, 136, 57, 0.6);"></i></span>
+                        </label>
+                    </div>
+                    <div class="col-lg-1">
+                        <span class="pessoaLogin">
+                            <a href="login.html"><i class="bi bi-person-fill"
+                                    style="color: rgba(233, 136, 57, 0.6);"></i></a>
                         </span>
                     </div>
                 </div>
@@ -79,7 +84,7 @@
                 </div>
             </main>
         </section>
-        <main class="fundinho" id="historia">
+        <main class="fundinho">
             <div>
                 <H3>História de um grande sonhador</H3>
 
@@ -138,7 +143,7 @@
         </main>
 
         <main class="fundinho2">
-            <div id="experiencia">
+            <div>
                 <H3>Minhas Experiências Com o PI</H3>
 
                 <h2>Inicio de tudo: </h2>
@@ -284,6 +289,8 @@
                 </div>
             </main>
         </footer>
+
+        <script src="script.js/temaescuro.js"></script>
 
 </body>
 

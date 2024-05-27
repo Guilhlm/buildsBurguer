@@ -4,6 +4,12 @@
     margin: 0;
 }
 
+p {
+    font-size: 19px;
+    margin-top: -40px;
+    font-family: "Calisto MT", "Bookman Old Style", Bookman, "Goudy Old Style", Garamond, "Hoefler Text", "Bitstream Charter", Georgia, serif;
+}
+
 h4 {
     margin-top: 20px;
     margin-bottom: 65px;
@@ -12,16 +18,29 @@ h4 {
     font-family: "Calisto MT", "Bookman Old Style", Bookman, "Goudy Old Style", Garamond, "Hoefler Text", "Bitstream Charter", Georgia, serif;
 }
 
-p {
-    font-size: 19px;
-    margin-top: -40px;
-    font-family: "Calisto MT", "Bookman Old Style", Bookman, "Goudy Old Style", Garamond, "Hoefler Text", "Bitstream Charter", Georgia, serif;
+body {
+    transition: 0.5s;
+    background-color: #fff;
 }
 
-.oi{
-    color: rgba(233, 136, 57, 0.6);
-    margin-right: 100px;
-    font-family: "Calisto MT", "Bookman Old Style", Bookman, "Goudy Old Style", Garamond, "Hoefler Text", "Bitstream Charter", Georgia, serif;
+body.dark-mode {
+    transition: 0.5s;
+    background-color: #303030;
+
+}
+
+#ChangeTheme {
+    opacity: 0;
+}
+
+.home {
+    background-color: rgb(0, 0, 0);
+}
+
+#logo {
+    display: flex;
+    margin-top: 10px;
+    margin-left: -100px;
 }
 
 .menu ul li {
@@ -54,23 +73,87 @@ header {
     justify-content: center;
     margin-top: 50px;
     margin-bottom: 10px;
-    
 }
 
-/* menuzin */
+.pesquisa {
+    display: flex;
+    padding-left: -15px;
+    margin-top: 45px;
+    font-size: 24px;
+    cursor: pointer;
+    padding-right: -30px;
+}
+
+div .pesquisa :hover {
+    display: flex;
+    margin-top: -0.3px;
+    color: rgb(255, 255, 255) !important;
+    cursor: pointer;
+}
+
+.carrinho {
+    display: flex;
+    margin-left: 1265px;
+    font-size: 28px;
+    margin-top: -89px;
+}
+
+div .carrinho :hover {
+    display: flex;
+    margin-top: -0.3px;
+    text-decoration: none;
+    color: rgba(255, 255, 255, 1) !important;
+}
+
+#lua {
+    display: flex;
+    margin-left: 1200px;
+    font-size: 25px;
+    margin-top: -86px;
+
+}
+
+div #lua :hover {
+    display: flex;
+    cursor: pointer;
+    margin-top: -0.3px;
+    text-decoration: none;
+    color: rgba(255, 255, 255, 1) !important;
+}
+
+.pessoaLogin {
+    display: flex;
+    margin-left: 1155px;
+    font-size: 32px;
+    margin-top: -90px;
+}
+
+.pessoaLogin :hover {
+    display: flex;
+    margin-top: -0.3px;
+    text-decoration: none;
+    color: rgba(255, 255, 255, 1) !important;
+}
+
+.risco {
+    border-bottom: 1.5px solid rgba(233, 136, 57, 0.6);
+    margin-bottom: 50px;
+}
+
+#banner {
+    background-image: url(../img/banner\(home\).png);
+    height: 70vh;
+    width: 100%;
+    background-repeat: no-repeat;
+    background-position: top;
+    justify-content: center;
+}
 
 .icones {
     display: flex;
     margin-top: 80px;
     margin-left: 1230px;
     font-size: 35px;
-}
-
-.icones #insta {
-    display: flex;
-    margin-top: 15px;
-    margin-left: 20px;
-    cursor: pointer;
 }
 
 .icones a {
@@ -84,6 +167,12 @@ header {
     color: rgba(233, 136, 57, 0.6) !important;
 }
 
+.icones #insta {
+    display: flex;
+    margin-top: 15px;
+    margin-left: 20px;
+    cursor: pointer;
+}
 
 .icones #youtube {
     display: flex;
@@ -99,36 +188,10 @@ header {
     cursor: pointer;
 }
 
-.risco{
-    border-bottom: 1.5px solid rgba(233, 136, 57, 0.6);
-    margin-bottom: 50px;
-}
-
-.home{
-    background-color: rgba(0, 0, 0, 0.719);
-}
-
-#banner {
-    background-image: url(../img/banner\(home\).png);
-    height: 70vh;
-    width: 100%;
-    background-repeat: no-repeat;
-    background-position: top;
-    justify-content: center;
-    margin-bottom: 55px;
-}
-
-#banner2 {
-    background-image: url(../img/bannerdrink.png);
-    height: 70vh;
-    width: 100%;
-    background-repeat: no-repeat;
-    background-position: top;
-    margin-bottom: 70px;
-}
-
 #produtos .titulo,
-#bebidas .titulobebida {
+#bebidas .titulobebida,
+#combos .titulocombos,
+#sobremesa .titulosobremesa {
     display: flex;
     justify-content: center;
     font-family: "Calisto MT", "Bookman Old Style", Bookman, "Goudy Old Style", Garamond, "Hoefler Text", "Bitstream Charter", Georgia, serif;
@@ -143,19 +206,10 @@ header {
     padding-top: 15px;
 }
 
-.foto-produto {
-    width: 100%;
-    max-width: 320px;
-    border-top-left-radius: 20px;
-    border-top-right-radius: 20px;
-    border-bottom: 5px solid rgba(233, 136, 57, 0.6);
-    max-height: 390px;
-    height: 400px;
-    object-fit: cover;
-}
-
 #produtos figure,
-#bebidas figure {
+#bebidas figure,
+#combos figure,
+#sobremesa figure {
     /* background-color: rgb(116, 68, 5); */
     background: linear-gradient(to top, rgb(54, 31, 1), rgb(0, 0, 0));
     border: 4px solid rgba(233, 136, 57, 0.6);
@@ -168,7 +222,9 @@ header {
 }
 
 #produtos figure figcaption,
-#bebidas figure figcaption {
+#bebidas figure figcaption,
+#combos figure figcaption,
+#sobremesa figure figcaption  {
     padding: 0 10%;
     display: flex;
     flex-direction: column;
@@ -176,82 +232,40 @@ header {
     height: 130px;
 }
 
-#produtos figure figcaption h4 
-#bebidas figure figcaption h4 {
-    font-size: auto;
-    margin-bottom: 0;
-    font-weight: 700;
-    text-align: start;
-    margin-top: 10px;
-    color: aliceblue;
+/* esse oi eh o preço do produto , nao consigo mudar*/
+.oi {
+    color: rgba(233, 136, 57, 0.6);
+    margin-right: 100px;
+    font-family: "Calisto MT", "Bookman Old Style", Bookman, "Goudy Old Style", Garamond, "Hoefler Text", "Bitstream Charter", Georgia, serif;
 }
 
 #produtos figure figcaption span.preco,
-#bebidas figure figcaption span.preco {
+#bebidas figure figcaption span.preco,
+#combos figure figcaption span.preco,
+#sobremesa figure figcaption span.preco {
     color: rgb(233, 136, 57);
     font-weight: 900;
     font-size: 1.2rem;
     text-align: end;
 }
 
-
-.carrinho {
-    display: flex;
-    margin-left: 35px;
-    font-size: 30px;
-    margin-top: -10px;
+.foto-produto {
+    width: 100%;
+    max-width: 320px;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    border-bottom: 5px solid rgba(233, 136, 57, 0.6);
+    max-height: 390px;
+    height: 400px;
+    object-fit: cover;
 }
 
-.carrinho :hover {
-    display: flex;
-    text-decoration: none;
-}
-
-#logo {
-    display: flex;
-    margin-top: 10px;
-    margin-left: -100px;
-}
-
-.pesquisa {
-    display: flex;
-    margin-left: -15px;
-    margin-top: 45px;
-    font-size: 23px;
-    cursor: pointer;
-}
-
-.pesquisa :hover {
-    display: flex;
-    color: rgb(255, 255, 255) !important;
-    cursor: pointer;
-}
-
-.temaEscuro {
-    display: flex;
-    margin-right: 30px;
-    margin-left: 40px;
-    font-size: 30px;
-    margin-top: -8px;
-}
-
-.temaEscuro :hover {
-    display: flex;
-}
-
-.pessoaLogin {
-    display: flex;
-    font-size: 35px;
-    margin-top: -9px;
-    margin-left: 5px;
-    cursor: pointer;
-}
-
-.pessoaLogin :hover {
-    display: flex;
-    margin-top: -2px;
-    text-decoration: none;
-    color: rgba(255, 255, 255, 1) !important;
+#banner2 {
+    background-image: url(../img/bannerdrink.png);
+    height: 70vh;
+    width: 100%;
+    background-repeat: no-repeat;
+    background-position: top;
 }
 
 .titulobebida {
@@ -267,22 +281,29 @@ header {
     margin-bottom: 70px;
 }
 
+#banner3 {
+    background-image: url(../img/bannertemporairo.png);
+    height: 70vh;
+    width: 100%;
+    background-repeat: no-repeat;
+    background-position: top;
+    margin-top: 70px;
+    margin-bottom: 60px;
+}
+
 footer {
     background-color: #000000;
     color: rgb(233, 136, 57);
     padding: 40px 0;
     border-top: 5px solid rgba(233, 136, 57, 0.6);
-    ;
 }
 
 footer h5 {
-
     margin-left: 60px;
     font-weight: bold;
 }
 
 footer a {
-
     margin-left: 60px;
     color: white;
     text-decoration: none;
