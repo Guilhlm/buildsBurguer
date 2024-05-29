@@ -4,6 +4,85 @@
     margin: 0;
 }
 
+
+
+
+
+
+#procurar-box {
+    display: flex;
+    margin-top: 65px;
+    transform: translate(-50%, -50%);
+    background-color: rgb(0, 83, 94);
+    height: 40px;
+    padding: 10px;
+    border-radius: 20px;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.procurar-texto {
+    border: none;
+    background: none;
+    outline: none;
+    padding: 0;
+    color: rgb(255, 255, 255);
+    font-size: 12px;
+    line-height: 20px;
+    width: 0px;
+    transition: .7s;
+}
+
+.procurar-botao {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: rgb(255, 255, 255);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: -9px;
+}
+
+
+/* sinal de maior indico oq vai mudar dentro da primeira tag */
+#procurar-box:hover > .procurar-texto{
+    width: 200px;
+    padding: 0 5px;
+    transition: .7s;
+    cursor: pointer;
+
+}
+
+#lupa{
+    font-size: 22px;
+}
+
+#lupa:hover{
+    font-size: 22px;
+    color: rgb(255, 255, 255) !important;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 p {
     font-size: 19px;
     margin-top: -40px;
@@ -75,25 +154,10 @@ header {
     margin-bottom: 10px;
 }
 
-.pesquisa {
-    display: flex;
-    padding-left: -15px;
-    margin-top: 45px;
-    font-size: 24px;
-    cursor: pointer;
-    padding-right: -30px;
-}
-
-div .pesquisa :hover {
-    display: flex;
-    margin-top: -0.3px;
-    color: rgb(255, 255, 255) !important;
-    cursor: pointer;
-}
 
 .carrinho {
     display: flex;
-    margin-left: 1265px;
+    margin-left: 1270px;
     font-size: 28px;
     margin-top: -89px;
 }
