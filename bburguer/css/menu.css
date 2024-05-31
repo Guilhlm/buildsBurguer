@@ -147,6 +147,7 @@ div #lua :hover {
     background-repeat: no-repeat;
     background-position: top;
     justify-content: center;
+    margin-bottom: -30px;
 }
 
 .icones {
@@ -188,10 +189,7 @@ div #lua :hover {
     cursor: pointer;
 }
 
-#produtos .titulo,
-#bebidas .titulobebida,
-#combos .titulocombos,
-#sobremesa .titulosobremesa {
+.titulo {
     display: flex;
     justify-content: center;
     font-family: "Calisto MT", "Bookman Old Style", Bookman, "Goudy Old Style", Garamond, "Hoefler Text", "Bitstream Charter", Georgia, serif;
@@ -206,10 +204,7 @@ div #lua :hover {
     padding-top: 15px;
 }
 
-#produtos figure,
-#bebidas figure,
-#combos figure,
-#sobremesa figure {
+#produtos figure{
     /* background-color: rgb(116, 68, 5); */
     background: linear-gradient(to top, rgb(54, 31, 1), rgb(0, 0, 0));
     border: 4px solid rgba(233, 136, 57, 0.6);
@@ -221,10 +216,7 @@ div #lua :hover {
     margin-top: 30px;
 }
 
-#produtos figure figcaption,
-#bebidas figure figcaption,
-#combos figure figcaption,
-#sobremesa figure figcaption  {
+#produtos figure figcaption {
     padding: 0 10%;
     display: flex;
     flex-direction: column;
@@ -232,17 +224,13 @@ div #lua :hover {
     height: 130px;
 }
 
-/* esse oi eh o preço do produto , nao consigo mudar*/
-.oi {
+.preçoescrito {
     color: rgba(233, 136, 57, 0.6);
     margin-right: 100px;
     font-family: "Calisto MT", "Bookman Old Style", Bookman, "Goudy Old Style", Garamond, "Hoefler Text", "Bitstream Charter", Georgia, serif;
 }
 
-#produtos figure figcaption span.preco,
-#bebidas figure figcaption span.preco,
-#combos figure figcaption span.preco,
-#sobremesa figure figcaption span.preco {
+#produtos figure figcaption span.preco {
     color: rgb(233, 136, 57);
     font-weight: 900;
     font-size: 1.2rem;
@@ -264,31 +252,20 @@ div #lua :hover {
     background-image: url(../img/bannerdrink.png);
     height: 70vh;
     width: 100%;
+    margin-bottom: 60px;
     background-repeat: no-repeat;
     background-position: top;
-}
-
-.titulobebida {
-    display: flex;
-    justify-content: center;
-    margin-top: 50px;
-    font-family: "Inter", sans-serif;
-    font-weight: bold;
-    font-size: 50px;
-    color: rgb(0, 0, 0);
-    margin-bottom: 70px;
-    text-transform: uppercase;
-    margin-bottom: 70px;
+    background-size: cover;
 }
 
 #banner3 {
     background-image: url(../img/bannerdoce.png);
     height: 70vh;
     width: 100%;
+    margin-bottom: 60px;
     background-repeat: no-repeat;
     background-position: top;
-    margin-top: 70px;
-    margin-bottom: 60px;
+    background-size: cover;
 }
 
 footer {

@@ -5,11 +5,14 @@
 }
 
 body {
+    transition: 0.5s;
     background-color: #fff;
 }
 
 body.dark-mode {
+    transition: 0.5s;
     background-color: #303030;
+
 }
 
 #ChangeTheme {
@@ -121,4 +124,39 @@ div #lua :hover{
 .risco {
     border-bottom: 1.5px solid rgba(233, 136, 57, 0.6);
     margin-bottom: 50px;
+}
+
+footer {
+    background-color: #000000;
+    color: rgb(233, 136, 57);
+    padding: 40px 0;
+    border-top: 5px solid rgba(233, 136, 57, 0.6);
+}
+
+footer h5 {
+    margin-left: 60px;
+    font-weight: bold;
+}
+
+footer a {
+    margin-left: 60px;
+    color: white;
+    text-decoration: none;
+}
+
+footer a:hover {
+    text-decoration: underline;
+    color: rgb(122, 121, 121);
+}
+
+.footer-bottom {
+    text-align: center;
+    padding: 5px 0;
+    border-top: 1px solid #ccc;
+    margin-top: 40px;
+}
+
+.footer-bottom div {
+    color: white;
+    font-weight: 300;
 }
