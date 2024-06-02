@@ -16,14 +16,13 @@ p{
 
 body{
     display: flex;
-    background-image: url(img/final\(login\).png);
     background-repeat: no-repeat;
     background-size: cover;
     display: flex;
     align-items: center;
     justify-content: center;
     height: 100vh;
-    background-image: linear-gradient(rgba(130, 61, 12, 0.3), rgba(0, 0, 0, 0.7)), url(../img/final\(login\).png);
+    background-image: linear-gradient(rgba(130, 61, 12, 0.3), rgba(0, 0, 0, 0.7)), url(../img/fundo/final\(login\).png);
     background-position: center;
 }
 

@@ -153,7 +153,7 @@ div #lua :hover{
 }
 
 #banner {
-    background-image: url(../img/banner\(home\).png);
+    background-image: url(../img/banners/banner\(home\).png);
     height: 60vh;
     width: 100%;
     background-repeat: no-repeat;
@@ -207,7 +207,7 @@ div #lua :hover{
     height: 1550px;
     width: 100%;
     max-width: 1300px;
-    background: linear-gradient(rgba(185, 132, 63, 0.3), rgba(90, 39, 7, 0.8)), url(../img/hambuerguerzinhos.png);
+    background: linear-gradient(rgba(185, 132, 63, 0.3), rgba(90, 39, 7, 0.8)), url(../img/fundo/hambuerguerzinhos.png);
     background-position: center;
     background-color: rgb(170, 137, 94);
     border-radius: 20px;
@@ -221,7 +221,7 @@ div #lua :hover{
     height: 2500px;
     width: 100%;
     max-width: 1300px;
-    background: linear-gradient(rgba(185, 132, 63, 0.3), rgba(90, 39, 7, 0.8)), url(../img/hambuerguerzinhos.png);
+    background: linear-gradient(rgba(185, 132, 63, 0.3), rgba(90, 39, 7, 0.8)), url(../img/fundo/hambuerguerzinhos.png);
     background-position: center;
     background-color: rgb(170, 137, 94);
     border-radius: 20px;

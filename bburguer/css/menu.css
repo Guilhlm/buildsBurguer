@@ -141,7 +141,7 @@ div #lua :hover {
 }
 
 #banner {
-    background-image: url(../img/banner\(home\).png);
+    background-image: url(../img/banners/banner\(home\).png);
     height: 70vh;
     width: 100%;
     background-repeat: no-repeat;
@@ -249,23 +249,33 @@ div #lua :hover {
 }
 
 #banner2 {
-    background-image: url(../img/bannerdrink.png);
+    background-image: url(../img/banners/bannerdrink.png);
     height: 70vh;
     width: 100%;
-    margin-bottom: 60px;
+    margin-top: 60px;
+    margin-bottom: -60px;
     background-repeat: no-repeat;
     background-position: top;
-    background-size: cover;
 }
 
 #banner3 {
-    background-image: url(../img/bannerdoce.png);
+    background-image: url(../img/banners/bannerdoce.png);
     height: 70vh;
     width: 100%;
-    margin-bottom: 60px;
+    margin-top: 60px;
+    margin-bottom: -60px;
     background-repeat: no-repeat;
     background-position: top;
-    background-size: cover;
+}
+
+#banner4 {
+    background-image: url(../img/banners/porçoes.png);
+    height: 70vh;
+    width: 100%;
+    margin-top: 60px;
+    margin-bottom: -60px;
+    background-repeat: no-repeat;
+    background-position: top;
 }
 
 footer {
