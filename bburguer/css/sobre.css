@@ -32,12 +32,12 @@ h3 {
 
 body {
     transition: 0.5s;
-    background-color: #fff;
+    background-color: #202020;
 }
 
 body.dark-mode {
     transition: 0.5s;
-    background-color: #303030;
+    background-color: #790000;
 
 }
 
@@ -51,8 +51,15 @@ body.dark-mode {
 
 #logo {
     display: flex;
-    margin-top: 10px;
-    margin-left: -100px;
+    justify-content: center;
+}
+
+.menu {
+    display: flex;
+    margin-top: 18px;
+    margin-left: 115px;
+    justify-content: center;
+    width: 100%;
 }
 
 .menu ul li {
@@ -80,52 +87,35 @@ body.dark-mode {
     color: rgba(233, 136, 57, 0.6);
 }
 
-header {
-    display: flex;
-    justify-content: center;
-    margin-top: 50px;
-    margin-bottom: 10px;
+#itensMenu .carrinho,
+#itensMenu #lua,
+#itensMenu .pessoaLogin {
+    display: inline-block;
+    margin-top: 40px;
 }
 
-.pesquisa {
-    display: flex;
-    padding-left: -15px;
-    margin-top: 45px;
-    font-size: 24px;
-    cursor: pointer;
-    padding-right: -30px;
+#itensMenu{
+    padding-left: 80px;
 }
 
-div .pesquisa :hover {
-    display: flex;  
-    margin-top: -0.3px;
-    color: rgb(255, 255, 255) !important;
-    cursor: pointer;
-}
-
-.carrinho {
-    display: flex;
-    margin-left: 1265px;
+.carrinho {   
     font-size: 28px;
-    margin-top: -89px;
+    padding: 0 20px;
 }
 
-div .carrinho :hover {
+.carrinho :hover {
     display: flex;
     margin-top: -0.3px;
     text-decoration: none;
     color: rgba(255, 255, 255, 1) !important;
 }
 
-#lua{
-    display: flex;
-    margin-left: 1200px;
+#lua {
     font-size: 25px;
-    margin-top: -86px;
-    
+    padding: 0 20px;
 }
 
-div #lua :hover{
+#lua :hover {
     display: flex;
     cursor: pointer;
     margin-top: -0.3px;
@@ -134,10 +124,8 @@ div #lua :hover{
 }
 
 .pessoaLogin {
-    display: flex;
-    margin-left: 1155px;
     font-size: 32px;
-    margin-top: -90px;
+    padding: 0 20px;
 }
 
 .pessoaLogin :hover {
@@ -149,11 +137,11 @@ div #lua :hover{
 
 .risco {
     border-bottom: 1.5px solid rgba(233, 136, 57, 0.6);
-    margin-bottom: 50px;
+    margin-bottom: 30px;
 }
 
 #banner {
-    background-image: url(../img/banner\(home\).png);
+    background-image: url(../img/banners/banner\(home\).png);
     height: 60vh;
     width: 100%;
     background-repeat: no-repeat;
@@ -203,11 +191,11 @@ div #lua :hover{
 
 .fundinho {
     display: flex;
-    margin-left: 150px;
+    margin-left: 140px;
     height: 1550px;
     width: 100%;
     max-width: 1300px;
-    background: linear-gradient(rgba(185, 132, 63, 0.3), rgba(90, 39, 7, 0.8)), url(../img/hambuerguerzinhos.png);
+    background: linear-gradient(rgba(185, 132, 63, 0.3), rgba(90, 39, 7, 0.8)), url(../img/fundo/hambuerguerzinhos.png);
     background-position: center;
     background-color: rgb(170, 137, 94);
     border-radius: 20px;
@@ -217,11 +205,11 @@ div #lua :hover{
 .fundinho2 {
     display: flex;
     margin-top: 40PX;
-    margin-left: 150px;
+    margin-left: 140px;
     height: 2500px;
     width: 100%;
     max-width: 1300px;
-    background: linear-gradient(rgba(185, 132, 63, 0.3), rgba(90, 39, 7, 0.8)), url(../img/hambuerguerzinhos.png);
+    background: linear-gradient(rgba(185, 132, 63, 0.3), rgba(90, 39, 7, 0.8)), url(../img/fundo/hambuerguerzinhos.png);
     background-position: center;
     background-color: rgb(170, 137, 94);
     border-radius: 20px;

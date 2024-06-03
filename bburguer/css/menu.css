@@ -4,85 +4,6 @@
     margin: 0;
 }
 
-
-
-
-
-
-#procurar-box {
-    display: flex;
-    margin-top: 65px;
-    transform: translate(-50%, -50%);
-    background-color: rgb(0, 83, 94);
-    height: 40px;
-    padding: 10px;
-    border-radius: 20px;
-    justify-content: space-between;
-    align-items: center;
-}
-
-.procurar-texto {
-    border: none;
-    background: none;
-    outline: none;
-    padding: 0;
-    color: rgb(255, 255, 255);
-    font-size: 12px;
-    line-height: 20px;
-    width: 0px;
-    transition: .7s;
-}
-
-.procurar-botao {
-    width: 40px;
-    height: 40px;
-    border-radius: 50%;
-    background-color: rgb(255, 255, 255);
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-right: -9px;
-}
-
-
-/* sinal de maior indico oq vai mudar dentro da primeira tag */
-#procurar-box:hover > .procurar-texto{
-    width: 200px;
-    padding: 0 5px;
-    transition: .7s;
-    cursor: pointer;
-
-}
-
-#lupa{
-    font-size: 22px;
-}
-
-#lupa:hover{
-    font-size: 22px;
-    color: rgb(255, 255, 255) !important;
-}
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 p {
     font-size: 19px;
     margin-top: -40px;
@@ -99,12 +20,12 @@ h4 {
 
 body {
     transition: 0.5s;
-    background-color: #fff;
+    background-color: #202020;
 }
 
 body.dark-mode {
     transition: 0.5s;
-    background-color: #303030;
+    background-color: #790000;
 
 }
 
@@ -118,8 +39,15 @@ body.dark-mode {
 
 #logo {
     display: flex;
-    margin-top: 10px;
-    margin-left: -100px;
+    justify-content: center;
+}
+
+.menu {
+    display: flex;
+    margin-top: 18px;
+    margin-left: 115px;
+    justify-content: center;
+    width: 100%;
 }
 
 .menu ul li {
@@ -147,22 +75,23 @@ body.dark-mode {
     color: rgba(233, 136, 57, 0.6);
 }
 
-header {
-    display: flex;
-    justify-content: center;
-    margin-top: 50px;
-    margin-bottom: 10px;
+#itensMenu .carrinho,
+#itensMenu #lua,
+#itensMenu .pessoaLogin {
+    display: inline-block;
+    margin-top: 40px;
 }
 
+#itensMenu{
+    padding-left: 80px;
+}
 
-.carrinho {
-    display: flex;
-    margin-left: 1270px;
+.carrinho {   
     font-size: 28px;
-    margin-top: -89px;
+    padding: 0 20px;
 }
 
-div .carrinho :hover {
+.carrinho :hover {
     display: flex;
     margin-top: -0.3px;
     text-decoration: none;
@@ -170,14 +99,11 @@ div .carrinho :hover {
 }
 
 #lua {
-    display: flex;
-    margin-left: 1200px;
     font-size: 25px;
-    margin-top: -86px;
-
+    padding: 0 20px;
 }
 
-div #lua :hover {
+#lua :hover {
     display: flex;
     cursor: pointer;
     margin-top: -0.3px;
@@ -186,10 +112,8 @@ div #lua :hover {
 }
 
 .pessoaLogin {
-    display: flex;
-    margin-left: 1155px;
     font-size: 32px;
-    margin-top: -90px;
+    padding: 0 20px;
 }
 
 .pessoaLogin :hover {
@@ -201,16 +125,17 @@ div #lua :hover {
 
 .risco {
     border-bottom: 1.5px solid rgba(233, 136, 57, 0.6);
-    margin-bottom: 50px;
+    margin-bottom: 30px;
 }
 
 #banner {
-    background-image: url(../img/banner\(home\).png);
+    background-image: url(../img/banners/banner\(home\).png);
     height: 70vh;
     width: 100%;
     background-repeat: no-repeat;
     background-position: top;
     justify-content: center;
+    margin-bottom: 50px;
 }
 
 .icones {
@@ -252,10 +177,7 @@ div #lua :hover {
     cursor: pointer;
 }
 
-#produtos .titulo,
-#bebidas .titulobebida,
-#combos .titulocombos,
-#sobremesa .titulosobremesa {
+.titulo {
     display: flex;
     justify-content: center;
     font-family: "Calisto MT", "Bookman Old Style", Bookman, "Goudy Old Style", Garamond, "Hoefler Text", "Bitstream Charter", Georgia, serif;
@@ -270,10 +192,7 @@ div #lua :hover {
     padding-top: 15px;
 }
 
-#produtos figure,
-#bebidas figure,
-#combos figure,
-#sobremesa figure {
+#produtos figure{
     /* background-color: rgb(116, 68, 5); */
     background: linear-gradient(to top, rgb(54, 31, 1), rgb(0, 0, 0));
     border: 4px solid rgba(233, 136, 57, 0.6);
@@ -285,10 +204,7 @@ div #lua :hover {
     margin-top: 30px;
 }
 
-#produtos figure figcaption,
-#bebidas figure figcaption,
-#combos figure figcaption,
-#sobremesa figure figcaption  {
+#produtos figure figcaption {
     padding: 0 10%;
     display: flex;
     flex-direction: column;
@@ -296,17 +212,13 @@ div #lua :hover {
     height: 130px;
 }
 
-/* esse oi eh o preço do produto , nao consigo mudar*/
-.oi {
+.preçoescrito {
     color: rgba(233, 136, 57, 0.6);
     margin-right: 100px;
     font-family: "Calisto MT", "Bookman Old Style", Bookman, "Goudy Old Style", Garamond, "Hoefler Text", "Bitstream Charter", Georgia, serif;
 }
 
-#produtos figure figcaption span.preco,
-#bebidas figure figcaption span.preco,
-#combos figure figcaption span.preco,
-#sobremesa figure figcaption span.preco {
+#produtos figure figcaption span.preco {
     color: rgb(233, 136, 57);
     font-weight: 900;
     font-size: 1.2rem;
@@ -325,34 +237,33 @@ div #lua :hover {
 }
 
 #banner2 {
-    background-image: url(../img/bannerdrink.png);
+    background-image: url(../img/banners/bannerdrink.png);
     height: 70vh;
     width: 100%;
+    margin-top: 60px;
+    margin-bottom: 60px;
     background-repeat: no-repeat;
     background-position: top;
-}
-
-.titulobebida {
-    display: flex;
-    justify-content: center;
-    margin-top: 50px;
-    font-family: "Inter", sans-serif;
-    font-weight: bold;
-    font-size: 50px;
-    color: rgb(0, 0, 0);
-    margin-bottom: 70px;
-    text-transform: uppercase;
-    margin-bottom: 70px;
 }
 
 #banner3 {
-    background-image: url(../img/bannerdoce.png);
+    background-image: url(../img/banners/bannerdoce.png);
     height: 70vh;
     width: 100%;
+    margin-top: 60px;
+    margin-bottom: 60px;
     background-repeat: no-repeat;
     background-position: top;
-    margin-top: 70px;
+}
+
+#banner4 {
+    background-image: url(../img/banners/porçoes.png);
+    height: 70vh;
+    width: 100%;
+    margin-top: 60px;
     margin-bottom: 60px;
+    background-repeat: no-repeat;
+    background-position: top;
 }
 
 footer {
