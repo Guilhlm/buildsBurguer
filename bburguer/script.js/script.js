@@ -4,8 +4,8 @@
 
 let indexSlidie = 0;
 
-function showSlide(index) {
-    const carrossel = document.querySelector(".carrossel");
+function showSlide(index, combo) {
+    const carrossel = document.querySelector(".carrossel-" + combo);
 
     const totalSlide = 5;
 
@@ -29,9 +29,9 @@ function anteriorSlide() {
     showSlide(indexSlidie);
 }
 
-function proximoSlide() {
+function proximoSlide(combo) {
     indexSlidie = indexSlidie + 1;
-    showSlide(indexSlidie);
+    showSlide(indexSlidie, combo);
 
 } 
 
