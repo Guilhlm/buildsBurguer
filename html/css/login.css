@@ -26,32 +26,6 @@ body{
     background-position: center;
 }
 
-.icone-redesocial{
-    margin: 20px 0;
-}
-
-.icone-redesocial a{
-    border: 1px solid #ccc;
-    border-radius: 20%;
-    display: inline-flex;
-    justify-content: center;
-    align-items: center;
-    margin: 0 3px;
-    width: 40px;
-    height: 40px;
-}
-
-.icone-redesocial a:hover{
-    border: 2px solid #795005;
-    border-radius: 20%;
-    display: inline-flex;
-    justify-content: center;
-    align-items: center;
-    margin: 0 3px;
-    width: 40px;
-    height: 40px;
-}
-
 form a.voltardireita{
     display: flex;
     font-size: 25px;
@@ -76,6 +50,10 @@ form a.voltardireita:hover{
     width: 50%;
     opacity: 0;
     z-index: 1;
+}
+
+.esqueceu:hover{
+    color: blue;
 }
 
 .container{
@@ -120,6 +98,10 @@ form a.voltardireita:hover{
     border-radius: 8px;
     width: 100%;
     outline: none;
+}
+
+.botaofinal:hover{
+    border: 1px solid #000000;
 }
 
 .container button{

@@ -25,7 +25,7 @@ body {
 
 body.dark-mode {
     transition: 0.5s;
-    background-color: #790000;
+    background-color: #ffffff;
 
 }
 
@@ -82,11 +82,7 @@ body.dark-mode {
     margin-top: 40px;
 }
 
-#itensMenu{
-    padding-left: 80px;
-}
-
-.carrinho {   
+.carrinho {
     font-size: 28px;
     padding: 0 20px;
 }
@@ -100,7 +96,6 @@ body.dark-mode {
 
 #lua {
     font-size: 25px;
-    padding: 0 20px;
 }
 
 #lua :hover {
@@ -113,7 +108,6 @@ body.dark-mode {
 
 .pessoaLogin {
     font-size: 32px;
-    padding: 0 20px;
 }
 
 .pessoaLogin :hover {
@@ -192,7 +186,7 @@ body.dark-mode {
     padding-top: 15px;
 }
 
-#produtos figure{
+#produtos figure {
     /* background-color: rgb(116, 68, 5); */
     background: linear-gradient(to top, rgb(54, 31, 1), rgb(0, 0, 0));
     border: 4px solid rgba(233, 136, 57, 0.6);
