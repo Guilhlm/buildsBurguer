@@ -273,7 +273,7 @@
     <section class="container" id="produtos">
         <main class="carrossel-container">
             <section id="produtos">
-                <div class="carrossel">
+                <div class="carrossel-combo carrossel">
                     <div class="col-lg-3 col-md-6 col-sm-12">
                         <a href="#" style="text-decoration: none;">
                             <figure>
@@ -445,8 +445,8 @@
                         </a>
                     </div>
                 </div>
-                <button class="anterior" onclick="javascript:anteriorSlide()"><i class="bi bi-caret-left"></i></button>
-                <button class="proximo" onclick="javascript:proximoSlide()"><i class="bi bi-caret-right"></i></button>
+                <button class="anterior" onclick="javascript:anteriorSlide('combo')"><i class="bi bi-caret-left"></i></button>
+                <button class="proximo" onclick="javascript:proximoSlide('combo')"><i class="bi bi-caret-right"></i></button>
             </section>
         </main>
         <br><br><br>
@@ -456,7 +456,7 @@
     <section class="container" id="produtos">
         <main class="carrossel-container">
             <section id="produtos">
-                <div class="carrossel">
+                <div class="carrossel-porcao carrossel">
                     <div class="col-lg-3 col-md-6 col-sm-12">
                         <a href="#" style="text-decoration: none;">
                             <figure>
@@ -627,8 +627,8 @@
                         </a>
                     </div>
                 </div>
-                <button class="anterior" onclick="javascript:anteriorSlide()"><i class="bi bi-caret-left"></i></button>
-                <button class="proximo" onclick="javascript:proximoSlide()"><i class="bi bi-caret-right"></i></button>
+                <button class="anterior" onclick="javascript:anteriorSlide('porcao')"><i class="bi bi-caret-left"></i></button>
+                <button class="proximo" onclick="javascript:proximoSlide('porcao')"><i class="bi bi-caret-right"></i></button>
             </section>
         </main>
         <br><br><br>
@@ -638,7 +638,7 @@
     <section class="container" id="produtos">
         <main class="carrossel-container">
             <section id="produtos">
-                <div class="carrossel">
+                <div class="carrossel-drink carrossel">
                     <div class="col-lg-3 col-md-6 col-sm-12">
                         <a href="#" style="text-decoration: none;">
                             <figure>
@@ -797,7 +797,7 @@
                     <div class="col-lg-3 col-md-6 col-sm-12">
                         <a href="#" style="text-decoration: none;">
                             <figure>
-                                <img src="./img/lanches/hmbCogmelo.png" alt="Hamburguer com Cogumelos"
+                                <img src="./img/bebidas/cocazero.png" alt="Hamburguer com Cogumelos"
                                     class="foto-produto">
                                 <figcaption>
                                     <h4>Hamburguer com Cogumelos</h4>
@@ -810,8 +810,8 @@
                         </a>
                     </div>
                 </div>
-                <button class="anterior" onclick="javascript:anteriorSlide()"><i class="bi bi-caret-left"></i></button>
-                <button class="proximo" onclick="javascript:proximoSlide()"><i class="bi bi-caret-right"></i></button>
+                <button class="anterior" onclick="javascript:anteriorSlide('drink')"><i class="bi bi-caret-left"></i></button>
+                <button class="proximo" onclick="javascript:proximoSlide('drink')"><i class="bi bi-caret-right"></i></button>
             </section>
         </main>
         <br><br>
@@ -820,7 +820,7 @@
     <section class="container" id="produtos">
         <main class="carrossel-container">
             <section id="produtos">
-                <div class="carrossel">
+                <div class="carrossel-alcoolico carrossel">
                     <div class="col-lg-3 col-md-6 col-sm-12">
                         <a href="#" style="text-decoration: none;">
                             <figure>
@@ -880,7 +880,7 @@
                     <div class="col-lg-3 col-md-6 col-sm-12">
                         <a href="#" style="text-decoration: none;">
                             <figure>
-                                <img src="./img/bebidas/cocazero.png" alt="cocazero" class="foto-produto">
+                                <img src="./img/bebidas/corona.jpg" alt="cocazero" class="foto-produto">
                                 <figcaption>
                                     <h4>Hamburguer Kids</h4>
                                     <span class="preco">
@@ -894,7 +894,7 @@
                     <div class="col-lg-3 col-md-6 col-sm-12">
                         <a href="#" style="text-decoration: none;">
                             <figure>
-                                <img src="./img/bebidas/laranjaAbacaxi.png" alt="Suco de laranja com abacaxi"
+                                <img src="./img/bebidas/blacklabel.jpg" alt="Suco de laranja com abacaxi"
                                     class="foto-produto">
                                 <figcaption>
                                     <h4>Hamburguer Completo</h4>
@@ -909,7 +909,7 @@
                     <div class="col-lg-3 col-md-6 col-sm-12">
                         <a href="#" style="text-decoration: none;">
                             <figure>
-                                <img src="./img/bebidas/sucolaranja.png" alt="Suco de laranja" class="foto-produto">
+                                <img src="./img/bebidas/jackdaniels.jpg" alt="Suco de laranja" class="foto-produto">
                                 <figcaption>
                                     <h4>Hamburguer Extra Queijo</h4>
                                     <span class="preco">
@@ -923,7 +923,7 @@
                     <div class="col-lg-3 col-md-6 col-sm-12">
                         <a href="#" style="text-decoration: none;">
                             <figure>
-                                <img src="./img/bebidas/vodkaCleite.png" alt="vodkaCleite " class="foto-produto">
+                                <img src="./img/bebidas/jameson.jpg" alt="vodkaCleite " class="foto-produto">
                                 <figcaption>
                                     <h4>Hamburguer com Cogumelos</h4>
                                     <span class="preco">
@@ -937,7 +937,7 @@
                     <div class="col-lg-3 col-md-6 col-sm-12">
                         <a href="#" style="text-decoration: none;">
                             <figure>
-                                <img src="./img/lanches/hmbSples.png" alt="Hamburguer Kids" class="foto-produto">
+                                <img src="./img/bebidas/josecorvo.jpg" alt="Hamburguer Kids" class="foto-produto">
                                 <figcaption>
                                     <h4>Hamburguer Kids</h4>
                                     <span class="preco">
@@ -951,7 +951,7 @@
                     <div class="col-lg-3 col-md-6 col-sm-12">
                         <a href="#" style="text-decoration: none;">
                             <figure>
-                                <img src="./img/lanches/hmbCmpleto.png" alt="Hmaburguer completo" class="foto-produto">
+                                <img src="./img/bebidas/labrisa.jpg" alt="Hmaburguer completo" class="foto-produto">
                                 <figcaption>
                                     <h4>Hamburguer Completo</h4>
                                     <span class="preco">
@@ -965,7 +965,7 @@
                     <div class="col-lg-3 col-md-6 col-sm-12">
                         <a href="#" style="text-decoration: none;">
                             <figure>
-                                <img src="./img/lanches/hmbQuijo.png" alt="Hamburguer com queijo" class="foto-produto">
+                                <img src="./img/bebidas/vinhocarvao.jpg" alt="Hamburguer com queijo" class="foto-produto">
                                 <figcaption>
                                     <h4>Hamburguer Extra Queijo</h4>
                                     <span class="preco">
@@ -979,7 +979,7 @@
                     <div class="col-lg-3 col-md-6 col-sm-12">
                         <a href="#" style="text-decoration: none;">
                             <figure>
-                                <img src="./img/lanches/hmbCogmelo.png" alt="Hamburguer com Cogumelos"
+                                <img src="./img/bebidas/smirnoff.jpg" alt="Hamburguer com Cogumelos"
                                     class="foto-produto">
                                 <figcaption>
                                     <h4>Hamburguer com Cogumelos</h4>
@@ -992,8 +992,8 @@
                         </a>
                     </div>
                 </div>
-                <button class="anterior" onclick="javascript:anteriorSlide()"><i class="bi bi-caret-left"></i></button>
-                <button class="proximo" onclick="javascript:proximoSlide()"><i class="bi bi-caret-right"></i></button>
+                <button class="anterior" onclick="javascript:anteriorSlide('alcoolico')"><i class="bi bi-caret-left"></i></button>
+                <button class="proximo" onclick="javascript:proximoSlide('alcoolico')"><i class="bi bi-caret-right"></i></button>
             </section>
         </main>
         <br><br><br>
@@ -1004,7 +1004,7 @@
     <section class="container" id="produtos">
         <main class="carrossel-container">
             <section id="produtos">
-                <div class="carrossel">
+                <div class="carrossel-doce carrossel">
                     <div class="col-lg-3 col-md-6 col-sm-12">
                         <a href="#" style="text-decoration: none;">
                             <figure>
@@ -1079,7 +1079,7 @@
                     <div class="col-lg-3 col-md-6 col-sm-12">
                         <a href="#" style="text-decoration: none;">
                             <figure>
-                                <img src="./img/lanches/hmbDoce.png" alt="Hmaburguer completo" class="foto-produto">
+                                <img src="./img/lanches/.png" alt="Hmaburguer completo" class="foto-produto">
                                 <figcaption>
                                     <h4>Hamburguer Completo</h4>
                                     <span class="preco">
@@ -1093,7 +1093,7 @@
                     <div class="col-lg-3 col-md-6 col-sm-12">
                         <a href="#" style="text-decoration: none;">
                             <figure>
-                                <img src="./img/lanches/hmbBacon.png" alt="Hamburguer com queijo" class="foto-produto">
+                                <img src="./img/lanches/.png" alt="Hamburguer com queijo" class="foto-produto">
                                 <figcaption>
                                     <h4>Hamburguer Extra Queijo</h4>
                                     <span class="preco">
@@ -1107,7 +1107,7 @@
                     <div class="col-lg-3 col-md-6 col-sm-12">
                         <a href="#" style="text-decoration: none;">
                             <figure>
-                                <img src="./img/lanches/hmbFritas.png" alt="Hamburguer com Cogumelos"
+                                <img src="./img/lanches/.png" alt="Hamburguer com Cogumelos"
                                     class="foto-produto">
                                 <figcaption>
                                     <h4>Hamburguer com Cogumelos</h4>
@@ -1122,7 +1122,7 @@
                     <div class="col-lg-3 col-md-6 col-sm-12">
                         <a href="#" style="text-decoration: none;">
                             <figure>
-                                <img src="./img/lanches/hmbSples.png" alt="Hamburguer Kids" class="foto-produto">
+                                <img src="./img/lanches/.png" alt="Hamburguer Kids" class="foto-produto">
                                 <figcaption>
                                     <h4>Hamburguer Kids</h4>
                                     <span class="preco">
@@ -1136,7 +1136,7 @@
                     <div class="col-lg-3 col-md-6 col-sm-12">
                         <a href="#" style="text-decoration: none;">
                             <figure>
-                                <img src="./img/lanches/hmbCmpleto.png" alt="Hmaburguer completo" class="foto-produto">
+                                <img src="./img/lanches/.png" alt="Hmaburguer completo" class="foto-produto">
                                 <figcaption>
                                     <h4>Hamburguer Completo</h4>
                                     <span class="preco">
@@ -1150,7 +1150,7 @@
                     <div class="col-lg-3 col-md-6 col-sm-12">
                         <a href="#" style="text-decoration: none;">
                             <figure>
-                                <img src="./img/lanches/hmbQuijo.png" alt="Hamburguer com queijo" class="foto-produto">
+                                <img src="./img/lanches/.png" alt="Hamburguer com queijo" class="foto-produto">
                                 <figcaption>
                                     <h4>Hamburguer Extra Queijo</h4>
                                     <span class="preco">
@@ -1164,7 +1164,7 @@
                     <div class="col-lg-3 col-md-6 col-sm-12">
                         <a href="#" style="text-decoration: none;">
                             <figure>
-                                <img src="./img/lanches/hmbCogmelo.png" alt="Hamburguer com Cogumelos"
+                                <img src="./img/lanches/.png" alt="Hamburguer com Cogumelos"
                                     class="foto-produto">
                                 <figcaption>
                                     <h4>Hamburguer com Cogumelos</h4>
@@ -1177,8 +1177,8 @@
                         </a>
                     </div>
                 </div>
-                <button class="anterior" onclick="javascript:anteriorSlide()"><i class="bi bi-caret-left"></i></button>
-                <button class="proximo" onclick="javascript:proximoSlide()"><i class="bi bi-caret-right"></i></button>
+                <button class="anterior" onclick="javascript:anteriorSlide('doce')"><i class="bi bi-caret-left"></i></button>
+                <button class="proximo" onclick="javascript:proximoSlide('doce')"><i class="bi bi-caret-right"></i></button>
             </section>
         </main>
         <br><br><br>

@@ -3,6 +3,7 @@
 //const toaki = "oi"   variavel que nao pode mudar.
 
 let indexSlidie = 0;
+let resetIndex = "";
 
 function showSlide(index, fucCarrossel) {
     const carrossel = document.querySelector(".carrossel-" + fucCarrossel);
@@ -25,11 +26,21 @@ function showSlide(index, fucCarrossel) {
 }
 
 function anteriorSlide(fucCarrossel) {
+
+    if (resetIndex != fucCarrossel){
+        indexSlidie = 0;
+    }
+    resetIndex = fucCarrossel
     indexSlidie = indexSlidie - 1;
     showSlide(indexSlidie, fucCarrossel);
 }
 
 function proximoSlide(fucCarrossel) {
+    
+    if (resetIndex != fucCarrossel){
+        indexSlidie = 0;
+    }
+    resetIndex = fucCarrossel
     indexSlidie = indexSlidie + 1;
     showSlide(indexSlidie, fucCarrossel);
 
