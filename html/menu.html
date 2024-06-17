@@ -16,39 +16,38 @@
 
 <body>
     <main>
-        <header class="home">
-            <div class="container text-center">
-                <div class="row">
-                    <div class="col-lg-1" id="logo">
-                        <figure><img src="img/foto(logo).png" alt="logo da empresa" width="180px"></figure>
-                    </div>
-                    <div class="col-lg-8">
-                        <nav class="menu">
-                            <ul>
-                                <li><a href="index.html">Inicio</a></li>
-                                <li><a href="menu.html">Menu</a></li>
-                                <li><a href="sobre.html">Sobre</a></li>
-                            </ul>
-                        </nav>
-                    </div>
-                    <div class="col-lg-3" id="itensMenu">
-                        <div class="carrinho">
-                            <a href="carrinho.html"><i class="bi bi-cart3"
-                                    style="color: rgba(233, 136, 57, 0.6);"></i></a>
+        <header>
+            <nav class="cabeçalho">
+                <a>
+                    <figure><img class="logo" src="img/foto(logo).png" alt="logo da empresa"></figure>
+                </a>
+                <ul class="menu">
+                    <li><a href="index.html">Inicio</a></li>
+                    <li class="select-principal">
+                        <a href="menu.html">Menu</a>
+                        <div class="select-opcoes">
+                            <a href="./menu.html#hambs">Hamburguers</a>
+                            <a href="./menu.html#combos">Combos</a>
+                            <a href="./menu.html#porcoes">Porções</a>
+                            <a href="./menu.html#bebidas">Bebidas</a>
+                            <a href="./menu.html#sobremesa">Sobremesas</a>
                         </div>
-                        <label for="ChangeTheme" id="lua">
-                            <input type="checkbox" id="ChangeTheme" />
-                            <span> <i class="bi bi-moon-stars" style="color: rgba(233, 136, 57, 0.6);"></i></span>
-                        </label>
-                        <div class="pessoaLogin">
-                            <a href="login.html"><i class="bi bi-person-fill"
-                                    style="color: rgba(233, 136, 57, 0.6);"></i></a>
-                        </div>
-                    </div>
-                </div>
-            </div>
+                    </li>
+                    <li><a href="sobre.html">Sobre</a></li>
+                </ul>
+
+                <ul class="menu-icons">
+                    <li><a href="carrinho.html"><i class="bi bi-cart2"></i></a></li>
+
+                    <label for="ChangeTheme" id="sol">
+                        <input type="checkbox" id="ChangeTheme" />
+                        <span> <i class="bi bi-brightness-high"></i></span>
+                    </label>
+
+                    <li><a href="login.html"><i class="bi bi-person"></i></a></li>
+                </ul>
+            </nav>
         </header>
-        <div class="risco"></div>
         <section id="banner">
             <main class="container">
                 <div class="row">
@@ -445,13 +444,16 @@
                         </a>
                     </div>
                 </div>
-                <button class="anterior" onclick="javascript:anteriorSlide('combo')"><i class="bi bi-caret-left"></i></button>
-                <button class="proximo" onclick="javascript:proximoSlide('combo')"><i class="bi bi-caret-right"></i></button>
+                <button class="anterior" onclick="javascript:anteriorSlide('combo')"><i
+                        class="bi bi-caret-left"></i></button>
+                <button class="proximo" onclick="javascript:proximoSlide('combo')"><i
+                        class="bi bi-caret-right"></i></button>
             </section>
         </main>
         <br><br><br>
     </section>
     <!-- porçoes -->
+    <div id="porcoes"></div>
     <section id="banner4"></section>
     <section class="container" id="produtos">
         <main class="carrossel-container">
@@ -627,13 +629,16 @@
                         </a>
                     </div>
                 </div>
-                <button class="anterior" onclick="javascript:anteriorSlide('porcao')"><i class="bi bi-caret-left"></i></button>
-                <button class="proximo" onclick="javascript:proximoSlide('porcao')"><i class="bi bi-caret-right"></i></button>
+                <button class="anterior" onclick="javascript:anteriorSlide('porcao')"><i
+                        class="bi bi-caret-left"></i></button>
+                <button class="proximo" onclick="javascript:proximoSlide('porcao')"><i
+                        class="bi bi-caret-right"></i></button>
             </section>
         </main>
         <br><br><br>
     </section>
     <!-- drinks -->
+    <div id="bebidas"></div>
     <section id="banner2"></section>
     <section class="container" id="produtos">
         <main class="carrossel-container">
@@ -797,21 +802,22 @@
                     <div class="col-lg-3 col-md-6 col-sm-12">
                         <a href="#" style="text-decoration: none;">
                             <figure>
-                                <img src="./img/bebidas/cocazero.png" alt="Hamburguer com Cogumelos"
-                                    class="foto-produto">
+                                <img src="./img/bebidas/cocazero.png" alt="coca zero" class="foto-produto">
                                 <figcaption>
-                                    <h4>Hamburguer com Cogumelos</h4>
+                                    <h4>Coca-zero</h4>
                                     <span class="preco">
                                         <p class="preçoescrito">Preço .............</p>
-                                        <p>R$ 45,90</p>
+                                        <p>R$ 5,90</p>
                                     </span>
                                 </figcaption>
                             </figure>
                         </a>
                     </div>
                 </div>
-                <button class="anterior" onclick="javascript:anteriorSlide('drink')"><i class="bi bi-caret-left"></i></button>
-                <button class="proximo" onclick="javascript:proximoSlide('drink')"><i class="bi bi-caret-right"></i></button>
+                <button class="anterior" onclick="javascript:anteriorSlide('drink')"><i
+                        class="bi bi-caret-left"></i></button>
+                <button class="proximo" onclick="javascript:proximoSlide('drink')"><i
+                        class="bi bi-caret-right"></i></button>
             </section>
         </main>
         <br><br>
@@ -840,7 +846,7 @@
                             <figure>
                                 <img src="./img/bebidas/baldehei.png" alt="Balde de Heiniken" class="foto-produto">
                                 <figcaption>
-                                    <h4>Hamburguer Completo</h4>
+                                    <h4>Balde de Heiniken</h4>
                                     <span class="preco">
                                         <p class="preçoescrito">Preço .............</p>
                                         <p>R$ 79,90</p>
@@ -880,12 +886,12 @@
                     <div class="col-lg-3 col-md-6 col-sm-12">
                         <a href="#" style="text-decoration: none;">
                             <figure>
-                                <img src="./img/bebidas/corona.jpg" alt="cocazero" class="foto-produto">
+                                <img src="./img/bebidas/corona.jpg" alt="corona" class="foto-produto">
                                 <figcaption>
-                                    <h4>Hamburguer Kids</h4>
+                                    <h4>Cerveja Corona</h4>
                                     <span class="preco">
                                         <p class="preçoescrito">Preço .............</p>
-                                        <p>R$ 15,90</p>
+                                        <p>R$ 11,90</p>
                                     </span>
                                 </figcaption>
                             </figure>
@@ -894,13 +900,12 @@
                     <div class="col-lg-3 col-md-6 col-sm-12">
                         <a href="#" style="text-decoration: none;">
                             <figure>
-                                <img src="./img/bebidas/blacklabel.jpg" alt="Suco de laranja com abacaxi"
-                                    class="foto-produto">
+                                <img src="./img/bebidas/blacklabel.jpg" alt="Black label" class="foto-produto">
                                 <figcaption>
-                                    <h4>Hamburguer Completo</h4>
+                                    <h4>Black label</h4>
                                     <span class="preco">
                                         <p class="preçoescrito">Preço .............</p>
-                                        <p>R$ 29,90</p>
+                                        <p>R$ 209,90</p>
                                     </span>
                                 </figcaption>
                             </figure>
@@ -909,12 +914,12 @@
                     <div class="col-lg-3 col-md-6 col-sm-12">
                         <a href="#" style="text-decoration: none;">
                             <figure>
-                                <img src="./img/bebidas/jackdaniels.jpg" alt="Suco de laranja" class="foto-produto">
+                                <img src="./img/bebidas/jackdaniels.jpg" alt="Jack Daniels" class="foto-produto">
                                 <figcaption>
-                                    <h4>Hamburguer Extra Queijo</h4>
+                                    <h4>Jack Daniels</h4>
                                     <span class="preco">
                                         <p class="preçoescrito">Preço .............</p>
-                                        <p>R$ 35,00</p>
+                                        <p>R$ 350,00</p>
                                     </span>
                                 </figcaption>
                             </figure>
@@ -923,12 +928,12 @@
                     <div class="col-lg-3 col-md-6 col-sm-12">
                         <a href="#" style="text-decoration: none;">
                             <figure>
-                                <img src="./img/bebidas/jameson.jpg" alt="vodkaCleite " class="foto-produto">
+                                <img src="./img/bebidas/jameson.jpg" alt="Bebida jameson" class="foto-produto">
                                 <figcaption>
-                                    <h4>Hamburguer com Cogumelos</h4>
+                                    <h4>Bebida jameson</h4>
                                     <span class="preco">
                                         <p class="preçoescrito">Preço .............</p>
-                                        <p>R$ 45,90</p>
+                                        <p>R$ 450,90</p>
                                     </span>
                                 </figcaption>
                             </figure>
@@ -937,12 +942,12 @@
                     <div class="col-lg-3 col-md-6 col-sm-12">
                         <a href="#" style="text-decoration: none;">
                             <figure>
-                                <img src="./img/bebidas/josecorvo.jpg" alt="Hamburguer Kids" class="foto-produto">
+                                <img src="./img/bebidas/josecorvo.jpg" alt="Jose corvo" class="foto-produto">
                                 <figcaption>
-                                    <h4>Hamburguer Kids</h4>
+                                    <h4>Jose corvo</h4>
                                     <span class="preco">
                                         <p class="preçoescrito">Preço .............</p>
-                                        <p>R$ 15,90</p>
+                                        <p>R$ 50,90</p>
                                     </span>
                                 </figcaption>
                             </figure>
@@ -951,12 +956,12 @@
                     <div class="col-lg-3 col-md-6 col-sm-12">
                         <a href="#" style="text-decoration: none;">
                             <figure>
-                                <img src="./img/bebidas/labrisa.jpg" alt="Hmaburguer completo" class="foto-produto">
+                                <img src="./img/bebidas/labrisa.jpg" alt="Garrafa LAbrisa" class="foto-produto">
                                 <figcaption>
-                                    <h4>Hamburguer Completo</h4>
+                                    <h4>Garrafa LA-brisa</h4>
                                     <span class="preco">
                                         <p class="preçoescrito">Preço .............</p>
-                                        <p>R$ 29,90</p>
+                                        <p>R$ 89,90</p>
                                     </span>
                                 </figcaption>
                             </figure>
@@ -965,12 +970,12 @@
                     <div class="col-lg-3 col-md-6 col-sm-12">
                         <a href="#" style="text-decoration: none;">
                             <figure>
-                                <img src="./img/bebidas/vinhocarvao.jpg" alt="Hamburguer com queijo" class="foto-produto">
+                                <img src="./img/bebidas/vinhocarvao.jpg" alt="Vinho Carvão" class="foto-produto">
                                 <figcaption>
-                                    <h4>Hamburguer Extra Queijo</h4>
+                                    <h4>Vinho Carvão</h4>
                                     <span class="preco">
                                         <p class="preçoescrito">Preço .............</p>
-                                        <p>R$ 35,00</p>
+                                        <p>R$ 102,00</p>
                                     </span>
                                 </figcaption>
                             </figure>
@@ -979,10 +984,9 @@
                     <div class="col-lg-3 col-md-6 col-sm-12">
                         <a href="#" style="text-decoration: none;">
                             <figure>
-                                <img src="./img/bebidas/smirnoff.jpg" alt="Hamburguer com Cogumelos"
-                                    class="foto-produto">
+                                <img src="./img/bebidas/smirnoff.jpg" alt="Smirnoff" class="foto-produto">
                                 <figcaption>
-                                    <h4>Hamburguer com Cogumelos</h4>
+                                    <h4>Smirnoff</h4>
                                     <span class="preco">
                                         <p class="preçoescrito">Preço .............</p>
                                         <p>R$ 45,90</p>
@@ -992,8 +996,10 @@
                         </a>
                     </div>
                 </div>
-                <button class="anterior" onclick="javascript:anteriorSlide('alcoolico')"><i class="bi bi-caret-left"></i></button>
-                <button class="proximo" onclick="javascript:proximoSlide('alcoolico')"><i class="bi bi-caret-right"></i></button>
+                <button class="anterior" onclick="javascript:anteriorSlide('alcoolico')"><i
+                        class="bi bi-caret-left"></i></button>
+                <button class="proximo" onclick="javascript:proximoSlide('alcoolico')"><i
+                        class="bi bi-caret-right"></i></button>
             </section>
         </main>
         <br><br><br>
@@ -1038,7 +1044,7 @@
                             <figure>
                                 <img src="./img/doces/roscacho.jpg" alt="Rosquinah de Chocolate" class="foto-produto">
                                 <figcaption>
-                                    <h4>Rosquinah de Chocolate</h4>
+                                    <h4>Rosquinha de Chocolate</h4>
                                     <span class="preco">
                                         <p class="preçoescrito">Preço .............</p>
                                         <p>R$ 10,00</p>
@@ -1079,12 +1085,12 @@
                     <div class="col-lg-3 col-md-6 col-sm-12">
                         <a href="#" style="text-decoration: none;">
                             <figure>
-                                <img src="./img/lanches/.png" alt="Hmaburguer completo" class="foto-produto">
+                                <img src="./img/doces/brownie.png" alt="Brownie de chocolate" class="foto-produto">
                                 <figcaption>
-                                    <h4>Hamburguer Completo</h4>
+                                    <h4>Brownie de chocolate</h4>
                                     <span class="preco">
                                         <p class="preçoescrito">Preço .............</p>
-                                        <p>R$ 29,90</p>
+                                        <p>R$ 22,90</p>
                                     </span>
                                 </figcaption>
                             </figure>
@@ -1093,12 +1099,12 @@
                     <div class="col-lg-3 col-md-6 col-sm-12">
                         <a href="#" style="text-decoration: none;">
                             <figure>
-                                <img src="./img/lanches/.png" alt="Hamburguer com queijo" class="foto-produto">
+                                <img src="./img/doces/panquecadoce.png" alt="Panqueca Doce" class="foto-produto">
                                 <figcaption>
-                                    <h4>Hamburguer Extra Queijo</h4>
+                                    <h4>Panqueca Doce</h4>
                                     <span class="preco">
                                         <p class="preçoescrito">Preço .............</p>
-                                        <p>R$ 35,00</p>
+                                        <p>R$ 8,90</p>
                                     </span>
                                 </figcaption>
                             </figure>
@@ -1107,13 +1113,12 @@
                     <div class="col-lg-3 col-md-6 col-sm-12">
                         <a href="#" style="text-decoration: none;">
                             <figure>
-                                <img src="./img/lanches/.png" alt="Hamburguer com Cogumelos"
-                                    class="foto-produto">
+                                <img src="./img/doces/musseframb.png" alt="Musse com Mertilos" class="foto-produto">
                                 <figcaption>
-                                    <h4>Hamburguer com Cogumelos</h4>
+                                    <h4>Musse com Mertilos</h4>
                                     <span class="preco">
                                         <p class="preçoescrito">Preço .............</p>
-                                        <p>R$ 45,90</p>
+                                        <p>R$ 27,90</p>
                                     </span>
                                 </figcaption>
                             </figure>
@@ -1122,9 +1127,9 @@
                     <div class="col-lg-3 col-md-6 col-sm-12">
                         <a href="#" style="text-decoration: none;">
                             <figure>
-                                <img src="./img/lanches/.png" alt="Hamburguer Kids" class="foto-produto">
+                                <img src="./img/doces/cupcake.png" alt="Cupcake roxo" class="foto-produto">
                                 <figcaption>
-                                    <h4>Hamburguer Kids</h4>
+                                    <h4>Cupcake roxo</h4>
                                     <span class="preco">
                                         <p class="preçoescrito">Preço .............</p>
                                         <p>R$ 15,90</p>
@@ -1136,49 +1141,51 @@
                     <div class="col-lg-3 col-md-6 col-sm-12">
                         <a href="#" style="text-decoration: none;">
                             <figure>
-                                <img src="./img/lanches/.png" alt="Hmaburguer completo" class="foto-produto">
-                                <figcaption>
-                                    <h4>Hamburguer Completo</h4>
-                                    <span class="preco">
-                                        <p class="preçoescrito">Preço .............</p>
-                                        <p>R$ 29,90</p>
-                                    </span>
-                                </figcaption>
-                            </figure>
-                        </a>
-                    </div>
-                    <div class="col-lg-3 col-md-6 col-sm-12">
-                        <a href="#" style="text-decoration: none;">
-                            <figure>
-                                <img src="./img/lanches/.png" alt="Hamburguer com queijo" class="foto-produto">
-                                <figcaption>
-                                    <h4>Hamburguer Extra Queijo</h4>
-                                    <span class="preco">
-                                        <p class="preçoescrito">Preço .............</p>
-                                        <p>R$ 35,00</p>
-                                    </span>
-                                </figcaption>
-                            </figure>
-                        </a>
-                    </div>
-                    <div class="col-lg-3 col-md-6 col-sm-12">
-                        <a href="#" style="text-decoration: none;">
-                            <figure>
-                                <img src="./img/lanches/.png" alt="Hamburguer com Cogumelos"
+                                <img src="./img/doces/macarronsbranco.png" alt="Macarrons de Chocolate"
                                     class="foto-produto">
                                 <figcaption>
-                                    <h4>Hamburguer com Cogumelos</h4>
+                                    <h4>Macarrons de Chocolate</h4>
                                     <span class="preco">
                                         <p class="preçoescrito">Preço .............</p>
-                                        <p>R$ 45,90</p>
+                                        <p>R$ 9,90</p>
+                                    </span>
+                                </figcaption>
+                            </figure>
+                        </a>
+                    </div>
+                    <div class="col-lg-3 col-md-6 col-sm-12">
+                        <a href="#" style="text-decoration: none;">
+                            <figure>
+                                <img src="./img/doces/magnumcomcobertura.png" alt="Sorvete Magnum" class="foto-produto">
+                                <figcaption>
+                                    <h4>Sorvete Magnum</h4>
+                                    <span class="preco">
+                                        <p class="preçoescrito">Preço .............</p>
+                                        <p>R$ 11,00</p>
+                                    </span>
+                                </figcaption>
+                            </figure>
+                        </a>
+                    </div>
+                    <div class="col-lg-3 col-md-6 col-sm-12">
+                        <a href="#" style="text-decoration: none;">
+                            <figure>
+                                <img src="./img/doces/milkshake.png" alt="Milk-shake de chocolate" class="foto-produto">
+                                <figcaption>
+                                    <h4>Milk-shake de chocolate</h4>
+                                    <span class="preco">
+                                        <p class="preçoescrito">Preço .............</p>
+                                        <p>R$ 17,90</p>
                                     </span>
                                 </figcaption>
                             </figure>
                         </a>
                     </div>
                 </div>
-                <button class="anterior" onclick="javascript:anteriorSlide('doce')"><i class="bi bi-caret-left"></i></button>
-                <button class="proximo" onclick="javascript:proximoSlide('doce')"><i class="bi bi-caret-right"></i></button>
+                <button class="anterior" onclick="javascript:anteriorSlide('doce')"><i
+                        class="bi bi-caret-left"></i></button>
+                <button class="proximo" onclick="javascript:proximoSlide('doce')"><i
+                        class="bi bi-caret-right"></i></button>
             </section>
         </main>
         <br><br><br>
@@ -1191,7 +1198,7 @@
                     <ul class="list-unstyled mt-3">
                         <li><a href="./menu.html#hambs">Hamburguers</a></li>
                         <li><a href="./menu.html#combos">Combos</a></li>
-                        <li><a href="./menu.html#porções">Porções</a></li>
+                        <li><a href="./menu.html#porcoes">Porções</a></li>
                         <li><a href="./menu.html#bebidas">Bebidas</a></li>
                         <li><a href="./menu.html#sobremesa">Sobremesas</a></li>
                     </ul>

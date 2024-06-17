@@ -15,48 +15,38 @@
 
 <body>
     <main>
-        <section class="home">
-            <div class="container text-center">
-                <div class="row">
-                    <div class="col-lg-1">
-                        <figure><img src="img/foto(logo).png" alt="" width="150px" id="logo"></figure>
-                    </div>
-                    <div class="col-lg-10">
-                        <nav class="menu">
-                            <ul>
-                                <li><a href="index.html">Inicio</a></li>
-                                <li><a href="menu.html">Menu</a></li>
-                                <li><a href="sobre.html">Sobre</a></li>
-                            </ul>
-                        </nav>
-                    </div>
-                    <div class="col-lg-1">
-                        <span class="pesquisa">
-                            <i class="bi bi-search" style="color: rgba(233, 136, 57, 0.6);"></i>
-                        </span>
-                    </div>
-                    <div class="col-lg-1">
-                        <span class="carrinho">
-                            <a href="carrinho.html"><i class="bi bi-cart3"
-                                    style="color: rgba(233, 136, 57, 0.6);"></i></a>
-                        </span>
-                    </div>
-                    <div class="col-lg-1">
-                        <label for="ChangeTheme" id="lua">
-                            <input type="checkbox" id="ChangeTheme" />
-                            <span> <i class="bi bi-moon-stars" style="color: rgba(233, 136, 57, 0.6);"></i></span>
-                        </label>
-                    </div>
-                    <div class="col-lg-1">
-                        <span class="pessoaLogin">
-                            <a href="login.html"><i class="bi bi-person-fill"
-                                    style="color: rgba(233, 136, 57, 0.6);"></i></a>
-                        </span>
-                    </div>
-                </div>
-            </div>
-        </section>
-        <div class="risco"></div>
+        <header>
+            <nav class="cabeçalho">
+                <a>
+                    <figure><img class="logo" src="img/foto(logo).png" alt="logo da empresa"></figure>
+                </a>
+                <ul class="menu">
+                    <li><a href="index.html">Inicio</a></li>
+                    <li class="select-principal">
+                        <a href="menu.html">Menu</a>
+                        <div class="select-opcoes">
+                            <a href="./menu.html#hambs">Hamburguers</a>
+                            <a href="./menu.html#combos">Combos</a>
+                            <a href="./menu.html#porcoes">Porções</a>
+                            <a href="./menu.html#bebidas">Bebidas</a>
+                            <a href="./menu.html#sobremesa">Sobremesas</a>
+                        </div>
+                    </li>
+                    <li><a href="sobre.html">Sobre</a></li>
+                </ul>
+
+                <ul class="menu-icons">
+                    <li><a href="carrinho.html"><i class="bi bi-cart2"></i></a></li>
+
+                    <label for="ChangeTheme" id="sol">
+                        <input type="checkbox" id="ChangeTheme" />
+                        <span> <i class="bi bi-brightness-high"></i></span>
+                    </label>
+
+                    <li><a href="login.html"><i class="bi bi-person"></i></a></li>
+                </ul>
+            </nav>
+        </header>
 
         <footer>
             <main class="container">
@@ -104,8 +94,9 @@
                 </div>
             </main>
         </footer>
-        
-        <script src="script.js/temaescuro.js"></script>
+
+
+        <script src="script/temaescuro.js"></script>
 </body>
 
 
