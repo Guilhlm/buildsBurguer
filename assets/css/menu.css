@@ -68,6 +68,7 @@ body.dark-mode {
     transition: 0.7s;
 }
 
+
 .select-opcoes {
     position: absolute;
     box-shadow: 0 0 2px black;
@@ -78,6 +79,11 @@ body.dark-mode {
 .select-opcoes a {
     display: block;
     color: aqua;
+}
+
+.select-opcoes a:hover{
+    border-radius: inherit !important;
+    width: 200px !important;
 }
 
 .select-principal:hover .select-opcoes {
