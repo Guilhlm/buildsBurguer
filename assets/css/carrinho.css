@@ -1,0 +1,141 @@
+@import url('https://fonts.googleapis.com/css2?family=Croissant+One&display=swap');
+
+* {
+    margin: 0;
+}
+
+body {
+    transition: 0.5s;
+    background-color: #fff;
+}
+
+body.dark-mode {
+    transition: 0.5s;
+    background-color: #303030;
+
+}
+
+#ChangeTheme {
+    opacity: 0;
+}
+
+.logo {
+    height: 120px;
+}
+
+.cabeçalho ul {
+    list-style: none;
+    display: flex;
+    gap: 15px;
+}
+
+.cabeçalho li {
+    display: inline-block;
+}
+
+.cabeçalho .menu li a {
+    font-family: "Croissant One", serif;
+    font-size: 18px;
+    padding: 8px;
+    border-radius: 8px;
+    color: rgba(233, 136, 57, 0.6);
+    text-decoration: none;
+    transition: 1s;
+
+}
+
+.cabeçalho .menu li a:hover {
+    padding: 10px 40px;
+    border-radius: 8px;
+    color: white;
+    background-color: rgba(233, 136, 57, 0.3);
+    border-radius: 25px;
+    text-decoration: none;
+    transition: 0.7s;
+}
+
+.menu-icons li a {
+    font-size: 25px;
+    color: rgba(233, 136, 57, 0.6);
+}
+
+.menu-icons li a:hover {
+    color: rgb(255, 255, 255);
+}
+
+.select-opcoes {
+    position: absolute;
+    box-shadow: 0 0 2px black;
+    display: none;
+}
+
+.select-opcoes a {
+    display: block;
+    color: aqua;
+}
+
+.select-principal:hover .select-opcoes {
+    display: block;
+    background-color: rgb(54, 31, 1);
+}
+
+.cabeçalho label {
+    display: flex;
+    padding-right: 10px;
+}
+
+#sol {
+    font-size: 25px;
+    color: rgba(233, 136, 57, 0.6);
+    cursor: pointer;
+}
+
+#sol:hover {
+    color: white;
+    font-size: 25px;
+}
+
+header nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    background-color: rgb(0, 0, 0);
+    width: 100%;
+    border-bottom: 5px solid rgba(233, 136, 57, 0.6);
+    margin-bottom: 30px;
+}
+
+footer {
+    background-color: #000000;
+    color: rgb(233, 136, 57);
+    padding: 40px 0;
+    border-top: 5px solid rgba(233, 136, 57, 0.6);
+}
+
+footer h5 {
+    margin-left: 60px;
+    font-weight: bold;
+}
+
+footer a {
+    margin-left: 60px;
+    color: white;
+    text-decoration: none;
+}
+
+footer a:hover {
+    text-decoration: underline;
+    color: rgb(122, 121, 121);
+}
+
+.footer-bottom {
+    text-align: center;
+    padding: 5px 0;
+    border-top: 1px solid #ccc;
+    margin-top: 40px;
+}
+
+.footer-bottom div {
+    color: white;
+    font-weight: 300;
+}
