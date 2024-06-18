@@ -5,7 +5,7 @@ https://www.figma.com/design/SRibJZ5WR4mk79x7D000pv/pi?node-id=8-99&t=QGO40peErV
 ## ESTRUTURAÇÃO DE ARQUIVOS
 
 ```
-- ARQUIVOS CSS
+ARQUIVOS (CSS)
 
 STYLE.css           // Estilizaçao do apenas o incio do site
 
@@ -21,7 +21,7 @@ CARROSSEL.css       // Estilizaçao do click produto "foto" e "proximo"
 ***
 
 ```
-- ARQUIVOS PHP
+ARQUIVOS (PHP)
 
 HEADER.php          // Arquivo de cabeçalho de todo o site
 
@@ -39,7 +39,7 @@ FOOTER.php          // Arquivo do footer de todo o site
 ***
 
 ```
-- ARQUIVOS JS
+ARQUIVOS (JS)
 
 SCRIPT.js          // Arquivo da func "carrossel"
 
@@ -51,7 +51,7 @@ TEMAESCURO.js      // Arquivo dp "tema escuro"ing ARQUIVOS BBURGUER.txt…]()
 ***
 
 ```
-- ARQUIVOS HTML
+ARQUIVOS (HTML)
 
 INDEX.html         // Arquivo do inicio do site
 
