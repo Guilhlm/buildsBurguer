@@ -1,4 +1,5 @@
 <?php include './includes/header.php' ?>
+
 <section id="banner">
     <main class="container">
         <div class="row">

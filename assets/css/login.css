@@ -1,20 +1,14 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap');
 
-*{
-     margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: 'Montserrat', sans-serif;
-}
 
-p{
+.container-login P{
     font-size: 14px;
     line-height: 20px;
     letter-spacing: 0.3px;
     margin: 20px 0;
 }
 
-body{
+.body-login{
     display: flex;
     background-repeat: no-repeat;
     background-size: cover;
@@ -26,37 +20,37 @@ body{
     background-position: center;
 }
 
-form a.voltardireita{
+.container-login form a.voltardireita{
     display: flex;
     font-size: 25px;
     margin-right: 280px;
 }
 
-form a.voltardireita:hover{
+.container-login form a.voltardireita:hover{
     display: flex;
     color: #684005;
     margin-right: 285px;
     cursor: pointer;
 }
 
-.logar{
+.container-login .logar{
     left: 0;
     width: 50%;
     z-index: 2;
 }
 
-.criar{
+.container-login .criar{
     left: 0;
     width: 50%;
     opacity: 0;
     z-index: 1;
 }
 
-.esqueceu:hover{
+.container-login .esqueceu:hover{
     color: blue;
 }
 
-.container{
+.container-login {
     background-color: #ffffff;
     border-radius: 40px;
     position: relative;
@@ -65,11 +59,11 @@ form a.voltardireita:hover{
     min-height: 480px;
 }
 
-.container span{
+.container-login  span{
     font-size: 12px;
 }
 
-.container a{
+.container-login  a{
     color: #333;
     font-size: 13px;
     margin: 15px 0 10px;
@@ -82,14 +76,14 @@ form a.voltardireita:hover{
     transition: all 0.6s ease-in-out;
 }
 
-.container .criar{
+.container-login  .criar{
     transform: translateX(100%);
     opacity: 1;
     z-index: 5;
     animation: move 0.6s;
 }
 
-.container input{
+.container-login  input{
     background-color: #eee;
     border: none;
     margin: 8px 0;
@@ -100,11 +94,11 @@ form a.voltardireita:hover{
     outline: none;
 }
 
-.botaofinal:hover{
+.container-login .botaofinal:hover{
     border: 1px solid #000000;
 }
 
-.container button{
+.container-login button{
     background-color: #a8812d;
     color: #ffffff;
     font-size: 12px;
@@ -116,16 +110,16 @@ form a.voltardireita:hover{
     cursor: pointer;
 }
 
-.container button.botao{
+.container-login  button.botao{
     background-color: transparent;
     border-color: #ffffff;
 }
 
-.container button.botao:hover{
+.container-login button.botao:hover{
     border-color: #a8812d;
 }
 
-.container form{
+.container-login form{
     background-color: #ffffff;
     display: flex;
     align-items: center;

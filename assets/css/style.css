@@ -5,7 +5,6 @@
 }
 
 body {
-    background-color: rgb(124, 124, 124);
     background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(55, 23, 1, 0.8)), url(../img/fundo/foto\(fundo\).jpg);
     background-repeat: no-repeat;
     background-size: cover;
@@ -38,15 +37,20 @@ body {
 
 header {
     display: flex;
-    margin-top: 100px;
-    margin-bottom: 200px;
+    padding-top: 100px;
+    padding-bottom: 200px;
+    justify-content: center;
+}
+
+.home{
+    display: flex;
+    align-items: center;
     justify-content: center;
 }
 
 .titulo {
     display: flex;
     width: 100%;
-    margin-top: 130px;
     font-size: 140px;
     justify-content: center;
     text-shadow: rgba(240, 151, 17, 0.8) 7px 0 15px;

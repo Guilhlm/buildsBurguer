@@ -4,25 +4,25 @@
                     <div class="col-md-3">
                         <h5>Menu</h5>
                         <ul class="list-unstyled mt-3">
-                            <li><a href="./menu.html#hambs">Hamburguers</a></li>
-                            <li><a href="./menu.html#combos">Combos</a></li>
-                            <li><a href="./menu.html#porcoes">Porções</a></li>
-                            <li><a href="./menu.html#bebidas">Bebidas</a></li>
-                            <li><a href="./menu.html#sobremesa">Sobremesas</a></li>
+                            <li><a href="./menu.php#hambs">Hamburguers</a></li>
+                            <li><a href="./menu.php#combos">Combos</a></li>
+                            <li><a href="./menu.php#porcoes">Porções</a></li>
+                            <li><a href="./menu.php#bebidas">Bebidas</a></li>
+                            <li><a href="./menu.php#sobremesa">Sobremesas</a></li>
                         </ul>
                     </div>
                     <div class="col-md-3">
                         <h5>Sobre Nós</h5>
                         <ul class="list-unstyled mt-3">
                             <li><a href="./index.html">Inicio</a></li>
-                            <li><a href="./sobre.html#historia">História</a></li>
-                            <li><a href="./sobre.html#experiencia">Experiências</a></li>
+                            <li><a href="./sobre.php#historia">História</a></li>
+                            <li><a href="./sobre.php#experiencia">Experiências</a></li>
                         </ul>
                     </div>
                     <div class="col-md-3">
                         <h5>Demanda</h5>
                         <ul class="list-unstyled mt-3">
-                            <li><a href="./carrinho.html">Carrinho</a></li>
+                            <li><a href="./carrinho.php">Carrinho</a></li>
                         </ul>
                     </div>
                     <div class="col-md-3">

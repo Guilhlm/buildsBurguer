@@ -11,10 +11,8 @@
 
     <link rel="stylesheet" href="assets/css/menu.css">
     <link rel="stylesheet" href="assets/css/carrossel.css">
-    <link rel="stylesheet" href="assets/css/carrinho.css">
     <link rel="stylesheet" href="assets/css/login.css">
-    <link rel="stylesheet" href="assets/css/sobre.css">
-    <link rel="stylesheet" href="assets/css/style.css">
+   <link rel="stylesheet" href="assets/css/sobre.css">
 </head>
 
 <body>
@@ -27,20 +25,20 @@
                 <ul class="menu">
                     <li><a href="index.html">Inicio</a></li>
                     <li class="select-principal">
-                        <a href="menu.html">Menu</a>
+                        <a href="menu.php">Menu</a>
                         <div class="select-opcoes">
-                            <a class="option" href="./menu.html#hambs">Hamburguers</a>
-                            <a class="option" href="./menu.html#combos">Combos</a>
-                            <a class="option" href="./menu.html#porcoes">Porções</a>
-                            <a class="option" href="./menu.html#bebidas">Bebidas</a>
-                            <a class="option" href="./menu.html#sobremesa">Sobremesas</a>
+                            <a class="option" href="./menu.php#hambs">Hamburguers</a>
+                            <a class="option" href="./menu.php#combos">Combos</a>
+                            <a class="option" href="./menu.php#porcoes">Porções</a>
+                            <a class="option" href="./menu.php#bebidas">Bebidas</a>
+                            <a class="option" href="./menu.php#sobremesa">Sobremesas</a>
                         </div>
                     </li>
-                    <li><a href="sobre.html">Sobre</a></li>
+                    <li><a href="sobre.php">Sobre</a></li>
                 </ul>
 
                 <ul class="menu-icons">
-                    <li><a href="carrinho.html"><i class="bi bi-cart2"></i></a></li>
+                    <li><a href="carrinho.php"><i class="bi bi-cart2"></i></a></li>
 
                     <label for="ChangeTheme" id="sol">
                         <input type="checkbox" id="ChangeTheme" />
