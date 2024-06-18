@@ -35,6 +35,7 @@
                         </div>
                     </li>
                     <li><a href="sobre.php">Sobre</a></li>
+                    <li><a href="produtos.php">Produtos</a></li>
                 </ul>
 
                 <ul class="menu-icons">
