@@ -24,6 +24,9 @@ CARRINHO.css        // Estilizaçao do body carrinho "vagner"
 PRODUTOS.css        // Estilizaçao do body click produto "foto" e "infos"
 <br>
 <br>
+USUARIO.css          // Estilizaçao da tela de usuario
+<br>
+<br>
 FOOTER.css          // Estilizaçao do footer de todo o site
 
 ***
@@ -46,6 +49,9 @@ CARRINHO.php        // Arquivo do body carrinho "vagner"
 <br>
 <br>
 PRODUTOS.php        // Arquivo do body click produto "foto" e "infos"
+<br>
+<br>
+USUARIO.php          // Arquivo do body da tela de "usuario"
 <br>
 <br>
 FOOTER.php          // Arquivo do footer de todo o site
