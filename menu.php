@@ -1,28 +1,6 @@
 <?php include './includes/header.php' ?>
 
-<section id="banner">
-    <main class="container">
-        <div class="row">
-            <div class="col-lg-3 col-md-6 col-sm-12">
-                <figure>
-                    <figcaption>
-                        <span class="icones">
-
-                            <a href="https://www.instagram.com"><i id="insta" class="bi bi-instagram text-light"></i></a>
-                            </i>
-
-                            <a href="https://www.youtube.com"><i id="youtube" class="bi bi-youtube text-light"></i></a>
-                            </i>
-
-                            <a href="https://www.twitter.com"><i id="twt" class="bi bi-twitter text-light"></i></a>
-                            </i>
-                        </span>
-                    </figcaption>
-                </figure>
-            </div>
-        </div>
-    </main>
-</section>
+<section id="banner"></section>
 <!-- hamburguers -->
 <h2 class="titulo" id="hambs">Hamburguers</h2>
 <section class="container" id="produtos">
@@ -387,7 +365,8 @@
     <br><br><br>
 </section>
 <!-- porçoes -->
-<div id="porcoes"></div>
+
+<h2 class="titulo" id="porcoes">Porções</h2>
 <section id="banner4"></section>
 <section class="container" id="produtos">
     <main class="carrossel-container">
@@ -569,7 +548,7 @@
     <br><br><br>
 </section>
 <!-- drinks -->
-<div id="bebidas"></div>
+<h2 class="titulo" id="bebidas">Drinks</h2>
 <section id="banner2"></section>
 <section class="container" id="produtos">
     <main class="carrossel-container">
@@ -931,7 +910,7 @@
     <br><br><br>
 </section>
 <!-- docinhos -->
-<div id="sobremesa"></div>
+<h2 class="titulo" id="sobremesa">Docinhos</h2>
 <section id="banner3"></section>
 <section class="container" id="produtos">
     <main class="carrossel-container">

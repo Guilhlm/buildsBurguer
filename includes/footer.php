@@ -23,17 +23,20 @@
                     <li><a href="./sobre.php#experiencia">Experiências</a></li>
                 </ul>
             </div>
-            <div class="col-md-3">
-                <h5>Demanda</h5>
-                <ul class="list-unstyled mt-3">
-                    <li><a href="./carrinho.php">Carrinho</a></li>
-                </ul>
-            </div>
-            <div class="col-md-3">
+            <div class="col-md-2">
                 <h5>Conta</h5>
                 <ul class="list-unstyled mt-3">
                     <li><a href="./login.html#logarais">Login</a></li>
-                    <li><a href="https://github.com/Guilhlm">Segue lá</a></li>
+                    <li><a href="./carrinho.php">Carrinho</a></li>
+                </ul>
+            </div>
+            <div class="col-md-4">
+                <h5>Siga nos</h5>
+                <ul class="list-unstyled mt-3" id="icones">
+                    <a href="https://www.instagram.com"><i id="estilo" class="bi bi-instagram text-light"></i></a>
+                    <a href="https://www.youtube.com"><i id="estilo" class="bi bi-youtube text-light"></i></a>
+                    <a href="https://www.twitter.com"><i id="estilo" class="bi bi-twitter text-light"></i></a>
+                    <a href="https://github.com/Guilhlm"><i id="estilo" class="bi bi-github"></i></a>
                 </ul>
             </div>
         </div>

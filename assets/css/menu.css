@@ -123,55 +123,37 @@ header nav {
     background-color: rgb(0, 0, 0);
     width: 100%;
     border-bottom: 5px solid rgba(233, 136, 57, 0.6);
-    margin-bottom: 30px;
 }
 
 #banner {
     background-image: url(../img/banners/banner\(home\).png);
     height: 70vh;
     width: 100%;
-    background-repeat: no-repeat;
-    background-position: top;
-    justify-content: center;
+    margin-bottom: 60px;
+    background-size: cover;
     background-position: center;
+    background-repeat: no-repeat;
 }
 
-.icones {
+#icones{
     display: flex;
-    margin-top: 80px;
-    margin-left: 1230px;
-    font-size: 35px;
+    margin-top: 10px;
+    font-size: 25px;
 }
 
-.icones a {
+#icones a {
     Text-decoration: none
 }
 
-.icones a :hover {
+#icones a :hover {
     Text-decoration: none;
     display: flex;
-    padding-top: 10px;
     color: rgba(233, 136, 57, 0.6) !important;
 }
 
-.icones #insta {
+#icones #estilo {
     display: block;
-    margin-top: 80px;
-    margin-left: 20px;
-    cursor: pointer;
-}
-
-.icones #youtube {
-    display: block;
-    margin-top: 80px;
-    margin-left: 20px;
-    cursor: pointer;
-}
-
-.icones #twt {
-    display: block;
-    margin-top: 80px;
-    margin-left: 20px;
+    margin-top: 10px;
     cursor: pointer;
 }
 
@@ -182,7 +164,6 @@ header nav {
     font-weight: bold;
     font-size: 50px;
     color: rgb(255, 255, 255);
-    margin-bottom: 50px;
     text-transform: uppercase;
     background-color: rgb(0, 0, 0);
     height: 100px;
@@ -236,32 +217,32 @@ header nav {
 
 #banner2 {
     background-image: url(../img/banners/bannerdrink.png);
-    height: 70vh;
+    height: 60vh;
     width: 100%;
-    margin-top: 60px;
     margin-bottom: 60px;
+    background-size: cover;
+    background-position: center;
     background-repeat: no-repeat;
-    background-position: top;
 }
 
 #banner3 {
     background-image: url(../img/banners/bannerdoce.png);
-    height: 70vh;
+    height: 60vh;
     width: 100%;
-    margin-top: 60px;
     margin-bottom: 60px;
+    background-size: cover;
+    background-position: center;
     background-repeat: no-repeat;
-    background-position: top;
 }
 
 #banner4 {
     background-image: url(../img/banners/porçoes.png);
-    height: 70vh;
+    height: 60vh;
     width: 100%;
-    margin-top: 60px;
     margin-bottom: 60px;
+    background-size: cover;
+    background-position: center;
     background-repeat: no-repeat;
-    background-position: top;
 }
 
 footer {
