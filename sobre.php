@@ -1,27 +1,6 @@
 <?php include './includes/header.php' ?>
 
 <section id="banner">
-    <main class="container">
-        <div class="row">
-            <div class="col-lg-3 col-md-6 col-sm-12">
-                <figure>
-                    <figcaption>
-                        <span class="icones">
-
-                            <a href="https://www.instagram.com"><i id="insta" class="bi bi-instagram text-light"></i></a>
-                            </i>
-
-                            <a href="https://www.youtube.com"><i id="youtube" class="bi bi-youtube text-light"></i></a>
-                            </i>
-
-                            <a href="https://www.twitter.com"><i id="twt" class="bi bi-twitter text-light"></i></a>
-                            </i>
-                        </span>
-                    </figcaption>
-                </figure>
-            </div>
-        </div>
-    </main>
 </section>
 <div class="centralizar">
     <main class="fundinho" id="historia">

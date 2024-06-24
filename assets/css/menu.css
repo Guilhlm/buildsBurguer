@@ -84,6 +84,7 @@ body.dark-mode {
 .select-opcoes a:hover{
     border-radius: inherit !important;
     width: 200px !important;
+
 }
 
 .select-principal:hover .select-opcoes {
