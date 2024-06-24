@@ -131,48 +131,39 @@
             <p>
                 E então veio o lindo javascript, eu ainda não sei dizer muito sobre essa linguagem por nao estar
                 confortavel o suficiente para realiar comandos com essa ela porem estou me desenvolvendo aos
-                poucos
+                poucos.
             </p>
 
             <h2>Finalização do Html: </h2>
             <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae at quibusdam expedita vero
-                reprehenderit dolore distinctio explicabo consectetur, exercitationem aliquid dicta ratione
-                veniam
-                deleniti voluptatum commodi eum. Praesentium, enim maiores!
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur est aliquid beatae
-                adipisci
-                tempore labore consequatur fugit praesentium earum rem, dolores inventore nesciunt ut commodi,
-                qui
-                aperiam eum aliquam. Aut.
+                Essa parte do meu projeto eu tinha convicção que teria acabado tudo, porem tive a incrivel supresa
+                do meu professor PAULIN que me dava inumeras tarefas a mais, para deixar o projeto mais completo e
+                funcional, ao completar todo o meu HTML percebi que tinha uma longa jornad atrás de mim e isso me
+                motivou ainda mais para enfrentar novos desafios propostos a mim, uma lição que aprendi com a
+                linguagem de marcação chamada HTML, é que as coisas são feitas de diversas formas mas alguns
+                modos são melhores que os outros, meu aprendizado com essa linguagem me ajudar e muito com o meu
+                proximo desafio que é o PHP.
             </p>
-
+            f
             <h2>Php: </h2>
             <p>
-                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quisquam, blanditiis, ad quo quis
-                sequi,
-                molestias voluptate iste id aut soluta adipisci porro cum? Facilis delectus illum molestias rem
-                aliquid
-                error!
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur est aliquid beatae
-                adipisci
-                tempore labore consequatur fugit praesentium earum rem, dolores inventore nesciunt ut commodi,
-                qui
-                aperiam eum aliquam. Aut.
+                Enfim cheguei no finais do projeto, o PHP pessoalmente foi complicado de entender no começo
+                porem me pego hoje no meio da UC e vejo que não era um bixo de 7 cabeças e apenas estava muito no
+                começo da aula para enteder tudo de cara. Depois de algumas aulas e muitas madrugadas arcodado
+                consegui enteder até que bem o conceito dessa linguagem porem ainda sinto dificuldades, alem disso
+                o Paulin ajudou muito ao marcar dois dias de duvidas para fazer com que nós alunos entendessemos
+                melhor a forma de trabalhar com PHP, e minha sincera opinião sobre essa linguagem é que ela poupa
+                muita linha de codigo porem para montrar a estrutura inicial é complicada depois que montou o inicio
+                salva muito codigo (mas enche de arquivos viu pqp).
             </p>
 
             <h2>Banco de Dados: </h2>
             <p>
-                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eaque quo inventore quod cum eum
-                accusamus
-                dolore voluptatibus? Eum natus voluptatum, quisquam iste ut doloribus ex, odio provident
-                sapiente
-                ratione dolores.
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur est aliquid beatae
-                adipisci
-                tempore labore consequatur fugit praesentium earum rem, dolores inventore nesciunt ut commodi,
-                qui
-                aperiam eum aliquam. Aut.
+                Chegou a hora de montar meu banco, no começo do projeto temi muito ele por não lembrar muito do
+                conceito de UPDATE porem ao assistir uma aula de banco percebi que era totalmente diferente do meu
+                Pré-conceito, mas nem tudo são flores percebi um pequeno impecilio na minha frente que era 69 Arquivos
+                de fotos para inserir no meu Banco de dados, isso me gerou um trabalho enorme por ter que montar uma
+                plania no Excel e de la popular o banco mas no final de tudo certo.
             </p>
 
             <h2>Testes finais: </h2>
@@ -201,6 +192,7 @@
                 qui
                 aperiam eum aliquam. Aut.
             </p>
+            <!-- agradecer o paulin <3 -->
         </div>
     </main>
 </div>
