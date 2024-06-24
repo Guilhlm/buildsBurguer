@@ -28,7 +28,7 @@
                 <ul class="list-unstyled mt-3">
                     <li><a href="./login.html#logarais">Login</a></li>
                     <li><a href="./carrinho.php">Carrinho</a></li>
-                    <li><a href="#">Cadastro itens</a></li>
+                    <li><a href="#">Cadastrar itens</a></li>
                 </ul>
             </div>
             <div class="col-md-2">
@@ -38,6 +38,7 @@
                     <li><a href="#">Venti qui</a></li>
                     <li><a href="#">Doceria</a></li>
                     <li><a href="#">Manutenção</a></li>
+                    <li><a href="#">Police-box</a></li>
                 </ul>
             </div>
             <div class="col-md-4">

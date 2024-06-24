@@ -1,0 +1,145 @@
+.fundo-centro {
+    display: flex;
+    justify-content: center;
+    height: 100%;
+    align-items: center;
+}
+
+.container-carrinho {
+    width: 100%;
+    width: 1200px;
+    background-color: #333;
+    padding: 20px;
+    border-radius: 10px;
+    margin: 50px 0 50px;
+}
+
+#header-compra {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+#header-compra h1 {
+    font-size: 50px;
+    color: #ffa500;
+    border-bottom: 1px solid #444;
+    padding-bottom: 20px;
+}
+
+.main-carrinho {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 10px;
+}
+
+.produto {
+    display: grid;
+    grid-template-columns: 90px 1fr 100px;
+    gap: 10px;
+    padding: 10px;
+    background-color: #444;
+    border-radius: 10px;
+    align-items: center;
+    position: relative;
+    border: 5px solid rgba(146, 82, 29, 0.6);
+}
+
+.produto-imagem img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+.produto-detalhes {
+    padding: 0 10px;
+}
+
+.produto-detalhes h2 {
+    font-size: 1.2em;
+    color: #fff;
+    margin: 0;
+}
+
+.produto-detalhes p {
+    font-size: 0.9em;
+    color: #fff;
+    margin: 10px 0;
+}
+
+.produto-preco {
+    font-size: 1.1em;
+    color: #ffa500;
+}
+
+.produto-quantidade {
+    position: absolute;
+    top: -15px;
+    right: -20px;
+    background-color: rgba(146, 82, 29, 1);
+    color: #fff;
+    border-radius: 40px;
+    padding: 10px 15px;
+    font-size: 0.9em;
+    font-weight: bold;
+}
+
+.add-button,
+.remove-button {
+    padding: 6px 25px;
+    margin: 5px 0;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.add-button {
+    background-color: #177e2f;
+    color: #fff;
+}
+
+.add-button:hover{
+    background-color: #015013;
+}
+
+.remove-button {
+    background-color: #a3212e;
+    color: #fff;
+}
+
+.remove-button:hover{
+    background-color: #4e0209
+
+}
+
+.footer-carrinho {
+    padding: 10px;
+    margin-top: 20px;
+    border-top: 1px solid #444;
+}
+
+.total {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+
+.total span {
+    font-size: 25px;
+    color: #ffa500;
+    display: flex;
+    margin-right: 375px;
+}
+
+.finalizar-button {
+    padding: 10px 50px;
+    background-color: #177e2f;
+    font-size: 15px;
+    border: none;
+    border-radius: 10px;
+    color: #fff;
+    cursor: pointer;
+}
+
+.finalizar-button:hover {
+    background-color: #015013;
+}
