@@ -16,37 +16,56 @@
 </head>
 
 <body>
-    <main>
+<main>
         <header>
-            <nav class="cabeçalho">
-                <a>
-                    <figure><img class="logo" src="assets/img/foto(logo).png" alt="logo da empresa"></figure>
-                </a>
-                <ul class="menu">
-                    <li><a href="index.html">Inicio</a></li>
-                    <li class="select-principal">
-                        <a href="menu.php">Menu</a>
-                        <div class="select-opcoes">
-                            <a class="option" href="./menu.php#hambs">Hamburguers</a>
-                            <a class="option" href="./menu.php#combos">Combos</a>
-                            <a class="option" href="./menu.php#porcoes">Porções</a>
-                            <a class="option" href="./menu.php#bebidas">Bebidas</a>
-                            <a class="option" href="./menu.php#sobremesa">Sobremesas</a>
+            <nav class="cabeçalho container">
+                <div class="col-3" id="Menu-Comeco">
+
+                    <figure><img class="logo" src="logo.png" alt="logo da empresa"></figure>
+                </div>
+                <div class="col-6" id="Menu-meio">
+
+                    <ul class="menu">
+
+                        <li><a href="index.html">Inicio</a></li>
+                        <li class="select-principal">
+                            <a href="menu.php">Menu</a>
+                            <div class="select-opcoes">
+                                <a class="option" href="./menu.php#hambs">Hamburguers</a>
+                                <a class="option" href="./menu.php#combos">Combos</a>
+                                <a class="option" href="./menu.php#porcoes">Porções</a>
+                                <a class="option" href="./menu.php#bebidas">Bebidas</a>
+                                <a class="option" href="./menu.php#sobremesa">Sobremesas</a>
+                            </div>
+                        </li>
+                        <li><a href="sobre.php">Sobre</a></li>
+                        <li><a href="produtos.php">Produtos</a></li>
+                    </ul>
+                </div>
+                <div class="col-3">
+
+
+                    <ul class="menu-icons" id="Menu-fim">
+
+                        <div class="procurar-box">
+                            <input type="text" class="procurar-texto" placeholder="Pesquisar">
+
+                            <a href="#" class="procurar-botao">
+
+                                <i class="bi bi-search" id="lupa" style="color: rgb(0, 0, 0);"></i>
+                            </a>
                         </div>
-                    </li>
-                    <li><a href="sobre.php">Sobre</a></li>
-                    <li><a href="produtos.php">Produtos</a></li>
-                </ul>
 
-                <ul class="menu-icons">
-                    <li><a href="carrinho.php"><i class="bi bi-cart2"></i></a></li>
+                        <li><a href="carrinho.php"><i class="bi bi-cart2"></i></a></li>
 
-                    <label for="ChangeTheme" id="sol">
-                        <input type="checkbox" id="ChangeTheme" />
-                        <span> <i class="bi bi-brightness-high"></i></span>
-                    </label>
+                        <label for="ChangeTheme" id="sol">
+                            <input type="checkbox" id="ChangeTheme" />
+                            <span> <i class="bi bi-brightness-high"></i></span>
+                        </label>
 
-                    <li><a href="login.html"><i class="bi bi-person"></i></a></li>
-                </ul>
+                        <li><a href="login.html"><i class="bi bi-person"></i></a></li>
+                    </ul>
+
+                </div>
             </nav>
         </header>

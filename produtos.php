@@ -20,7 +20,7 @@
 
                     <?php
 
-                    for ($i = 0; $i < 16; $i++) {
+                    for ($i = 0; $i < 10; $i++) {
 
                         include "./includes/produto.php";
                     }
