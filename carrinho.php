@@ -1,3 +1,5 @@
-<?php include "./includes/header.php";
+<?php include "./includes/header.php"; ?>
 
-include "./includes/footer.php";
+
+<script src="assets/script/temaescuro.js"></script>
+<?php include "./includes/footer.php"; ?>

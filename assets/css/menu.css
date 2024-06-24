@@ -18,6 +18,10 @@ h4 {
     font-family: "Calisto MT", "Bookman Old Style", Bookman, "Goudy Old Style", Garamond, "Hoefler Text", "Bitstream Charter", Georgia, serif;
 }
 
+h2{
+    margin-bottom: 0;
+}
+
 body {
     transition: 0.5s;
     background-color: #202020;
@@ -28,11 +32,6 @@ body.dark-mode {
     background-color: #ffffff;
 
 }
-
-#ChangeTheme {
-    opacity: 0;
-}
-
 .logo {
     height: 120px;
 }
@@ -43,10 +42,6 @@ body.dark-mode {
     gap: 15px;
 }
 
-.cabeçalho li {
-    display: inline-block;
-}
-
 .cabeçalho .menu li a {
     font-family: "Croissant One", serif;
     font-size: 18px;
@@ -55,7 +50,6 @@ body.dark-mode {
     color: rgba(233, 136, 57, 0.6);
     text-decoration: none;
     transition: 1s;
-
 }
 
 .cabeçalho .menu li a:hover {
@@ -68,23 +62,20 @@ body.dark-mode {
     transition: 0.7s;
 }
 
-
 .select-opcoes {
     position: absolute;
     box-shadow: 0 0 2px black;
     display: none;
-
 }
 
 .select-opcoes a {
     display: block;
-    color: aqua;
 }
 
-.select-opcoes a:hover{
+.select-opcoes a:hover {
     border-radius: inherit !important;
-    width: 200px !important;
-
+    width: 180px !important;
+    margin-top: 10px;
 }
 
 .select-principal:hover .select-opcoes {
@@ -112,24 +103,99 @@ body.dark-mode {
     cursor: pointer;
 }
 
+#ChangeTheme {
+    opacity: 0;
+}
+
 #sol:hover {
     color: white;
     font-size: 25px;
 }
 
-header nav {
-    display: flex;
-    align-items: center;
-    justify-content: space-around;
+header {
     background-color: rgb(0, 0, 0);
     width: 100%;
     border-bottom: 5px solid rgba(233, 136, 57, 0.6);
 }
 
+header nav {
+    display: flex;
+    align-items: center;
+}
+
+#Menu-Comeco {
+    display: flex;
+    margin-top: 10px;
+}
+
+#Menu-meio {
+    display: flex;
+    justify-content: center;
+}
+
+#Menu-fim {
+    display: flex;
+    justify-content: end;
+
+}
+
+.procurar-box {
+    display: flex;
+    background-color: rgba(233, 136, 57, 0.6);
+    height: 35px;
+    padding: 5px;
+    border-radius: 90px;
+    align-items: center;
+    padding: 10px;
+    margin-top: 3px;
+}
+
+.procurar-texto {
+    border: none;
+    background: none;
+    outline: none;
+    padding: 0;
+    font-size: 15px;
+    line-height: 20px;
+    width: 0;
+    transition: .7s;
+    color: white;
+}
+
+.procurar-botao {
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    background-color: rgba(146, 82, 29, 0.6);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: rgb(0, 0, 0);
+}
+
+.procurar-botao:hover {
+    color: rgb(255, 255, 255);
+}
+
+.procurar-box:hover>.procurar-texto {
+    width: 130px;
+    padding: 0 8px;
+    transition: .7s;
+}
+
+#lupa {
+    font-size: 20px;
+}
+
+input::placeholder {
+    color: rgba(255, 255, 255, 0.4);
+}
+
 #banner {
     background-image: url(../img/banners/banner\(home\).png);
-    height: 70vh;
+    height: 60vh;
     width: 100%;
+    /* margin-top: 30px;  talvez */
     margin-bottom: 60px;
     background-size: cover;
     background-position: center;
@@ -218,7 +284,7 @@ header nav {
 
 #banner2 {
     background-image: url(../img/banners/bannerdrink.png);
-    height: 60vh;
+    height: 50vh;
     width: 100%;
     margin-bottom: 60px;
     background-size: cover;
@@ -228,7 +294,7 @@ header nav {
 
 #banner3 {
     background-image: url(../img/banners/bannerdoce.png);
-    height: 60vh;
+    height: 50vh;
     width: 100%;
     margin-bottom: 60px;
     background-size: cover;
@@ -238,7 +304,7 @@ header nav {
 
 #banner4 {
     background-image: url(../img/banners/porçoes.png);
-    height: 60vh;
+    height: 50vh;
     width: 100%;
     margin-bottom: 60px;
     background-size: cover;
@@ -266,7 +332,7 @@ footer a {
 
 footer a:hover {
     text-decoration: underline;
-    color: rgb(122, 121, 121);
+    color: rgba(233, 136, 57, 0.6);
 }
 
 .footer-bottom {

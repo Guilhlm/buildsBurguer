@@ -20,7 +20,7 @@
 
                     <?php
 
-                    for ($i = 0; $i < 10; $i++) {
+                    for ($i = 0; $i < 4; $i++) {
 
                         include "./includes/produto.php";
                     }
@@ -35,4 +35,5 @@
 
 
 
+<script src="assets/script/temaescuro.js"></script>
 <?php include "./includes/footer.php"; ?>

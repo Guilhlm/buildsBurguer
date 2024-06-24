@@ -5,7 +5,7 @@
 <footer>
     <main class="container">
         <div class="row">
-            <div class="col-md-3">
+            <div class="col-md-2">
                 <h5>Menu</h5>
                 <ul class="list-unstyled mt-3">
                     <li><a href="./menu.php#hambs">Hamburguers</a></li>
@@ -15,7 +15,7 @@
                     <li><a href="./menu.php#sobremesa">Sobremesas</a></li>
                 </ul>
             </div>
-            <div class="col-md-3">
+            <div class="col-md-2">
                 <h5>Sobre Nós</h5>
                 <ul class="list-unstyled mt-3">
                     <li><a href="./index.html">Inicio</a></li>
@@ -28,6 +28,16 @@
                 <ul class="list-unstyled mt-3">
                     <li><a href="./login.html#logarais">Login</a></li>
                     <li><a href="./carrinho.php">Carrinho</a></li>
+                    <li><a href="#">Cadastro itens</a></li>
+                </ul>
+            </div>
+            <div class="col-md-2">
+                <h5>Parceiros</h5>
+                <ul class="list-unstyled mt-3">
+                    <li><a href="#">IDrink</a></li>
+                    <li><a href="#">Venti qui</a></li>
+                    <li><a href="#">Doceria</a></li>
+                    <li><a href="#">Manutenção</a></li>
                 </ul>
             </div>
             <div class="col-md-4">

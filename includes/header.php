@@ -21,7 +21,7 @@
             <nav class="cabeçalho container">
                 <div class="col-3" id="Menu-Comeco">
 
-                    <figure><img class="logo" src="logo.png" alt="logo da empresa"></figure>
+                    <figure><img class="logo" src="assets/img/foto(logo).png" alt="logo da empresa"></figure>
                 </div>
                 <div class="col-6" id="Menu-meio">
 
@@ -52,7 +52,7 @@
 
                             <a href="#" class="procurar-botao">
 
-                                <i class="bi bi-search" id="lupa" style="color: rgb(0, 0, 0);"></i>
+                                <i class="bi bi-search" id="lupa"></i>
                             </a>
                         </div>
 
