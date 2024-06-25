@@ -18,7 +18,7 @@ h4 {
     font-family: "Calisto MT", "Bookman Old Style", Bookman, "Goudy Old Style", Garamond, "Hoefler Text", "Bitstream Charter", Georgia, serif;
 }
 
-h2{
+h2 {
     margin-bottom: 0;
 }
 
@@ -32,6 +32,7 @@ body.dark-mode {
     background-color: #ffffff;
 
 }
+
 .logo {
     height: 120px;
 }
@@ -136,7 +137,6 @@ header nav {
 #Menu-fim {
     display: flex;
     justify-content: end;
-
 }
 
 .procurar-box {
@@ -195,14 +195,13 @@ input::placeholder {
     background-image: url(../img/banners/banner\(home\).png);
     height: 60vh;
     width: 100%;
-    /* margin-top: 30px;  talvez */
     margin-bottom: 60px;
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
 }
 
-#icones{
+#icones {
     display: flex;
     margin-top: 10px;
     font-size: 25px;

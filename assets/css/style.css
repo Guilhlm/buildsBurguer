@@ -15,7 +15,7 @@ body {
 .menu ul li {
     list-style-type: none;
     display: inline-block;
-    margin-right: 3vh;  
+    margin-right: 3vh;
 }
 
 .menu ul li a {
@@ -25,14 +25,14 @@ body {
     text-decoration: none;
     font-family: "Croissant One", serif;
     transition: 1s;
-    font-size: 20px;  
+    font-size: 20px;
 }
 
 .menu a:hover {
     padding: 10px 35px;
     border-radius: 15px;
     background-color: rgb(88, 51, 2);
-    transition: 0.5s; 
+    transition: 0.5s;
 }
 
 header {
@@ -42,7 +42,7 @@ header {
     justify-content: center;
 }
 
-.home{
+.home {
     display: flex;
     align-items: center;
     justify-content: center;

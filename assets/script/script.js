@@ -1,7 +1,3 @@
-//var variavel = "oi"  variavel normal
-//let tchau = "oi"     variavel temporaria
-//const toaki = "oi"   variavel que nao pode mudar.
-
 let indexSlidie = 0;
 let resetIndex = "";
 
@@ -10,13 +6,13 @@ function showSlide(index, fucCarrossel) {
 
     const totalSlide = 5;
 
-    if(index >= totalSlide ){
+    if (index >= totalSlide) {
         indexSlidie = 0;
     }
-    else if (index < 0){
-        indexSlidie = totalSlide -1;
+    else if (index < 0) {
+        indexSlidie = totalSlide - 1;
     }
-    else{
+    else {
         indexSlidie = index;
     }
 
@@ -27,7 +23,7 @@ function showSlide(index, fucCarrossel) {
 
 function anteriorSlide(fucCarrossel) {
 
-    if (resetIndex != fucCarrossel){
+    if (resetIndex != fucCarrossel) {
         indexSlidie = 0;
     }
     resetIndex = fucCarrossel
@@ -36,18 +32,18 @@ function anteriorSlide(fucCarrossel) {
 }
 
 function proximoSlide(fucCarrossel) {
-    
-    if (resetIndex != fucCarrossel){
+
+    if (resetIndex != fucCarrossel) {
         indexSlidie = 0;
     }
     resetIndex = fucCarrossel
     indexSlidie = indexSlidie + 1;
     showSlide(indexSlidie, fucCarrossel);
 
-} 
+}
 
 
-// //troca soziho 
+// //troca soziho
 
 // setInterval(() => {
 //     proximoSlide()

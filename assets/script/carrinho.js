@@ -30,8 +30,7 @@ function atualizaCarrinho() {
         const produtoQuantitySpan = document.querySelector(`.produto-quantidade[data-produto="${item.produto}"]`);
         if (produtoQuantitySpan) {
             produtoQuantitySpan.innerText = `${item.qtd}x`;
-        }      
-        
+        }
     });
 
     document.getElementById('carrinho-total').innerText = total.toFixed(2);

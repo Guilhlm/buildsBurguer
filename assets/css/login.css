@@ -1,14 +1,13 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap');
 
-
-.container-login P{
+.container-login P {
     font-size: 14px;
     line-height: 20px;
     letter-spacing: 0.3px;
     margin: 20px 0;
 }
 
-.body-login{
+.body-login {
     display: flex;
     background-repeat: no-repeat;
     background-size: cover;
@@ -20,33 +19,33 @@
     background-position: center;
 }
 
-.container-login form a.voltardireita{
+.container-login form a.voltardireita {
     display: flex;
     font-size: 25px;
     margin-right: 280px;
 }
 
-.container-login form a.voltardireita:hover{
+.container-login form a.voltardireita:hover {
     display: flex;
     color: #684005;
     margin-right: 285px;
     cursor: pointer;
 }
 
-.container-login .logar{
+.container-login .logar {
     left: 0;
     width: 50%;
     z-index: 2;
 }
 
-.container-login .criar{
+.container-login .criar {
     left: 0;
     width: 50%;
     opacity: 0;
     z-index: 1;
 }
 
-.container-login .esqueceu:hover{
+.container-login .esqueceu:hover {
     color: blue;
 }
 
@@ -59,31 +58,31 @@
     min-height: 480px;
 }
 
-.container-login  span{
+.container-login span {
     font-size: 12px;
 }
 
-.container-login  a{
+.container-login a {
     color: #333;
     font-size: 13px;
     margin: 15px 0 10px;
 }
 
-.form-container{
+.form-container {
     position: absolute;
     top: 0;
     height: 100%;
     transition: all 0.6s ease-in-out;
 }
 
-.container-login  .criar{
+.container-login .criar {
     transform: translateX(100%);
     opacity: 1;
     z-index: 5;
     animation: move 0.6s;
 }
 
-.container-login  input{
+.container-login input {
     background-color: #eee;
     border: none;
     margin: 8px 0;
@@ -94,16 +93,18 @@
     outline: none;
 }
 
-.container-login .botaoCriar, .container-login .botaoLogar{    
+.container-login .botaoCriar,
+.container-login .botaoLogar {
     background-color: #a8812d;
     border: 1px solid #000000;
 }
 
-.container-login .botaoCriar:hover, .botaoLogar:hover{
+.container-login .botaoCriar:hover,
+.botaoLogar:hover {
     background-color: #5e4309;
 }
 
-.container-login button{
+.container-login button {
     background-color: #a8812d;
     color: #ffffff;
     font-size: 12px;
@@ -115,16 +116,16 @@
     cursor: pointer;
 }
 
-.container-login  button.botao{
+.container-login button.botao {
     background-color: transparent;
     border-color: #ffffff;
 }
 
-.container-login button.botao:hover{
+.container-login button.botao:hover {
     border-color: #a8812d;
 }
 
-.container-login form{
+.container-login form {
     background-color: #ffffff;
     display: flex;
     align-items: center;
@@ -136,7 +137,7 @@
     border-radius: 20px;
 }
 
-.alternar-container{
+.alternar-container {
     position: absolute;
     top: 0;
     left: 50%;
@@ -148,12 +149,12 @@
     z-index: 1000;
 }
 
-.container.active .alternar-container{
+.container.active .alternar-container {
     transform: translateX(-100%);
     border-radius: 0 150px 100px 0;
 }
 
-.alternar{
+.alternar {
     height: 100%;
     background: linear-gradient(to top, #000000, #684005);
     color: #fff;
@@ -165,11 +166,11 @@
     transition: all 0.6s ease-in-out;
 }
 
-.container.active .alternar{
+.container.active .alternar {
     transform: translateX(50%);
 }
 
-.alternar-panel{
+.alternar-panel {
     position: absolute;
     width: 50%;
     height: 100%;
@@ -184,19 +185,19 @@
     transition: all 0.6s ease-in-out;
 }
 
-.alternar-esquerda{
+.alternar-esquerda {
     transform: translateX(-200%);
 }
 
-.container.active .alternar-esquerda{
+.container.active .alternar-esquerda {
     transform: translateX(0);
 }
 
-.alternar-direita{
+.alternar-direita {
     right: 0;
     transform: translateX(0);
 }
 
-.container.active .alternar-direita{
+.container.active .alternar-direita {
     transform: translateX(200%);
 }

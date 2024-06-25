@@ -1,21 +1,23 @@
-.fundinho p, .fundinho2 p {
+.fundinho p,
+.fundinho2 p {
     display: flex;
     font-size: 20px;
     margin-top: 50px;
     margin-right: 60px;
     margin-left: 60px;
     color: rgb(0, 0, 0);
-    
 }
 
-.fundinho h2, .fundinho2 h2{
+.fundinho h2,
+.fundinho2 h2 {
     display: flex;
     margin-top: 20px;
     margin-left: 50px;
     color: rgb(0, 0, 0);
 }
 
-.fundinho h3,.fundinho2 h3 {
+.fundinho h3,
+.fundinho2 h3 {
     display: flex;
     margin-top: 70px;
     margin-bottom: 100px;
@@ -24,7 +26,7 @@
     color: rgb(0, 0, 0);
 }
 
-.centralizar{
+.centralizar {
     display: flex;
     flex-direction: column;
     align-items: center;

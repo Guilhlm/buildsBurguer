@@ -21,13 +21,14 @@ INSERT INTO tb_produto (titulo, preco, imagem, categoria) VALUE ('Hamburguer Kid
 INSERT INTO tb_produto (titulo, preco, imagem, categoria) VALUE ('Hamburguer Completo', 29.90, 'hmbCompleto.png', 1);
 INSERT INTO tb_produto (titulo, preco, imagem, categoria) VALUE ('Hamburguer Extra Queijo', 35.00, 'hmbQueijo.png', 1);
 
-CREATE TABLE tb_usuario (
+CREATE TABLE tb_usuarios (
     id INT PRIMARY KEY AUTO_INCREMENT,
+    nome VARCHAR(100),
     usuario VARCHAR(100),
     senha VARCHAR(100)
 );
 
-INSERT INTO tb_usuario (usuario, senha)
+INSERT INTO tb_usuarios (nome, usuario, senha)
 VALUES
-    ('guilherme@gmail.com', 'senha'),
-    ('adm', 'adm');
+    ('guilherme', 'guilherme@gmail.com', 'senha'),
+    ('admin', 'admin@gmail.com', 'admin');

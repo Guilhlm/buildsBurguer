@@ -96,7 +96,7 @@
     color: #fff;
 }
 
-.add-button:hover{
+.add-button:hover {
     background-color: #015013;
 }
 
@@ -105,9 +105,8 @@
     color: #fff;
 }
 
-.remove-button:hover{
+.remove-button:hover {
     background-color: #4e0209
-
 }
 
 .footer-carrinho {

@@ -1,24 +1,21 @@
-.carrossel-container{
+.carrossel-container {
     max-width: 100%;
     width: 1700px;
     max-height: 720px;
     padding-right: 40px;
     padding-left: 10px;
-
     position: relative;
     border-radius: 10px;
-
     overflow: hidden;
-
 }
 
-.carrossel{
+.carrossel {
     display: flex;
     transition: transform 0.5s ease-in-out;
     gap: 10px;
 }
 
-.carrossel-container button{
+.carrossel-container button {
     z-index: 1;
     position: absolute;
     top: 50%;
@@ -31,15 +28,15 @@
     border: none;
 }
 
-.carrossel-container button :hover{
+.carrossel-container button :hover {
 
     color: rgba(255, 255, 255, 0.7);
 }
 
-.carrossel-container button.anterior{
+.carrossel-container button.anterior {
     left: 10px;
 }
 
-.carrossel-container button.proximo{
+.carrossel-container button.proximo {
     right: 10px;
 }
