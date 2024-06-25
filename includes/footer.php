@@ -34,11 +34,11 @@
             <div class="col-md-2">
                 <h5>Parceiros</h5>
                 <ul class="list-unstyled mt-3">
-                    <li><a href="#">IDrink</a></li>
-                    <li><a href="https://ventqui.paulowh.com/">Ven't qui</a></li>
-                    <li><a href="https://doceslunares.paulowh.com/">Doces lunares</a></li>
-                    <li><a href="#">Manutenção</a></li>
-                    <li><a href="https://policebox.paulowh.com/">Police box</a></li>
+                    <li><a href="#" target="_blank">IDrink</a></li>
+                    <li><a href="https://ventqui.paulowh.com/" target="_blank">Ven't qui</a></li>
+                    <li><a href="https://doceslunares.paulowh.com/" target="_blank">Doces lunares</a></li>
+                    <li><a href="#" target="_blank">Manutenção</a></li>
+                    <li><a href="https://policebox.paulowh.com/" target="_blank">Police box</a></li>
                 </ul>
             </div>
             <div class="col-md-4">

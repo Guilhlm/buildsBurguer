@@ -68,7 +68,7 @@
                         <figure>
                             <img src="./assets/img/lanches/hambPreto.png" alt="Hamburguer Kids" class="foto-produto">
                             <figcaption>
-                                <h4>Hamburguer Kids</h4>
+                                <h4>Hamburguer Preto</h4>
                                 <span class="preco">
                                     <p class="preçoescrito">Preço .............</p>
                                     <p>R$ 15,90</p>
@@ -80,9 +80,9 @@
                 <div class="col-lg-3 col-md-6 col-sm-12">
                     <a href="#" style="text-decoration: none;">
                         <figure>
-                            <img src="./assets/img/lanches/hmbDoce.png" alt="Hmaburguer completo" class="foto-produto">
+                            <img src="./assets/img/lanches/hmbDoce.png" alt="Hmaburguer Nutella" class="foto-produto">
                             <figcaption>
-                                <h4>Hamburguer Completo</h4>
+                                <h4>Hamburguer Nutella</h4>
                                 <span class="preco">
                                     <p class="preçoescrito">Preço .............</p>
                                     <p>R$ 29,90</p>
@@ -96,7 +96,7 @@
                         <figure>
                             <img src="./assets/img/lanches/hmbBacon.png" alt="Hamburguer com queijo" class="foto-produto">
                             <figcaption>
-                                <h4>Hamburguer Extra Queijo</h4>
+                                <h4>Hamburguer Bacon</h4>
                                 <span class="preco">
                                     <p class="preçoescrito">Preço .............</p>
                                     <p>R$ 35,00</p>
@@ -110,7 +110,7 @@
                         <figure>
                             <img src="./assets/img/lanches/hmbFritas.png" alt="Hamburguer com Cogumelos" class="foto-produto">
                             <figcaption>
-                                <h4>Hamburguer com Cogumelos</h4>
+                                <h4>Hamburguer com Fritas</h4>
                                 <span class="preco">
                                     <p class="preçoescrito">Preço .............</p>
                                     <p>R$ 45,90</p>
