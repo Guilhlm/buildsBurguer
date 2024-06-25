@@ -64,7 +64,7 @@
                             <span> <i class="bi bi-brightness-high"></i></span>
                         </label>
 
-                        <li><a href="login.html"><i class="bi bi-person"></i></a></li>
+                        <li><a href="login.php"><i class="bi bi-person"></i></a></li>
                     </ul>
 
                 </div>

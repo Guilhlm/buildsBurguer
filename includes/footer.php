@@ -26,7 +26,7 @@
             <div class="col-md-2">
                 <h5>Conta</h5>
                 <ul class="list-unstyled mt-3">
-                    <li><a href="./login.html#logarais">Login</a></li>
+                    <li><a href="./login.php#logarais">Login</a></li>
                     <li><a href="./carrinho.php">Carrinho</a></li>
                     <li><a href="#">Cadastrar itens</a></li>
                 </ul>

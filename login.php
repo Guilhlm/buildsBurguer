@@ -6,8 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
 
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
 
 
@@ -15,34 +14,66 @@
     <title>Login Build's Burguer</title>
 </head>
 
+<?php
+
+if (isset($_POST) && !empty($_POST)) {
+
+
+    $user = $_POST['usuario'];
+    $password = $_POST['senha'];
+
+    $conn = new PDO("mysql:host=localhost;dbname=db_login", "root", "");
+
+    $script = "SELECT * FROM tb_usuarios WHERE usuario = '{$user}' AND senha = '{$password}'";
+
+    $resultado = $conn->query($script)->fetch();
+
+    if (!empty($resultado)) {
+
+        header('location: menu.php');
+    } else {
+
+        echo 'usuarinhu nao encontrado';
+    }
+}
+
+?>
+
 <body class="body-login">
 
     <div class="container container-login" id="box-marrom">
         <div class="form-container criar">
-            <form>
+            <form action="#" method="post">
                 <h1>Crie sua conta</h1>
-               
+
                 <span>Use seu Email para registro</span>
                 <input type="text" placeholder="Nome">
                 <input type="email" placeholder="Email">
-                <input type="password" placeholder="Senha">     
+                <input type="password" placeholder="Senha">
                 <input type="password" placeholder="Confirmar Senha">
-                <button class="botaofinal">Criar</button>
+                <input type="submit" class="botaoCriar"></input>
             </form>
         </div>
+
+
+
         <div class="form-container logar">
-            <form>
+            <form action="#" method="post">
                 <div><a class="voltardireita" href="menu.php"><i class="bi bi-arrow-left-square"></i></a></div>
                 <br>
                 <h1 id="logarais">Login</h1>
-               
+
                 <span>Use seu Email e Senha</span>
-                <input type="email" placeholder="Email">
-                <input type="password" placeholder="Senha">
+                <input type="email" name="usuario" placeholder="Email">
+                <input type="password" name="senha" placeholder="Senha">
                 <a href="https://accounts.google.com/v3/signin/challenge/kpp" class="esqueceu">Esqueceu tua senha?</a>
-                <button class="botaofinal">Logar</button>
+                <input type="submit" class="botaoLogar"></input>
             </form>
         </div>
+
+
+
+
         <div class="alternar-container">
             <div class="alternar">
                 <div class="alternar-panel alternar-esquerda">

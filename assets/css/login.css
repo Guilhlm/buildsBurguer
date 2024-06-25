@@ -94,8 +94,13 @@
     outline: none;
 }
 
-.container-login .botaofinal:hover{
+.container-login .botaoCriar, .container-login .botaoLogar{    
+    background-color: #a8812d;
     border: 1px solid #000000;
+}
+
+.container-login .botaoCriar:hover, .botaoLogar:hover{
+    background-color: #5e4309;
 }
 
 .container-login button{
