@@ -35,10 +35,10 @@
                 <h5>Parceiros</h5>
                 <ul class="list-unstyled mt-3">
                     <li><a href="#">IDrink</a></li>
-                    <li><a href="#">Venti qui</a></li>
-                    <li><a href="#">Doceria</a></li>
+                    <li><a href="https://ventqui.paulowh.com/">Ven't qui</a></li>
+                    <li><a href="https://doceslunares.paulowh.com/">Doces lunares</a></li>
                     <li><a href="#">Manutenção</a></li>
-                    <li><a href="#">Police-box</a></li>
+                    <li><a href="https://policebox.paulowh.com/">Police box</a></li>
                 </ul>
             </div>
             <div class="col-md-4">
