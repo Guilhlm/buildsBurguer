@@ -250,7 +250,6 @@ input::placeholder {
 }
 
 #produtos figure figcaption {
-    padding: 0 10%;
     display: flex;
     flex-direction: column;
     max-width: 100%;
@@ -259,7 +258,8 @@ input::placeholder {
 
 .preçoescrito {
     color: rgba(233, 136, 57, 0.6);
-    margin-right: 100px;
+    display: flex;
+    justify-content: space-evenly;
     font-family: "Calisto MT", "Bookman Old Style", Bookman, "Goudy Old Style", Garamond, "Hoefler Text", "Bitstream Charter", Georgia, serif;
 }
 
@@ -267,7 +267,8 @@ input::placeholder {
     color: rgb(233, 136, 57);
     font-weight: 900;
     font-size: 1.2rem;
-    text-align: end;
+    display: flex;
+    justify-content: space-evenly;
 }
 
 .foto-produto {

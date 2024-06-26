@@ -5,7 +5,7 @@
             <figcaption>
                 <h4>Brigadeiro</h4>
                 <span class="preco">
-                    <p class="preçoescrito">Preço .............</p>
+                    <p class="preçoescrito">Preço ..........</p>
                     <p>R$ 3,90</p>
                 </span>
             </figcaption>
