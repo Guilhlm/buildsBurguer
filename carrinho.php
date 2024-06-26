@@ -7,7 +7,7 @@
             </section>
             <main class="main-carrinho">
                 <div class="produto">
-                    <div class="produto-imagem"><img src="./assets/img/lanches/hmbsimples.png" alt="Produto 1"></div>
+                    <div class="produto-imagem"><img src="./assets/img/lanches/hmbSimples.png" alt="Produto 1"></div>
                     <div class="produto-detalhes">
                         <h2>Nome do produto 1</h2>
                         <p>Descrição adaptada aqui. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
