@@ -4,6 +4,10 @@
     margin: 0;
 }
 
+*::selection{
+    background-color: rgba(233, 136, 57, 0.6);
+}
+
 p {
     font-size: 19px;
     margin-top: -40px;

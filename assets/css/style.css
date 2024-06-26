@@ -4,6 +4,10 @@
     margin: 0px;
 }
 
+*::selection{
+    background-color: rgba(233, 136, 57, 0.6);
+}
+
 body {
     background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(55, 23, 1, 0.8)), url(../img/fundo/foto\(fundo\).jpg);
     background-repeat: no-repeat;
