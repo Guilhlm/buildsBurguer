@@ -30,6 +30,32 @@ INSERT INTO tb_produtos (titulo, preco, imagem, categoria) VALUE ('Hamburguer Ex
 INSERT INTO tb_produtos (titulo, preco, imagem, categoria) VALUE ('Hamburguer Super Carne', 85.90, 'hmbsuper.jpeg', 1);
 INSERT INTO tb_produtos (titulo, preco, imagem, categoria) VALUE ('Hamburguer Breakfest', 18.90, 'hmbbreakfest.jpeg', 1);
 
+INSERT INTO tb_produtos (titulo, preco, imagem, categoria) VALUE ('Combo Simples', 28.90, 'combosimples.jpeg', 2);
+INSERT INTO tb_produtos (titulo, preco, imagem, categoria) VALUE ('Combo 2 pessoas', 59.90, 'combo2pessoas.jpg', 2);
+INSERT INTO tb_produtos (titulo, preco, imagem, categoria) VALUE ('Combo Cevada', 45.00, 'combosevada.jpg', 2);
+INSERT INTO tb_produtos (titulo, preco, imagem, categoria) VALUE ('Combo 3 mini hambs', 55.90, 'combo3minis.jpg', 2);
+INSERT INTO tb_produtos (titulo, preco, imagem, categoria) VALUE ('Combo KiGuaranads', 28.90, 'comboguarana.jpg', 2);
+INSERT INTO tb_produtos (titulo, preco, imagem, categoria) VALUE ('Combo Milkshake Completo', 49.90, 'combomilk.jpg', 2);
+INSERT INTO tb_produtos (titulo, preco, imagem, categoria) VALUE ('Combo X-salada', 17.00, 'comboxsalada.jpg', 2);
+INSERT INTO tb_produtos (titulo, preco, imagem, categoria) VALUE ('Combo 2 por 1', 32.90, 'combo2por1.jpg', 2);
+INSERT INTO tb_produtos (titulo, preco, imagem, categoria) VALUE ('Combo jack daniels', 95.90, 'combojack.jpg', 2);
+INSERT INTO tb_produtos (titulo, preco, imagem, categoria) VALUE ('Combo 2 salgados 1 doce', 76.90, 'combo21doce.jpg', 2);
+INSERT INTO tb_produtos (titulo, preco, imagem, categoria) VALUE ('Combo Dark', 55.00, 'combodark.jpg', 2);
+INSERT INTO tb_produtos (titulo, preco, imagem, categoria) VALUE ('Triplo e mais', 15.90, 'tripledark.jpg', 2);
+
+INSERT INTO tb_produtos (titulo, preco, imagem, categoria) VALUE ('Batata frita', 5.90, 'batatafrita.jpg', 3);
+INSERT INTO tb_produtos (titulo, preco, imagem, categoria) VALUE ('Onions Rigs', 7.90, 'onionrigs.jpg', 3);
+INSERT INTO tb_produtos (titulo, preco, imagem, categoria) VALUE ('12 Fragos fritos', 25.00, 'fragofrito.jpg', 3);
+INSERT INTO tb_produtos (titulo, preco, imagem, categoria) VALUE ('Batata recheada', 17.90, 'bttchedar.jpg', 3);
+INSERT INTO tb_produtos (titulo, preco, imagem, categoria) VALUE ('Torresmo', 5.90, 'torresmo.jpg', 3);
+INSERT INTO tb_produtos (titulo, preco, imagem, categoria) VALUE ('Banana Frita', 4.90, 'bannafrita.jpg', 3);
+INSERT INTO tb_produtos (titulo, preco, imagem, categoria) VALUE ('Bolinha Extra Queijo', 12.00, 'bolinhaqueijo.png', 3);
+INSERT INTO tb_produtos (titulo, preco, imagem, categoria) VALUE ('Linguica', 11.90, 'linguiçia.jpg', 3);
+INSERT INTO tb_produtos (titulo, preco, imagem, categoria) VALUE ('Salada gurme', 15.90, 'gurmetsalda.jpg', 3);
+INSERT INTO tb_produtos (titulo, preco, imagem, categoria) VALUE ('Macarrao', 29.90, 'risotodemacarrao.jpg', 3);
+INSERT INTO tb_produtos (titulo, preco, imagem, categoria) VALUE ('Saladinha do mal', 305.00, 'saldiinha.jpg', 3);
+INSERT INTO tb_produtos (titulo, preco, imagem, categoria) VALUE ('Saladinha do chefe', 450.90, 'salsadachefe.jpg', 3);
+
 CREATE TABLE tb_usuarios (
     id INT PRIMARY KEY AUTO_INCREMENT,
     nome VARCHAR(100),
