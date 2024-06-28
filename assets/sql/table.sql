@@ -56,6 +56,46 @@ INSERT INTO tb_produtos (titulo, preco, imagem, categoria) VALUE ('Macarrao', 29
 INSERT INTO tb_produtos (titulo, preco, imagem, categoria) VALUE ('Saladinha do mal', 305.00, 'saldiinha.jpg', 3);
 INSERT INTO tb_produtos (titulo, preco, imagem, categoria) VALUE ('Saladinha do chefe', 450.90, 'salsadachefe.jpg', 3);
 
+INSERT INTO tb_produtos (titulo, preco, imagem, categoria) VALUE ('Suco de laranja com abacaxi', 9.90, 'laranjaAbacaxi.png', 4);
+INSERT INTO tb_produtos (titulo, preco, imagem, categoria) VALUE ('Suco de laranja', 9.90, 'sucolaranja.png', 4);
+INSERT INTO tb_produtos (titulo, preco, imagem, categoria) VALUE ('Cha com cafe', 11.90, 'chacafe.png', 4);
+INSERT INTO tb_produtos (titulo, preco, imagem, categoria) VALUE ('Fanta xing-ling', 7.90, 'fantaxingling.jpg', 4);
+INSERT INTO tb_produtos (titulo, preco, imagem, categoria) VALUE ('coquinha gelada', 15.90, 'coquinha.jpg', 4);
+INSERT INTO tb_produtos (titulo, preco, imagem, categoria) VALUE ('spite', 9.90, 'spite.jpg', 4);
+INSERT INTO tb_produtos (titulo, preco, imagem, categoria) VALUE ('Suco de coca', 3500.00, 'pepsi.jpg', 4);
+INSERT INTO tb_produtos (titulo, preco, imagem, categoria) VALUE ('Redbull da asas', 11.90, 'redbull.jpg', 4);
+INSERT INTO tb_produtos (titulo, preco, imagem, categoria) VALUE ('Monster', 1.90, 'mlhrmonter.jpg', 4);
+INSERT INTO tb_produtos (titulo, preco, imagem, categoria) VALUE ('Monster Red', 9.90, 'monsterred.jpg', 4);
+INSERT INTO tb_produtos (titulo, preco, imagem, categoria) VALUE ('Agua voss', 50.00, 'voss.jpg', 4);
+INSERT INTO tb_produtos (titulo, preco, imagem, categoria) VALUE ('coca-zero', 5.90, 'cocarzero.png', 4);
+
+INSERT INTO tb_produtos (titulo, preco, imagem, categoria) VALUE ('Cerveja skol 1L', 22.90, 'cerveja.jpg', 4);
+INSERT INTO tb_produtos (titulo, preco, imagem, categoria) VALUE ('Balde de Heiniken', 79.90, 'baldehei.png', 4);
+INSERT INTO tb_produtos (titulo, preco, imagem, categoria) VALUE ('caipirinha', 15.90, 'caipirinha.png', 4);
+INSERT INTO tb_produtos (titulo, preco, imagem, categoria) VALUE ('Drink de açai c/ Vodka', 9.90, 'drinkaçai.jpg', 4);
+INSERT INTO tb_produtos (titulo, preco, imagem, categoria) VALUE ('Cerveja Corona', 11.90, 'corona.jpg', 4);
+INSERT INTO tb_produtos (titulo, preco, imagem, categoria) VALUE ('Black label', 209.90, 'blacklabel.jpg', 4);
+INSERT INTO tb_produtos (titulo, preco, imagem, categoria) VALUE ('Jack Daniels', 350.00, 'jackdaniels.jpg', 4);
+INSERT INTO tb_produtos (titulo, preco, imagem, categoria) VALUE ('Bebida jameson', 450.90, 'jameson.jpg', 4);
+INSERT INTO tb_produtos (titulo, preco, imagem, categoria) VALUE ('Jose corvo', 50.90, 'josecorvo.jpg', 4);
+INSERT INTO tb_produtos (titulo, preco, imagem, categoria) VALUE ('Garrafa LA-brisa', 89.90, 'labrisa.jpg', 4);
+INSERT INTO tb_produtos (titulo, preco, imagem, categoria) VALUE ('Vinho Carvão', 102.00, 'vinhocarvao.jpg', 4);
+INSERT INTO tb_produtos (titulo, preco, imagem, categoria) VALUE ('Smirnoff', 45.90, 'Smirnoff.jpg', 4);
+
+
+INSERT INTO tb_produtos (titulo, preco, imagem, categoria) VALUE ('Brigadeiro', 3.90, 'brigadeiro.jpg', 4);
+INSERT INTO tb_produtos (titulo, preco, imagem, categoria) VALUE ('Chocolate c/ framboesa', 19.90, 'chomornago.png', 4);
+INSERT INTO tb_produtos (titulo, preco, imagem, categoria) VALUE ('Rosquinha de Chocolate', 10.00, 'roscacho.jpg', 4);
+INSERT INTO tb_produtos (titulo, preco, imagem, categoria) VALUE ('Sorvete de creme', 18.90, 'taçasorvete.png', 4);
+INSERT INTO tb_produtos (titulo, preco, imagem, categoria) VALUE ('Sorvete de morango', 15.90, 'sorvetemorango.jpg', 4);
+INSERT INTO tb_produtos (titulo, preco, imagem, categoria) VALUE ('Brownie de chocolate', 22.90, 'brownie.png', 4);
+INSERT INTO tb_produtos (titulo, preco, imagem, categoria) VALUE ('Panqueca Doce', 8.90, 'panquecadoce.png', 4);
+INSERT INTO tb_produtos (titulo, preco, imagem, categoria) VALUE ('Musse com Mertilos', 27.90, 'musseframb.png', 4);
+INSERT INTO tb_produtos (titulo, preco, imagem, categoria) VALUE ('Cupcake roxo', 15.90, 'cupcake.png', 4);
+INSERT INTO tb_produtos (titulo, preco, imagem, categoria) VALUE ('Macarrons de Chocolate', 9.90, 'macarronsbranco.png', 4);
+INSERT INTO tb_produtos (titulo, preco, imagem, categoria) VALUE ('Sorvete Magnum', 11.00, 'magnumcomcobertura.png', 4);
+INSERT INTO tb_produtos (titulo, preco, imagem, categoria) VALUE ('Milk-shake de chocolate', 17.90, 'milkshake.png', 4);
+
 CREATE TABLE tb_usuarios (
     id INT PRIMARY KEY AUTO_INCREMENT,
     nome VARCHAR(100),

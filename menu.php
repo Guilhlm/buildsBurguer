@@ -365,7 +365,6 @@
     <br><br><br>
 </section>
 <!-- porçoes -->
-
 <h2 class="titulo" id="porcoes">Porções</h2>
 <section id="banner4"></section>
 <section class="container" id="produtos">
@@ -657,7 +656,7 @@
                         <figure>
                             <img src="./assets/img/bebidas/redbull.jpg" alt="Redbull da asas " class="foto-produto">
                             <figcaption>
-                                <h4>Redbull da asas </h4>
+                                <h4>Redbull da asas</h4>
                                 <span class="preco">
                                     <p class="preçoescrito">Preço ..........</p>
                                     <p>R$ 11,90</p>
