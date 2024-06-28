@@ -9,14 +9,13 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
     <link rel="shortcut icon" href="assets/img/foto(logo)favicon.png" type="image/x-icon">
     <link rel="stylesheet" href="assets/css/login.css">
-    
+
     <title>Login Build's Burguer</title>
 </head>
 
 <?php
 
 if (isset($_POST) && !empty($_POST)) {
-
 
     $user = $_POST['usuario'];
     $password = $_POST['senha'];
@@ -32,7 +31,7 @@ if (isset($_POST) && !empty($_POST)) {
         header('location: menu.php');
     } else {
 
-        echo 'usuarinhu nao encontrado';
+        $erro_login = "Usuário ou senha incorretos.";
     }
 }
 
@@ -65,6 +64,19 @@ if (isset($_POST) && !empty($_POST)) {
                 <span>Use seu Email e Senha</span>
                 <input type="email" name="usuario" placeholder="Email">
                 <input type="password" name="senha" placeholder="Senha">
+
+                <?php
+                // Exibe a mensagem de erro se estiver definida
+                if (isset($erro_login)) {
+                    echo '<div id="campo-erro">' . $erro_login . '</div>';
+                } else {
+                    echo '<div id="campo-erro"></div>';
+                }
+                ?>
+
+
+
+
                 <a href="https://accounts.google.com/v3/signin/challenge/kpp" class="esqueceu">Esqueceu tua senha?</a>
                 <input type="submit" class="botaoLogar"></input>
             </form>
