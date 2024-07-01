@@ -41,19 +41,17 @@ if (isset($_POST) && !empty($_POST)) {
 
     <div class="container container-login" id="box-marrom">
         <div class="form-container criar">
-            <form action="#" method="post">
+            <form action="auxcadastro.php" method="post">
                 <h1>Crie sua conta</h1>
 
                 <span>Use seu Email para registro</span>
-                <input type="text" placeholder="Nome">
-                <input type="email" placeholder="Email">
-                <input type="password" placeholder="Senha">
-                <input type="password" placeholder="Confirmar Senha">
-                <input type="submit" class="botaoCriar"></input>
+                <input type="text" name="nome" placeholder="Nome">
+                <input type="email" name="usuario" placeholder="Email">
+                <input type="password" name="senha" placeholder="Senha">
+                <input type="password" name="Confirmar" placeholder="Confirmar Senha">
+                <input type="submit" class="botaoCriar" value="Criar Conta"></input>
             </form>
         </div>
-
-
 
         <div class="form-container logar">
             <form action="#" method="post">
@@ -74,16 +72,10 @@ if (isset($_POST) && !empty($_POST)) {
                 }
                 ?>
 
-
-
-
                 <a href="https://accounts.google.com/v3/signin/challenge/kpp" class="esqueceu">Esqueceu tua senha?</a>
-                <input type="submit" class="botaoLogar"></input>
+                <input type="submit" class="botaoLogar" value="Logar"></input>
             </form>
         </div>
-
-
-
 
         <div class="alternar-container">
             <div class="alternar">
