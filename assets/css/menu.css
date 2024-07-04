@@ -4,7 +4,7 @@
     margin: 0;
 }
 
-*::selection{
+*::selection {
     background-color: rgba(233, 136, 57, 0.6);
 }
 
@@ -33,7 +33,7 @@ body {
 
 body.dark-mode {
     transition: 0.5s;
-    background-color: #ffffff;
+    background-color: #cccccc;
 
 }
 
@@ -195,14 +195,17 @@ input::placeholder {
     color: rgba(255, 255, 255, 0.4);
 }
 
-#banner {
-    background-image: url(../img/banners/banner\(home\).png);
+#bannersobre {
+    background-image: url(../img/BannerMenu.png);
     height: 60vh;
     width: 100%;
+    margin-top: 60px;
     margin-bottom: 60px;
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
+    border-top: 5px solid rgba(233, 136, 57, 0.6);
+    border-bottom: 5px solid rgba(233, 136, 57, 0.6);
 }
 
 #icones {

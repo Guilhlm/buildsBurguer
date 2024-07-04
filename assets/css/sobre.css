@@ -1,3 +1,13 @@
+#banner {
+    background-image: url(../img/banner\(sobre\).png);
+    height: 60vh;
+    width: 100%;
+    margin-bottom: 60px;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
 .fundinho p,
 .fundinho2 p {
     display: flex;

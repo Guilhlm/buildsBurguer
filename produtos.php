@@ -1,5 +1,7 @@
 <?php include "./includes/header.php"; ?>
 
+<section id="bannersobre"></section>
+
 <section class="container" id="produtos">
     <section id="produtos">
         <div class="row">
@@ -20,7 +22,7 @@
 
                     <?php
 
-                    for ($i = 0; $i < 4; $i++) {
+                    for ($i = 0; $i < 10; $i++) {
 
                         include "./includes/produto.php";
                     }

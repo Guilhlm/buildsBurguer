@@ -1,7 +1,7 @@
 <?php include './includes/header.php' ?>
 
-<section id="banner">
-</section>
+<section id="banner"></section>
+
 <div class="centralizar">
     <main class="fundinho" id="historia">
         <div>
