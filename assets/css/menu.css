@@ -48,28 +48,21 @@ body.dark-mode {
 }
 
 .cabeçalho .menu li a {
+    margin-right: 3vh;
     font-family: "Croissant One", serif;
     font-size: 18px;
-    padding: 8px;
-    border-radius: 8px;
     color: rgba(233, 136, 57, 0.6);
     text-decoration: none;
-    transition: 1s;
 }
 
 .cabeçalho .menu li a:hover {
-    padding: 10px 40px;
-    border-radius: 8px;
     color: white;
-    background-color: rgba(233, 136, 57, 0.3);
-    border-radius: 25px;
     text-decoration: none;
-    transition: 0.7s;
+
 }
 
 .select-opcoes {
     position: absolute;
-    box-shadow: 0 0 2px black;
     display: none;
 }
 
