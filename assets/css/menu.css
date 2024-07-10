@@ -262,10 +262,6 @@ input::placeholder {
     object-fit: cover;
 }
 
-.foto-produto:hover {
-    transform: scale(0.92);
-}
-
 #banner2 {
     background-image: url(../img/banners/bannerdrink.png);
     height: 50vh;
