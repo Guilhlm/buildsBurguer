@@ -15,6 +15,7 @@
     <link rel="stylesheet" href="assets/css/carrossel.css">
     <link rel="stylesheet" href="assets/css/sobre.css">
     <link rel="stylesheet" href="assets/css/carrinho.css">
+    <link rel="stylesheet" href="assets/css/click-produto.css">
 </head>
 
 <body>
