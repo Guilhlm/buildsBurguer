@@ -67,7 +67,7 @@
     background-position: center;
     background-size: cover;
     border: 5px solid black;
-    width: 550px;
+    width: 600px;
     height: 750px;
     border-radius: 20px;
 }
@@ -105,7 +105,7 @@
     border: 2px solid black;
     height: 50px;
     width: 140px;
-    border-radius: 40px;
+    border-radius: 15px;
     font-size: 17px;
 }
 
@@ -119,6 +119,11 @@
     justify-content: center;
     color: black;
     cursor: pointer;
+}
+
+.menos:hover{
+    background-color: #24242466;
+
 }
 
 .numero {
@@ -139,18 +144,27 @@
     cursor: pointer;
 }
 
+.mais:hover{
+    background-color: #24242466;
+
+}
+
 .addcart {
     font-family: 'Croissant One';
     display: flex;
     align-items: center;
     justify-content: space-evenly;
-    background-color: #361F01;
+    background-color: #5c3400;
     border: 2px solid black;
     height: 50px;
     width: 350px;
-    border-radius: 40px;
+    border-radius: 15px;
     font-size: 15px;
     cursor: pointer;
+}
+
+.addcart:hover{
+    background-color: #311c00;
 }
 
 .titulo-desc {
