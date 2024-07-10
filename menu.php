@@ -8,7 +8,7 @@
         <section id="produtos">
             <div class="carrossel-hamb carrossel">
                 <div class="col-lg-3 col-md-6 col-sm-12">
-                    <a href="#" style="text-decoration: none;">
+                    <a href="click-produto.html" style="text-decoration: none;">
                         <figure>
                             <img src="./assets/img/lanches/hmbSimples.png" alt="Hamburguer Kids" class="foto-produto">
                             <figcaption>
