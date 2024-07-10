@@ -3,9 +3,9 @@
 .body-produto {
     color: white;
     display: flex;
-    justify-content: center;
     margin-top: 50px;
     margin-bottom: 50px;
+    margin-left: 20vh;
 }
 
 #ois {
@@ -90,8 +90,8 @@
 
 .preco-produto {
     font-family: 'Croissant One';
-    margin-right: 20px;
     font-size: 40px;
+    margin-bottom: 0;
     margin-left: 70px;
     color: #000000;
 }
@@ -165,7 +165,7 @@
     font-family: 'Croissant One';
     padding-top: 20px;
     color: #000;
-    font-size: 14px;
+    font-size: 12.3px !important;
 }
 
 .avaliacao-title {

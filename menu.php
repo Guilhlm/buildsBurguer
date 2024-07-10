@@ -14,8 +14,8 @@
                             <figcaption>
                                 <h4>Hamburguer Kids</h4>
                                 <span class="preco">
-                                    <p class="preçoescrito">Preço ..........</p>
-                                    <p>R$ 15,90</p>
+                                    <p class="preçoescrito precin">Preço ..........</p>
+                                    <p class="precin">R$ 15,90</p>
                                 </span>
                             </figcaption>
                         </figure>
@@ -28,8 +28,8 @@
                             <figcaption>
                                 <h4>Hamburguer Completo</h4>
                                 <span class="preco">
-                                    <p class="preçoescrito">Preço ..........</p>
-                                    <p>R$ 29,90</p>
+                                    <p class="preçoescrito precin">Preço ..........</p>
+                                    <p class="precin">R$ 29,90</p>
                                 </span>
                             </figcaption>
                         </figure>
@@ -42,8 +42,8 @@
                             <figcaption>
                                 <h4>Hamburguer Extra Queijo</h4>
                                 <span class="preco">
-                                    <p class="preçoescrito">Preço ..........</p>
-                                    <p>R$ 35,00</p>
+                                    <p class="preçoescrito precin">Preço ..........</p>
+                                    <p class="precin">R$ 35,00</p>
                                 </span>
                             </figcaption>
                         </figure>
@@ -56,8 +56,8 @@
                             <figcaption>
                                 <h4>Hamburguer com Cogumelos</h4>
                                 <span class="preco">
-                                    <p class="preçoescrito">Preço ..........</p>
-                                    <p>R$ 45,90</p>
+                                    <p class="preçoescrito precin">Preço ..........</p>
+                                    <p class="precin">R$ 45,90</p>
                                 </span>
                             </figcaption>
                         </figure>
@@ -70,8 +70,8 @@
                             <figcaption>
                                 <h4>Hamburguer Preto</h4>
                                 <span class="preco">
-                                    <p class="preçoescrito">Preço ..........</p>
-                                    <p>R$ 15,90</p>
+                                    <p class="preçoescrito precin">Preço ..........</p>
+                                    <p class="precin">R$ 15,90</p>
                                 </span>
                             </figcaption>
                         </figure>
@@ -84,8 +84,8 @@
                             <figcaption>
                                 <h4>Hamburguer Nutella</h4>
                                 <span class="preco">
-                                    <p class="preçoescrito">Preço ..........</p>
-                                    <p>R$ 29,90</p>
+                                    <p class="preçoescrito precin">Preço ..........</p>
+                                    <p class="precin">R$ 29,90</p>
                                 </span>
                             </figcaption>
                         </figure>
@@ -98,8 +98,8 @@
                             <figcaption>
                                 <h4>Hamburguer Bacon</h4>
                                 <span class="preco">
-                                    <p class="preçoescrito">Preço ..........</p>
-                                    <p>R$ 35,00</p>
+                                    <p class="preçoescrito precin">Preço ..........</p>
+                                    <p class="precin">R$ 35,00</p>
                                 </span>
                             </figcaption>
                         </figure>
@@ -112,8 +112,8 @@
                             <figcaption>
                                 <h4>Hamburguer com Fritas</h4>
                                 <span class="preco">
-                                    <p class="preçoescrito">Preço ..........</p>
-                                    <p>R$ 45,90</p>
+                                    <p class="preçoescrito precin">Preço ..........</p>
+                                    <p class="precin">R$ 45,90</p>
                                 </span>
                             </figcaption>
                         </figure>
@@ -126,8 +126,8 @@
                             <figcaption>
                                 <h4>Hamburguer de Costela</h4>
                                 <span class="preco">
-                                    <p class="preçoescrito">Preço ..........</p>
-                                    <p>R$ 48,90</p>
+                                    <p class="preçoescrito precin">Preço ..........</p>
+                                    <p class="precin">R$ 48,90</p>
                                 </span>
                             </figcaption>
                         </figure>
@@ -140,8 +140,8 @@
                             <figcaption>
                                 <h4>Hamburguer Extra Cebola</h4>
                                 <span class="preco">
-                                    <p class="preçoescrito">Preço ..........</p>
-                                    <p>R$ 32,90</p>
+                                    <p class="preçoescrito precin">Preço ..........</p>
+                                    <p class="precin">R$ 32,90</p>
                                 </span>
                             </figcaption>
                         </figure>
@@ -154,8 +154,8 @@
                             <figcaption>
                                 <h4>Hamburguer Super Carne</h4>
                                 <span class="preco">
-                                    <p class="preçoescrito">Preço ..........</p>
-                                    <p>R$ 85,90</p>
+                                    <p class="preçoescrito precin">Preço ..........</p>
+                                    <p class="precin">R$ 85,90</p>
                                 </span>
                             </figcaption>
                         </figure>
@@ -168,8 +168,8 @@
                             <figcaption>
                                 <h4>Hamburguer Breakfest</h4>
                                 <span class="preco">
-                                    <p class="preçoescrito">Preço ..........</p>
-                                    <p>R$ 18,90</p>
+                                    <p class="preçoescrito precin">Preço ..........</p>
+                                    <p class="precin">R$ 18,90</p>
                                 </span>
                             </figcaption>
                         </figure>
@@ -196,8 +196,8 @@
                             <figcaption>
                                 <h4>Combo Simples</h4>
                                 <span class="preco">
-                                    <p class="preçoescrito">Preço ..........</p>
-                                    <p>R$ 28,90</p>
+                                    <p class="preçoescrito precin">Preço ..........</p>
+                                    <p class="precin">R$ 28,90</p>
                                 </span>
                             </figcaption>
                         </figure>
@@ -210,8 +210,8 @@
                             <figcaption>
                                 <h4>Combo 2 pessoas</h4>
                                 <span class="preco">
-                                    <p class="preçoescrito">Preço ..........</p>
-                                    <p>R$ 59,90</p>
+                                    <p class="preçoescrito precin">Preço ..........</p>
+                                    <p class="precin">R$ 59,90</p>
                                 </span>
                             </figcaption>
                         </figure>
@@ -224,8 +224,8 @@
                             <figcaption>
                                 <h4>Combo Cevada</h4>
                                 <span class="preco">
-                                    <p class="preçoescrito">Preço ..........</p>
-                                    <p>R$ 45,00</p>
+                                    <p class="preçoescrito precin">Preço ..........</p>
+                                    <p class="precin">R$ 45,00</p>
                                 </span>
                             </figcaption>
                         </figure>
@@ -238,8 +238,8 @@
                             <figcaption>
                                 <h4>Combo 3 mini hambs</h4>
                                 <span class="preco">
-                                    <p class="preçoescrito">Preço ..........</p>
-                                    <p>R$ 55,90</p>
+                                    <p class="preçoescrito precin">Preço ..........</p>
+                                    <p class="precin">R$ 55,90</p>
                                 </span>
                             </figcaption>
                         </figure>
@@ -252,8 +252,8 @@
                             <figcaption>
                                 <h4>Combo Guarana</h4>
                                 <span class="preco">
-                                    <p class="preçoescrito">Preço ..........</p>
-                                    <p>R$ 28,90</p>
+                                    <p class="preçoescrito precin">Preço ..........</p>
+                                    <p class="precin">R$ 28,90</p>
                                 </span>
                             </figcaption>
                         </figure>
@@ -266,8 +266,8 @@
                             <figcaption>
                                 <h4>Combo Milkshake Completo</h4>
                                 <span class="preco">
-                                    <p class="preçoescrito">Preço ..........</p>
-                                    <p>R$ 49,90</p>
+                                    <p class="preçoescrito precin">Preço ..........</p>
+                                    <p class="precin">R$ 49,90</p>
                                 </span>
                             </figcaption>
                         </figure>
@@ -280,8 +280,8 @@
                             <figcaption>
                                 <h4>Combo X-salada</h4>
                                 <span class="preco">
-                                    <p class="preçoescrito">Preço ..........</p>
-                                    <p>R$ 17,00</p>
+                                    <p class="preçoescrito precin">Preço ..........</p>
+                                    <p class="precin">R$ 17,00</p>
                                 </span>
                             </figcaption>
                         </figure>
@@ -294,8 +294,8 @@
                             <figcaption>
                                 <h4>Combo 2 por 1</h4>
                                 <span class="preco">
-                                    <p class="preçoescrito">Preço ..........</p>
-                                    <p>R$ 32,90</p>
+                                    <p class="preçoescrito precin">Preço ..........</p>
+                                    <p class="precin">R$ 32,90</p>
                                 </span>
                             </figcaption>
                         </figure>
@@ -308,8 +308,8 @@
                             <figcaption>
                                 <h4>Combo jack daniels</h4>
                                 <span class="preco">
-                                    <p class="preçoescrito">Preço ..........</p>
-                                    <p>R$ 95,90</p>
+                                    <p class="preçoescrito precin">Preço ..........</p>
+                                    <p class="precin">R$ 95,90</p>
                                 </span>
                             </figcaption>
                         </figure>
@@ -322,8 +322,8 @@
                             <figcaption>
                                 <h4>Combo 2 salgados 1 doce</h4>
                                 <span class="preco">
-                                    <p class="preçoescrito">Preço ..........</p>
-                                    <p>R$ 76,90</p>
+                                    <p class="preçoescrito precin">Preço ..........</p>
+                                    <p class="precin">R$ 76,90</p>
                                 </span>
                             </figcaption>
                         </figure>
@@ -336,8 +336,8 @@
                             <figcaption>
                                 <h4>Combo Dark</h4>
                                 <span class="preco">
-                                    <p class="preçoescrito">Preço ..........</p>
-                                    <p>R$ 55,00</p>
+                                    <p class="preçoescrito precin">Preço ..........</p>
+                                    <p class="precin">R$ 55,00</p>
                                 </span>
                             </figcaption>
                         </figure>
@@ -350,8 +350,8 @@
                             <figcaption>
                                 <h4>Triplo e mais</h4>
                                 <span class="preco">
-                                    <p class="preçoescrito">Preço ..........</p>
-                                    <p>R$ 45,90</p>
+                                    <p class="preçoescrito precin">Preço ..........</p>
+                                    <p class="precin">R$ 45,90</p>
                                 </span>
                             </figcaption>
                         </figure>
@@ -378,8 +378,8 @@
                             <figcaption>
                                 <h4>Batata frita</h4>
                                 <span class="preco">
-                                    <p class="preçoescrito">Preço ..........</p>
-                                    <p>R$ 5,90</p>
+                                    <p class="preçoescrito precin">Preço ..........</p>
+                                    <p class="precin">R$ 5,90</p>
                                 </span>
                             </figcaption>
                         </figure>
@@ -392,8 +392,8 @@
                             <figcaption>
                                 <h4>Onions Rigs</h4>
                                 <span class="preco">
-                                    <p class="preçoescrito">Preço ..........</p>
-                                    <p>R$ 7,90</p>
+                                    <p class="preçoescrito precin">Preço ..........</p>
+                                    <p class="precin">R$ 7,90</p>
                                 </span>
                             </figcaption>
                         </figure>
@@ -406,8 +406,8 @@
                             <figcaption>
                                 <h4>12 Fragos fritos</h4>
                                 <span class="preco">
-                                    <p class="preçoescrito">Preço ..........</p>
-                                    <p>R$ 25,00</p>
+                                    <p class="preçoescrito precin">Preço ..........</p>
+                                    <p class="precin">R$ 25,00</p>
                                 </span>
                             </figcaption>
                         </figure>
@@ -420,8 +420,8 @@
                             <figcaption>
                                 <h4>Batata recheada</h4>
                                 <span class="preco">
-                                    <p class="preçoescrito">Preço ..........</p>
-                                    <p>R$ 17,90</p>
+                                    <p class="preçoescrito precin">Preço ..........</p>
+                                    <p class="precin">R$ 17,90</p>
                                 </span>
                             </figcaption>
                         </figure>
@@ -434,8 +434,8 @@
                             <figcaption>
                                 <h4>Torresmo</h4>
                                 <span class="preco">
-                                    <p class="preçoescrito">Preço ..........</p>
-                                    <p>R$ 5,90</p>
+                                    <p class="preçoescrito precin">Preço ..........</p>
+                                    <p class="precin">R$ 5,90</p>
                                 </span>
                             </figcaption>
                         </figure>
@@ -448,8 +448,8 @@
                             <figcaption>
                                 <h4>Banana Frita</h4>
                                 <span class="preco">
-                                    <p class="preçoescrito">Preço ..........</p>
-                                    <p>R$ 4,90</p>
+                                    <p class="preçoescrito precin">Preço ..........</p>
+                                    <p class="precin">R$ 4,90</p>
                                 </span>
                             </figcaption>
                         </figure>
@@ -462,8 +462,8 @@
                             <figcaption>
                                 <h4>Bolinha Extra Queijo</h4>
                                 <span class="preco">
-                                    <p class="preçoescrito">Preço ..........</p>
-                                    <p>R$ 12,00</p>
+                                    <p class="preçoescrito precin">Preço ..........</p>
+                                    <p class="precin">R$ 12,00</p>
                                 </span>
                             </figcaption>
                         </figure>
@@ -476,8 +476,8 @@
                             <figcaption>
                                 <h4>Linguiça</h4>
                                 <span class="preco">
-                                    <p class="preçoescrito">Preço ..........</p>
-                                    <p>R$ 11,90</p>
+                                    <p class="preçoescrito precin">Preço ..........</p>
+                                    <p class="precin">R$ 11,90</p>
                                 </span>
                             </figcaption>
                         </figure>
@@ -490,8 +490,8 @@
                             <figcaption>
                                 <h4>Salada gurmet</h4>
                                 <span class="preco">
-                                    <p class="preçoescrito">Preço ..........</p>
-                                    <p>R$ 15,90</p>
+                                    <p class="preçoescrito precin">Preço ..........</p>
+                                    <p class="precin">R$ 15,90</p>
                                 </span>
                             </figcaption>
                         </figure>
@@ -504,8 +504,8 @@
                             <figcaption>
                                 <h4>Macarrao</h4>
                                 <span class="preco">
-                                    <p class="preçoescrito">Preço ..........</p>
-                                    <p>R$ 29,90</p>
+                                    <p class="preçoescrito precin">Preço ..........</p>
+                                    <p class="precin">R$ 29,90</p>
                                 </span>
                             </figcaption>
                         </figure>
@@ -518,8 +518,8 @@
                             <figcaption>
                                 <h4>Saladinha do mal</h4>
                                 <span class="preco">
-                                    <p class="preçoescrito">Preço ..........</p>
-                                    <p>R$ 305,00</p>
+                                    <p class="preçoescrito precin">Preço ..........</p>
+                                    <p class="precin">R$ 305,00</p>
                                 </span>
                             </figcaption>
                         </figure>
@@ -532,8 +532,8 @@
                             <figcaption>
                                 <h4>Saladinha do chefe</h4>
                                 <span class="preco">
-                                    <p class="preçoescrito">Preço ..........</p>
-                                    <p>R$ 450,90</p>
+                                    <p class="preçoescrito precin">Preço ..........</p>
+                                    <p class="precin">R$ 450,90</p>
                                 </span>
                             </figcaption>
                         </figure>
@@ -560,8 +560,8 @@
                             <figcaption>
                                 <h4>Suco de laranja com abacaxi</h4>
                                 <span class="preco">
-                                    <p class="preçoescrito">Preço ..........</p>
-                                    <p>R$ 9,90</p>
+                                    <p class="preçoescrito precin">Preço ..........</p>
+                                    <p class="precin">R$ 9,90</p>
                                 </span>
                             </figcaption>
                         </figure>
@@ -574,8 +574,8 @@
                             <figcaption>
                                 <h4>Suco de laranja</h4>
                                 <span class="preco">
-                                    <p class="preçoescrito">Preço ..........</p>
-                                    <p>R$ 9,90</p>
+                                    <p class="preçoescrito precin">Preço ..........</p>
+                                    <p class="precin">R$ 9,90</p>
                                 </span>
                             </figcaption>
                         </figure>
@@ -588,8 +588,8 @@
                             <figcaption>
                                 <h4>Cha com cafe</h4>
                                 <span class="preco">
-                                    <p class="preçoescrito">Preço ..........</p>
-                                    <p>R$ 11,90</p>
+                                    <p class="preçoescrito precin">Preço ..........</p>
+                                    <p class="precin">R$ 11,90</p>
                                 </span>
                             </figcaption>
                         </figure>
@@ -602,8 +602,8 @@
                             <figcaption>
                                 <h4>Fanta xing-ling</h4>
                                 <span class="preco">
-                                    <p class="preçoescrito">Preço ..........</p>
-                                    <p>R$ 7,90</p>
+                                    <p class="preçoescrito precin">Preço ..........</p>
+                                    <p class="precin">R$ 7,90</p>
                                 </span>
                             </figcaption>
                         </figure>
@@ -616,8 +616,8 @@
                             <figcaption>
                                 <h4>Coquinha gelada</h4>
                                 <span class="preco">
-                                    <p class="preçoescrito">Preço ..........</p>
-                                    <p>R$ 15,90</p>
+                                    <p class="preçoescrito precin">Preço ..........</p>
+                                    <p class="precin">R$ 15,90</p>
                                 </span>
                             </figcaption>
                         </figure>
@@ -630,8 +630,8 @@
                             <figcaption>
                                 <h4>Sprite</h4>
                                 <span class="preco">
-                                    <p class="preçoescrito">Preço ..........</p>
-                                    <p>R$ 9,90</p>
+                                    <p class="preçoescrito precin">Preço ..........</p>
+                                    <p class="precin">R$ 9,90</p>
                                 </span>
                             </figcaption>
                         </figure>
@@ -644,8 +644,8 @@
                             <figcaption>
                                 <h4>Suco de coca</h4>
                                 <span class="preco">
-                                    <p class="preçoescrito">Preço ..........</p>
-                                    <p>R$ 3500,00</p>
+                                    <p class="preçoescrito precin">Preço ..........</p>
+                                    <p class="precin">R$ 3500,00</p>
                                 </span>
                             </figcaption>
                         </figure>
@@ -658,8 +658,8 @@
                             <figcaption>
                                 <h4>Redbull da asas</h4>
                                 <span class="preco">
-                                    <p class="preçoescrito">Preço ..........</p>
-                                    <p>R$ 11,90</p>
+                                    <p class="preçoescrito precin">Preço ..........</p>
+                                    <p class="precin">R$ 11,90</p>
                                 </span>
                             </figcaption>
                         </figure>
@@ -672,8 +672,8 @@
                             <figcaption>
                                 <h4>Monster</h4>
                                 <span class="preco">
-                                    <p class="preçoescrito">Preço ..........</p>
-                                    <p>R$ 1,90</p>
+                                    <p class="preçoescrito precin">Preço ..........</p>
+                                    <p class="precin">R$ 1,90</p>
                                 </span>
                             </figcaption>
                         </figure>
@@ -686,8 +686,8 @@
                             <figcaption>
                                 <h4>Monster Red</h4>
                                 <span class="preco">
-                                    <p class="preçoescrito">Preço ..........</p>
-                                    <p>R$ 9,90</p>
+                                    <p class="preçoescrito precin">Preço ..........</p>
+                                    <p class="precin">R$ 9,90</p>
                                 </span>
                             </figcaption>
                         </figure>
@@ -700,8 +700,8 @@
                             <figcaption>
                                 <h4>Agua voss</h4>
                                 <span class="preco">
-                                    <p class="preçoescrito">Preço ..........</p>
-                                    <p>R$ 50,00</p>
+                                    <p class="preçoescrito precin">Preço ..........</p>
+                                    <p class="precin">R$ 50,00</p>
                                 </span>
                             </figcaption>
                         </figure>
@@ -714,8 +714,8 @@
                             <figcaption>
                                 <h4>Coca-zero</h4>
                                 <span class="preco">
-                                    <p class="preçoescrito">Preço ..........</p>
-                                    <p>R$ 5,90</p>
+                                    <p class="preçoescrito precin">Preço ..........</p>
+                                    <p class="precin">R$ 5,90</p>
                                 </span>
                             </figcaption>
                         </figure>
@@ -740,8 +740,8 @@
                             <figcaption>
                                 <h4>Cerveja skol 1L</h4>
                                 <span class="preco">
-                                    <p class="preçoescrito">Preço ..........</p>
-                                    <p>R$ 22,90</p>
+                                    <p class="preçoescrito precin">Preço ..........</p>
+                                    <p class="precin">R$ 22,90</p>
                                 </span>
                             </figcaption>
                         </figure>
@@ -754,8 +754,8 @@
                             <figcaption>
                                 <h4>Balde de Heiniken</h4>
                                 <span class="preco">
-                                    <p class="preçoescrito">Preço ..........</p>
-                                    <p>R$ 79,90</p>
+                                    <p class="preçoescrito precin">Preço ..........</p>
+                                    <p class="precin">R$ 79,90</p>
                                 </span>
                             </figcaption>
                         </figure>
@@ -768,8 +768,8 @@
                             <figcaption>
                                 <h4>Caipirinha</h4>
                                 <span class="preco">
-                                    <p class="preçoescrito">Preço ..........</p>
-                                    <p>R$ 15,00</p>
+                                    <p class="preçoescrito precin">Preço ..........</p>
+                                    <p class="precin">R$ 15,00</p>
                                 </span>
                             </figcaption>
                         </figure>
@@ -782,8 +782,8 @@
                             <figcaption>
                                 <h4>Drink de açai c/ Vodka</h4>
                                 <span class="preco">
-                                    <p class="preçoescrito">Preço ..........</p>
-                                    <p>R$ 9,90</p>
+                                    <p class="preçoescrito precin">Preço ..........</p>
+                                    <p class="precin">R$ 9,90</p>
                                 </span>
                             </figcaption>
                         </figure>
@@ -796,8 +796,8 @@
                             <figcaption>
                                 <h4>Cerveja Corona</h4>
                                 <span class="preco">
-                                    <p class="preçoescrito">Preço ..........</p>
-                                    <p>R$ 11,90</p>
+                                    <p class="preçoescrito precin">Preço ..........</p>
+                                    <p class="precin">R$ 11,90</p>
                                 </span>
                             </figcaption>
                         </figure>
@@ -810,8 +810,8 @@
                             <figcaption>
                                 <h4>Black label</h4>
                                 <span class="preco">
-                                    <p class="preçoescrito">Preço ..........</p>
-                                    <p>R$ 209,90</p>
+                                    <p class="preçoescrito precin">Preço ..........</p>
+                                    <p class="precin">R$ 209,90</p>
                                 </span>
                             </figcaption>
                         </figure>
@@ -824,8 +824,8 @@
                             <figcaption>
                                 <h4>Jack Daniels</h4>
                                 <span class="preco">
-                                    <p class="preçoescrito">Preço ..........</p>
-                                    <p>R$ 350,00</p>
+                                    <p class="preçoescrito precin">Preço ..........</p>
+                                    <p class="precin">R$ 350,00</p>
                                 </span>
                             </figcaption>
                         </figure>
@@ -838,8 +838,8 @@
                             <figcaption>
                                 <h4>Bebida jameson</h4>
                                 <span class="preco">
-                                    <p class="preçoescrito">Preço ..........</p>
-                                    <p>R$ 450,90</p>
+                                    <p class="preçoescrito precin">Preço ..........</p>
+                                    <p class="precin">R$ 450,90</p>
                                 </span>
                             </figcaption>
                         </figure>
@@ -852,8 +852,8 @@
                             <figcaption>
                                 <h4>Jose corvo</h4>
                                 <span class="preco">
-                                    <p class="preçoescrito">Preço ..........</p>
-                                    <p>R$ 50,90</p>
+                                    <p class="preçoescrito precin">Preço ..........</p>
+                                    <p class="precin">R$ 50,90</p>
                                 </span>
                             </figcaption>
                         </figure>
@@ -866,8 +866,8 @@
                             <figcaption>
                                 <h4>Garrafa LA-brisa</h4>
                                 <span class="preco">
-                                    <p class="preçoescrito">Preço ..........</p>
-                                    <p>R$ 89,90</p>
+                                    <p class="preçoescrito precin">Preço ..........</p>
+                                    <p class="precin">R$ 89,90</p>
                                 </span>
                             </figcaption>
                         </figure>
@@ -880,8 +880,8 @@
                             <figcaption>
                                 <h4>Vinho Carvão</h4>
                                 <span class="preco">
-                                    <p class="preçoescrito">Preço ..........</p>
-                                    <p>R$ 102,00</p>
+                                    <p class="preçoescrito precin">Preço ..........</p>
+                                    <p class="precin">R$ 102,00</p>
                                 </span>
                             </figcaption>
                         </figure>
@@ -894,8 +894,8 @@
                             <figcaption>
                                 <h4>Smirnoff</h4>
                                 <span class="preco">
-                                    <p class="preçoescrito">Preço ..........</p>
-                                    <p>R$ 45,90</p>
+                                    <p class="preçoescrito precin">Preço ..........</p>
+                                    <p class="precin">R$ 45,90</p>
                                 </span>
                             </figcaption>
                         </figure>
@@ -922,8 +922,8 @@
                             <figcaption>
                                 <h4>Brigadeiro</h4>
                                 <span class="preco">
-                                    <p class="preçoescrito">Preço ..........</p>
-                                    <p>R$ 3,90</p>
+                                    <p class="preçoescrito precin">Preço ..........</p>
+                                    <p class="precin">R$ 3,90</p>
                                 </span>
                             </figcaption>
                         </figure>
@@ -936,8 +936,8 @@
                             <figcaption>
                                 <h4>Chocolate c/ framboesa</h4>
                                 <span class="preco">
-                                    <p class="preçoescrito">Preço ..........</p>
-                                    <p>R$ 11,90</p>
+                                    <p class="preçoescrito precin">Preço ..........</p>
+                                    <p class="precin">R$ 11,90</p>
                                 </span>
                             </figcaption>
                         </figure>
@@ -950,8 +950,8 @@
                             <figcaption>
                                 <h4>Rosquinha de Chocolate</h4>
                                 <span class="preco">
-                                    <p class="preçoescrito">Preço ..........</p>
-                                    <p>R$ 10,00</p>
+                                    <p class="preçoescrito precin">Preço ..........</p>
+                                    <p class="precin">R$ 10,00</p>
                                 </span>
                             </figcaption>
                         </figure>
@@ -964,8 +964,8 @@
                             <figcaption>
                                 <h4>Sorvete de creme</h4>
                                 <span class="preco">
-                                    <p class="preçoescrito">Preço ..........</p>
-                                    <p>R$ 18,90</p>
+                                    <p class="preçoescrito precin">Preço ..........</p>
+                                    <p class="precin">R$ 18,90</p>
                                 </span>
                             </figcaption>
                         </figure>
@@ -978,8 +978,8 @@
                             <figcaption>
                                 <h4>Sorvete de morango</h4>
                                 <span class="preco">
-                                    <p class="preçoescrito">Preço ..........</p>
-                                    <p>R$ 15,90</p>
+                                    <p class="preçoescrito precin">Preço ..........</p>
+                                    <p class="precin">R$ 15,90</p>
                                 </span>
                             </figcaption>
                         </figure>
@@ -992,8 +992,8 @@
                             <figcaption>
                                 <h4>Brownie de chocolate</h4>
                                 <span class="preco">
-                                    <p class="preçoescrito">Preço ..........</p>
-                                    <p>R$ 22,90</p>
+                                    <p class="preçoescrito precin">Preço ..........</p>
+                                    <p class="precin">R$ 22,90</p>
                                 </span>
                             </figcaption>
                         </figure>
@@ -1006,8 +1006,8 @@
                             <figcaption>
                                 <h4>Panqueca Doce</h4>
                                 <span class="preco">
-                                    <p class="preçoescrito">Preço ..........</p>
-                                    <p>R$ 8,90</p>
+                                    <p class="preçoescrito precin">Preço ..........</p>
+                                    <p class="precin">R$ 8,90</p>
                                 </span>
                             </figcaption>
                         </figure>
@@ -1020,8 +1020,8 @@
                             <figcaption>
                                 <h4>Musse com Mertilos</h4>
                                 <span class="preco">
-                                    <p class="preçoescrito">Preço ..........</p>
-                                    <p>R$ 27,90</p>
+                                    <p class="preçoescrito precin">Preço ..........</p>
+                                    <p class="precin">R$ 27,90</p>
                                 </span>
                             </figcaption>
                         </figure>
@@ -1034,8 +1034,8 @@
                             <figcaption>
                                 <h4>Cupcake roxo</h4>
                                 <span class="preco">
-                                    <p class="preçoescrito">Preço ..........</p>
-                                    <p>R$ 15,90</p>
+                                    <p class="preçoescrito precin">Preço ..........</p>
+                                    <p class="precin">R$ 15,90</p>
                                 </span>
                             </figcaption>
                         </figure>
@@ -1048,8 +1048,8 @@
                             <figcaption>
                                 <h4>Macarrons de Chocolate</h4>
                                 <span class="preco">
-                                    <p class="preçoescrito">Preço ..........</p>
-                                    <p>R$ 9,90</p>
+                                    <p class="preçoescrito precin">Preço ..........</p>
+                                    <p class="precin">R$ 9,90</p>
                                 </span>
                             </figcaption>
                         </figure>
@@ -1062,8 +1062,8 @@
                             <figcaption>
                                 <h4>Sorvete Magnum</h4>
                                 <span class="preco">
-                                    <p class="preçoescrito">Preço ..........</p>
-                                    <p>R$ 11,00</p>
+                                    <p class="preçoescrito precin">Preço ..........</p>
+                                    <p class="precin">R$ 11,00</p>
                                 </span>
                             </figcaption>
                         </figure>
@@ -1076,8 +1076,8 @@
                             <figcaption>
                                 <h4>Milk-shake de chocolate</h4>
                                 <span class="preco">
-                                    <p class="preçoescrito">Preço ..........</p>
-                                    <p>R$ 17,90</p>
+                                    <p class="preçoescrito precin">Preço ..........</p>
+                                    <p class="precin">R$ 17,90</p>
                                 </span>
                             </figcaption>
                         </figure>

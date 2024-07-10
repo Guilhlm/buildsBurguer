@@ -8,7 +8,7 @@
     background-color: rgba(233, 136, 57, 0.6);
 }
 
-p {
+.precin {
     font-size: 19px;
     margin-top: -40px;
     font-family: "Calisto MT", "Bookman Old Style", Bookman, "Goudy Old Style", Garamond, "Hoefler Text", "Bitstream Charter", Georgia, serif;
@@ -59,26 +59,6 @@ body.dark-mode {
     color: white;
     text-decoration: none;
 
-}
-
-.select-opcoes {
-    position: absolute;
-    display: none;
-}
-
-.select-opcoes a {
-    display: block;
-}
-
-.select-opcoes a:hover {
-    border-radius: inherit !important;
-    width: 180px !important;
-    margin-top: 10px;
-}
-
-.select-principal:hover .select-opcoes {
-    display: block;
-    background-color: rgb(54, 31, 1);
 }
 
 .menu-icons li a {

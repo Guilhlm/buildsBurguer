@@ -33,13 +33,6 @@
                         <li><a href="index.html">Inicio</a></li>
                         <li class="select-principal">
                             <a href="menu.php">Menu</a>
-                            <div class="select-opcoes">
-                                <a class="option" href="./menu.php#hambs">Hamburguers</a>
-                                <a class="option" href="./menu.php#combos">Combos</a>
-                                <a class="option" href="./menu.php#porcoes">Porções</a>
-                                <a class="option" href="./menu.php#bebidas">Bebidas</a>
-                                <a class="option" href="./menu.php#sobremesa">Sobremesas</a>
-                            </div>
                         </li>
                         <li><a href="sobre.php">Sobre</a></li>
                         <li><a href="produtos.php">Produtos</a></li>
