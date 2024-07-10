@@ -15,12 +15,12 @@ body {
 
 .container {
     border: 4px solid rgb(0, 0, 0);
-    background-image: url(Rectangle\ 20.png);
+    background-image: url(../img/hambsproduto.png);
     background-color: #7c7c7c;
     width: 600px;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
-    grid-template-rows: 120px 110px 120px 250px 150px;
+    grid-template-rows: 120px 110px 120px 260px 140px;
 
     border-radius: 20px;
 }
@@ -40,7 +40,6 @@ body {
     justify-content: center;
     gap: 10px;
     font-size: 15px;
-
     grid-column: 1/6;
 }
 
@@ -54,7 +53,7 @@ body {
 }
 
 .grid-4 {
-    padding: 50px 40px 0 40px;
+    padding: 30px 40px 0 40px;
     grid-column: 1/6;
     grid-row: 4;
 }
@@ -69,7 +68,7 @@ body {
 }
 
 .fotinha {
-    background-image: url(batatafrita.jpg);
+    background-image: url(../img/lanches/hmbSimples.png);
     background-position: center;
     background-size: cover;
     border: 5px solid black;
@@ -169,11 +168,12 @@ body {
 
 .texto-desc {
     font-family: 'Croissant One';
-    padding-top: 30px;
+    padding-top: 20px;
     color: #000;
+    font-size: 14px;
 }
 
-.avaliacao-title{
+.avaliacao-title {
     font-family: 'Croissant One';
     font-size: 35px;
     color: #000;
