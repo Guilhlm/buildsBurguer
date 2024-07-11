@@ -8,9 +8,9 @@
         <section id="produtos">
             <div class="carrossel-hamb carrossel">
                 <div class="col-lg-3 col-md-6 col-sm-12">
-                    <a href="click-produto.php" style="text-decoration: none;">
+                    <a href="click-produto.php?id=" style="text-decoration: none;">
                         <figure>
-                            <img src="./assets/img/lanches/hmbSimples.png" alt="Hamburguer Kids" class="foto-produto">
+                            <img src="./assets/img/produtos/hmbSimples.png" alt="Hamburguer Kids" class="foto-produto">
                             <figcaption>
                                 <h4>Hamburguer Kids</h4>
                                 <span class="preco">
@@ -24,7 +24,7 @@
                 <div class="col-lg-3 col-md-6 col-sm-12">
                     <a href="#" style="text-decoration: none;">
                         <figure>
-                            <img src="./assets/img/lanches/hmbCompleto.png" alt="Hmaburguer completo" class="foto-produto">
+                            <img src="./assets/img/produtos/hmbCompleto.png" alt="Hmaburguer completo" class="foto-produto">
                             <figcaption>
                                 <h4>Hamburguer Completo</h4>
                                 <span class="preco">
@@ -38,7 +38,7 @@
                 <div class="col-lg-3 col-md-6 col-sm-12">
                     <a href="#" style="text-decoration: none;">
                         <figure>
-                            <img src="./assets/img/lanches/hmbQueijo.png" alt="Hamburguer com queijo" class="foto-produto">
+                            <img src="./assets/img/produtos/hmbQueijo.png" alt="Hamburguer com queijo" class="foto-produto">
                             <figcaption>
                                 <h4>Hamburguer Extra Queijo</h4>
                                 <span class="preco">
@@ -52,7 +52,7 @@
                 <div class="col-lg-3 col-md-6 col-sm-12">
                     <a href="#" style="text-decoration: none;">
                         <figure>
-                            <img src="./assets/img/lanches/hmbCogumelo.png" alt="Hamburguer com Cogumelos" class="foto-produto">
+                            <img src="./assets/img/produtos/hmbCogumelo.png" alt="Hamburguer com Cogumelos" class="foto-produto">
                             <figcaption>
                                 <h4>Hamburguer com Cogumelos</h4>
                                 <span class="preco">
@@ -66,7 +66,7 @@
                 <div class="col-lg-3 col-md-6 col-sm-12">
                     <a href="#" style="text-decoration: none;">
                         <figure>
-                            <img src="./assets/img/lanches/hambPreto.png" alt="Hamburguer Kids" class="foto-produto">
+                            <img src="./assets/img/produtos/hambPreto.png" alt="Hamburguer Kids" class="foto-produto">
                             <figcaption>
                                 <h4>Hamburguer Preto</h4>
                                 <span class="preco">
@@ -80,7 +80,7 @@
                 <div class="col-lg-3 col-md-6 col-sm-12">
                     <a href="#" style="text-decoration: none;">
                         <figure>
-                            <img src="./assets/img/lanches/hmbDoce.png" alt="Hmaburguer Nutella" class="foto-produto">
+                            <img src="./assets/img/produtos/hmbDoce.png" alt="Hmaburguer Nutella" class="foto-produto">
                             <figcaption>
                                 <h4>Hamburguer Nutella</h4>
                                 <span class="preco">
@@ -94,7 +94,7 @@
                 <div class="col-lg-3 col-md-6 col-sm-12">
                     <a href="#" style="text-decoration: none;">
                         <figure>
-                            <img src="./assets/img/lanches/hmbBacon.png" alt="Hamburguer com queijo" class="foto-produto">
+                            <img src="./assets/img/produtos/hmbBacon.png" alt="Hamburguer com queijo" class="foto-produto">
                             <figcaption>
                                 <h4>Hamburguer Bacon</h4>
                                 <span class="preco">
@@ -108,7 +108,7 @@
                 <div class="col-lg-3 col-md-6 col-sm-12">
                     <a href="#" style="text-decoration: none;">
                         <figure>
-                            <img src="./assets/img/lanches/hmbFritas.png" alt="Hamburguer com Cogumelos" class="foto-produto">
+                            <img src="./assets/img/produtos/hmbFritas.png" alt="Hamburguer com Cogumelos" class="foto-produto">
                             <figcaption>
                                 <h4>Hamburguer com Fritas</h4>
                                 <span class="preco">
@@ -122,7 +122,7 @@
                 <div class="col-lg-3 col-md-6 col-sm-12">
                     <a href="#" style="text-decoration: none;">
                         <figure>
-                            <img src="./assets/img/lanches/hambcostela.jpeg" alt="Hamburguer de Costela" class="foto-produto">
+                            <img src="./assets/img/produtos/hambcostela.jpeg" alt="Hamburguer de Costela" class="foto-produto">
                             <figcaption>
                                 <h4>Hamburguer de Costela</h4>
                                 <span class="preco">
@@ -136,7 +136,7 @@
                 <div class="col-lg-3 col-md-6 col-sm-12">
                     <a href="#" style="text-decoration: none;">
                         <figure>
-                            <img src="./assets/img/lanches/hmbesxtracebola.jpeg" alt="Hamburguer extra cebola" class="foto-produto">
+                            <img src="./assets/img/produtos/hmbesxtracebola.jpeg" alt="Hamburguer extra cebola" class="foto-produto">
                             <figcaption>
                                 <h4>Hamburguer Extra Cebola</h4>
                                 <span class="preco">
@@ -150,7 +150,7 @@
                 <div class="col-lg-3 col-md-6 col-sm-12">
                     <a href="#" style="text-decoration: none;">
                         <figure>
-                            <img src="./assets/img/lanches/hmbsuper.jpeg" alt="Hamburguer Super carne" class="foto-produto">
+                            <img src="./assets/img/produtos/hmbsuper.jpeg" alt="Hamburguer Super carne" class="foto-produto">
                             <figcaption>
                                 <h4>Hamburguer Super Carne</h4>
                                 <span class="preco">
@@ -164,7 +164,7 @@
                 <div class="col-lg-3 col-md-6 col-sm-12">
                     <a href="#" style="text-decoration: none;">
                         <figure>
-                            <img src="./assets/img/lanches/hmbbreakfest.jpeg" alt="Hamburguer Breakfest" class="foto-produto">
+                            <img src="./assets/img/produtos/hmbbreakfest.jpeg" alt="Hamburguer Breakfest" class="foto-produto">
                             <figcaption>
                                 <h4>Hamburguer Breakfest</h4>
                                 <span class="preco">
@@ -192,7 +192,7 @@
                 <div class="col-lg-3 col-md-6 col-sm-12">
                     <a href="#" style="text-decoration: none;">
                         <figure>
-                            <img src="./assets/img/combos/combosimples.jpeg" alt="Combo Simples" class="foto-produto">
+                            <img src="./assets/img/produtos/combosimples.jpeg" alt="Combo Simples" class="foto-produto">
                             <figcaption>
                                 <h4>Combo Simples</h4>
                                 <span class="preco">
@@ -206,7 +206,7 @@
                 <div class="col-lg-3 col-md-6 col-sm-12">
                     <a href="#" style="text-decoration: none;">
                         <figure>
-                            <img src="./assets/img/combos/combo2pessoas.jpg" alt="Combo 2 pessoas" class="foto-produto">
+                            <img src="./assets/img/produtos/combo2pessoas.jpg" alt="Combo 2 pessoas" class="foto-produto">
                             <figcaption>
                                 <h4>Combo 2 pessoas</h4>
                                 <span class="preco">
@@ -220,7 +220,7 @@
                 <div class="col-lg-3 col-md-6 col-sm-12">
                     <a href="#" style="text-decoration: none;">
                         <figure>
-                            <img src="./assets/img/combos/combosevada.jpg" alt="combo cevada" class="foto-produto">
+                            <img src="./assets/img/produtos/combosevada.jpg" alt="combo cevada" class="foto-produto">
                             <figcaption>
                                 <h4>Combo Cevada</h4>
                                 <span class="preco">
@@ -234,7 +234,7 @@
                 <div class="col-lg-3 col-md-6 col-sm-12">
                     <a href="#" style="text-decoration: none;">
                         <figure>
-                            <img src="./assets/img/combos/combo3minis.jpg" alt="combo 3 mini hambs" class="foto-produto">
+                            <img src="./assets/img/produtos/combo3minis.jpg" alt="combo 3 mini hambs" class="foto-produto">
                             <figcaption>
                                 <h4>Combo 3 mini hambs</h4>
                                 <span class="preco">
@@ -248,7 +248,7 @@
                 <div class="col-lg-3 col-md-6 col-sm-12">
                     <a href="#" style="text-decoration: none;">
                         <figure>
-                            <img src="./assets/img/combos/comboguarana.jpg" alt="Combo guarana" class="foto-produto">
+                            <img src="./assets/img/produtos/comboguarana.jpg" alt="Combo guarana" class="foto-produto">
                             <figcaption>
                                 <h4>Combo Guarana</h4>
                                 <span class="preco">
@@ -262,7 +262,7 @@
                 <div class="col-lg-3 col-md-6 col-sm-12">
                     <a href="#" style="text-decoration: none;">
                         <figure>
-                            <img src="./assets/img/combos/combomilk.jpg" alt="Combo milkshake completo" class="foto-produto">
+                            <img src="./assets/img/produtos/combomilk.jpg" alt="Combo milkshake completo" class="foto-produto">
                             <figcaption>
                                 <h4>Combo Milkshake Completo</h4>
                                 <span class="preco">
@@ -276,7 +276,7 @@
                 <div class="col-lg-3 col-md-6 col-sm-12">
                     <a href="#" style="text-decoration: none;">
                         <figure>
-                            <img src="./assets/img/combos/comboxsalada.jpg" alt="Combo X-salada" class="foto-produto">
+                            <img src="./assets/img/produtos/comboxsalada.jpg" alt="Combo X-salada" class="foto-produto">
                             <figcaption>
                                 <h4>Combo X-salada</h4>
                                 <span class="preco">
@@ -290,7 +290,7 @@
                 <div class="col-lg-3 col-md-6 col-sm-12">
                     <a href="#" style="text-decoration: none;">
                         <figure>
-                            <img src="./assets/img/combos/combo2por1.jpg" alt="Combo 2 por 1" class="foto-produto">
+                            <img src="./assets/img/produtos/combo2por1.jpg" alt="Combo 2 por 1" class="foto-produto">
                             <figcaption>
                                 <h4>Combo 2 por 1</h4>
                                 <span class="preco">
@@ -304,7 +304,7 @@
                 <div class="col-lg-3 col-md-6 col-sm-12">
                     <a href="#" style="text-decoration: none;">
                         <figure>
-                            <img src="./assets/img/combos/combojack.jpg" alt="Combo jack daniels" class="foto-produto">
+                            <img src="./assets/img/produtos/combojack.jpg" alt="Combo jack daniels" class="foto-produto">
                             <figcaption>
                                 <h4>Combo jack daniels</h4>
                                 <span class="preco">
@@ -318,7 +318,7 @@
                 <div class="col-lg-3 col-md-6 col-sm-12">
                     <a href="#" style="text-decoration: none;">
                         <figure>
-                            <img src="./assets/img/combos/combo21doce.jpg" alt="Combo 2 salgados 1 doce" class="foto-produto">
+                            <img src="./assets/img/produtos/combo21doce.jpg" alt="Combo 2 salgados 1 doce" class="foto-produto">
                             <figcaption>
                                 <h4>Combo 2 salgados 1 doce</h4>
                                 <span class="preco">
@@ -332,7 +332,7 @@
                 <div class="col-lg-3 col-md-6 col-sm-12">
                     <a href="#" style="text-decoration: none;">
                         <figure>
-                            <img src="./assets/img/combos/combodark.jpg" alt="Combo Dark" class="foto-produto">
+                            <img src="./assets/img/produtos/combodark.jpg" alt="Combo Dark" class="foto-produto">
                             <figcaption>
                                 <h4>Combo Dark</h4>
                                 <span class="preco">
@@ -346,7 +346,7 @@
                 <div class="col-lg-3 col-md-6 col-sm-12">
                     <a href="#" style="text-decoration: none;">
                         <figure>
-                            <img src="./assets/img/combos/tripledark.jpg" alt="Hamburguer triplo" class="foto-produto">
+                            <img src="./assets/img/produtos/tripledark.jpg" alt="Hamburguer triplo" class="foto-produto">
                             <figcaption>
                                 <h4>Triplo e mais</h4>
                                 <span class="preco">
@@ -374,7 +374,7 @@
                 <div class="col-lg-3 col-md-6 col-sm-12">
                     <a href="#" style="text-decoration: none;">
                         <figure>
-                            <img src="./assets/img/porcoes/batatafrita.jpg" alt="Batata frita" class="foto-produto">
+                            <img src="./assets/img/produtos/batatafrita.jpg" alt="Batata frita" class="foto-produto">
                             <figcaption>
                                 <h4>Batata frita</h4>
                                 <span class="preco">
@@ -388,7 +388,7 @@
                 <div class="col-lg-3 col-md-6 col-sm-12">
                     <a href="#" style="text-decoration: none;">
                         <figure>
-                            <img src="./assets/img/porcoes/onionrigs.jpg" alt="Onions Rigs" class="foto-produto">
+                            <img src="./assets/img/produtos/onionrigs.jpg" alt="Onions Rigs" class="foto-produto">
                             <figcaption>
                                 <h4>Onions Rigs</h4>
                                 <span class="preco">
@@ -402,7 +402,7 @@
                 <div class="col-lg-3 col-md-6 col-sm-12">
                     <a href="#" style="text-decoration: none;">
                         <figure>
-                            <img src="./assets/img/porcoes/fragofrito.jpg" alt="12 Fragos fritos" class="foto-produto">
+                            <img src="./assets/img/produtos/fragofrito.jpg" alt="12 Fragos fritos" class="foto-produto">
                             <figcaption>
                                 <h4>12 Fragos fritos</h4>
                                 <span class="preco">
@@ -416,7 +416,7 @@
                 <div class="col-lg-3 col-md-6 col-sm-12">
                     <a href="#" style="text-decoration: none;">
                         <figure>
-                            <img src="./assets/img/porcoes/bttchedar.jpg" alt="Batata recheada com cheddar" class="foto-produto">
+                            <img src="./assets/img/produtos/bttchedar.jpg" alt="Batata recheada com cheddar" class="foto-produto">
                             <figcaption>
                                 <h4>Batata recheada</h4>
                                 <span class="preco">
@@ -430,7 +430,7 @@
                 <div class="col-lg-3 col-md-6 col-sm-12">
                     <a href="#" style="text-decoration: none;">
                         <figure>
-                            <img src="./assets/img/porcoes/torresmo.jpg" alt="Torresmo" class="foto-produto">
+                            <img src="./assets/img/produtos/torresmo.jpg" alt="Torresmo" class="foto-produto">
                             <figcaption>
                                 <h4>Torresmo</h4>
                                 <span class="preco">
@@ -444,7 +444,7 @@
                 <div class="col-lg-3 col-md-6 col-sm-12">
                     <a href="#" style="text-decoration: none;">
                         <figure>
-                            <img src="./assets/img/porcoes/bannafrita.jpg" alt="Banana Frita" class="foto-produto">
+                            <img src="./assets/img/produtos/bannafrita.jpg" alt="Banana Frita" class="foto-produto">
                             <figcaption>
                                 <h4>Banana Frita</h4>
                                 <span class="preco">
@@ -458,7 +458,7 @@
                 <div class="col-lg-3 col-md-6 col-sm-12">
                     <a href="#" style="text-decoration: none;">
                         <figure>
-                            <img src="./assets/img/porcoes/bolinhaqueijo.png" alt="Bolinha de Queijo" class="foto-produto">
+                            <img src="./assets/img/produtos/bolinhaqueijo.png" alt="Bolinha de Queijo" class="foto-produto">
                             <figcaption>
                                 <h4>Bolinha Extra Queijo</h4>
                                 <span class="preco">
@@ -472,7 +472,7 @@
                 <div class="col-lg-3 col-md-6 col-sm-12">
                     <a href="#" style="text-decoration: none;">
                         <figure>
-                            <img src="./assets/img/porcoes/linguiçia.jpg" alt="Linguiça" class="foto-produto">
+                            <img src="./assets/img/produtos/linguiçia.jpg" alt="Linguiça" class="foto-produto">
                             <figcaption>
                                 <h4>Linguiça</h4>
                                 <span class="preco">
@@ -486,7 +486,7 @@
                 <div class="col-lg-3 col-md-6 col-sm-12">
                     <a href="#" style="text-decoration: none;">
                         <figure>
-                            <img src="./assets/img/porcoes/gurmetsalda.jpg" alt="Salada gurmet" class="foto-produto">
+                            <img src="./assets/img/produtos/gurmetsalda.jpg" alt="Salada gurmet" class="foto-produto">
                             <figcaption>
                                 <h4>Salada gurmet</h4>
                                 <span class="preco">
@@ -500,7 +500,7 @@
                 <div class="col-lg-3 col-md-6 col-sm-12">
                     <a href="#" style="text-decoration: none;">
                         <figure>
-                            <img src="./assets/img/porcoes/risotodemacarrao.jpg" alt="Macarrao" class="foto-produto">
+                            <img src="./assets/img/produtos/risotodemacarrao.jpg" alt="Macarrao" class="foto-produto">
                             <figcaption>
                                 <h4>Macarrao</h4>
                                 <span class="preco">
@@ -514,7 +514,7 @@
                 <div class="col-lg-3 col-md-6 col-sm-12">
                     <a href="#" style="text-decoration: none;">
                         <figure>
-                            <img src="./assets/img/porcoes/saldiinha.jpg" alt="Saladinha do mal" class="foto-produto">
+                            <img src="./assets/img/produtos/saldiinha.jpg" alt="Saladinha do mal" class="foto-produto">
                             <figcaption>
                                 <h4>Saladinha do mal</h4>
                                 <span class="preco">
@@ -528,7 +528,7 @@
                 <div class="col-lg-3 col-md-6 col-sm-12">
                     <a href="#" style="text-decoration: none;">
                         <figure>
-                            <img src="./assets/img/porcoes/salsadachefe.jpg" alt="Saladinha do chefe" class="foto-produto">
+                            <img src="./assets/img/produtos/salsadachefe.jpg" alt="Saladinha do chefe" class="foto-produto">
                             <figcaption>
                                 <h4>Saladinha do chefe</h4>
                                 <span class="preco">
@@ -556,7 +556,7 @@
                 <div class="col-lg-3 col-md-6 col-sm-12">
                     <a href="#" style="text-decoration: none;">
                         <figure>
-                            <img src="./assets/img/bebidas/laranjaAbacaxi.png" alt="Suco de laranja com abacaxi" class="foto-produto">
+                            <img src="./assets/img/produtos/laranjaAbacaxi.png" alt="Suco de laranja com abacaxi" class="foto-produto">
                             <figcaption>
                                 <h4>Suco de laranja com abacaxi</h4>
                                 <span class="preco">
@@ -570,7 +570,7 @@
                 <div class="col-lg-3 col-md-6 col-sm-12">
                     <a href="#" style="text-decoration: none;">
                         <figure>
-                            <img src="./assets/img/bebidas/sucolaranja.png" alt="Suco de laranja" class="foto-produto">
+                            <img src="./assets/img/produtos/sucolaranja.png" alt="Suco de laranja" class="foto-produto">
                             <figcaption>
                                 <h4>Suco de laranja</h4>
                                 <span class="preco">
@@ -584,7 +584,7 @@
                 <div class="col-lg-3 col-md-6 col-sm-12">
                     <a href="#" style="text-decoration: none;">
                         <figure>
-                            <img src="./assets/img/bebidas/chacafe.png" alt="Cha com cafe" class="foto-produto">
+                            <img src="./assets/img/produtos/chacafe.png" alt="Cha com cafe" class="foto-produto">
                             <figcaption>
                                 <h4>Cha com cafe</h4>
                                 <span class="preco">
@@ -598,7 +598,7 @@
                 <div class="col-lg-3 col-md-6 col-sm-12">
                     <a href="#" style="text-decoration: none;">
                         <figure>
-                            <img src="./assets/img/bebidas/fantaxingling.jpg" alt="Fanta xing-ling" class="foto-produto">
+                            <img src="./assets/img/produtos/fantaxingling.jpg" alt="Fanta xing-ling" class="foto-produto">
                             <figcaption>
                                 <h4>Fanta xing-ling</h4>
                                 <span class="preco">
@@ -612,7 +612,7 @@
                 <div class="col-lg-3 col-md-6 col-sm-12">
                     <a href="#" style="text-decoration: none;">
                         <figure>
-                            <img src="./assets/img/bebidas/coquinha.jpg" alt="coca" class="foto-produto">
+                            <img src="./assets/img/produtos/coquinha.jpg" alt="coca" class="foto-produto">
                             <figcaption>
                                 <h4>Coquinha gelada</h4>
                                 <span class="preco">
@@ -626,7 +626,7 @@
                 <div class="col-lg-3 col-md-6 col-sm-12">
                     <a href="#" style="text-decoration: none;">
                         <figure>
-                            <img src="./assets/img/bebidas/spite.jpg" alt="Sprite" class="foto-produto">
+                            <img src="./assets/img/produtos/spite.jpg" alt="Sprite" class="foto-produto">
                             <figcaption>
                                 <h4>Sprite</h4>
                                 <span class="preco">
@@ -640,7 +640,7 @@
                 <div class="col-lg-3 col-md-6 col-sm-12">
                     <a href="#" style="text-decoration: none;">
                         <figure>
-                            <img src="./assets/img/bebidas/pepsi.jpg" alt="Suco de coca" class="foto-produto">
+                            <img src="./assets/img/produtos/pepsi.jpg" alt="Suco de coca" class="foto-produto">
                             <figcaption>
                                 <h4>Suco de coca</h4>
                                 <span class="preco">
@@ -654,7 +654,7 @@
                 <div class="col-lg-3 col-md-6 col-sm-12">
                     <a href="#" style="text-decoration: none;">
                         <figure>
-                            <img src="./assets/img/bebidas/redbull.jpg" alt="Redbull da asas " class="foto-produto">
+                            <img src="./assets/img/produtos/redbull.jpg" alt="Redbull da asas " class="foto-produto">
                             <figcaption>
                                 <h4>Redbull da asas</h4>
                                 <span class="preco">
@@ -668,7 +668,7 @@
                 <div class="col-lg-3 col-md-6 col-sm-12">
                     <a href="#" style="text-decoration: none;">
                         <figure>
-                            <img src="./assets/img/bebidas/mlhrmonter.jpg" alt="Monster" class="foto-produto">
+                            <img src="./assets/img/produtos/mlhrmonter.jpg" alt="Monster" class="foto-produto">
                             <figcaption>
                                 <h4>Monster</h4>
                                 <span class="preco">
@@ -682,7 +682,7 @@
                 <div class="col-lg-3 col-md-6 col-sm-12">
                     <a href="#" style="text-decoration: none;">
                         <figure>
-                            <img src="./assets/img/bebidas/monsterred.jpg" alt="Monster Red" class="foto-produto">
+                            <img src="./assets/img/produtos/monsterred.jpg" alt="Monster Red" class="foto-produto">
                             <figcaption>
                                 <h4>Monster Red</h4>
                                 <span class="preco">
@@ -696,7 +696,7 @@
                 <div class="col-lg-3 col-md-6 col-sm-12">
                     <a href="#" style="text-decoration: none;">
                         <figure>
-                            <img src="./assets/img/bebidas/voss.jpg" alt="Agua voss" class="foto-produto">
+                            <img src="./assets/img/produtos/voss.jpg" alt="Agua voss" class="foto-produto">
                             <figcaption>
                                 <h4>Agua voss</h4>
                                 <span class="preco">
@@ -710,7 +710,7 @@
                 <div class="col-lg-3 col-md-6 col-sm-12">
                     <a href="#" style="text-decoration: none;">
                         <figure>
-                            <img src="./assets/img/bebidas/cocazero.png" alt="coca zero" class="foto-produto">
+                            <img src="./assets/img/produtos/cocazero.png" alt="coca zero" class="foto-produto">
                             <figcaption>
                                 <h4>Coca-zero</h4>
                                 <span class="preco">
@@ -736,7 +736,7 @@
                 <div class="col-lg-3 col-md-6 col-sm-12">
                     <a href="#" style="text-decoration: none;">
                         <figure>
-                            <img src="./assets/img/bebidas/cerveja.jpg" alt="Cerveja skol 1l" class="foto-produto">
+                            <img src="./assets/img/produtos/cerveja.jpg" alt="Cerveja skol 1l" class="foto-produto">
                             <figcaption>
                                 <h4>Cerveja skol 1L</h4>
                                 <span class="preco">
@@ -750,7 +750,7 @@
                 <div class="col-lg-3 col-md-6 col-sm-12">
                     <a href="#" style="text-decoration: none;">
                         <figure>
-                            <img src="./assets/img/bebidas/baldehei.png" alt="Balde de Heiniken" class="foto-produto">
+                            <img src="./assets/img/produtos/baldehei.png" alt="Balde de Heiniken" class="foto-produto">
                             <figcaption>
                                 <h4>Balde de Heiniken</h4>
                                 <span class="preco">
@@ -764,7 +764,7 @@
                 <div class="col-lg-3 col-md-6 col-sm-12">
                     <a href="#" style="text-decoration: none;">
                         <figure>
-                            <img src="./assets/img/bebidas/caipirinha.png" alt="Caipirinha" class="foto-produto">
+                            <img src="./assets/img/produtos/caipirinha.png" alt="Caipirinha" class="foto-produto">
                             <figcaption>
                                 <h4>Caipirinha</h4>
                                 <span class="preco">
@@ -778,7 +778,7 @@
                 <div class="col-lg-3 col-md-6 col-sm-12">
                     <a href="#" style="text-decoration: none;">
                         <figure>
-                            <img src="./assets/img/bebidas/drinkaçai.jpg" alt="Drink de açai" class="foto-produto">
+                            <img src="./assets/img/produtos/drinkaçai.jpg" alt="Drink de açai" class="foto-produto">
                             <figcaption>
                                 <h4>Drink de açai c/ Vodka</h4>
                                 <span class="preco">
@@ -792,7 +792,7 @@
                 <div class="col-lg-3 col-md-6 col-sm-12">
                     <a href="#" style="text-decoration: none;">
                         <figure>
-                            <img src="./assets/img/bebidas/corona.jpg" alt="corona" class="foto-produto">
+                            <img src="./assets/img/produtos/corona.jpg" alt="corona" class="foto-produto">
                             <figcaption>
                                 <h4>Cerveja Corona</h4>
                                 <span class="preco">
@@ -806,7 +806,7 @@
                 <div class="col-lg-3 col-md-6 col-sm-12">
                     <a href="#" style="text-decoration: none;">
                         <figure>
-                            <img src="./assets/img/bebidas/blacklabel.jpg" alt="Black label" class="foto-produto">
+                            <img src="./assets/img/produtos/blacklabel.jpg" alt="Black label" class="foto-produto">
                             <figcaption>
                                 <h4>Black label</h4>
                                 <span class="preco">
@@ -820,7 +820,7 @@
                 <div class="col-lg-3 col-md-6 col-sm-12">
                     <a href="#" style="text-decoration: none;">
                         <figure>
-                            <img src="./assets/img/bebidas/jackdaniels.jpg" alt="Jack Daniels" class="foto-produto">
+                            <img src="./assets/img/produtos/jackdaniels.jpg" alt="Jack Daniels" class="foto-produto">
                             <figcaption>
                                 <h4>Jack Daniels</h4>
                                 <span class="preco">
@@ -834,7 +834,7 @@
                 <div class="col-lg-3 col-md-6 col-sm-12">
                     <a href="#" style="text-decoration: none;">
                         <figure>
-                            <img src="./assets/img/bebidas/jameson.jpg" alt="Bebida jameson" class="foto-produto">
+                            <img src="./assets/img/produtos/jameson.jpg" alt="Bebida jameson" class="foto-produto">
                             <figcaption>
                                 <h4>Bebida jameson</h4>
                                 <span class="preco">
@@ -848,7 +848,7 @@
                 <div class="col-lg-3 col-md-6 col-sm-12">
                     <a href="#" style="text-decoration: none;">
                         <figure>
-                            <img src="./assets/img/bebidas/josecorvo.jpg" alt="Jose corvo" class="foto-produto">
+                            <img src="./assets/img/produtos/josecorvo.jpg" alt="Jose corvo" class="foto-produto">
                             <figcaption>
                                 <h4>Jose corvo</h4>
                                 <span class="preco">
@@ -862,7 +862,7 @@
                 <div class="col-lg-3 col-md-6 col-sm-12">
                     <a href="#" style="text-decoration: none;">
                         <figure>
-                            <img src="./assets/img/bebidas/labrisa.jpg" alt="Garrafa LAbrisa" class="foto-produto">
+                            <img src="./assets/img/produtos/labrisa.jpg" alt="Garrafa LAbrisa" class="foto-produto">
                             <figcaption>
                                 <h4>Garrafa LA-brisa</h4>
                                 <span class="preco">
@@ -876,7 +876,7 @@
                 <div class="col-lg-3 col-md-6 col-sm-12">
                     <a href="#" style="text-decoration: none;">
                         <figure>
-                            <img src="./assets/img/bebidas/vinhocarvao.jpg" alt="Vinho Carvão" class="foto-produto">
+                            <img src="./assets/img/produtos/vinhocarvao.jpg" alt="Vinho Carvão" class="foto-produto">
                             <figcaption>
                                 <h4>Vinho Carvão</h4>
                                 <span class="preco">
@@ -890,7 +890,7 @@
                 <div class="col-lg-3 col-md-6 col-sm-12">
                     <a href="#" style="text-decoration: none;">
                         <figure>
-                            <img src="./assets/img/bebidas/smirnoff.jpg" alt="Smirnoff" class="foto-produto">
+                            <img src="./assets/img/produtos/smirnoff.jpg" alt="Smirnoff" class="foto-produto">
                             <figcaption>
                                 <h4>Smirnoff</h4>
                                 <span class="preco">
@@ -918,7 +918,7 @@
                 <div class="col-lg-3 col-md-6 col-sm-12">
                     <a href="#" style="text-decoration: none;">
                         <figure>
-                            <img src="./assets/img/doces/brigadeiro.jpg" alt="Brigadeiro" class="foto-produto">
+                            <img src="./assets/img/produtos/brigadeiro.jpg" alt="Brigadeiro" class="foto-produto">
                             <figcaption>
                                 <h4>Brigadeiro</h4>
                                 <span class="preco">
@@ -932,7 +932,7 @@
                 <div class="col-lg-3 col-md-6 col-sm-12">
                     <a href="#" style="text-decoration: none;">
                         <figure>
-                            <img src="./assets/img/doces/chomornago.jpg" alt="Chocolate c/ framboesa" class="foto-produto">
+                            <img src="./assets/img/produtos/chomornago.jpg" alt="Chocolate c/ framboesa" class="foto-produto">
                             <figcaption>
                                 <h4>Chocolate c/ framboesa</h4>
                                 <span class="preco">
@@ -946,7 +946,7 @@
                 <div class="col-lg-3 col-md-6 col-sm-12">
                     <a href="#" style="text-decoration: none;">
                         <figure>
-                            <img src="./assets/img/doces/roscacho.jpg" alt="Rosquinah de Chocolate" class="foto-produto">
+                            <img src="./assets/img/produtos/roscacho.jpg" alt="Rosquinah de Chocolate" class="foto-produto">
                             <figcaption>
                                 <h4>Rosquinha de Chocolate</h4>
                                 <span class="preco">
@@ -960,7 +960,7 @@
                 <div class="col-lg-3 col-md-6 col-sm-12">
                     <a href="#" style="text-decoration: none;">
                         <figure>
-                            <img src="./assets/img/doces/taçasorvete.png" alt="Sorvete de creme" class="foto-produto">
+                            <img src="./assets/img/produtos/taçasorvete.png" alt="Sorvete de creme" class="foto-produto">
                             <figcaption>
                                 <h4>Sorvete de creme</h4>
                                 <span class="preco">
@@ -974,7 +974,7 @@
                 <div class="col-lg-3 col-md-6 col-sm-12">
                     <a href="#" style="text-decoration: none;">
                         <figure>
-                            <img src="./assets/img/doces/sorvetemorango.jpg" alt="Sorvete de morangos" class="foto-produto">
+                            <img src="./assets/img/produtos/sorvetemorango.jpg" alt="Sorvete de morangos" class="foto-produto">
                             <figcaption>
                                 <h4>Sorvete de morango</h4>
                                 <span class="preco">
@@ -988,7 +988,7 @@
                 <div class="col-lg-3 col-md-6 col-sm-12">
                     <a href="#" style="text-decoration: none;">
                         <figure>
-                            <img src="./assets/img/doces/brownie.png" alt="Brownie de chocolate" class="foto-produto">
+                            <img src="./assets/img/produtos/brownie.png" alt="Brownie de chocolate" class="foto-produto">
                             <figcaption>
                                 <h4>Brownie de chocolate</h4>
                                 <span class="preco">
@@ -1002,7 +1002,7 @@
                 <div class="col-lg-3 col-md-6 col-sm-12">
                     <a href="#" style="text-decoration: none;">
                         <figure>
-                            <img src="./assets/img/doces/panquecadoce.png" alt="Panqueca Doce" class="foto-produto">
+                            <img src="./assets/img/produtos/panquecadoce.png" alt="Panqueca Doce" class="foto-produto">
                             <figcaption>
                                 <h4>Panqueca Doce</h4>
                                 <span class="preco">
@@ -1016,7 +1016,7 @@
                 <div class="col-lg-3 col-md-6 col-sm-12">
                     <a href="#" style="text-decoration: none;">
                         <figure>
-                            <img src="./assets/img/doces/musseframb.png" alt="Musse com Mertilos" class="foto-produto">
+                            <img src="./assets/img/produtos/musseframb.png" alt="Musse com Mertilos" class="foto-produto">
                             <figcaption>
                                 <h4>Musse com Mertilos</h4>
                                 <span class="preco">
@@ -1030,7 +1030,7 @@
                 <div class="col-lg-3 col-md-6 col-sm-12">
                     <a href="#" style="text-decoration: none;">
                         <figure>
-                            <img src="./assets/img/doces/cupcake.png" alt="Cupcake roxo" class="foto-produto">
+                            <img src="./assets/img/produtos/cupcake.png" alt="Cupcake roxo" class="foto-produto">
                             <figcaption>
                                 <h4>Cupcake roxo</h4>
                                 <span class="preco">
@@ -1044,7 +1044,7 @@
                 <div class="col-lg-3 col-md-6 col-sm-12">
                     <a href="#" style="text-decoration: none;">
                         <figure>
-                            <img src="./assets/img/doces/macarronsbranco.png" alt="Macarrons de Chocolate" class="foto-produto">
+                            <img src="./assets/img/produtos/macarronsbranco.png" alt="Macarrons de Chocolate" class="foto-produto">
                             <figcaption>
                                 <h4>Macarrons de Chocolate</h4>
                                 <span class="preco">
@@ -1058,7 +1058,7 @@
                 <div class="col-lg-3 col-md-6 col-sm-12">
                     <a href="#" style="text-decoration: none;">
                         <figure>
-                            <img src="./assets/img/doces/magnumcomcobertura.png" alt="Sorvete Magnum" class="foto-produto">
+                            <img src="./assets/img/produtos/magnumcomcobertura.png" alt="Sorvete Magnum" class="foto-produto">
                             <figcaption>
                                 <h4>Sorvete Magnum</h4>
                                 <span class="preco">
@@ -1072,7 +1072,7 @@
                 <div class="col-lg-3 col-md-6 col-sm-12">
                     <a href="#" style="text-decoration: none;">
                         <figure>
-                            <img src="./assets/img/doces/milkshake.png" alt="Milk-shake de chocolate" class="foto-produto">
+                            <img src="./assets/img/produtos/milkshake.png" alt="Milk-shake de chocolate" class="foto-produto">
                             <figcaption>
                                 <h4>Milk-shake de chocolate</h4>
                                 <span class="preco">

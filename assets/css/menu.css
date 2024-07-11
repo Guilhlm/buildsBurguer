@@ -28,12 +28,13 @@ h2 {
 
 body {
     transition: 0.5s;
-    background-color: #857979;
+    background-color: #1d1d1d;
 }
 
 body.dark-mode {
     transition: 0.5s;
-    background-color: #cccccc;
+    background-color: #dadada;
+    background-image: url(../img/hambsproduto.png);
 
 }
 
