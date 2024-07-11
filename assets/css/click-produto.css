@@ -63,10 +63,10 @@
 }
 
 .fotinha {
-    background-image: url(../img/lanches/hmbSimples.png);
     background-position: center;
     background-size: cover;
     border: 5px solid black;
+    border-radius: 5px;
     width: 600px;
     height: 750px;
     border-radius: 20px;

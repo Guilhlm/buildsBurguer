@@ -31,9 +31,7 @@
                     <ul class="menu">
 
                         <li><a href="index.html">Inicio</a></li>
-                        <li class="select-principal">
-                            <a href="menu.php">Menu</a>
-                        </li>
+                        <li class="select-principal"><a href="menu.php">Cardapio</a></li>
                         <li><a href="sobre.php">Sobre</a></li>
                         <li><a href="produtos.php">Produtos</a></li>
                     </ul>

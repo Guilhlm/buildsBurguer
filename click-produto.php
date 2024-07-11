@@ -1,13 +1,38 @@
 <?php include './includes/header.php' ?>
 
+<?php
+
+class Produto
+{
+    public function Listar1Produto($id)
+    {
+
+        $conn = new PDO("mysql:host=62.72.62.1;dbname=u687609827_gui", "u687609827_gui", "Ou]Q||Jr^7H");
+        $query = "SELECT * FROM tb_produtos WHERE id = {$id}";
+        $resultado = $conn->query($query)->fetch();
+
+        return $resultado;
+    }
+}
+
+$produto = new Produto();
+
+if (isset($_GET['id']) && !empty($_GET['id'])) {
+    $id = $_GET['id'];
+
+    $dados = $produto->Listar1Produto($id);
+}
+
+?>
+
 <section class="body-produto">
 
-    <figcaption class="fotinha"></figcaption>
+    <figcaption><img class="fotinha" alt="foto do produto" src="./assets/img/lanches/<?= $dados['imagem'] ?>"></figcaption>
 
     <div class="container" id="ois">
 
         <section class="grid-1">
-            <h1 class="titulo-produto">NOME DO PRODUTO</h1>
+            <h1 class="titulo-produto"><?= $dados['titulo'] ?></h1>
         </section>
 
         <section class="grid-2">
@@ -34,16 +59,12 @@
         </section>
 
         <div class="grid-4">
-            <h2 class="titulo-desc">Descrição:</h2>
+            <h2 class="titulo-desc">Ingredientes:</h2>
 
             <section class="texto-desc">
                 <p>
-                    Esta delícia começa com batatas selecionadas, cortadas artesanalmente em fatias grossas para
-                    garantir a
-                    textura ideal. Depois, são fritas lentamente em óleo de girassol, até atingirem uma crocância
-                    perfeita
-                    por fora, enquanto permanecem macias e suculentas por dentro.
-
+                    Esta delícia começa com ingredentes pre selecionados, cortados artesanalmente
+                    textura ideal. Depois, são armazenados com muito cuidado em nosso restaurante, até atingirem seu tempo em nosso estoque
                     O diferencial está no tempero secreto, uma mistura harmoniosa de ervas finas, alho em pó, páprica
                     defumada e um toque de sal marinho. Essa combinação exclusiva proporciona um sabor profundo e único.
                 </p>
@@ -70,5 +91,7 @@
         </div>
     </div>
 </section>
+
+<script src="assets/script/temaescuro.js"></script>
 
 <?php include './includes/footer.php' ?>
