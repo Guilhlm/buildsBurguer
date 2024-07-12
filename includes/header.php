@@ -16,6 +16,7 @@
     <link rel="stylesheet" href="assets/css/sobre.css">
     <link rel="stylesheet" href="assets/css/carrinho.css">
     <link rel="stylesheet" href="assets/css/click-produto.css">
+    <link rel="stylesheet" href="assets/css/filtro.css">
 </head>
 
 <body>
@@ -33,7 +34,7 @@
                         <li><a href="index.html">Inicio</a></li>
                         <li class="select-principal"><a href="menu.php">Cardapio</a></li>
                         <li><a href="sobre.php">Sobre</a></li>
-                        <li><a href="produtos.php">Produtos</a></li>
+                        <li><a href="filtro.php">Produtos</a></li>
                     </ul>
                 </div>
                 <div class="col-3">

@@ -1,5 +1,27 @@
 <?php include "./includes/header.php"; ?>
 
+<?php
+
+class Produto
+{
+    public function ListarProdutos()
+    {
+
+        $conn = new PDO("mysql:host=62.72.62.1;dbname=u687609827_gui", "u687609827_gui", "Ou]Q||Jr^7H");
+        $query = "SELECT * FROM tb_produtos";
+        $resultado = $conn->query($query)->fetch();
+
+        return $resultado;
+    }
+}
+
+$produto = new Produto();
+
+    $dados = $produto->ListarProdutos();
+
+
+?>
+
 <section class="fundo-centro">
         <div class="container container-carrinho">
             <section id="header-compra">
@@ -7,57 +29,57 @@
             </section>
             <main class="main-carrinho">
                 <div class="produto">
-                    <div class="produto-imagem"><img src="./assets/img/lanches/hmbSimples.png" alt="Produto 1"></div>
+                    <div class="produto-imagem"><img src="./assets/img/produtos/<?= $dados['imagem'] ?>" alt="Produto 1"></div>
                     <div class="produto-detalhes">
-                        <h2>Nome do produto 1</h2>
-                        <p>Descrição adaptada aqui. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-                        <span class="produto-preco">Valor: R$ 240,68</span>
+                        <h2><?= $dados['titulo'] ?></h2>
+                        <p><?= $dados['descricao'] ?></p>
+                        <span class="produto-preco">Valor: R$ <?= $dados['preco'] ?></span>
                     </div>
                     <div class="produto-acao">
                         <span class="produto-quantidade" data-produto="Produto 1">0x</span>
-                        <button class="add-button" onclick="addCarrinho('Produto 1', 240.68)">Adicionar</button>
+                        <button class="add-button" onclick="addCarrinho('Produto 1', <?= $dados['preco'] ?>)">Adicionar</button>
                         <button class="remove-button" onclick="removeItemCarrinho('Produto 1')">Remover</button>
                     </div>
                 </div>
 
                 <div class="produto">
-                    <div class="produto-imagem"><img src="./assets/img/bebidas/cerveja.jpg" alt="Produto 2"></div>
+                <div class="produto-imagem"><img src="./assets/img/produtos/<?= $dados['imagem'] ?>" alt="Produto 1"></div>
                     <div class="produto-detalhes">
-                        <h2>Nome do produto 2</h2>
-                        <p>Descrição adaptada aqui. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-                        <span class="produto-preco">Valor: R$ 150,00</span>
+                        <h2><?= $dados['titulo'] ?></h2>
+                        <p><?= $dados['descricao'] ?></p>
+                        <span class="produto-preco">Valor: R$ <?= $dados['preco'] ?></span>
                     </div>
                     <div class="produto-acao">
                         <span class="produto-quantidade" data-produto="Produto 2">0x</span>
-                        <button class="add-button" onclick="addCarrinho('Produto 2', 150.00)">Adicionar</button>
+                        <button class="add-button" onclick="addCarrinho('Produto 2', <?= $dados['preco'] ?>)">Adicionar</button>
                         <button class="remove-button" onclick="removeItemCarrinho('Produto 2')">Remover</button>
                     </div>
                 </div>
 
                 <div class="produto">
-                    <div class="produto-imagem"><img src="./assets/img/doces/brigadeiro.jpg" alt="Produto 3"></div>
+                <div class="produto-imagem"><img src="./assets/img/produtos/<?= $dados['imagem'] ?>" alt="Produto 1"></div>
                     <div class="produto-detalhes">
-                        <h2>Nome do produto 3</h2>
-                        <p>Descrição adaptada aqui. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-                        <span class="produto-preco">Valor: R$ 99,90</span>
+                        <h2><?= $dados['titulo'] ?></h2>
+                        <p><?= $dados['descricao'] ?></p>
+                        <span class="produto-preco">Valor: R$ <?= $dados['preco'] ?></span>
                     </div>
                     <div class="produto-acao">
                         <span class="produto-quantidade" data-produto="Produto 3">0x</span>
-                        <button class="add-button" onclick="addCarrinho('Produto 3', 99.90)">Adicionar</button>
+                        <button class="add-button" onclick="addCarrinho('Produto 3', <?= $dados['preco'] ?>)">Adicionar</button>
                         <button class="remove-button" onclick="removeItemCarrinho('Produto 3')">Remover</button>
                     </div>
                 </div>
 
                 <div class="produto">
-                    <div class="produto-imagem"><img src="./assets/img/porcoes/bannafrita.jpg" alt="Produto 4"></div>
+                <div class="produto-imagem"><img src="./assets/img/produtos/<?= $dados['imagem'] ?>" alt="Produto 1"></div>
                     <div class="produto-detalhes">
-                        <h2>Nome do produto 3</h2>
-                        <p>Descrição adaptada aqui. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-                        <span class="produto-preco">Valor: R$ 789,99</span>
+                        <h2><?= $dados['titulo'] ?></h2>
+                        <p><?= $dados['descricao'] ?></p>
+                        <span class="produto-preco">Valor: R$ <?= $dados['preco'] ?></span>
                     </div>
                     <div class="produto-acao">
                         <span class="produto-quantidade" data-produto="Produto 4">0x</span>
-                        <button class="add-button" onclick="addCarrinho('Produto 4', 789.99)">Adicionar</button>
+                        <button class="add-button" onclick="addCarrinho('Produto 4', <?= $dados['preco'] ?>)">Adicionar</button>
                         <button class="remove-button" onclick="removeItemCarrinho('Produto 4')">Remover</button>
                     </div>
                 </div>

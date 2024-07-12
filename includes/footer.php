@@ -6,7 +6,7 @@
     <main class="container">
         <div class="row">
             <div class="col-md-2">
-                <h5>Menu</h5>
+                <h5>Cardapio</h5>
                 <ul class="list-unstyled mt-3">
                     <li><a href="./menu.php#hambs">Hamburguers</a></li>
                     <li><a href="./menu.php#combos">Combos</a></li>
@@ -27,8 +27,7 @@
                 <h5>Conta</h5>
                 <ul class="list-unstyled mt-3">
                     <li><a href="./login.php#logarais">Login</a></li>
-                    <li><a href="./carrinho.php">Carrinho</a></li>
-                    <li><a href="#">Cadastrar itens</a></li>
+                    <li><a href="./carrinho.php">Carrinho</a></li>  
                 </ul>
             </div>
             <div class="col-md-2">
