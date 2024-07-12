@@ -59,15 +59,10 @@ if (isset($_GET['id']) && !empty($_GET['id'])) {
         </section>
 
         <div class="grid-4">
-            <h2 class="titulo-desc">Modo de Preparo:</h2>
+            <h2 class="titulo-desc">Descrição:</h2>
 
             <section class="texto-desc">
-                <p>
-                    Esta delícia começa com ingredentes pre selecionados, cortados artesanalmente
-                    textura ideal. Depois, são armazenados com muito cuidado em nosso restaurante, até atingirem seu tempo em nosso estoque
-                    O diferencial está no tempero secreto, uma mistura harmoniosa de ervas finas, alho em pó, páprica
-                    defumada e um toque de sal marinho. Essa combinação exclusiva proporciona um sabor profundo e único.
-                </p>
+                <p><?= $dados['descricao'] ?></p>
             </section>
         </div>
 
