@@ -135,3 +135,12 @@ VALUES
     ('roberta', '1990', '567.890.123-45', '(99) 5678-9012'),
     ('gabriel', '1987', '543.210.987-65', '(00) 5432-1098'),
     ('patricia', '2002', '890.123.456-78', '(12) 8901-2345');
+
+    CREATE TABLE tb_vendas (
+    id INT PRIMARY KEY AUTO_INCREMENT,
+    data_venda DATETIME NOT NULL,
+    id_pessoa INT NOT NULL,
+    id_produto INT NOT NULL,
+    quantidade INT NOT NULL,
+    preco DECIMAL(10, 2) NOT NULL
+);
