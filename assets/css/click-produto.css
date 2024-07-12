@@ -15,7 +15,7 @@
     width: 600px;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
-    grid-template-rows: 120px 110px 120px 260px 140px;
+    grid-template-rows: 100px 110px 120px 260px 160px;
 
     border-radius: 20px;
 }
@@ -25,7 +25,7 @@
     color: #000000;
     display: flex;
     justify-content: center;
-    align-items: center;
+    align-items: end;
     grid-column: 1/6;
 }
 
@@ -67,13 +67,13 @@
     background-size: cover;
     border: 5px solid black;
     border-radius: 5px;
-    width: 600px;
+    width: 520px;
     height: 750px;
     border-radius: 20px;
 }
 
 .titulo-produto {
-    font-size: 40px;
+    font-size: 35px;
 }
 
 #tamanho {

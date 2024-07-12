@@ -39,7 +39,7 @@ if (isset($_GET['id']) && !empty($_GET['id'])) {
             <div id="tamanho">Médio</div>
             <div id="tamanho">Grande</div>
 
-            <p class="preco-produto">R$ 240,00</p>
+            <p class="preco-produto">R$ <?= $dados['preco'] ?></p>
         </section>
 
         <section class="grid-3">
@@ -59,7 +59,7 @@ if (isset($_GET['id']) && !empty($_GET['id'])) {
         </section>
 
         <div class="grid-4">
-            <h2 class="titulo-desc">Ingredientes:</h2>
+            <h2 class="titulo-desc">Modo de Preparo:</h2>
 
             <section class="texto-desc">
                 <p>

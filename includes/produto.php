@@ -1,7 +1,7 @@
 <div class="col-lg-3 col-md-6 col-sm-12">
     <a href="#" style="text-decoration: none;">
         <figure>
-            <img src="./assets/img/doces/brigadeiro.jpg" alt="Brigadeiro" class="foto-produto">
+            <img src="./assets/img/produtos/brigadeiro.jpg" alt="Brigadeiro" class="foto-produto">
             <figcaption>
                 <h4>Brigadeiro</h4>
                 <span class="preco">

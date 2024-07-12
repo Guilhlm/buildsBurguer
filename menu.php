@@ -1,5 +1,27 @@
 <?php include './includes/header.php' ?>
 
+<?php
+
+class Produto
+{
+    public function ListarProdutos()
+    {
+
+        $conn = new PDO("mysql:host=62.72.62.1;dbname=u687609827_gui", "u687609827_gui", "Ou]Q||Jr^7H");
+        $query = "SELECT * FROM tb_produtos";
+        $resultado = $conn->query($query)->fetch();
+
+        return $resultado;
+    }
+}
+
+$produto = new Produto();
+
+    $dados = $produto->ListarProdutos();
+
+
+?>
+
 <section id="banner"></section>
 <!-- hamburguers -->
 <h2 class="titulo" id="hambs">Hamburguers</h2>
@@ -10,12 +32,12 @@
                 <div class="col-lg-3 col-md-6 col-sm-12">
                     <a href="click-produto.php?id=" style="text-decoration: none;">
                         <figure>
-                            <img src="./assets/img/produtos/hmbSimples.png" alt="Hamburguer Kids" class="foto-produto">
+                            <img src="./assets/img/produtos/<?= $dados['imagem'] ?>" alt="Hamburguer Kids" class="foto-produto">
                             <figcaption>
-                                <h4>Hamburguer Kids</h4>
+                                <h4><?= $dados['titulo'] ?></h4>
                                 <span class="preco">
                                     <p class="preçoescrito precin">Preço ..........</p>
-                                    <p class="precin">R$ 15,90</p>
+                                    <p class="precin">R$ <?= $dados['preco'] ?></p>
                                 </span>
                             </figcaption>
                         </figure>
@@ -24,12 +46,12 @@
                 <div class="col-lg-3 col-md-6 col-sm-12">
                     <a href="#" style="text-decoration: none;">
                         <figure>
-                            <img src="./assets/img/produtos/hmbCompleto.png" alt="Hmaburguer completo" class="foto-produto">
+                            <img src="./assets/img/produtos/<?= $dados['imagem'] ?>" alt="Hmaburguer completo" class="foto-produto">
                             <figcaption>
-                                <h4>Hamburguer Completo</h4>
+                                <h4><?= $dados['titulo'] ?></h4>
                                 <span class="preco">
                                     <p class="preçoescrito precin">Preço ..........</p>
-                                    <p class="precin">R$ 29,90</p>
+                                    <p class="precin">R$ <?= $dados['preco'] ?></p>
                                 </span>
                             </figcaption>
                         </figure>

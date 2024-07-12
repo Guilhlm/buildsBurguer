@@ -50,7 +50,7 @@ header {
 .titulo {
     display: flex;
     width: 100%;
-    font-size: 140px;
+    font-size: 150px;
     justify-content: center;
     text-shadow: rgba(240, 151, 17, 0.8) 7px 0 15px;
     color: rgb(189, 153, 106);
