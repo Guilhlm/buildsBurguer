@@ -96,19 +96,6 @@ INSERT INTO tb_produtos (titulo, preco, imagem, categoria) VALUE ('Macarrons de 
 INSERT INTO tb_produtos (titulo, preco, imagem, categoria) VALUE ('Sorvete Magnum', 11.00, 'magnumcomcobertura.png', 4);
 INSERT INTO tb_produtos (titulo, preco, imagem, categoria) VALUE ('Milk-shake de chocolate', 17.90, 'milkshake.png', 4);
 
-CREATE TABLE tb_pessoas (
-    id INT PRIMARY KEY AUTO_INCREMENT,
-    nome VARCHAR(100),
-    ano_nascimento YEAR(4),
-    cpf VARCHAR(11),
-    telefone_1 VARCHAR(11)
-);
-
-INSERT INTO tb_pessoas (nome, ano_nascimento, cpf, telefone_1)
-VALUES
-    ('guilherme', '2008', '12345677890', '12121212121'),
-    ('gustavao', '1990', '12323232323', '11111111112');
-
 CREATE TABLE tb_usuarios (
     id INT PRIMARY KEY AUTO_INCREMENT,
     nome VARCHAR(100),
@@ -120,4 +107,36 @@ CREATE TABLE tb_usuarios (
 INSERT INTO tb_usuarios (nome, usuario, senha, id_pessoa)
 VALUES
     ('admin', 'admin@gmail.com', 'admin', '1'),
-    ('gustavao', 'gustavao@gmail.com', 'senha', '2');
+    ('ana', 'ana@gmail.com', 'ana123', '2'),
+    ('carlos', 'carlos@gmail.com', 'carlos123', '3'),
+    ('maria', 'maria@gmail.com', 'maria123', '4'),
+    ('jose', 'jose@gmail.com', 'jose123', '5'),
+    ('joão', 'joão@gmail.com', 'joão123', '6'),
+    ('luciana', 'luciana@gmail.com', 'luciana123', '7'),
+    ('felipe', 'felipe@gmail.com', 'felipe123', '8'),
+    ('roberta', 'roberta@gmail.com', 'roberta123', '9'),
+    ('gabriel', 'gabriel@gmail.com', 'gabriel123', '10'),
+    ('patricia', 'patricia@gmail.com', 'patricia123', '11');
+
+    
+CREATE TABLE tb_pessoas (
+    id INT PRIMARY KEY AUTO_INCREMENT,
+    nome VARCHAR(100),
+    ano_nascimento YEAR(4),
+    cpf VARCHAR(11),
+    telefone_1 VARCHAR(15)
+);
+
+INSERT INTO tb_pessoas (nome, ano_nascimento, cpf, telefone_1)
+VALUES
+    ('guilherme', '2008', '123.456.789', '(11) 1111-1111'),
+    ('ana', '1985', '987.654.321-00', '(22) 9876-5432'),
+    ('carlos', '2000', '234.567.890-12', '(33) 2345-6789'),
+    ('maria', '1993', '876.543.210-98', '(44) 8765-4321'),
+    ('jose', '1980', '345.678.901-23', '(55) 3456-7890'),
+    ('joão', '1995', '765.432.109-87', '(66) 7654-3210'),
+    ('luciana', '1988', '456.789.012-34', '(77) 4567-8901'),
+    ('felipe', '2005', '654.321.098-76', '(88) 6543-2109'),
+    ('roberta', '1990', '567.890.123-45', '(99) 5678-9012'),
+    ('gabriel', '1987', '543.210.987-65', '(00) 5432-1098'),
+    ('patricia', '2002', '890.123.456-78', '(12) 8901-2345');
