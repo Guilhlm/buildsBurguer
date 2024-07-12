@@ -96,14 +96,28 @@ INSERT INTO tb_produtos (titulo, preco, imagem, categoria) VALUE ('Macarrons de 
 INSERT INTO tb_produtos (titulo, preco, imagem, categoria) VALUE ('Sorvete Magnum', 11.00, 'magnumcomcobertura.png', 4);
 INSERT INTO tb_produtos (titulo, preco, imagem, categoria) VALUE ('Milk-shake de chocolate', 17.90, 'milkshake.png', 4);
 
+CREATE TABLE tb_pessoas (
+    id INT PRIMARY KEY AUTO_INCREMENT,
+    nome VARCHAR(100),
+    ano_nascimento YEAR(4),
+    cpf VARCHAR(11),
+    telefone_1 VARCHAR(11)
+);
+
+INSERT INTO tb_pessoas (nome, ano_nascimento, cpf, telefone_1)
+VALUES
+    ('guilherme', '2008', '12345677890', '12121212121'),
+    ('gustavao', '1990', '12323232323', '11111111112');
+
 CREATE TABLE tb_usuarios (
     id INT PRIMARY KEY AUTO_INCREMENT,
     nome VARCHAR(100),
     usuario VARCHAR(100),
-    senha VARCHAR(100)
+    senha VARCHAR(100),
+    id_pessoa INT NOT NULL
 );
 
-INSERT INTO tb_usuarios (nome, usuario, senha)
+INSERT INTO tb_usuarios (nome, usuario, senha, id_pessoa)
 VALUES
-    ('guilherme', 'guilherme@gmail.com', 'senha'),
-    ('admin', 'admin@gmail.com', 'admin');
+    ('admin', 'admin@gmail.com', 'admin', '1'),
+    ('gustavao', 'gustavao@gmail.com', 'senha', '2');
