@@ -30,7 +30,7 @@ $produto = new Produto();
         <section id="produtos">
             <div class="carrossel-hamb carrossel">
                 <div class="col-lg-3 col-md-6 col-sm-12">
-                    <a href="click-produto.php?id=" style="text-decoration: none;">
+                    <a href="click-produto.php?id=<?= $dados['id'] ?>" style="text-decoration: none;">
                         <figure>
                             <img src="./assets/img/produtos/<?= $dados['imagem'] ?>" alt="Hamburguer Kids" class="foto-produto">
                             <figcaption>
