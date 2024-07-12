@@ -16,7 +16,16 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 520px;
-    width: 200px;
-    background-color: rgb(221, 30, 30);
+    height: 150px;
+    width: 100%;
+    font-size: 25px;
+    border-radius: 20px;
+    color: white;
+    border: 2px solid rgb(255, 255, 255);
+    background-color: rgb(160, 51, 0);
+}
+
+#produtos{
+    
+    border: 5px solid blue;
 }

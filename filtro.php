@@ -1,12 +1,12 @@
 <?php include "./includes/header.php"; ?>
 
-<section><a href="menu.php#hambs"><img id="bannersobre" src="./assets/img/BannerMenu.png" alt="banner do catalogo"></a></section>
+<section><a href="menu.php#hambs"><img id="bannersobre" src="./assets/img/BannerMenu.png" alt=""></a></section>
 
 <section class="container" id="produtos">
-    <section id="produtos">
+    <section class="produtos">
         <div class="row">
 
-            <main class="col-2 filtro">
+            <main class="col-12 filtro">
                 <form action="#">
                     <label for="">Lanches</label>
                     <input type="checkbox" name="" id="">
@@ -22,7 +22,7 @@
 
 
             </main>
-            <main class="col-10">
+            <main class="col-12">
                 <div class="row">
 
                     <?php
