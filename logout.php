@@ -3,5 +3,5 @@ session_start();
 
 session_destroy();
 
-header("location: sobre.php");
+header("location: menu.php");
 ?>
