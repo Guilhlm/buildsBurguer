@@ -1,5 +1,4 @@
 <?php include './includes/header.php' ?>
-
 <?php
 
 class Produto
@@ -17,7 +16,7 @@ class Produto
 
 $produto = new Produto();
 
-    $dados = $produto->ListarProdutos();
+$dados = $produto->ListarProdutos();
 
 
 ?>

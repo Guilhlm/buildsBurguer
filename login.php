@@ -28,6 +28,11 @@ if (isset($_POST) && !empty($_POST)) {
 
     if (!empty($resultado)) {
 
+        session_start();
+    $_SESSION["usuario"] = $user;
+
+    // $_SESSION["fotoPerfilLogado"] = ['foto'];
+
         header('location: menu.php');
     } else {
 
