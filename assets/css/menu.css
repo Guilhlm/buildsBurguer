@@ -203,6 +203,12 @@ input::placeholder {
     color: rgba(233, 136, 57, 0.6) !important;
     border-radius: 10px;
 }
+
+#AcionarNavbar:hover{
+    color: white !important;
+    border: 3px solid rgb(255, 255, 255);
+}
+
 .xizinhoNav{
     display: flex; 
     justify-content: end; 
@@ -238,9 +244,9 @@ input::placeholder {
     color: white;
     padding: 20px;
     position: fixed;
-    right: -500px; /* Hide sidebar initially */
+    right: 0px;
     transition: right 0.3s;
-    z-index: 1001; /* Make sure sidebar is on top */
+    z-index: 1001; 
 }
 
 .nomeLogin {

@@ -30,7 +30,7 @@ $dados = $produto->ListarProdutos();
     </section>
 
     <section class="SectionFotoNome">
-        <img class="imagemPerfil" src="img/<?php echo $_SESSION['fotoPerfilLogado']; ?>">
+        <!-- <img class="imagemPerfil" src="img/<?php echo $_SESSION['fotoPerfilLogado']; ?>"> -->
         
         <h2 class="nomeLogin"> 
         <?php
@@ -46,9 +46,9 @@ $dados = $produto->ListarProdutos();
     </section>
 
     <ul>
-        <?php echo (isset($_SESSION['usuario'])) ? '<a class="nav-link" href="login.php">Cadastrar ADM</a>' : '' ?>
-        <?php echo (isset($_SESSION['usuario'])) ? '<a class="nav-link" href="login.php">Cadastrar Produto</a>' : '' ?>
-        <?php echo (isset($_SESSION['usuario'])) ? '<a class="nav-link red" href="logout.php">d</a>' : '' ?>
+        <?php echo (isset($_SESSION['usuario'])) ? '<a class="nav-link" href="#">Cadastrar ADM</a>' : '' ?>
+        <?php echo (isset($_SESSION['usuario'])) ? '<a class="nav-link" href="#">Cadastrar Produto</a>' : '' ?>
+        <?php echo (isset($_SESSION['usuario'])) ? '<a class="nav-link red" href="logout.php">Logout</a>' : '' ?>
     </ul>
 
 </div>
@@ -1149,6 +1149,6 @@ $dados = $produto->ListarProdutos();
 <?php include './includes/footer.php' ?>
 
 
+<script src="navbar.js"></script>
 <script src="assets/script/temaescuro.js"></script>
 <script src="assets/script/script.js"></script>
-<script src="navbar.js"></script>
