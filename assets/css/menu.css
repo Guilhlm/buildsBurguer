@@ -62,6 +62,11 @@ body.dark-mode {
 
 }
 
+.menu-icons{
+    position: relative;
+    z-index: 1001; 
+}
+
 .menu-icons li a {
     font-size: 25px;
     color: rgba(233, 136, 57, 0.6);
@@ -190,6 +195,94 @@ input::placeholder {
     margin-top: 10px;
     cursor: pointer;
 }
+
+/* //////////////////////////////////////////////////////////////////// */
+#AcionarNavbar{
+    border: 3px solid rgba(233, 136, 57, 0.6);
+    background: none;
+    color: rgba(233, 136, 57, 0.6) !important;
+    border-radius: 10px;
+}
+.xizinhoNav{
+    display: flex; 
+    justify-content: end; 
+    align-items: end;
+}
+
+.fecharnav{
+    font-size: 25px;
+    border: 2px solid white;
+    background: none;
+    border: none;
+    color: #ffffff;
+    cursor: pointer;
+}
+
+.fecharnav:hover{
+    color: rgb(196, 0, 0);
+
+}
+
+.SectionFotoNome{
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    gap: 30px;
+}
+
+.sidebar {
+    width: 450px;
+    height: 100vh;
+    background-color: #2c2c2c;
+    border-left: 5px solid rgb(134, 87, 0);
+    color: white;
+    padding: 20px;
+    position: fixed;
+    right: -500px; /* Hide sidebar initially */
+    transition: right 0.3s;
+    z-index: 1001; /* Make sure sidebar is on top */
+}
+
+.nomeLogin {
+    display: flex;
+    font-size: 18px;
+}
+
+.imagemPerfil{
+    border-radius: 50%; 
+    justify-content: center !important;
+}
+
+.sidebar ul {
+    margin-top: 40px;
+    list-style-type: none;
+    padding: 0;
+}
+
+.sidebar ul li {
+    margin: 15px 0;
+}
+
+.sidebar ul li a {
+    color: white;
+    text-decoration: none;
+    display: block;
+    padding: 10px;
+    transition: background-color 0.3s;
+    border-radius: 10px;
+}
+
+.sidebar ul li a:hover {
+    background-color: #575757;
+    border-radius: 10px;
+}
+
+.red:hover{
+    color: rgb(167, 0, 0) !important;
+}
+
+
+/* //////////////////////////////////////////////////////////////////// */
 
 .titulo {
     display: flex;

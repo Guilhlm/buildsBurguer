@@ -62,7 +62,7 @@
 
                         <?php echo (isset($_SESSION['usuario'])) ? '' : '<li><a href="login.php"><i class="bi bi-person"></i></a></li>' ?>
 
-                        <?php echo (isset($_SESSION['usuario'])) ? '<button><i class="bi bi-list"></i></button>' : '' ?>
+                        <?php echo (isset($_SESSION['usuario'])) ? '<button class="menu-icons" id="AcionarNavbar" onclick="toggleSidebar()">☰</button>' : '' ?>
 
                     </ul>
 
