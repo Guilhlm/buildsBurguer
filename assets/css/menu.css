@@ -265,11 +265,7 @@ input::placeholder {
     padding: 0;
 }
 
-.sidebar ul li {
-    margin: 15px 0;
-}
-
-.sidebar ul li a {
+.sidebar ul a {
     color: white;
     text-decoration: none;
     display: block;
@@ -278,8 +274,8 @@ input::placeholder {
     border-radius: 10px;
 }
 
-.sidebar ul li a:hover {
-    background-color: #575757;
+.sidebar ul a:hover {
+    background-color: #5c5c5c;
     border-radius: 10px;
 }
 
