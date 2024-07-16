@@ -244,7 +244,7 @@ input::placeholder {
     color: white;
     padding: 20px;
     position: fixed;
-    right: 0px;
+    right: -500px;
     transition: right 0.3s;
     z-index: 1001; 
 }
@@ -341,7 +341,7 @@ input::placeholder {
     border-top-right-radius: 20px;
     border-bottom: 5px solid rgba(233, 136, 57, 0.6);
     max-height: 390px;
-    height: 400px;
+    height: 390px;
     object-fit: cover;
 }
 

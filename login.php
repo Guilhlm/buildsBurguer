@@ -15,29 +15,19 @@
 
 <?php
 
-if (isset($_POST) && !empty($_POST)) {
+if (isset($_POST['nomeCadastro']) && !empty($_POST['nomeCadastro'])) {
 
-    $user = $_POST['usuario'];
-    $password = $_POST['senha'];
+    $nome = $_POST['nomeCadastro'];
+    $usuario = $_POST['usuarioCadastro'];
+    $senha = $_POST['senhaCadastro'];
+    $Confirmar = $_POST['ConfirmarCadastro'];
 
     $conn = new PDO("mysql:host=62.72.62.1;dbname=u687609827_gui", "u687609827_gui", "Ou]Q||Jr^7H");
 
-    $script = "SELECT * FROM tb_usuarios WHERE usuario = '{$user}' AND senha = '{$password}'";
+    $scriptCadastro = "INSERT INTO tb_usuarios (nome, usuario, senha) VALUE ('{$nome}', '{$usuario}', '{$senha}')";
 
-    $resultado = $conn->query($script)->fetch();
+    $resultadoCadastro = $conn->prepare($scriptCadastro)->execute([]);
 
-    if (!empty($resultado)) {
-
-        session_start();
-    $_SESSION["usuario"] = $user;
-
-    // $_SESSION["fotoPerfilLogado"] = ['foto'];
-
-        header('location: menu.php');
-    } else {
-
-        $erro_login = "Usuário ou senha incorretos.";
-    }
 }
 
 ?>
@@ -46,20 +36,49 @@ if (isset($_POST) && !empty($_POST)) {
 
     <div class="container container-login" id="box-marrom">
         <div class="form-container criar">
-            <form action="auxcadastro.php" method="post">
+            <form action="#" method="POST">
                 <h1>Crie sua conta</h1>
 
                 <span>Use seu Email para registro</span>
-                <input type="text" name="nome" placeholder="Nome">
-                <input type="email" name="usuario" placeholder="Email">
-                <input type="password" name="senha" placeholder="Senha">
-                <input type="password" name="Confirmar" placeholder="Confirmar Senha">
-                <input type="submit" class="botaoCriar" value="Criar Conta"></input>
+                <input type="text" name="nomeCadastro" placeholder="Nome">
+                <input type="email" name="usuarioCadastro" placeholder="Email">
+                <input type="password" name="senhaCadastro" placeholder="Senha">
+                <input type="password" name="ConfirmarCadastro" placeholder="Confirmar Senha">
+                <input type="submit" class="botaoCriar">
             </form>
         </div>
 
+        <?php
+
+        if (isset($_POST['usuario']) && !empty($_POST['usuario'])) {
+
+            $user = $_POST['usuario'];
+            $password = $_POST['senha'];
+
+            $conn = new PDO("mysql:host=62.72.62.1;dbname=u687609827_gui", "u687609827_gui", "Ou]Q||Jr^7H");
+
+            $script = "SELECT * FROM tb_usuarios WHERE usuario = '{$user}' AND senha = '{$password}'";
+
+            $resultado = $conn->query($script)->fetch();
+
+            if (!empty($resultado)) {
+
+                session_start();
+                $_SESSION["usuario"] = $user;
+
+                // $_SESSION["fotoPerfilLogado"] = ['foto'];
+
+                header('location: menu.php');
+            } else {
+
+                $erro_login = "Usuário ou senha incorretos.";
+            }
+        }
+
+        ?>
+
         <div class="form-container logar">
-            <form action="#" method="post">
+            <form action="#" method="POST">
                 <div><a class="voltardireita" href="menu.php"><i class="bi bi-arrow-left-square"></i></a></div>
                 <br>
                 <h1 id="logarais">Login</h1>
