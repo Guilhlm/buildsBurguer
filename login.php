@@ -27,7 +27,6 @@ if (isset($_POST['nomeCadastro']) && !empty($_POST['nomeCadastro'])) {
     $scriptCadastro = "INSERT INTO tb_usuarios (nome, usuario, senha) VALUE ('{$nome}', '{$usuario}', '{$senha}')";
 
     $resultadoCadastro = $conn->prepare($scriptCadastro)->execute([]);
-
 }
 
 ?>
@@ -65,6 +64,9 @@ if (isset($_POST['nomeCadastro']) && !empty($_POST['nomeCadastro'])) {
 
                 session_start();
                 $_SESSION["usuario"] = $user;
+
+                $nivel = $resultado ['nivel'];
+                $_SESSION["nivel"] = $nivel;
 
                 // $_SESSION["fotoPerfilLogado"] = ['foto'];
 
