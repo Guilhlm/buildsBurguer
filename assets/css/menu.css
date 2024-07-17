@@ -212,6 +212,7 @@ input::placeholder {
     display: flex;
     justify-content: end;
     align-items: end;
+    margin-right: 20px;
 }
 
 .fecharnav {
@@ -245,6 +246,7 @@ input::placeholder {
     right: -500px;
     transition: right 0.3s;
     z-index: 1001;
+    transform: translate(10px, -50px);
 }
 
 .nomeLogin {
@@ -276,7 +278,6 @@ input::placeholder {
 .sidebar ul a:hover {
     width: 24vw;
     background-color: #5c5c5c;
-
 }
 
 .red:hover {
