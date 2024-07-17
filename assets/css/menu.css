@@ -62,9 +62,9 @@ body.dark-mode {
 
 }
 
-.menu-icons{
+.menu-icons {
     position: relative;
-    z-index: 1001; 
+    z-index: 1001;
 }
 
 .menu-icons li a {
@@ -196,26 +196,25 @@ input::placeholder {
     cursor: pointer;
 }
 
-/* //////////////////////////////////////////////////////////////////// */
-#AcionarNavbar{
+#AcionarNavbar {
     border: 3px solid rgba(233, 136, 57, 0.6);
     background: none;
     color: rgba(233, 136, 57, 0.6) !important;
     border-radius: 10px;
 }
 
-#AcionarNavbar:hover{
+#AcionarNavbar:hover {
     color: white !important;
     border: 3px solid rgb(255, 255, 255);
 }
 
-.xizinhoNav{
-    display: flex; 
-    justify-content: end; 
+.xizinhoNav {
+    display: flex;
+    justify-content: end;
     align-items: end;
 }
 
-.fecharnav{
+.fecharnav {
     font-size: 25px;
     border: 2px solid white;
     background: none;
@@ -224,12 +223,11 @@ input::placeholder {
     cursor: pointer;
 }
 
-.fecharnav:hover{
+.fecharnav:hover {
     color: rgb(196, 0, 0);
-
 }
 
-.SectionFotoNome{
+.SectionFotoNome {
     display: flex;
     align-items: center;
     justify-content: start;
@@ -246,7 +244,7 @@ input::placeholder {
     position: fixed;
     right: -500px;
     transition: right 0.3s;
-    z-index: 1001; 
+    z-index: 1001;
 }
 
 .nomeLogin {
@@ -254,8 +252,8 @@ input::placeholder {
     font-size: 18px;
 }
 
-.imagemPerfil{
-    border-radius: 50%; 
+.imagemPerfil {
+    border-radius: 50%;
     justify-content: center !important;
 }
 
@@ -263,6 +261,7 @@ input::placeholder {
     margin-top: 40px;
     list-style-type: none;
     padding: 0;
+    display: inline-block;
 }
 
 .sidebar ul a {
@@ -275,16 +274,14 @@ input::placeholder {
 }
 
 .sidebar ul a:hover {
+    width: 24vw;
     background-color: #5c5c5c;
-    border-radius: 10px;
+
 }
 
-.red:hover{
+.red:hover {
     color: rgb(167, 0, 0) !important;
 }
-
-
-/* //////////////////////////////////////////////////////////////////// */
 
 .titulo {
     display: flex;

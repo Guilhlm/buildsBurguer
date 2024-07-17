@@ -21,40 +21,6 @@ $dados = $produto->ListarProdutos();
 
 ?>
 
-<!-- /* //////////////////////////////////////////////////////////////////// */ -->
-
-<div class="sidebar" id="sidebar">
-
-    <section class="xizinhoNav">
-        <button class="fecharnav" onclick="fechar()">X</button>
-    </section>
-
-    <section class="SectionFotoNome">
-        <!-- <img class="imagemPerfil" src="img/<?php echo $_SESSION['fotoPerfilLogado']; ?>"> -->
-        
-        <h2 class="nomeLogin"> 
-        <?php
-        if (isset($_SESSION["usuario"]) && $_SESSION["usuario"] !== "") {
-
-          echo $_SESSION["usuario"]; ?>
-
-        <?php
-        }
-        ?>
-        </h2>
-
-    </section>
-
-    <ul>
-        <?php echo (isset($_SESSION['usuario'])) ? '<a class="nav-link" href="#">Cadastrar ADM</a>' : '' ?>
-        <?php echo (isset($_SESSION['usuario'])) ? '<a class="nav-link" href="#">Cadastrar Produto</a>' : '' ?>
-        <?php echo (isset($_SESSION['usuario'])) ? '<a class="nav-link red" href="logout.php">Logout</a>' : '' ?>
-    </ul>
-
-</div>
-
-<!-- /* //////////////////////////////////////////////////////////////////// */ -->
-
 <section id="banner"></section>
 <!-- hamburguers -->
 <h2 class="titulo" id="hambs">Hamburguers</h2>
@@ -1147,8 +1113,5 @@ $dados = $produto->ListarProdutos();
 </section>
 
 <?php include './includes/footer.php' ?>
-
-
-<script src="navbar.js"></script>
 <script src="assets/script/temaescuro.js"></script>
 <script src="assets/script/script.js"></script>

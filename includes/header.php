@@ -62,10 +62,47 @@
 
                         <?php echo (isset($_SESSION['usuario'])) ? '' : '<li><a href="login.php"><i class="bi bi-person"></i></a></li>' ?>
 
+
+                        <!-- /* //////////////////////////////////////////////////////////////////// */ -->
+
                         <?php echo (isset($_SESSION['usuario'])) ? '<button class="menu-icons" id="AcionarNavbar" onclick="toggleSidebar()">☰</button>' : '' ?>
 
-                    </ul>
 
+                        <div class="sidebar" id="sidebar">
+
+                            <section class="xizinhoNav">
+                                <button class="fecharnav" onclick="fechar()">X</button>
+                            </section>
+
+                            <section class="SectionFotoNome">
+                                <!-- <img class="imagemPerfil" src="img/<?php echo $_SESSION['fotoPerfilLogado']; ?>"> -->
+                                <img class="imagemPerfil" src="https://picsum.photos/seed/picsum/100/100" alt="">
+
+                                <h2 class="nomeLogin">
+                                    <?php
+                                    if (isset($_SESSION["usuario"]) && $_SESSION["usuario"] !== "") {
+
+                                        echo $_SESSION["usuario"]; ?>
+
+                                    <?php
+                                    }
+                                    ?>
+                                </h2>
+
+                            </section>
+
+                            <ul>
+                                <?php echo (isset($_SESSION['usuario'])) ? '<a class="nav-link" href="#">Cadastrar ADM</a>' : '' ?>
+                                <?php echo (isset($_SESSION['usuario'])) ? '<a class="nav-link" href="#">Cadastrar Produto</a>' : '' ?>
+                                <?php echo (isset($_SESSION['usuario'])) ? '<a class="nav-link red" href="logout.php">Logout</a>' : '' ?>
+                            </ul>
+
+                        </div>
+                        <script src="assets/script/navbar.js"></script>
+
+                        <!-- /* //////////////////////////////////////////////////////////////////// */ -->
+
+                    </ul>
                 </div>
             </nav>
         </header>
