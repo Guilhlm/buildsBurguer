@@ -21,7 +21,7 @@ $dados = $produto->listarfiltro();
 
 <!-- /////////////////////////////////////// -->
 
-<?php
+<!-- <?php
 
 if (empty($_POST['buscar'])) {
 
@@ -36,7 +36,7 @@ $query = "SELECT * FROM tb_produtos WHERE titulo LIKE ?";
 $result = $consulta->execute();
 
 
-while ($valor = $result->query($query)->fetchAll()) { ?>
+while ($valor = $result->query($query)->fetchAll()) { ?> -->
 
 
     <!-- /////////////////////////////////////// -->
@@ -95,7 +95,7 @@ while ($valor = $result->query($query)->fetchAll()) { ?>
         </section>
     </section>
 
-<?php } ?>
+<!-- <?php } ?> -->
 
 
 <script src="assets/script/temaescuro.js"></script>
