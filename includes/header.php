@@ -41,17 +41,20 @@
                 </div>
                 <div class="col-3">
 
-
                     <ul class="menu-icons" id="Menu-fim">
 
+                        <form action="filtro.php" method="post">
                         <div class="procurar-box">
-                            <input type="text" class="procurar-texto" placeholder="Pesquisar" name="buscar">
 
-                            <a href="#" class="procurar-botao">
+                                <input type="text" class="procurar-texto" placeholder="Pesquisar" name="buscar">
 
-                            <button id="lupa" type="submit"><i class="bi bi-search" id="lupa"></i></button>
-                            </a>
-                        </div>
+                                <a href="#" class="procurar-botao">
+
+                                    <button id="lupa" type="submit"><i class="bi bi-search" id="lupa"></i></button>
+                                </a>
+
+                            </div>
+                        </form>
 
                         <li><a href="carrinho.php"><i class="bi bi-cart2"></i></a></li>
 
