@@ -51,7 +51,7 @@ $dados = $produto->listarfiltro();
 
 
                         <div class="col-lg-3 col-md-6 col-sm-12">
-                            <a href="?id=<?= $valor['id'] ?>" style="text-decoration: none;">
+                            <a href="click-produto.php?id=<?= $valor['id'] ?>" style="text-decoration: none;">
                                 <figure>
                                     <img src="./assets/img/produtos/<?= $valor['imagem'] ?>" alt="<?= $valor['titulo'] ?>" class="foto-produto">
                                     <figcaption>
