@@ -9,7 +9,7 @@ class filtro
 
         $conn = new PDO("mysql:host=62.72.62.1;dbname=u687609827_gui", "u687609827_gui", "Ou]Q||Jr^7H");
         $query = "SELECT * FROM tb_produtos";
-        $resultado = $conn->query($query)->fetch();
+        $resultado = $conn->query($query)->fetchAll();
         return $resultado;
     }
 }
@@ -46,17 +46,19 @@ $dados = $produto->listarfiltro();
 
                     <?php
 
-                    for ($i = 0; $i < 4; $i++) { ?>
+                    foreach ($dados as $valor ) { ?>
+
+
 
                         <div class="col-lg-3 col-md-6 col-sm-12">
-                            <a href="?id=<?= $dados['id'] ?>" style="text-decoration: none;">
+                            <a href="?id=<?= $valor['id'] ?>" style="text-decoration: none;">
                                 <figure>
-                                    <img src="./assets/img/produtos/<?= $dados['imagem'] ?>" alt="<?= $dados['titulo'] ?>" class="foto-produto">
+                                    <img src="./assets/img/produtos/<?= $valor['imagem'] ?>" alt="<?= $valor['titulo'] ?>" class="foto-produto">
                                     <figcaption>
-                                        <h4><?= $dados['titulo'] ?></h4>
+                                        <h4><?= $valor['titulo'] ?></h4>
                                         <span class="preco">
                                             <p class="preçoescrito precin">Preço ..........</p>
-                                            <p class="precin"><?= $dados['preco'] ?></p>
+                                            <p class="precin"><?= $valor['preco'] ?></p>
                                         </span>
                                     </figcaption>
                                 </figure>
