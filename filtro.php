@@ -8,11 +8,11 @@ class filtro
     {
 
         $conn = new PDO("mysql:host=62.72.62.1;dbname=u687609827_gui", "u687609827_gui", "Ou]Q||Jr^7H");
-        $query = "SELECT * FROM tb_produtos";
+        $query = "SELECT * FROM tb_produtos ORDER BY RAND()";
         $resultado = $conn->query($query)->fetchAll();
         return $resultado;
     }
-}
+}   
 
 $produto = new filtro();
 $dados = $produto->listarfiltro();
@@ -47,8 +47,6 @@ $dados = $produto->listarfiltro();
                     <?php
 
                     foreach ($dados as $valor ) { ?>
-
-
 
                         <div class="col-lg-3 col-md-6 col-sm-12">
                             <a href="click-produto.php?id=<?= $valor['id'] ?>" style="text-decoration: none;">
