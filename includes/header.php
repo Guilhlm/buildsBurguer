@@ -45,11 +45,11 @@
                     <ul class="menu-icons" id="Menu-fim">
 
                         <div class="procurar-box">
-                            <input type="text" class="procurar-texto" placeholder="Pesquisar">
+                            <input type="text" class="procurar-texto" placeholder="Pesquisar" name="buscar">
 
                             <a href="#" class="procurar-botao">
 
-                                <i class="bi bi-search" id="lupa"></i>
+                            <button id="lupa" type="submit"><i class="bi bi-search" id="lupa"></i></button>
                             </a>
                         </div>
 
@@ -61,9 +61,6 @@
                         </label>
 
                         <?php echo (isset($_SESSION['usuario'])) ? '' : '<li><a href="login.php"><i class="bi bi-person"></i></a></li>' ?>
-
-
-                        <!-- /* //////////////////////////////////////////////////////////////////// */ -->
 
                         <?php echo (isset($_SESSION['usuario'])) ? '<button class="menu-icons" id="AcionarNavbar" onclick="toggleSidebar()">☰</button>' : '' ?>
 
@@ -101,8 +98,6 @@
 
                         </div>
                         <script src="assets/script/navbar.js"></script>
-
-                        <!-- /* //////////////////////////////////////////////////////////////////// */ -->
 
                     </ul>
                 </div>

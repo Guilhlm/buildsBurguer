@@ -9,7 +9,6 @@ class Produto
         $conn = new PDO("mysql:host=62.72.62.1;dbname=u687609827_gui", "u687609827_gui", "Ou]Q||Jr^7H");
         $query = "SELECT * FROM tb_produtos";
         $resultado = $conn->query($query)->fetch();
-
         return $resultado;
     }
 }

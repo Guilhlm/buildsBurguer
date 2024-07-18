@@ -141,7 +141,7 @@ header nav {
     font-size: 15px;
     line-height: 20px;
     width: 0;
-    transition: .7s;
+    transition: 1s;
     color: white;
 }
 
@@ -168,6 +168,13 @@ header nav {
 
 #lupa {
     font-size: 20px;
+    border: none;
+    background: none;
+}
+
+#lupa:hover{
+    
+    color: white;
 }
 
 input::placeholder {
