@@ -23,7 +23,7 @@ INSERT INTO tb_produtos (titulo, preco, imagem, categoria, descricao) VALUE ('Ha
 INSERT INTO tb_produtos (titulo, preco, imagem, categoria, descricao) VALUE ('Hamburguer Extra Queijo', 35.00, 'hmbQueijo.png', 1, 'Hamburguer com extra queijo, perfeito para os amantes de queijo. Uma explosão de sabor.');
 INSERT INTO tb_produtos (titulo, preco, imagem, categoria, descricao) VALUE ('Hamburguer com Cogumelos', 45.90, 'hmbCogumelo.png', 1, 'Hamburguer suculento com cogumelos frescos. Um toque gourmet para o seu paladar.');
 INSERT INTO tb_produtos (titulo, preco, imagem, categoria, descricao) VALUE ('Hamburguer Preto', 15.90, 'hambPreto.png', 1, 'Hamburguer preto, uma opção diferente e deliciosa. Surpreenda-se com o sabor único.');
-INSERT INTO tb_produtos (titulo, preco, imagem, categoria, descricao) VALUE ('Hamburguer Nutella', 29.90, 'hmbCompleto.png', 1, 'Hamburguer com Nutella, uma combinação irresistível de doce e salgado. Para os amantes de novidades.');
+INSERT INTO tb_produtos (titulo, preco, imagem, categoria, descricao) VALUE ('Hamburguer Nutella', 29.90, 'hmbdoce.png', 1, 'Hamburguer com Nutella, uma combinação irresistível de doce e salgado. Para os amantes de novidades.');
 INSERT INTO tb_produtos (titulo, preco, imagem, categoria, descricao) VALUE ('Hamburguer Bacon', 35.00, 'hmbQueijo.png', 1, 'Hamburguer com bacon crocante, o toque perfeito de sabor defumado. Uma delícia a cada mordida.');
 INSERT INTO tb_produtos (titulo, preco, imagem, categoria, descricao) VALUE ('Hamburguer com Fritas', 45.90, 'hmbFritas.png', 1, 'Hamburguer acompanhado de fritas crocantes. A combinação clássica que nunca falha.');
 INSERT INTO tb_produtos (titulo, preco, imagem, categoria, descricao) VALUE ('Hamburguer de Costela', 48.90, 'hambcostela.jpeg', 1, 'Hamburguer de costela, suculento e saboroso. Um verdadeiro deleite para os amantes de carne.');
@@ -65,7 +65,7 @@ INSERT INTO tb_produtos (titulo, preco, imagem, categoria, descricao) VALUE ('Re
 INSERT INTO tb_produtos (titulo, preco, imagem, categoria, descricao) VALUE ('Monster', 1.90, 'mlhrmonter.jpg', 4, 'Monster, uma opção energética e saborosa. Ideal para qualquer momento.');
 INSERT INTO tb_produtos (titulo, preco, imagem, categoria, descricao) VALUE ('Monster Red', 9.90, 'monsterred.jpg', 4, 'Monster Red, energético e refrescante. Perfeito para dar um impulso extra.');
 INSERT INTO tb_produtos (titulo, preco, imagem, categoria, descricao) VALUE ('Agua voss', 50.00, 'voss.jpg', 4, 'Água Voss, pura e refrescante. Ideal para hidratação com estilo.');
-INSERT INTO tb_produtos (titulo, preco, imagem, categoria, descricao) VALUE ('coca-zero', 5.90, 'cocarzero.png', 4, 'Coca-zero, refrescante e sem açúcar. Perfeita para qualquer momento.');
+INSERT INTO tb_produtos (titulo, preco, imagem, categoria, descricao) VALUE ('coca-zero', 5.90, 'cocazero.png', 4, 'Coca-zero, refrescante e sem açúcar. Perfeita para qualquer momento.');
 INSERT INTO tb_produtos (titulo, preco, imagem, categoria, descricao) VALUE ('Cerveja skol 1L', 22.90, 'cerveja.jpg', 4, 'Cerveja Skol 1L, refrescante e saborosa. Ideal para compartilhar com amigos.');
 INSERT INTO tb_produtos (titulo, preco, imagem, categoria, descricao) VALUE ('Balde de Heiniken', 79.90, 'baldehei.png', 4, 'Balde de Heineken, perfeito para festas e celebrações. Compartilhe com os amigos.');
 INSERT INTO tb_produtos (titulo, preco, imagem, categoria, descricao) VALUE ('caipirinha', 15.90, 'caipirinha.png', 4, 'Caipirinha, o clássico drink brasileiro. Refrescante e saboroso.');
