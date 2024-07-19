@@ -97,7 +97,7 @@
                                 <?php echo (isset($_SESSION['usuario']) && $_SESSION['nivel'] == "admin") ? '<a class="nav-link" href="#">Cadastrar ADM</a>' : '' ?>
                                 <?php echo (isset($_SESSION['usuario']) && $_SESSION['nivel'] == "admin") ? '<a class="nav-link" href="#">Cadastrar Produto</a>' : '' ?>
                                 <?php echo (isset($_SESSION['usuario'])) ? '<a class="nav-link red" href="logout.php">Logout</a>' : '' ?>
-                               
+
                             </ul>
 
                         </div>

@@ -71,6 +71,8 @@ if (isset($_POST['nomeCadastro']) && !empty($_POST['nomeCadastro'])) {
                 // $_SESSION["fotoPerfilLogado"] = ['foto'];
 
                 header('location: menu.php');
+
+                sleep(2);
             } else {
                 $erro_login = "Usuário ou senha incorretos.";
             }
