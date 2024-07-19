@@ -1,6 +1,6 @@
 <?php include './includes/header.php' ?>
 
-<section id="banner"></section>
+<section><a href="menu.php#hambs"><img id="bannersobre" src="./assets/img/BannerMenu.png" alt=""></a></section>
 
 <div class="centralizar">
     <main class="fundinho" id="historia">

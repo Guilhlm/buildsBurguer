@@ -36,7 +36,6 @@
                         <li><a href="index.html">Inicio</a></li>
                         <li class="select-principal"><a href="menu.php">Cardapio</a></li>
                         <li><a href="sobre.php">Sobre</a></li>
-                        <li><a href="filtro.php">Filtrar</a></li>
                     </ul>
                 </div>
                 <div class="col-3">
