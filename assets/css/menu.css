@@ -81,19 +81,49 @@ body.dark-mode {
     padding-right: 10px;
 }
 
-#sol {
-    font-size: 25px;
-    color: rgba(233, 136, 57, 0.6);
+.containerTema {
     cursor: pointer;
+    font-size: 20px;
+    color: rgb(0, 0, 0);
 }
 
-#ChangeTheme {
-    opacity: 0;
+.containerTema input {
+    display: none;
 }
 
-#sol:hover {
-    color: white;
-    font-size: 25px;
+div.checkmark {
+    background-color: rgba(233, 136, 57, 0.6);
+    border-radius: 15px;
+    display: flex;
+    padding: 0.5em;
+    margin-left: 2px;
+    margin-right: -12px;
+}
+
+.icon {
+    width: 20px;
+    height: auto;
+}
+
+.Yes {
+    width: 0;
+}
+
+div.checkmark::before {
+    position: absolute;
+    box-sizing: border-box;
+}
+
+.containerTema input:checked~div.checkmark .No {
+    width: 0;
+}
+
+.containerTema input:checked~div.checkmark .Yes {
+    width: 20px;
+}
+
+.icon {
+    transition: all 0.3s;
 }
 
 header {
@@ -126,7 +156,6 @@ header nav {
     display: flex;
     background-color: rgba(233, 136, 57, 0.6);
     height: 35px;
-    padding: 5px;
     border-radius: 90px;
     align-items: center;
     padding: 10px;
@@ -204,15 +233,16 @@ input::placeholder {
 }
 
 #AcionarNavbar {
-    border: 3px solid rgba(233, 136, 57, 0.6);
+    border: 2px solid rgba(233, 136, 57, 0.6);
     background: none;
+    padding: 6px;
     color: rgba(233, 136, 57, 0.6) !important;
     border-radius: 10px;
 }
 
 #AcionarNavbar:hover {
     color: white !important;
-    border: 3px solid rgb(255, 255, 255);
+    border: 2px solid rgb(255, 255, 255);
 }
 
 .xizinhoNav {
@@ -278,7 +308,7 @@ input::placeholder {
     text-decoration: none;
     display: block;
     padding: 10px;
-    transition: background-color 0.3s;
+    transition: 0.3s;
     border-radius: 10px;
 }
 
