@@ -65,14 +65,13 @@ if (isset($_POST['nomeCadastro']) && !empty($_POST['nomeCadastro'])) {
                 session_start();
                 $_SESSION["usuario"] = $user;
 
-                $nivel = $resultado ['nivel'];
+                $nivel = $resultado['nivel'];
                 $_SESSION["nivel"] = $nivel;
 
                 // $_SESSION["fotoPerfilLogado"] = ['foto'];
 
                 header('location: menu.php');
             } else {
-
                 $erro_login = "Usuário ou senha incorretos.";
             }
         }
@@ -90,13 +89,22 @@ if (isset($_POST['nomeCadastro']) && !empty($_POST['nomeCadastro'])) {
                 <input type="password" name="senha" placeholder="Senha">
 
                 <?php
-                // Exibe a mensagem de erro se estiver definida
+
+                if (isset($login_sucess)) {
+                    echo '<div id="campo-sucess" style="color:green;">' . $login_sucess . '</div>';
+                    
+                } else {
+                    echo '<div id="campo-sucess"></div>';
+                }
+
                 if (isset($erro_login)) {
-                    echo '<div id="campo-erro">' . $erro_login . '</div>';
+                    echo '<div id="campo-erro" style="color:red;">' . $erro_login . '</div>';
                 } else {
                     echo '<div id="campo-erro"></div>';
                 }
+
                 ?>
+
 
                 <a href="https://accounts.google.com/v3/signin/challenge/kpp" class="esqueceu">Esqueceu tua senha?</a>
                 <input type="submit" class="botaoLogar" value="Logar"></input>

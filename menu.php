@@ -20,7 +20,7 @@ $dados = $produto->ListarProdutos();
 
 ?>
 
-<section id="banner"></section>
+<section id="banner"></section>e
 <!-- hamburguers -->
 <h2 class="titulo" id="hambs">Hamburguers</h2>
 <section class="container" id="produtos">
