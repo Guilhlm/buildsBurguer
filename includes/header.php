@@ -27,7 +27,7 @@
             <nav class="cabeçalho container">
                 <div class="col-3" id="Menu-Comeco">
 
-                    <figure><img class="logo" src="assets/img/foto(logo).png" alt="logo da empresa"></figure>
+                    <figure><a href="menu.php"><img class="logo" src="assets/img/foto(logo).png" alt="logo da empresa"></a></figure>
                 </div>
                 <div class="col-6" id="Menu-meio">
 
