@@ -19,7 +19,6 @@
     <link rel="stylesheet" href="assets/css/carrinho.css">
     <link rel="stylesheet" href="assets/css/click-produto.css">
     <link rel="stylesheet" href="assets/css/filtro.css">
-    <link rel="stylesheet" href="assets/css/perfil.css">
 </head>
 
 <body>
