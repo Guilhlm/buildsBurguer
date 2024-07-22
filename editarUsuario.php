@@ -9,6 +9,7 @@
 
     <link rel="shortcut icon" href="assets/img/foto(logo)favicon.png" type="image/x-icon">
     <link rel="stylesheet" href="assets/css/perfil.css">
+
 </head>
 
 <body>
@@ -18,7 +19,6 @@
 
         <section class="userProfile card">
 
-
             <div class="profile">
                 <figure>
                     <img src="https://picsum.photos/250/250" alt="profile" width="50px" height="25px">
@@ -26,8 +26,6 @@
             </div>
 
         </section>
-
-
 
         <section class="work_skills card">
 
@@ -40,34 +38,20 @@
                     <p>Cpf: 123.123.123</p>
                     <p>Telefone: (11) 1111-1111</p>
                 </div>
-                
-            </div>
 
-
-
-            <div class="redessociaisperfil">
-            <img src="https://picsum.photos/40/40" style="border-radius: 8px;">
-            <img src="https://picsum.photos/40/40" style="border-radius: 8px;">
-            <img src="https://picsum.photos/40/40" style="border-radius: 8px;">
-            <img src="https://picsum.photos/40/40" style="border-radius: 8px;">
-            <img src="https://picsum.photos/40/40" style="border-radius: 8px;">
             </div>
 
         </section>
 
-
-
         <section class="userDetails card">
 
             <div class="userName">
-                <span class="coisinha">ADM ou BASE</span>
+                <span class="coisinha">ADMIN</span>
                 <h1 class="name">NOME DA PESSOA</h1>
                 <p>gui@gmail.com</p>
             </div>
 
         </section>
-
-
 
         <section class="timeline_about card">
             <div class="tabs">
@@ -82,10 +66,49 @@
                         <span>Usuario</span>
                     </li>
                 </ul>
+                <div class="form">
+                    <form action="#">
 
-            </div>
+                        <div class="input-group">
 
-            <div>oi</div>
+                            <div class="input-box">
+                                <label for="firstname">Nome</label>
+                                <input id="firstname" type="text" name="nome" placeholder="Digite seu nome" required>
+                            </div>
+
+                            <div class="input-box">
+                                <label for="lastname">Data Nascimento</label>
+                                <input id="lastname" type="date" name="data" placeholder="Digite sua Data de nascimento" required>
+                            </div>
+
+                            <div class="input-box">
+                                <label for="email">E-mail</label>
+                                <input id="email" type="email" name="email" placeholder="Digite seu e-mail" required>
+                            </div>
+
+                            <div class="input-box">
+                                <label for="number">Telefone</label>
+                                <input id="number" type="tel" name="telefone" placeholder="(xx) xxxx-xxxx" required>
+                            </div>
+
+                            <div class="input-box">
+                                <label for="password">Cpf</label>
+                                <input id="password" type="number" name="password" placeholder="Digite seu CPF" required>
+                            </div>
+
+                            <div class="input-box">
+                                <label for="confirmPassword">Senha</label>
+                                <input id="confirmPassword" type="password" name="confirmPassword" placeholder="Digite sua senha" required>
+                            </div>
+
+                        </div>
+
+                        <div class="continue-button">
+                            <button><a href="#">Alterar</a> </button>
+                        </div>
+
+                    </form>
+                </div>
 
         </section>
     </div>

@@ -48,7 +48,6 @@
                 uma
                 experiência personalizada e memorável.
             </p>
-
             <h2>Um Legado de Sucesso: </h2>
             <p>
                 Hoje, a Build's Burger é muito mais do que apenas uma hamburgueria local. Com várias filiais
@@ -59,7 +58,6 @@
                 toque especial de hospitalidade e criatividade. A jornada desde a cozinha caseira até o sucesso
                 comercial é uma prova do poder da paixão, da perseverança e, é claro, de um bom hambúrguer.
             </p>
-
             <h2>Conclusão: </h2>
             <p>
                 A história da Build's Burger é uma inspiração para empreendedores e amantes da comida em todo o
@@ -89,7 +87,6 @@
                 e
                 superar cada obstaculo.
             </p>
-
             <h2>Start do projeto: </h2>
             <p>
                 Não me lembro o dia em que eu comecei porem, eu tinha uma missão em mente terminar tudo o mais
@@ -126,14 +123,12 @@
                 que
                 eu estava fazendo.
             </p>
-
             <h2>Java Script </h2>
             <p>
                 E então veio o lindo javascript, eu ainda não sei dizer muito sobre essa linguagem por nao estar
                 confortavel o suficiente para realiar comandos com essa ela porem estou me desenvolvendo aos
                 poucos.
             </p>
-
             <h2>Finalização do Html: </h2>
             <p>
                 Essa parte do meu projeto eu tinha convicção que teria acabado tudo, porem tive a incrivel supresa
@@ -144,7 +139,6 @@
                 modos são melhores que os outros, meu aprendizado com essa linguagem me ajudar e muito com o meu
                 proximo desafio que é o PHP.
             </p>
-            f
             <h2>Php: </h2>
             <p>
                 Enfim cheguei no finais do projeto, o PHP pessoalmente foi complicado de entender no começo
@@ -156,7 +150,6 @@
                 muita linha de codigo porem para montrar a estrutura inicial é complicada depois que montou o inicio
                 salva muito codigo (mas enche de arquivos viu pqp).
             </p>
-
             <h2>Banco de Dados: </h2>
             <p>
                 Chegou a hora de montar meu banco, no começo do projeto temi muito ele por não lembrar muito do
@@ -165,7 +158,6 @@
                 de fotos para inserir no meu Banco de dados, isso me gerou um trabalho enorme por ter que montar uma
                 plania no Excel e de la popular o banco mas no final de tudo certo.
             </p>
-
             <h2>Testes finais: </h2>
             <p>
                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur est aliquid beatae
