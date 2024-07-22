@@ -1,0 +1,45 @@
+#grid-principal {
+    border: 4px solid rgb(0, 0, 0);
+    background-image: url(../img/hambsproduto.png);
+    background-color: #7c7c7c;
+    width: 1500px;
+    display: grid;
+    grid-template-columns: 400px 1fr;
+    grid-template-rows: 300px 400px;
+    border-radius: 20px;
+}
+
+.grideditar-1 {
+    font-family: 'Croissant One';
+    color: #000000;
+    grid-column: 1;
+    grid-row: 1/2;
+    background-color: aqua;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.grideditar-2 {
+    font-family: 'Croissant One';
+    color: #000000;
+    grid-column: 1;
+    grid-row: 2;
+    background-color: rgb(255, 0, 200);
+}
+
+.grideditar-3 {
+    gap: 10px;
+    font-size: 15px;
+    grid-column: 2/3;
+    grid-row: 1;
+    background-color: rgb(9, 255, 0);
+}
+
+.grideditar-4 {
+    font-size: 35px;
+    grid-column: 2/3;
+    grid-row: 2;
+    background-color: rgb(255, 0, 0);
+}

@@ -19,6 +19,7 @@
     <link rel="stylesheet" href="assets/css/carrinho.css">
     <link rel="stylesheet" href="assets/css/click-produto.css">
     <link rel="stylesheet" href="assets/css/filtro.css">
+    <link rel="stylesheet" href="assets/css/perfil.css">
 </head>
 
 <body>
@@ -100,7 +101,7 @@
                             </section>
 
                             <ul>
-                                <?php echo (isset($_SESSION['usuario'])) ? '<a class="nav-link" href="#">Editar Usuario</a>' : '' ?>
+                                <?php echo (isset($_SESSION['usuario'])) ? '<a class="nav-link" href="editarUsuario.php">Editar Usuario</a>' : '' ?>
                                 <?php echo (isset($_SESSION['usuario']) && $_SESSION['nivel'] == "admin") ? '<a class="nav-link" href="#">Cadastrar ADM</a>' : '' ?>
                                 <?php echo (isset($_SESSION['usuario']) && $_SESSION['nivel'] == "admin") ? '<a class="nav-link" href="#">Cadastrar Produto</a>' : '' ?>
                                 <?php echo (isset($_SESSION['usuario'])) ? '<a class="nav-link red" href="logout.php">Logout</a>' : '' ?>
