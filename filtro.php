@@ -1,24 +1,5 @@
 <?php include "./includes/header.php"; ?>
 
-<?php
-
-class filtro
-{
-    public function listarfiltro()
-    {
-
-        $conn = new PDO("mysql:host=62.72.62.1;dbname=u687609827_gui", "u687609827_gui", "Ou]Q||Jr^7H");
-        $query = "SELECT * FROM tb_produtos ORDER BY RAND()";
-        $resultado = $conn->query($query)->fetchAll();
-        return $resultado;
-    }
-}
-
-$produto = new filtro();
-$dados = $produto->listarfiltro();
-
-?>
-
 <section class="container" id="produtos">
     <section class="produtos">
         <div class="row">
@@ -36,7 +17,7 @@ $dados = $produto->listarfiltro();
                     }
 
                     $conn = new PDO("mysql:host=62.72.62.1;dbname=u687609827_gui", "u687609827_gui", "Ou]Q||Jr^7H");
-                    $consulta = $conn->prepare("SELECT * FROM tb_produtos WHERE titulo LIKE :buscar ");
+                    $consulta = $conn->prepare("SELECT * FROM tb_produtos WHERE titulo LIKE :buscar ORDER BY RAND()");
 
                     $buscaComCuringa = "%" . $buscar . "%";
                     $consulta->bindParam(':buscar', $buscaComCuringa);
@@ -61,7 +42,6 @@ $dados = $produto->listarfiltro();
                         </div>
                         
                     <?php } ?>
-
 
                 </div>
             </main>
