@@ -34,7 +34,7 @@
                     <ul class="menu">
 
                         <li><a href="index.html">Inicio</a></li>
-                        <li class="select-principal"><a href="menu.php">Cardapio</a></li>                       
+                        <li class="select-principal"><a href="menu.php">Cardapio</a></li>
                         <li><a href="sobre.php">Sobre</a></li>
                     </ul>
                 </div>
@@ -82,15 +82,15 @@
 
                             <section class="SectionFotoNome">
                                 <!-- <img class="imagemPerfil" src="img/<?php echo $_SESSION['fotoPerfilLogado']; ?>"> -->
-                                <img class="imagemPerfil" src="https://picsum.photos/seed/picsum/100/100" alt="">
+
+                                <?php echo (isset($_SESSION['usuario']) && $_SESSION['nivel'] == "admin") ? '<img class="imagemPerfil" src="./assets/img/perfilADM.png" width="150px">' : '<img class="imagemPerfil" src="./assets/img/perfilUser.png" width="150px">' ?>
 
                                 <h2 class="nomeLogin">
 
                                     <?php
                                     if (isset($_SESSION["usuario"]) && $_SESSION["usuario"] !== "") {
 
-
-                                        echo ($_SESSION['usuario']); ?>
+                                        echo ($_SESSION['nome']); ?>
 
                                     <?php
                                     }

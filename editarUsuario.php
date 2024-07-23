@@ -21,7 +21,7 @@
         <section class="userProfile card">
             <div class="profile">
                 <figure>
-                    <img src="https://picsum.photos/250/250" alt="profile" width="50px" height="25px">
+                    <?php echo (isset($_SESSION['usuario']) && $_SESSION['nivel'] == "admin") ? '<img class="imagemPerfil" src="./assets/img/perfilADM.png" width="150px">' : '<img class="imagemPerfil" src="./assets/img/perfilUser.png" width="150px">' ?>
                 </figure>
             </div>
         </section>
@@ -34,7 +34,7 @@
                 <h1 class="heading">Informações Pessoais</h1><br>
                 <div class="primary">
 
-                    <p>Nome: <?php echo ($_SESSION['nome']); ?></p>
+                    <p style="text-transform: uppercase;">Nome: <?php echo ($_SESSION['nome']); ?></p>
                     <p>Data Nasc: <?php echo ($_SESSION['ano_nascimento']); ?></p>
                     <p>Cpf: <?php echo ($_SESSION['cpf']); ?></p>
                     <p>Telefone: <?php echo ($_SESSION['telefone_1']); ?></p>
@@ -72,38 +72,44 @@
 
                             <div class="input-box">
                                 <label for="firstname">Nome</label>
-                                <input id="firstname" type="text" name="nome" placeholder="Digite seu nome" required>
+                                <input id="firstname" type="text" name="nome" placeholder="Digite seu nome">
                             </div>
 
                             <div class="input-box">
                                 <label for="lastname">Data Nascimento</label>
-                                <input id="lastname" type="date" name="data" placeholder="Digite sua Data de nascimento" required>
+                                <input id="lastname" type="date" name="data">
                             </div>
 
                             <div class="input-box">
                                 <label for="email">E-mail</label>
-                                <input id="email" type="email" name="email" placeholder="Digite seu e-mail" required>
+                                <input id="email" type="email" name="email" placeholder="exemplo@gmail.com">
                             </div>
 
                             <div class="input-box">
                                 <label for="number">Telefone</label>
-                                <input id="number" type="tel" name="telefone" placeholder="(xx) xxxx-xxxx" required>
+                                <input id="number" type="tel" name="telefone" placeholder="(xx) xxxx-xxxx">
                             </div>
 
                             <div class="input-box">
                                 <label for="password">Cpf</label>
-                                <input id="password" type="number" name="password" placeholder="Digite seu CPF" required>
+                                <input id="password" type="number" name="password" placeholder="000.000.000.00">
                             </div>
 
                             <div class="input-box">
                                 <label for="confirmPassword">Senha</label>
-                                <input id="confirmPassword" type="password" name="confirmPassword" placeholder="Digite sua senha" required>
+                                <input id="confirmPassword" type="password" name="confirmPassword" placeholder="Digite sua senha">
                             </div>
 
-                            <div class="input-box">
+                            <?php echo (isset($_SESSION['usuario']) && $_SESSION['nivel'] == "admin") ? 
+                            
+                            '<div class="input-box">
                                 <label for="confirmPassword">Nivel</label>
-                                <input id="confirmPassword" type="password" name="confirmPassword" placeholder="admin ou null" required>
-                            </div>
+                                <input id="confirmPassword" type="password" name="confirmPassword" placeholder="admin ou vazio">
+                            </div>' 
+                            
+                            : '' ?>
+
+
 
                         </div>
 

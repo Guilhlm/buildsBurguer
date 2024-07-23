@@ -25,7 +25,6 @@ if (isset($_POST['nomeCadastro']) && !empty($_POST['nomeCadastro'])) {
     $conn = new PDO("mysql:host=62.72.62.1;dbname=u687609827_gui", "u687609827_gui", "Ou]Q||Jr^7H");
     $scriptCadastro = "INSERT INTO tb_usuarios (nome, usuario, senha) VALUE ('{$nome}', '{$usuario}', '{$senha}')";
     $resultadoCadastro = $conn->prepare($scriptCadastro)->execute([]);
-
 } ?>
 
 <body class="body-login">
@@ -59,7 +58,6 @@ if (isset($_POST['nomeCadastro']) && !empty($_POST['nomeCadastro'])) {
             $script = "SELECT * FROM tb_usuarios INNER JOIN tb_pessoas ON tb_usuarios.id_pessoa = tb_pessoas.id WHERE usuario = '{$user}' AND senha = '{$password}'";
             $resultado = $conn->query($script)->fetch();
 
-
             if (!empty($resultado)) {
 
                 session_start();
@@ -75,9 +73,8 @@ if (isset($_POST['nomeCadastro']) && !empty($_POST['nomeCadastro'])) {
                 $_SESSION['telefone_1'] = $resultado['telefone_1'];
                 $_SESSION['ano_nascimento'] = $resultado['ano_nascimento'];
 
-                header('location: menu.php');
+                header('location: editarUsuario.php');
                 sleep(1);
-
             } else {
                 $erro_login = "Usuário ou senha incorretos.";
             }
@@ -130,7 +127,7 @@ if (isset($_POST['nomeCadastro']) && !empty($_POST['nomeCadastro'])) {
         </div>
     </div>
     <script src="assets/script/login.js"></script>
-    
+
 </body>
 
 </html>

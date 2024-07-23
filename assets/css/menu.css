@@ -287,7 +287,8 @@ input::placeholder {
 
 .nomeLogin {
     display: flex;
-    font-size: 18px;
+    font-size: 25px;
+    text-transform: uppercase;
 }
 
 .imagemPerfil {
