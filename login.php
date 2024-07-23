@@ -53,35 +53,34 @@ if (isset($_POST['nomeCadastro']) && !empty($_POST['nomeCadastro'])) {
 
             $user = $_POST['usuario'];
             $password = $_POST['senha'];
+            $nome = $_POST['nome'];
+            $cpf = $_POST['cpf'];
+            $ano_nascimento = $_POST['ano_nascimento'];
+            $telefone = $_POST['telefone_1'];
 
             $conn = new PDO("mysql:host=62.72.62.1;dbname=u687609827_gui", "u687609827_gui", "Ou]Q||Jr^7H");
-            $script = "SELECT * FROM tb_usuarios WHERE usuario = '{$user}' AND senha = '{$password}'";
+            $script = "SELECT * FROM tb_usuarios INNER JOIN tb_pessoas ON tb_usuarios.id_pessoa = tb_pessoas.id WHERE usuario = '{$user}' AND senha = '{$password}'";
             $resultado = $conn->query($script)->fetch();
 
-            
-            // $nome = $_POST['nome'];
-            // $cpf = $_POST['cpf'];
-            // $scriptPessoa = "SELECT * FROM tb_pessoas WHERE nome = '{$nome}' AND cpf = '{$cpf}'";
-            // $resultadoPessoa = $conn->query($scriptPessoa)->fetch();
 
-
-            
-            // $resultadoPessoa["nome"] = $nome;
-            // $resultadoPessoa["cpf"] = $cpf;
-
-            if (!empty($resultado)) { 
+            if (!empty($resultado)) {
 
                 session_start();
-                $_SESSION["usuario"] = $user;
 
+                $_SESSION["usuario"] = $user;
                 $nivel = $resultado['nivel'];
                 $_SESSION["nivel"] = $nivel;
 
                 // $_SESSION["fotoPerfilLogado"] = ['foto'];
 
-                header('location: menu.php');
+                $_SESSION['nome'] = $resultado['nome'];
+                $_SESSION['cpf'] = $resultado['cpf'];
+                $_SESSION['telefone_1'] = $resultado['telefone_1'];
+                $_SESSION['ano_nascimento'] = $resultado['ano_nascimento'];
 
+                header('location: menu.php');
                 sleep(1);
+
             } else {
                 $erro_login = "Usuário ou senha incorretos.";
             }
@@ -103,7 +102,6 @@ if (isset($_POST['nomeCadastro']) && !empty($_POST['nomeCadastro'])) {
 
                 if (isset($login_sucess)) {
                     echo '<div id="campo-sucess" style="color:green;">' . $login_sucess . '</div>';
-                    
                 } else {
                     echo '<div id="campo-sucess"></div>';
                 }
@@ -115,7 +113,6 @@ if (isset($_POST['nomeCadastro']) && !empty($_POST['nomeCadastro'])) {
                 }
 
                 ?>
-
 
                 <a href="https://accounts.google.com/v3/signin/challenge/kpp" class="esqueceu">Esqueceu tua senha?</a>
                 <input type="submit" class="botaoLogar" value="Logar"></input>

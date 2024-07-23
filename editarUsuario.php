@@ -34,14 +34,14 @@
 
             <div class="work">
 
-                <span class="nivelConta"> <?php echo (isset($_SESSION['usuario']) && $_SESSION['nivel'] == "admin") ? 'Admin' : 'Basico' ?> </span>
+                <span class="nivelConta"> <?php echo (isset($_SESSION['usuario']) && $_SESSION['nivel'] == "admin") ? 'Admin' : 'Cliente' ?> </span>
 
                 <h1 class="heading">Informações Pessoais</h1><br>
                 <div class="primary">
-                    <p>Nome: <?php echo ($_POST['nome']); ?></p>
-                    <p>Data Nasc: <?php echo ($_SESSION['usuario']); ?></p>
+                    <p>Nome: <?php echo ($_SESSION['nome']); ?></p>
+                    <p>Data Nasc: <?php echo ($_SESSION['ano_nascimento']); ?></p>
                     <p>Cpf: <?php echo ($_SESSION['cpf']); ?></p>
-                    <p>Telefone: <?php echo ($_SESSION['usuario']); ?></p>
+                    <p>Telefone: <?php echo ($_SESSION['telefone_1']); ?></p>
                 </div>
 
             </div>
@@ -54,7 +54,7 @@
                 <p class="fecharPerfil">
                     <a href="menu.php">X</a>
                 </p>
-                <h1 class="name"><?php echo ($_SESSION['usuario']); ?></h1>
+                <h1 class="name"><?php echo ($_SESSION['nome']); ?></h1>
                 <p><?php echo ($_SESSION['usuario']); ?></p>
             </div>
 
