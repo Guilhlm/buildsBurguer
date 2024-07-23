@@ -10,20 +10,19 @@ class Produto
         $conn = new PDO("mysql:host=62.72.62.1;dbname=u687609827_gui", "u687609827_gui", "Ou]Q||Jr^7H");
         $query = "SELECT * FROM tb_produtos WHERE id = {$id}";
         $resultado = $conn->query($query)->fetch();
-
         return $resultado;
+
     }
 }
 
 $produto = new Produto();
 
 if (isset($_GET['id']) && !empty($_GET['id'])) {
+
     $id = $_GET['id'];
-
     $dados = $produto->Listar1Produto($id);
-}
 
-?>
+} ?>
 
 <section class="body-produto">
 
@@ -88,5 +87,4 @@ if (isset($_GET['id']) && !empty($_GET['id'])) {
 </section>
 
 <script src="assets/script/temaescuro.js"></script>
-
 <?php include './includes/footer.php' ?>

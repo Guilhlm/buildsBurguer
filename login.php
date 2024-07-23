@@ -23,13 +23,10 @@ if (isset($_POST['nomeCadastro']) && !empty($_POST['nomeCadastro'])) {
     $Confirmar = $_POST['ConfirmarCadastro'];
 
     $conn = new PDO("mysql:host=62.72.62.1;dbname=u687609827_gui", "u687609827_gui", "Ou]Q||Jr^7H");
-
     $scriptCadastro = "INSERT INTO tb_usuarios (nome, usuario, senha) VALUE ('{$nome}', '{$usuario}', '{$senha}')";
-
     $resultadoCadastro = $conn->prepare($scriptCadastro)->execute([]);
-}
 
-?>
+} ?>
 
 <body class="body-login">
 
@@ -84,9 +81,7 @@ if (isset($_POST['nomeCadastro']) && !empty($_POST['nomeCadastro'])) {
             } else {
                 $erro_login = "Usuário ou senha incorretos.";
             }
-        }
-
-        ?>
+        } ?>
 
         <div class="form-container logar">
             <form action="#" method="POST">
@@ -134,8 +129,8 @@ if (isset($_POST['nomeCadastro']) && !empty($_POST['nomeCadastro'])) {
             </div>
         </div>
     </div>
-
     <script src="assets/script/login.js"></script>
+    
 </body>
 
 </html>

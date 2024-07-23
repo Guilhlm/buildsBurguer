@@ -18,34 +18,29 @@
 <body>
 
     <div class="container containereditar">
-
         <section class="userProfile card">
-
             <div class="profile">
-
                 <figure>
                     <img src="https://picsum.photos/250/250" alt="profile" width="50px" height="25px">
                 </figure>
             </div>
-
         </section>
 
         <section class="work_skills card">
-
             <div class="work">
 
                 <span class="nivelConta"> <?php echo (isset($_SESSION['usuario']) && $_SESSION['nivel'] == "admin") ? 'Admin' : 'Cliente' ?> </span>
 
                 <h1 class="heading">Informações Pessoais</h1><br>
                 <div class="primary">
+
                     <p>Nome: <?php echo ($_SESSION['nome']); ?></p>
                     <p>Data Nasc: <?php echo ($_SESSION['ano_nascimento']); ?></p>
                     <p>Cpf: <?php echo ($_SESSION['cpf']); ?></p>
                     <p>Telefone: <?php echo ($_SESSION['telefone_1']); ?></p>
+
                 </div>
-
             </div>
-
         </section>
 
         <section class="userDetails card">
@@ -54,15 +49,16 @@
                 <p class="fecharPerfil">
                     <a href="menu.php">X</a>
                 </p>
+
                 <h1 class="name"><?php echo ($_SESSION['nome']); ?></h1>
                 <p><?php echo ($_SESSION['usuario']); ?></p>
+
             </div>
 
         </section>
 
         <section class="timeline_about card">
             <div class="tabs">
-
                 <ul>
                     <li class="about active">
                         <i class="ri-user-3-fill ri"></i>
@@ -117,7 +113,6 @@
 
                     </form>
                 </div>
-
         </section>
     </div>
 

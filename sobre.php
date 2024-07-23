@@ -15,6 +15,7 @@
                 desejo de compartilhar sua paixão com o mundo foram os ingredientes iniciais deste
                 empreendimento.
             </p>
+
             <h2>Os Primeiros Passos: </h2>
             <p>
                 Em um bairro tranquilo da cidade, Guilherme decidiu transformar seu hobby em um negócio real.
@@ -25,6 +26,7 @@
                 suas portas em 2024. A decoração simples e o aroma tentador dos hambúrgueres juntamente com seu
                 diferencial atraíram os moradores locais desde o primeiro dia.
             </p>
+
             <h2>Desafios e Superando Obstáculos: </h2>
             <p>
                 No início, enfrentamos uma série de desafios típicos de qualquer novo empreendimento. Desde
@@ -36,6 +38,7 @@
                 contra
                 tempos e transformamos cada desafio em uma oportunidade de crescimento.
             </p>
+            
             <h2>O Toque Especial: </h2>
             <p>
                 O que torna a Build's Burger verdadeiramente especial é o seu compromisso com a qualidade e a
@@ -48,6 +51,7 @@
                 uma
                 experiência personalizada e memorável.
             </p>
+
             <h2>Um Legado de Sucesso: </h2>
             <p>
                 Hoje, a Build's Burger é muito mais do que apenas uma hamburgueria local. Com várias filiais
@@ -58,6 +62,7 @@
                 toque especial de hospitalidade e criatividade. A jornada desde a cozinha caseira até o sucesso
                 comercial é uma prova do poder da paixão, da perseverança e, é claro, de um bom hambúrguer.
             </p>
+
             <h2>Conclusão: </h2>
             <p>
                 A história da Build's Burger é uma inspiração para empreendedores e amantes da comida em todo o
@@ -87,6 +92,7 @@
                 e
                 superar cada obstaculo.
             </p>
+
             <h2>Start do projeto: </h2>
             <p>
                 Não me lembro o dia em que eu comecei porem, eu tinha uma missão em mente terminar tudo o mais
@@ -98,6 +104,7 @@
                 de
                 tudo.
             </p>
+
             <h2>Cronograma: </h2>
             <p>
                 Ao decorrer dos dias eu percebia que não tinha começado nada do meu projeto e meus amigos ja
@@ -109,6 +116,7 @@
                 ajudou em
                 muito por saber que meu projeto evoluia mesmo que pouco a pouco.
             </p>
+
             <h2>O despertar: </h2>
             <p>
                 Em um certo dia me peguei pensando o que eu gostaria para minha vida e como daria o start para
@@ -123,12 +131,14 @@
                 que
                 eu estava fazendo.
             </p>
+
             <h2>Java Script </h2>
             <p>
                 E então veio o lindo javascript, eu ainda não sei dizer muito sobre essa linguagem por nao estar
                 confortavel o suficiente para realiar comandos com essa ela porem estou me desenvolvendo aos
                 poucos.
             </p>
+
             <h2>Finalização do Html: </h2>
             <p>
                 Essa parte do meu projeto eu tinha convicção que teria acabado tudo, porem tive a incrivel supresa
@@ -139,6 +149,7 @@
                 modos são melhores que os outros, meu aprendizado com essa linguagem me ajudar e muito com o meu
                 proximo desafio que é o PHP.
             </p>
+
             <h2>Php: </h2>
             <p>
                 Enfim cheguei no finais do projeto, o PHP pessoalmente foi complicado de entender no começo
@@ -150,6 +161,7 @@
                 muita linha de codigo porem para montrar a estrutura inicial é complicada depois que montou o inicio
                 salva muito codigo (mas enche de arquivos viu pqp).
             </p>
+
             <h2>Banco de Dados: </h2>
             <p>
                 Chegou a hora de montar meu banco, no começo do projeto temi muito ele por não lembrar muito do
@@ -158,6 +170,7 @@
                 de fotos para inserir no meu Banco de dados, isso me gerou um trabalho enorme por ter que montar uma
                 plania no Excel e de la popular o banco mas no final de tudo certo.
             </p>
+            
             <h2>Testes finais: </h2>
             <p>
                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur est aliquid beatae
