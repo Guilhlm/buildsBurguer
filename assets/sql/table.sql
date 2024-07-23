@@ -91,17 +91,18 @@ INSERT INTO tb_produtos (titulo, preco, imagem, categoria, descricao) VALUE ('Ma
 INSERT INTO tb_produtos (titulo, preco, imagem, categoria, descricao) VALUE ('Sorvete Magnum', 11.00, 'magnumcomcobertura.png', 5, 'Sorvete Magnum, uma sobremesa indulgente e deliciosa. Perfeita para qualquer momento.');
 INSERT INTO tb_produtos (titulo, preco, imagem, categoria, descricao) VALUE ('Milk-shake de chocolate', 17.90, 'milkshake.png', 5, 'Milk-shake de chocolate, uma bebida deliciosa e refrescante. Perfeita para qualquer hora.');
 
-CREATE TABLE tb_usuarios (
+CREATE TABLE tb_usuariosss (
     id INT PRIMARY KEY AUTO_INCREMENT,
     nome VARCHAR(100),
     usuario VARCHAR(100),
     senha VARCHAR(100),
-    id_pessoa id INT PRIMARY KEY AUTO_INCREMENT
+    id_pessoa INT,
+    nivel VARCHAR(255) NULL
 );
 
-INSERT INTO tb_usuarios (nome, usuario, senha, id_pessoa)
+INSERT INTO tb_usuarios (nome, usuario, senha, id_pessoa, nivel)
 VALUES
-    ('admin', 'admin@gmail.com', 'admin'),
+    ('admin', 'admin@gmail.com', 'admin', 'admin'),
     ('ana', 'ana@gmail.com', 'ana123'),
     ('carlos', 'carlos@gmail.com', 'carlos123'),
     ('maria', 'maria@gmail.com', 'maria123'),
