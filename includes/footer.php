@@ -36,7 +36,7 @@
                     <li><a href="https://idrink.paulowh.com/adega-idrink/" target="_blank">IDrink</a></li>
                     <li><a href="https://ventqui.paulowh.com/" target="_blank">Ven't qui</a></li>
                     <li><a href="https://doceslunares.paulowh.com/" target="_blank">Doces lunares</a></li>
-                    <li><a href="#" target="_blank">Manutenção</a></li>
+                    <li><a href="#" target="_blank">Pc prevenido</a></li>
                     <li><a href="https://policebox.paulowh.com/" target="_blank">Police box</a></li>
                 </ul>
             </div>
