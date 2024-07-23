@@ -273,7 +273,7 @@ input::placeholder {
 
 .sidebar {
     width: 450px;
-    height: 100vh;
+    height: 101vh;
     background-color: #2c2c2c;
     border-left: 5px solid rgb(134, 87, 0);
     color: white;

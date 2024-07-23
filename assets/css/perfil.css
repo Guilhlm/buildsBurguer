@@ -11,6 +11,7 @@ body {
   justify-content: center;
   align-items: center;
   min-height: 100vh;
+  background-color: #1d1d1d;
 }
 
 .containereditar {
@@ -22,8 +23,8 @@ body {
     "work_skills timeline_about"
     "work_skills timeline_about";
   width: 85%;
-  height: 85vh;
-  background: rgba(179, 179, 179, 0.815);
+  height: 90vh;
+  background-color: #505050;
   padding: 20px;
   border-radius: 10px;
   gap: 10px;
@@ -91,17 +92,36 @@ body {
   margin-bottom: 20px;
 }
 
-.coisinha {
+.nivelConta {
   position: absolute;
-  top: 0;
-  right: 3rem;
+  left: 320px;
   font-weight: 700;
   font-size: 15px;
   color: rgb(85, 129, 212);
   background: #e6f2ff;
   padding: 4px 10px;
   border-radius: 0.4rem;
+}
+
+.fecharPerfil a{
+  position: absolute;
+  top: 0;
+  right: 30px;
+  font-weight: 700;
+  font-size: 25px !important;
+  color: rgb(0, 0, 0) !important;
+  background: #e6f2ff;
+  padding: 4px 10px;
+  border-radius: 0.4rem;
   margin-top: 20px;
+  cursor: pointer;
+  text-decoration: none;
+
+}
+
+.fecharPerfil a:hover {
+  color: rgb(218, 0, 0) !important;
+  background: #ccd7e2;
 }
 
 .work_skills .work .primary p,
@@ -162,15 +182,6 @@ body {
   margin-right: 6px;
 }
 
-.timeline_about .tabs ul .active::before {
-  content: "";
-  position: absolute;
-  bottom: 0;
-  width: 120%;
-  height: 2px;
-  background: rgb(49, 49, 177);
-}
-
 .form {
   display: flex;
   justify-content: center;
@@ -181,7 +192,6 @@ body {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-evenly;
-  padding: 1rem 0;
 }
 
 .input-box {
@@ -206,7 +216,6 @@ body {
 
 .continue-button button {
   width: 100%;
-  margin-top: 25px;
   border: none;
   background-color: #ce7500;
   padding: 10px;

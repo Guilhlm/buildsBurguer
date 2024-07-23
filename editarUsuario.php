@@ -1,3 +1,5 @@
+<?php session_start(); ?>
+
 <!DOCTYPE html>
 <html lang="pt-br">
 
@@ -12,14 +14,15 @@
 
 </head>
 
+
 <body>
 
     <div class="container containereditar">
 
-
         <section class="userProfile card">
 
             <div class="profile">
+
                 <figure>
                     <img src="https://picsum.photos/250/250" alt="profile" width="50px" height="25px">
                 </figure>
@@ -31,12 +34,14 @@
 
             <div class="work">
 
+                <span class="nivelConta"> <?php echo (isset($_SESSION['usuario']) && $_SESSION['nivel'] == "admin") ? 'Admin' : 'Basico' ?> </span>
+
                 <h1 class="heading">Informações Pessoais</h1><br>
                 <div class="primary">
-                    <p>Nome: NOMEPESSOA</p>
-                    <p>Data Nasc: 00-00-0000</p>
-                    <p>Cpf: 123.123.123</p>
-                    <p>Telefone: (11) 1111-1111</p>
+                    <p>Nome: <?php echo ($_POST['nome']); ?></p>
+                    <p>Data Nasc: <?php echo ($_SESSION['usuario']); ?></p>
+                    <p>Cpf: <?php echo ($_SESSION['cpf']); ?></p>
+                    <p>Telefone: <?php echo ($_SESSION['usuario']); ?></p>
                 </div>
 
             </div>
@@ -46,9 +51,11 @@
         <section class="userDetails card">
 
             <div class="userName">
-                <span class="coisinha">ADMIN</span>
-                <h1 class="name">NOME DA PESSOA</h1>
-                <p>gui@gmail.com</p>
+                <p class="fecharPerfil">
+                    <a href="menu.php">X</a>
+                </p>
+                <h1 class="name"><?php echo ($_SESSION['usuario']); ?></h1>
+                <p><?php echo ($_SESSION['usuario']); ?></p>
             </div>
 
         </section>
@@ -57,13 +64,9 @@
             <div class="tabs">
 
                 <ul>
-                    <li class="timeline">
-                        <i class="ri-eye-fill ri"></i>
-                        <span>Novo Lanche</span>
-                    </li>
                     <li class="about active">
                         <i class="ri-user-3-fill ri"></i>
-                        <span>Usuario</span>
+                        <span>Editar Informações</span>
                     </li>
                 </ul>
                 <div class="form">
@@ -101,10 +104,15 @@
                                 <input id="confirmPassword" type="password" name="confirmPassword" placeholder="Digite sua senha" required>
                             </div>
 
+                            <div class="input-box">
+                                <label for="confirmPassword">Nivel</label>
+                                <input id="confirmPassword" type="password" name="confirmPassword" placeholder="admin ou null" required>
+                            </div>
+
                         </div>
 
                         <div class="continue-button">
-                            <button><a href="#">Alterar</a> </button>
+                            <button><a href="#">Salvar</a> </button>
                         </div>
 
                     </form>
