@@ -96,22 +96,22 @@ CREATE TABLE tb_usuarios (
     nome VARCHAR(100),
     usuario VARCHAR(100),
     senha VARCHAR(100),
-    id_pessoa INT NOT NULL
+    id_pessoa id INT PRIMARY KEY AUTO_INCREMENT
 );
 
 INSERT INTO tb_usuarios (nome, usuario, senha, id_pessoa)
 VALUES
-    ('admin', 'admin@gmail.com', 'admin', '1'),
-    ('ana', 'ana@gmail.com', 'ana123', '2'),
-    ('carlos', 'carlos@gmail.com', 'carlos123', '3'),
-    ('maria', 'maria@gmail.com', 'maria123', '4'),
-    ('jose', 'jose@gmail.com', 'jose123', '5'),
-    ('joão', 'joão@gmail.com', 'joão123', '6'),
-    ('luciana', 'luciana@gmail.com', 'luciana123', '7'),
-    ('felipe', 'felipe@gmail.com', 'felipe123', '8'),
-    ('roberta', 'roberta@gmail.com', 'roberta123', '9'),
-    ('gabriel', 'gabriel@gmail.com', 'gabriel123', '10'),
-    ('patricia', 'patricia@gmail.com', 'patricia123', '11');
+    ('admin', 'admin@gmail.com', 'admin'),
+    ('ana', 'ana@gmail.com', 'ana123'),
+    ('carlos', 'carlos@gmail.com', 'carlos123'),
+    ('maria', 'maria@gmail.com', 'maria123'),
+    ('jose', 'jose@gmail.com', 'jose123'),
+    ('joão', 'joão@gmail.com', 'joão123'),
+    ('luciana', 'luciana@gmail.com', 'luciana123'),
+    ('felipe', 'felipe@gmail.com', 'felipe123'),
+    ('roberta', 'roberta@gmail.com', 'roberta123'),
+    ('gabriel', 'gabriel@gmail.com', 'gabriel123'),
+    ('patricia', 'patricia@gmail.com', 'patricia123');
 
     
 CREATE TABLE tb_pessoas (
@@ -124,7 +124,7 @@ CREATE TABLE tb_pessoas (
 
 INSERT INTO tb_pessoas (nome, ano_nascimento, cpf, telefone_1)
 VALUES
-    ('guilherme', '2008', '123.456.789', '(11) 1111-1111'),
+    ('guilherme', '2005', '101.010.110', '(11) 1233-2132'),
     ('ana', '1985', '987.654.321-00', '(22) 9876-5432'),
     ('carlos', '2000', '234.567.890-12', '(33) 2345-6789'),
     ('maria', '1993', '876.543.210-98', '(44) 8765-4321'),
