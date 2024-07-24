@@ -35,7 +35,7 @@
                 <div class="primary">
 
                     <p style="text-transform: uppercase;">Nome: <?php echo ($_SESSION['nome']); ?></p>
-                    <p>Data Nasc: <?php echo ($_SESSION['ano_nascimento']); ?></p>
+                    <p>Ano Nasc: <?php echo ($_SESSION['ano_nascimento']); ?></p>
                     <p>Cpf: <?php echo ($_SESSION['cpf']); ?></p>
                     <p>Telefone: <?php echo ($_SESSION['telefone_1']); ?></p>
 
@@ -66,62 +66,60 @@
                     </li>
                 </ul>
                 <div class="form">
-                    <form action="#">
+                    <form action="UpdteUsuario.php?id=<?= $resultado['id'] ?>">
 
                         <div class="input-group">
 
                             <div class="input-box">
                                 <label for="firstname">Nome</label>
-                                <input id="firstname" type="text" name="nome" placeholder="Digite seu nome">
+                                <input id="firstname" type="text" name="nome" placeholder="Digite seu nome" value="<?= $_SESSION['nome'] ?>">
                             </div>
 
                             <div class="input-box">
-                                <label for="lastname">Data Nascimento</label>
-                                <input id="lastname" type="date" name="data">
+                                <label for="lastname">Ano Nascimento</label>
+                                <input id="lastname" type="int" name="data" value="<?= $_SESSION['ano_nascimento'] ?>">
                             </div>
 
                             <div class="input-box">
                                 <label for="email">E-mail</label>
-                                <input id="email" type="email" name="email" placeholder="exemplo@gmail.com">
+                                <input id="email" type="email" name="email" placeholder="exemplo@gmail.com" value="<?= $_SESSION['usuario'] ?>">
                             </div>
 
                             <div class="input-box">
                                 <label for="number">Telefone</label>
-                                <input id="number" type="tel" name="telefone" placeholder="(xx) xxxx-xxxx">
+                                <input id="number" type="tel" name="telefone" placeholder="(xx) xxxx-xxxx" value="<?= $_SESSION['telefone_1'] ?>">
                             </div>
 
                             <div class="input-box">
                                 <label for="password">Cpf</label>
-                                <input id="password" type="number" name="password" placeholder="000.000.000.00">
+                                <input id="password" type="text" name="cpf" placeholder="000.000.000.00" value=" <?= $_SESSION['cpf'] ?>">
                             </div>
 
                             <div class="input-box">
                                 <label for="confirmPassword">Senha</label>
-                                <input id="confirmPassword" type="password" name="confirmPassword" placeholder="Digite sua senha">
+                                <input id="confirmPassword" type="password" name="confirmPassword" placeholder="Digite sua senha" >
                             </div>
 
-                            <?php echo (isset($_SESSION['usuario']) && $_SESSION['nivel'] == "admin") ? 
-                            
-                            '<div class="input-box">
+                            <?php echo (isset($_SESSION['usuario']) && $_SESSION['nivel'] == "admin") ?
+
+                                '<div class="input-box">
                                 <label for="confirmPassword">Nivel</label>
-                                <input id="confirmPassword" type="password" name="confirmPassword" placeholder="admin ou vazio">
-                            </div>' 
-                            
-                            : '' ?>
+                                <input id="confirmPassword" type="text" name="confirmPassword " placeholder="admin ou vazio">
+                            </div>'
 
-
-
+                                : '' ?>
                         </div>
 
-                        <div class="continue-button">
-                            <button><a href="#">Salvar</a> </button>
-                        </div>
+
+                        <button class="continue-button" type="submit" value="Confirmar Alterações">Confirmar alterações</button>
 
                     </form>
-                </div>
+                </div>  
         </section>
     </div>
 
 </body>
 
 </html>
+
+

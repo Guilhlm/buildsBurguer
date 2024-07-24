@@ -215,7 +215,7 @@ body {
   color: #00000050;
 }
 
-.continue-button button {
+.continue-button  {
   width: 100%;
   border: none;
   background-color: #ce7500;
@@ -224,11 +224,11 @@ body {
   cursor: pointer;
 }
 
-.continue-button button:hover {
+.continue-button:hover {
   background-color: #834a00;
 }
 
-.continue-button button a {
+.continue-button {
   text-decoration: none;
   font-size: 18px;
   font-weight: 500;
