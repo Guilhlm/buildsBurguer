@@ -23,7 +23,13 @@ if (isset($_POST['nomeCadastro']) && !empty($_POST['nomeCadastro'])) {
     $Confirmar = $_POST['ConfirmarCadastro'];
 
     $conn = new PDO("mysql:host=62.72.62.1;dbname=u687609827_gui", "u687609827_gui", "Ou]Q||Jr^7H");
-    $scriptCadastro = "INSERT INTO tb_usuarios (nome, usuario, senha) VALUE ('{$nome}', '{$usuario}', '{$senha}')";
+
+
+    $scriptCadastroPessoa = "INSERT INTO tb_pessoas (nome) VALUE ('{$nome}')";
+    $resultadoCadastroPessoa = $conn->prepare($scriptCadastroPessoa)->execute([]);
+    $pessoaID = $conn->lastInsertId();
+
+    $scriptCadastro = "INSERT INTO tb_usuarios (nome, usuario, senha, id_pessoa) VALUE ('{$nome}', '{$usuario}', '{$senha}', '{$pessoaID}')";
     $resultadoCadastro = $conn->prepare($scriptCadastro)->execute([]);
 } ?>
 
