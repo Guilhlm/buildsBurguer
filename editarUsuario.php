@@ -27,7 +27,7 @@
 
                 <div class="fundoHeader">
                     <figure>
-                        <img src="<?php echo (isset($_SESSION['usuario']) && $_SESSION['nivel'] == "admin") ? './assets/img/perfilADM.png' : './assets/img/perfilUser.png' ?>" class="foto">
+                        <img src="<?php echo (isset($_SESSION['usuario']) && $_SESSION['nivel'] == "admin") ? './assets/img/Perfil/perfilADM.png' : './assets/img/Perfil/perfilUser.png' ?>" class="foto">
                     </figure>
 
                     <div>

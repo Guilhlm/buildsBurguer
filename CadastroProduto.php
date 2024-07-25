@@ -44,7 +44,7 @@ if (isset($_SESSION['nivel']) && !empty($_SESSION['nivel']) && isset($_POST) && 
 
                 <div class="fundoHeader">
                     <figure>
-                        <img src="./assets/img/perfilADM.png" class="foto">
+                    <img src="<?php echo (isset($_SESSION['usuario']) && $_SESSION['nivel'] == "admin") ? './assets/img/Perfil/perfilADM.png' : './assets/img/Perfil/perfilUser.png' ?>" class="foto">
                     </figure>
 
                     <div>
@@ -90,13 +90,13 @@ if (isset($_SESSION['nivel']) && !empty($_SESSION['nivel']) && isset($_POST) && 
                     <div class="secaoForm">
 
                         <section class="Fotoupdate">
-                            <img src="./assets/img/inserirfoto.png" alt="" class="inserirFoto">
+                            <img src="./assets/img/Perfil/inserirfoto.png" alt="" class="inserirFoto">
 
                         </section>
 
                         <section class="fomulariodeCADASTRO">
                             <div class="form">
-                                <form action="menu.php" method="POST">
+                                <form action="CadastroProduto.php" method="POST">
 
                                     <div class="input-group">
 

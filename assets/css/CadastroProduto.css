@@ -49,9 +49,10 @@ body {
 }
 
 .fundoHeader {
-  background: linear-gradient(to right bottom,
-      rgba(255, 255, 255, 0.5),
-      rgba(255, 255, 255, 0.3));
+  background-image: url(../img/perfil/bannerEdicao.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
   height: 20vh;
   width: 75vw;
   border-radius: 1vw;
@@ -71,9 +72,9 @@ body {
 }
 
 .emailPessoa {
-  margin: 0;
+  margin: 0 0.5vw;
   font-size: 2vh;
-  color: #2470e0;
+  color: #eeeeee73;
 }
 
 .fechar {
@@ -113,7 +114,7 @@ body {
       rgba(255, 255, 255, 0.3));
   padding-top: 2vh;
   width: 31vw;
-  height: 55vh;
+  height: 56vh;
   border-radius: 1vw;
   display: flex;
   flex-wrap: wrap;
@@ -136,7 +137,7 @@ body {
 
 .NivelConta {
   background-color: #e0e0e0;
-  color: #2470e0;
+  color: #000000;
   height: 4vh;
   width: 7vw;
   font-size: 2vh;
@@ -201,7 +202,7 @@ body {
   cursor: pointer;
 }
 
-.inserirFoto:hover{
+.inserirFoto:hover {
   transform: scale(1.02);
 }
 
