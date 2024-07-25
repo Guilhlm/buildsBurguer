@@ -1,0 +1,167 @@
+@import url('https://fonts.googleapis.com/css2?family=Croissant+One&display=swap');
+
+* {
+  font-family: "Croissant One", serif;
+}
+
+body {
+  background-color: rgb(53, 53, 53);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 1vh;
+}
+
+#grid-principal {
+  border: 0.5vw solid rgb(0, 0, 0);
+  background-color: #505050;
+  width: 90vw;
+  height: 90vh;
+  display: grid;
+  grid-template-columns: 1fr 8vw 1fr 1fr;
+  grid-template-rows: 25vh 42vh 16vh;
+  border-radius: 1vw;
+  gap: 1vw;
+}
+
+.grid-1 {
+  grid-column: 1/6;
+  grid-row: 1;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.grid-2 {
+  grid-column: 1/3;
+  grid-row: 2/4;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.grid-3 {
+  grid-column: 3/6;
+  grid-row: 2/4;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.fundoHeader {
+  background: linear-gradient(to right bottom,
+      rgba(255, 255, 255, 0.5),
+      rgba(255, 255, 255, 0.3));
+  height: 20vh;
+  width: 75vw;
+  border-radius: 1vw;
+  display: flex;
+  align-items: center;
+}
+
+.foto {
+  width: 9vw;
+  height: 16vh;
+  border-radius: 50%;
+}
+
+.nomePessoa {
+  margin: 0;
+  font-size: 5vh;
+  text-transform: uppercase;
+}
+
+.emailPessoa {
+  margin: 0;
+  font-size: 2vh;
+  color: #2470e0;
+}
+
+.fechar {
+  width: 7vw;
+  height: 10vh;
+  border-radius: 1vw;
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+}
+
+.fecharPagina a {
+  margin: -7vh 0 0 3vh;
+  background-color: white;
+  color: black;
+  height: 5vh;
+  width: 4vw;
+  border-radius: 1vw;
+  font-size: 2.5vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  text-decoration: none;
+  position: relative;
+  z-index: 1001;
+}
+
+.fecharPagina a:hover {
+  color: red;
+  background-color: rgb(230, 230, 230);
+}
+
+.informacoesPessoais {
+  background: linear-gradient(to right bottom,
+      rgba(255, 255, 255, 0.5),
+      rgba(255, 255, 255, 0.3));
+  padding-top: 2vh;
+  width: 31vw;
+  height: 55vh;
+  border-radius: 1vw;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: start;
+}
+
+.headerInfos {
+  width: 30vw;
+  height: 5vh;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 2vw 0 2vw;
+}
+
+.tituloInfos {
+  font-size: 2.5vh;
+}
+
+.NivelConta {
+  background-color: #e0e0e0;
+  color: #2470e0;
+  height: 4vh;
+  width: 7vw;
+  font-size: 2vh;
+  border-radius: 1vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.informacoes {
+  height: 40vh;
+  width: 27.5vw;
+}
+
+.informacoes p {
+  font-size: 1.7vh;
+}
+
+.ColUpdate {
+  background: linear-gradient(to right bottom,
+      rgba(255, 255, 255, 0.5),
+      rgba(255, 255, 255, 0.3));
+  width: 53vw;
+  height: 58vh;
+  border-radius: 1vw;
+  margin-right: 2vw;
+}
