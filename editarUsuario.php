@@ -49,7 +49,7 @@
                     <section class="headerInfos">
                         <p class="tituloInfos">INFORMAÇÕES PESSOAIS</p>
 
-                        <div class="NivelConta"><?php echo ($_SESSION['nivel']); ?></div>
+                        <div class="NivelConta"><?php echo (isset($_SESSION['usuario']) && $_SESSION['nivel'] == "admin") ? 'Admin' : 'Cliente' ?></div>
 
                     </section>
 

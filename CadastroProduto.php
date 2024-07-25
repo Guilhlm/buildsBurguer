@@ -1,5 +1,24 @@
 <?php session_start(); ?>
 
+<?php
+
+if (isset($_SESSION['nivel']) && !empty($_SESSION['nivel']) && isset($_POST) && !empty($_POST)) {
+
+    $titulo = $_POST['titulo'];
+    $preco = $_POST['preco'];
+    // $imagem = $_POST['imagem'];
+    $categoria = $_POST['categoria'];
+    $descricao = $_POST['descricao'];
+
+    $conn = new PDO("mysql:host=62.72.62.1;dbname=u687609827_gui", "u687609827_gui", "Ou]Q||Jr^7H");
+    $scriptCadastroLanche = "INSERT INTO tb_produtos (titulo, preco, categoria, descricao) VALUE ('{$titulo}', {$preco}, {$categoria}, '{$descricao}')";
+
+    $resultadoCadastro = $conn->query($scriptCadastroLanche)->fetch();
+    return $resultadoCadastro;
+
+} ?>
+
+
 <!DOCTYPE html>
 <html lang="pt-br">
 
@@ -77,26 +96,31 @@
 
                         <section class="fomulariodeCADASTRO">
                             <div class="form">
-                                <form action="#">
+                                <form action="CadastroProduto.php" method="POST">
 
                                     <div class="input-group">
 
                                         <div class="input-box">
-                                            <label for="firstname">Titulo</label>
-                                            <input id="firstname" type="text" name="titulo" placeholder="Digite o Titulo">
+                                            <label for="titulo">Titulo Pd.</label>
+                                            <input id="titulo" type="text" name="titulo" placeholder="Digite o Titulo">
                                         </div>
 
                                         <div class="input-box">
-                                            <label for="lastname">Preço</label>
-                                            <input id="lastname" type="int" name="preco" placeholder="Digite o preço">
+                                            <label for="preco">Preço R$.</label>
+                                            <input id="preco" type="int" name="preco" placeholder="Digite o preço">
                                         </div>
 
                                         <div class="input-box">
-                                            <label for="email">Desc.</label>
-                                            <input id="email" type="email" name="desc" placeholder="Digite a descrição">
+                                            <label for="categoria">categoria</label>
+                                            <input id="categoria" type="text" name="categoria" placeholder="Digite a categoria">
                                         </div>
 
-                                    <button class="continue-button" type="submit" value="Confirmar Alterações">Confirmar alterações</button>
+                                        <div class="input-box">
+                                            <label for="descricao">Descricao</label>
+                                            <input id="descricao" type="text" name="descricao" placeholder="Digite a descrição">
+                                        </div>
+
+                                        <button class="continue-button" type="submit" value="Confirmar Alterações">Confirmar alterações</button>
 
                                 </form>
                             </div>
