@@ -53,11 +53,11 @@
 
                     <section class="informacoes">
 
-                    <p>NOME: </p>
-                    <p>ANO NASCIMENTO: </p>
-                    <p>CPF: </p>
-                    <p>TELEFONE: </p>
-                    <p>EMAIL PRINCIPAL: </p>
+                        <p>NOME: </p>
+                        <p>ANO NASCIMENTO: </p>
+                        <p>CPF: </p>
+                        <p>TELEFONE: </p>
+                        <p>EMAIL PRINCIPAL: </p>
 
                     </section>
                 </div>
@@ -67,7 +67,14 @@
             <div class="grid-3">
                 <div class="ColUpdate">
                     <h2>Cadastrar Novo Produto</h2>
+
+                    <section>
+                        <form action="">oi</form>
+                    </section>
+
                 </div>
+
+
 
             </div>
 
