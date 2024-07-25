@@ -15,11 +15,9 @@
 
 <body>
 
-
     <section>
 
         <div class="container" id="grid-principal">
-
 
             <section class="grid-1">
 
@@ -66,13 +64,54 @@
 
             <div class="grid-3">
                 <div class="ColUpdate">
-                    <h2>Cadastrar Novo Produto</h2>
+                    <h2 class="tituloForm">Cadastrar Novo Produto</h2>
 
-                    <div class="coisa">
+                    <div class="secaoForm">
 
-                        <section class="teste1">
-                            </section>
-                            <section class="teste2"></section>
+                        <section class="Fotoupdate">
+                            <img src="./assets/img/inserirfoto.png" alt="" class="inserirFoto">
+
+                        </section>
+
+                        <section class="fomulariodeCADASTRO">
+                            <div class="form">
+                                <form action="#">
+
+                                    <div class="input-group">
+
+                                        <div class="input-box">
+                                            <label for="firstname">Titulo</label>
+                                            <input id="firstname" type="text" name="titulo" placeholder="Digite o Titulo">
+                                        </div>
+
+                                        <div class="input-box">
+                                            <label for="lastname">Preço</label>
+                                            <input id="lastname" type="int" name="preco" placeholder="Digite o preço">
+                                        </div>
+
+                                        <div class="input-box">
+                                            <label for="email">Desc.</label>
+                                            <input id="email" type="email" name="desc" placeholder="Digite a descrição">
+                                        </div>
+
+                                       
+                                        <?php echo (isset($_SESSION['usuario']) && $_SESSION['nivel'] == "admin") ?
+
+                                            '<div class="input-box">
+                                <label for="confirmPassword">Nivel</label>
+                                <input id="confirmPassword" type="text" name="confirmPassword " placeholder="admin ou vazio">
+                            </div>'
+
+                                            : '' ?>
+                                    </div>
+
+
+                                    <button class="continue-button" type="submit" value="Confirmar Alterações">Confirmar alterações</button>
+
+                                </form>
+                            </div>
+
+                        </section>
                     </div>
 
 

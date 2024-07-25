@@ -61,7 +61,6 @@ body {
 
 .foto {
   width: 9vw;
-  height: 16vh;
   border-radius: 50%;
 }
 
@@ -167,21 +166,80 @@ body {
   margin-right: 2vw;
 }
 
-.coisa{
+.tituloForm {
+  font-size: 1.9vh;
+  border-bottom: 0.2vh solid black;
+  width: 48vw;
+  padding: 1.5vh 0 1.5vh;
+  margin-left: 2vw;
+}
+
+.secaoForm {
   display: flex;
   justify-content: space-around;
   align-items: center;
 }
 
-.teste1 {
-  width: 270px;
-  height: 360px;
-  background-color: red;
-
+.Fotoupdate {
+  width: 18vw;
+  height: 45vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
-.teste2 {
-  width: 420px;
-  height: 360px;
-  background-color: green;
+.fomulariodeCADASTRO {
+  width: 26vw;
+  height: 45vh;
+  display: flex;
+  align-items: center;
+}
+
+.inserirFoto {
+  width: 17vw;
+}
+
+.input-group {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+}
+
+.input-box {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-evenly;
+}
+
+.input-box input {
+  margin: 0 40px 40px;
+  padding: 0.8rem 1.2rem;
+  border: none;
+  border-radius: 10px;
+  box-shadow: 1px 1px 6px #0000001c;
+  font-size: 15px;
+}
+
+.input-box input::placeholder {
+  color: #00000050;
+}
+
+.continue-button {
+  width: 100%;
+  border: none;
+  background-color: #ce7500;
+  padding: 10px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.continue-button:hover {
+  background-color: #834a00;
+}
+
+.continue-button {
+  text-decoration: none;
+  font-size: 18px;
+  font-weight: 500;
+  color: #fff;
 }
