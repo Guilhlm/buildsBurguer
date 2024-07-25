@@ -1,3 +1,5 @@
+<?php session_start(); ?>
+
 <!DOCTYPE html>
 <html lang="pt-br">
 
@@ -27,13 +29,13 @@
                     </figure>
 
                     <div>
-                        <h1 class="nomePessoa">Guilherme</h1>
-                        <p class="emailPessoa">admin@gmail.com</p>
+                        <h1 class="nomePessoa"><?php echo ($_SESSION['nome']); ?></h1>
+                        <p class="emailPessoa"><?php echo ($_SESSION['usuario']); ?></p>
                     </div>
                 </div>
 
                 <div class="fechar">
-                    <h1 class="fecharPagina"><a href="">X</a></h1>
+                    <h1 class="fecharPagina"><a href="menu.php">X</a></h1>
                 </div>
 
             </section>
@@ -45,17 +47,17 @@
                     <section class="headerInfos">
                         <p class="tituloInfos">INFORMAÇÕES PESSOAIS</p>
 
-                        <div class="NivelConta">Admin</div>
+                        <div class="NivelConta"><?php echo ($_SESSION['nivel']); ?></div>
 
                     </section>
 
                     <section class="informacoes">
 
-                        <p>NOME: </p>
-                        <p>ANO NASCIMENTO: </p>
-                        <p>CPF: </p>
-                        <p>TELEFONE: </p>
-                        <p>EMAIL PRINCIPAL: </p>
+                        <p>NOME: <?php echo ($_SESSION['nome']); ?></p>
+                        <p>ANO NASCIMENTO: <?php echo ($_SESSION['ano_nascimento']); ?></p>
+                        <p>CPF: <?php echo ($_SESSION['cpf']); ?></p>
+                        <p>TELEFONE: <?php echo ($_SESSION['telefone_1']); ?></p>
+                        <p>EMAIL PRINCIPAL: <?php echo ($_SESSION['usuario']); ?></p>
 
                     </section>
                 </div>
@@ -93,18 +95,6 @@
                                             <label for="email">Desc.</label>
                                             <input id="email" type="email" name="desc" placeholder="Digite a descrição">
                                         </div>
-
-                                       
-                                        <?php echo (isset($_SESSION['usuario']) && $_SESSION['nivel'] == "admin") ?
-
-                                            '<div class="input-box">
-                                <label for="confirmPassword">Nivel</label>
-                                <input id="confirmPassword" type="text" name="confirmPassword " placeholder="admin ou vazio">
-                            </div>'
-
-                                            : '' ?>
-                                    </div>
-
 
                                     <button class="continue-button" type="submit" value="Confirmar Alterações">Confirmar alterações</button>
 
