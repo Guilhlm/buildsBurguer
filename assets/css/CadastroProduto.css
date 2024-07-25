@@ -182,10 +182,11 @@ body {
 
 .Fotoupdate {
   width: 18vw;
-  height: 45vh;
+  height: 35vh;
   display: flex;
   justify-content: center;
   align-items: center;
+  border: 0.4vh solid black;
 }
 
 .fomulariodeCADASTRO {
@@ -197,6 +198,11 @@ body {
 
 .inserirFoto {
   width: 17vw;
+  cursor: pointer;
+}
+
+.inserirFoto:hover{
+  transform: scale(1.02);
 }
 
 .input-group {
