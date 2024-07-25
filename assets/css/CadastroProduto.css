@@ -154,6 +154,7 @@ body {
 
 .informacoes p {
   font-size: 1.7vh;
+  color: #00000094;
 }
 
 .ColUpdate {
@@ -164,4 +165,23 @@ body {
   height: 58vh;
   border-radius: 1vw;
   margin-right: 2vw;
+}
+
+.coisa{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.teste1 {
+  width: 270px;
+  height: 360px;
+  background-color: red;
+
+}
+
+.teste2 {
+  width: 420px;
+  height: 360px;
+  background-color: green;
 }

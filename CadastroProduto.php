@@ -68,13 +68,16 @@
                 <div class="ColUpdate">
                     <h2>Cadastrar Novo Produto</h2>
 
-                    <section>
-                        <form action="">oi</form>
-                    </section>
+                    <div class="coisa">
+
+                        <section class="teste1">
+                            </section>
+                            <section class="teste2"></section>
+                    </div>
+
+
 
                 </div>
-
-
 
             </div>
 
