@@ -213,6 +213,7 @@ body {
   padding: 10px;
   border-radius: 5px;
   cursor: pointer;
+  margin: 0 0 0 40px;
 }
 
 .continue-button:hover {
