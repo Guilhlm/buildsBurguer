@@ -96,7 +96,7 @@ if (isset($_SESSION['nivel']) && !empty($_SESSION['nivel']) && isset($_POST) && 
 
                         <section class="fomulariodeCADASTRO">
                             <div class="form">
-                                <form action="CadastroProduto.php" method="POST">
+                                <form action="menu.php" method="POST">
 
                                     <div class="input-group">
 
