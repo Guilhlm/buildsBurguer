@@ -29,7 +29,7 @@
                         <div class="col-lg-3 col-md-6 col-sm-12">
                             <a href="click-produto.php?id=<?= $valor['id'] ?>" style="text-decoration: none;">
                                 <figure>
-                                    <img src="./assets/img/produtos/<?= $valor['imagem'] ?>" alt="<?= $valor['titulo'] ?>" class="foto-produto">
+                                    <img src="<?= $valor['imagem'] ?>" alt="foto individual do produto" class="foto-produto">
                                     <figcaption>
                                         <h4><?= $valor['titulo'] ?></h4>
                                         <span class="preco">

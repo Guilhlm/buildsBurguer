@@ -25,7 +25,7 @@ $dados = $produto->ListarProdutos(); ?>
         </section>
         <main class="main-carrinho">
             <div class="produto">
-                <div class="produto-imagem"><img src="./assets/img/produtos/<?= $dados['imagem'] ?>" alt="Produto 1"></div>
+                <div class="produto-imagem"><img src="<?= $dados['imagem'] ?>" alt="foto individual do produto"></div>
                 <div class="produto-detalhes">
                     <h2><?= $dados['titulo'] ?></h2>
                     <p><?= $dados['descricao'] ?></p>

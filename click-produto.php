@@ -26,7 +26,7 @@ if (isset($_GET['id']) && !empty($_GET['id'])) {
 
 <section class="body-produto">
 
-    <figcaption><img class="fotinha" alt="foto do produto" src="./assets/img/produtos/<?= $dados['imagem'] ?>"></figcaption>
+    <figcaption><img class="fotinha" alt="foto individual do produto" src="<?= $dados['imagem'] ?>"></figcaption>
 
     <div class="container" id="grid-principal">
 

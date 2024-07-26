@@ -1,4 +1,4 @@
-<?php include './includes/header.php'?>
+<?php include './includes/header.php' ?>
 <?php
 
 class Produto
@@ -24,24 +24,24 @@ $dados = $produto->ListarProdutos(); ?>
         <section id="produtos">
             <div class="carrossel-hamb carrossel">
 
-                <?php for ($i = 0; $i < 12; $i++) {?>
+                <?php for ($i = 0; $i < 12; $i++) { ?>
 
                     <div class="col-lg-3 col-md-6 col-sm-12">
-                        <a href="click-produto.php?id=<?=$dados[$i]['id']?>" style="text-decoration: none;">
+                        <a href="click-produto.php?id=<?= $dados[$i]['id'] ?>" style="text-decoration: none;">
                             <figure>
-                                <img src="./assets/img/produtos/<?=$dados[$i]['imagem']?>" alt="Hamburguer Kids" class="foto-produto">
+                                <img src="<?= $dados[$i]['imagem'] ?>" alt="foto individual do produto" class="foto-produto">
                                 <figcaption>
-                                    <h4><?=$dados[$i]['titulo']?></h4>
+                                    <h4><?= $dados[$i]['titulo'] ?></h4>
                                     <span class="preco">
                                         <p class="preçoescrito precin">Preço ..........</p>
-                                        <p class="precin">R$ <?=$dados[$i]['preco']?></p> <!--[$i]['preco']?>  contador depois banco por ter array dentro de array-->
+                                        <p class="precin">R$ <?= $dados[$i]['preco'] ?></p> <!--[$i]['preco']?>  contador depois banco por ter array dentro de array-->
                                     </span>
                                 </figcaption>
                             </figure>
                         </a>
                     </div>
 
-                <?php }?>
+                <?php } ?>
 
             </div>
         </section>
@@ -58,24 +58,24 @@ $dados = $produto->ListarProdutos(); ?>
         <section id="produtos">
             <div class="carrossel-combo carrossel">
 
-                <?php for ($i = 12; $i < 24; $i++) {?>
+                <?php for ($i = 12; $i < 24; $i++) { ?>
 
                     <div class="col-lg-3 col-md-6 col-sm-12">
-                        <a href="click-produto.php?id=<?=$dados[$i]['id']?>" style="text-decoration: none;">
+                        <a href="click-produto.php?id=<?= $dados[$i]['id'] ?>" style="text-decoration: none;">
                             <figure>
-                                <img src="./assets/img/produtos/<?=$dados[$i]['imagem']?>" alt="Hamburguer Kids" class="foto-produto">
+                                <img src="<?= $dados[$i]['imagem'] ?>" alt="foto individual do produto" class="foto-produto">
                                 <figcaption>
-                                    <h4><?=$dados[$i]['titulo']?></h4>
+                                    <h4><?= $dados[$i]['titulo'] ?></h4>
                                     <span class="preco">
                                         <p class="preçoescrito precin">Preço ..........</p>
-                                        <p class="precin">R$ <?=$dados[$i]['preco']?></p>
+                                        <p class="precin">R$ <?= $dados[$i]['preco'] ?></p>
                                     </span>
                                 </figcaption>
                             </figure>
                         </a>
                     </div>
 
-                <?php }?>
+                <?php } ?>
 
             </div>
             <button class="anterior" onclick="javascript:anteriorSlide('combo')"><i class="bi bi-caret-left"></i></button>
@@ -93,24 +93,24 @@ $dados = $produto->ListarProdutos(); ?>
         <section id="produtos">
             <div class="carrossel-porcao carrossel">
 
-                <?php for ($i = 24; $i < 36; $i++) {?>
+                <?php for ($i = 24; $i < 36; $i++) { ?>
 
                     <div class="col-lg-3 col-md-6 col-sm-12">
-                        <a href="click-produto.php?id=<?=$dados[$i]['id']?>" style="text-decoration: none;">
+                        <a href="click-produto.php?id=<?= $dados[$i]['id'] ?>" style="text-decoration: none;">
                             <figure>
-                                <img src="./assets/img/produtos/<?=$dados[$i]['imagem']?>" alt="Hamburguer Kids" class="foto-produto">
+                                <img src="<?= $dados[$i]['imagem'] ?>" alt="foto individual do produto" class="foto-produto">
                                 <figcaption>
-                                    <h4><?=$dados[$i]['titulo']?></h4>
+                                    <h4><?= $dados[$i]['titulo'] ?></h4>
                                     <span class="preco">
                                         <p class="preçoescrito precin">Preço ..........</p>
-                                        <p class="precin">R$ <?=$dados[$i]['preco']?></p>
+                                        <p class="precin">R$ <?= $dados[$i]['preco'] ?></p>
                                     </span>
                                 </figcaption>
                             </figure>
                         </a>
                     </div>
 
-                <?php }?>
+                <?php } ?>
 
             </div>
             <button class="anterior" onclick="javascript:anteriorSlide('porcao')"><i class="bi bi-caret-left"></i></button>
@@ -128,24 +128,24 @@ $dados = $produto->ListarProdutos(); ?>
         <section id="produtos">
             <div class="carrossel-drink carrossel">
 
-                <?php for ($i = 36; $i < 48; $i++) {?>
+                <?php for ($i = 36; $i < 48; $i++) { ?>
 
                     <div class="col-lg-3 col-md-6 col-sm-12">
-                        <a href="click-produto.php?id=<?=$dados[$i]['id']?>" style="text-decoration: none;">
+                        <a href="click-produto.php?id=<?= $dados[$i]['id'] ?>" style="text-decoration: none;">
                             <figure>
-                                <img src="./assets/img/produtos/<?=$dados[$i]['imagem']?>" alt="Hamburguer Kids" class="foto-produto">
+                                <img src="<?= $dados[$i]['imagem'] ?>" alt="foto individual do produto" class="foto-produto">
                                 <figcaption>
-                                    <h4><?=$dados[$i]['titulo']?></h4>
+                                    <h4><?= $dados[$i]['titulo'] ?></h4>
                                     <span class="preco">
                                         <p class="preçoescrito precin">Preço ..........</p>
-                                        <p class="precin">R$ <?=$dados[$i]['preco']?></p>
+                                        <p class="precin">R$ <?= $dados[$i]['preco'] ?></p>
                                     </span>
                                 </figcaption>
                             </figure>
                         </a>
                     </div>
 
-                <?php }?>
+                <?php } ?>
 
             </div>
             <button class="anterior" onclick="javascript:anteriorSlide('drink')"><i class="bi bi-caret-left"></i></button>
@@ -161,24 +161,24 @@ $dados = $produto->ListarProdutos(); ?>
         <section id="produtos">
             <div class="carrossel-alcoolico carrossel">
 
-                <?php for ($i = 48; $i < 60; $i++) {?>
+                <?php for ($i = 48; $i < 60; $i++) { ?>
 
                     <div class="col-lg-3 col-md-6 col-sm-12">
-                        <a href="click-produto.php?id=<?=$dados[$i]['id']?>" style="text-decoration: none;">
+                        <a href="click-produto.php?id=<?= $dados[$i]['id'] ?>" style="text-decoration: none;">
                             <figure>
-                                <img src="./assets/img/produtos/<?=$dados[$i]['imagem']?>" alt="Hamburguer Kids" class="foto-produto">
+                                <img src="<?= $dados[$i]['imagem'] ?>" alt="foto individual do produto" class="foto-produto">
                                 <figcaption>
-                                    <h4><?=$dados[$i]['titulo']?></h4>
+                                    <h4><?= $dados[$i]['titulo'] ?></h4>
                                     <span class="preco">
                                         <p class="preçoescrito precin">Preço ..........</p>
-                                        <p class="precin">R$ <?=$dados[$i]['preco']?></p>
+                                        <p class="precin">R$ <?= $dados[$i]['preco'] ?></p>
                                     </span>
                                 </figcaption>
                             </figure>
                         </a>
                     </div>
 
-                <?php }?>
+                <?php } ?>
 
             </div>
             <button class="anterior" onclick="javascript:anteriorSlide('alcoolico')"><i class="bi bi-caret-left"></i></button>
@@ -196,24 +196,24 @@ $dados = $produto->ListarProdutos(); ?>
         <section id="produtos">
             <div class="carrossel-doce carrossel">
 
-                <?php for ($i = 60; $i < 72; $i++) {?>
+                <?php for ($i = 60; $i < 72; $i++) { ?>
 
                     <div class="col-lg-3 col-md-6 col-sm-12">
-                        <a href="click-produto.php?id=<?=$dados[$i]['id']?>" style="text-decoration: none;">
+                        <a href="click-produto.php?id=<?= $dados[$i]['id'] ?>" style="text-decoration: none;">
                             <figure>
-                                <img src="./assets/img/produtos/<?=$dados[$i]['imagem']?>" alt="Hamburguer Kids" class="foto-produto">
+                                <img src="<?= $dados[$i]['imagem'] ?>" alt="foto individual do produto" class="foto-produto">
                                 <figcaption>
-                                    <h4><?=$dados[$i]['titulo']?></h4>
+                                    <h4><?= $dados[$i]['titulo'] ?></h4>
                                     <span class="preco">
                                         <p class="preçoescrito precin">Preço ..........</p>
-                                        <p class="precin">R$ <?=$dados[$i]['preco']?></p>
+                                        <p class="precin">R$ <?= $dados[$i]['preco'] ?></p>
                                     </span>
                                 </figcaption>
                             </figure>
                         </a>
                     </div>
 
-                <?php }?>
+                <?php } ?>
 
             </div>
             <button class="anterior" onclick="javascript:anteriorSlide('doce')"><i class="bi bi-caret-left"></i></button>
@@ -222,6 +222,6 @@ $dados = $produto->ListarProdutos(); ?>
     </main><br><br><br>
 </section>
 
-<?php include './includes/footer.php'?>
+<?php include './includes/footer.php' ?>
 <script src="assets/script/temaescuro.js"></script>
 <script src="assets/script/script.js"></script>
