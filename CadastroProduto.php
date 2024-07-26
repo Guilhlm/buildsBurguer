@@ -1,34 +1,47 @@
-<?php session_start(); ?>
-
 <?php
+session_start();
 
 if (isset($_SESSION['nivel']) && !empty($_SESSION['nivel']) && isset($_POST) && !empty($_POST)) {
 
-    $titulo = $_POST['titulo'];
-    $preco = $_POST['preco'];
-    // $imagem = $_POST['foto'];
-    $categoria = $_POST['categoria'];
-    $descricao = $_POST['descricao'];
+    if (isset($_FILES['imagem']) && $_FILES['imagem']['error'] == 0) {
 
-    $conn = new PDO("mysql:host=62.72.62.1;dbname=u687609827_gui", "u687609827_gui", "Ou]Q||Jr^7H");
-    $scriptCadastroLanche = "INSERT INTO tb_produtos (titulo, preco, categoria, descricao) VALUE ('{$titulo}', {$preco}, {$categoria}, '{$descricao}')";
+        $titulo = $_POST['titulo'];
+        $preco = $_POST['preco'];
+        $imagem = $_FILES['imagem'];
+        $categoria = $_POST['categoria'];
+        $descricao = $_POST['descricao'];
+        $titulo = htmlspecialchars($titulo);
+        $preco = floatval($preco);
+        $categoria = htmlspecialchars($categoria);
+        $descricao = htmlspecialchars($descricao);
 
-    $resultadoCadastro = $conn->query($scriptCadastroLanche)->fetch();
-    return $resultadoCadastro;
-} ?>
+        $nomeCaminho = round(microtime(true)) . '-' . basename($imagem['name']);
+        move_uploaded_file($imagem['tmp_name'], $nomeCaminho);
 
-<!-- ///////////////////////////////////////////// -->
-<?php
+        try {
 
+            $conn = new PDO("mysql:host=62.72.62.1;dbname=u687609827_gui", "u687609827_gui", "Ou]Q||Jr^7H");
+            $conn->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
 
-// $nomeCaminho = "img/" . round(microtime(true)) . $foto['name'];
-// move_uploaded_file($foto['tmp_name'], $nomeCaminho);
+            $stmt = $conn->prepare("INSERT INTO tb_produtos (titulo, imagem, preco, categoria, descricao) VALUES (:titulo, :imagem, :preco, :categoria, :descricao)");
+            $stmt->bindParam(':titulo', $titulo);
+            $stmt->bindParam(':imagem', $nomeCaminho);
+            $stmt->bindParam(':preco', $preco);
+            $stmt->bindParam(':categoria', $categoria);
+            $stmt->bindParam(':descricao', $descricao);
+            $stmt->execute();
 
+            echo "<script>alert('produto cadastrado');</script>";
 
+        } catch (PDOException $e) {
+            echo "Erro: " . $e->getMessage();
+        }
+    } else {
 
+        echo "<script>alert('seguinte deu erro');</script>";
+    }
+}
 ?>
-
-<!-- ///////////////////////////////////////////// -->
 
 <!DOCTYPE html>
 <html lang="pt-br">
@@ -37,23 +50,20 @@ if (isset($_SESSION['nivel']) && !empty($_SESSION['nivel']) && isset($_POST) && 
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
     <title>Profile</title>
 
     <link rel="shortcut icon" href="assets/img/foto(logo)favicon.png" type="image/x-icon">
     <link rel="stylesheet" href="assets/css/CadastroProduto.css">
-
 </head>
 
-
 <body>
-
     <section>
-
         <div class="container" id="grid-principal">
 
             <section class="grid-1">
-
                 <div class="fundoHeader">
+
                     <figure>
                         <img src="<?php echo (isset($_SESSION['usuario']) && $_SESSION['nivel'] == "admin") ? './assets/img/Perfil/perfilADM.png' : './assets/img/Perfil/perfilUser.png' ?>" class="foto">
                     </figure>
@@ -62,6 +72,7 @@ if (isset($_SESSION['nivel']) && !empty($_SESSION['nivel']) && isset($_POST) && 
                         <h1 class="nomePessoa"><?php echo ($_SESSION['nome']); ?></h1>
                         <p class="emailPessoa"><?php echo ($_SESSION['usuario']); ?></p>
                     </div>
+
                 </div>
 
                 <div class="fechar">
@@ -71,12 +82,11 @@ if (isset($_SESSION['nivel']) && !empty($_SESSION['nivel']) && isset($_POST) && 
             </section>
 
             <section class="grid-2">
-
                 <div class="informacoesPessoais">
 
                     <section class="headerInfos">
-                        <p class="tituloInfos">INFORMAÇÕES PESSOAIS</p>
 
+                        <p class="tituloInfos">INFORMAÇÕES PESSOAIS</p>
                         <div class="NivelConta"><?php echo ($_SESSION['nivel']); ?></div>
 
                     </section>
@@ -90,68 +100,55 @@ if (isset($_SESSION['nivel']) && !empty($_SESSION['nivel']) && isset($_POST) && 
                         <p>EMAIL PRINCIPAL: <?php echo ($_SESSION['usuario']); ?></p>
 
                     </section>
-                </div>
 
+                </div>
             </section>
 
             <div class="grid-3">
                 <div class="ColUpdate">
                     <h2 class="tituloForm">Cadastrar Novo Produto</h2>
-
                     <div class="secaoForm">
-
                         <section class="fomulariodeCADASTRO">
-                            <div class="form">
 
+                            <div class="form">
                                 <form action="CadastroProduto.php" method="POST" class="improviso" enctype="multipart/form-data">
 
                                     <section class="Fotoupdate">
-
                                         <img src="./assets/img/perfil/inserirfoto.png" alt="foto upload" class="inserirFoto">
-                                        <input name="foto" type="file" accept="image/png, image/jpeg">
-
+                                        <input id="imagem" type="file" name="imagem" accept="image/png, image/jpeg" required>
                                     </section>
 
                                     <div class="input-group">
 
                                         <div class="input-box">
                                             <label for="titulo">Titulo Pd.</label>
-                                            <input id="titulo" type="text" name="titulo" placeholder="Digite o Titulo">
+                                            <input id="titulo" type="text" name="titulo" placeholder="Digite o Titulo" required>
                                         </div>
 
                                         <div class="input-box">
                                             <label for="preco">Preço R$.</label>
-                                            <input id="preco" type="int" name="preco" placeholder="Digite o preço">
+                                            <input id="preco" type="number" step="0.01" name="preco" placeholder="Digite o preço" required>
                                         </div>
 
                                         <div class="input-box">
-                                            <label for="categoria">categoria</label>
-                                            <input id="categoria" type="text" name="categoria" placeholder="Digite a categoria">
+                                            <label for="categoria">Categoria</label>
+                                            <input id="categoria" type="number" tep="0.01" name="categoria" placeholder="Digite a categoria" required>
                                         </div>
 
                                         <div class="input-box">
-                                            <label for="descricao">Descricao</label>
-                                            <input id="descricao" type="text" name="descricao" placeholder="Digite a descrição">
+                                            <label for="descricao">Descrição</label>
+                                            <input id="descricao" type="text" name="descricao" placeholder="Digite a descrição" required>
                                         </div>
 
-                                        <button class="continue-button" type="submit" value="Confirmar Alterações">Confirmar alterações</button>
-
+                                        <button class="continue-button" type="submit">Confirmar alterações</button>
                                 </form>
                             </div>
-
                         </section>
                     </div>
-
-
-
                 </div>
-
             </div>
-
         </div>
     </section>
-    </div>
 
 </body>
-
 </html>
