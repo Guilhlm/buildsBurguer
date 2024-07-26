@@ -6,7 +6,7 @@ if (isset($_SESSION['nivel']) && !empty($_SESSION['nivel']) && isset($_POST) && 
 
     $titulo = $_POST['titulo'];
     $preco = $_POST['preco'];
-    // $imagem = $_POST['imagem'];
+    // $imagem = $_POST['foto'];
     $categoria = $_POST['categoria'];
     $descricao = $_POST['descricao'];
 
@@ -21,17 +21,10 @@ if (isset($_SESSION['nivel']) && !empty($_SESSION['nivel']) && isset($_POST) && 
 <?php
 
 
-$foto = $_FILES["foto"];
-echo "Foto do usuario: " . $foto['name'] . "<br>";
+// $nomeCaminho = "img/" . round(microtime(true)) . $foto['name'];
+// move_uploaded_file($foto['tmp_name'], $nomeCaminho);
 
-$nomeCaminho = "img/" . round(microtime(true)) . $foto['name'];
-move_uploaded_file($foto['tmp_name'], $nomeCaminho);
 
-$conn = new PDO("mysql:host=62.72.62.1;dbname=u687609827_gui", "u687609827_gui", "Ou]Q||Jr^7H");
-$script = "INSERT INTO dados(nome, foto) VALUES ('$nome','$nomeCaminho')";
-
-$resultado = $conn->query($script)->fetch();
-return $resultado;
 
 ?>
 
@@ -115,7 +108,7 @@ return $resultado;
                                     <section class="Fotoupdate">
 
                                         <img src="./assets/img/perfil/inserirfoto.png" alt="foto upload" class="inserirFoto">
-                                        <input name="foto" id="foto" type="file" accept="image/png, image/jpeg">
+                                        <input name="foto" type="file" accept="image/png, image/jpeg">
 
                                     </section>
 

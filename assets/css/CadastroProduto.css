@@ -179,14 +179,16 @@ body {
 }
 
 .Fotoupdate {
-  width: 18vw;
-  height: 35vh;
+  width: 20vw;
+  height: 36vh;
   display: flex;
   justify-content: center;
   border: 0.4vh solid black;
   flex-wrap: wrap;
-  margin-left: 100px;
-  margin-right: 50px;
+  margin-left: 25px;
+  margin-right: 20px;
+  align-content: space-around;
+  padding: 0 10px;
 }
 
 .fomulariodeCADASTRO {
@@ -199,6 +201,7 @@ body {
 .inserirFoto {
   width: 15vw;
 }
+
 
 .input-group {
   display: flex;
@@ -214,7 +217,7 @@ body {
 
 .input-box input {
   margin: 0 30px 23px;
-  padding: 7px 1.2rem;
+  padding: 10px 1.2rem;
   border: none;
   border-radius: 10px;
   box-shadow: 1px 1px 6px #0000001c;
@@ -226,11 +229,12 @@ body {
 }
 
 .continue-button {
-  width: 100%;
+  width: 85%;
   border: none;
   background-color: #ce7500;
   border-radius: 5px;
   cursor: pointer;
+  padding: 6px;
 }
 
 .continue-button:hover {
@@ -239,11 +243,11 @@ body {
 
 .continue-button {
   text-decoration: none;
-  font-size: 18px;
+  font-size: 15px;
   font-weight: 500;
   color: #fff;
 }
 
-.improviso{
+.improviso {
   display: flex;
 }
