@@ -148,7 +148,7 @@
 
 }
 
-.addcart {
+.addcart a{
     font-family: 'Croissant One';
     display: flex;
     align-items: center;
@@ -160,9 +160,11 @@
     border-radius: 15px;
     font-size: 15px;
     cursor: pointer;
+    text-decoration: none;
+    color: white;
 }
 
-.addcart:hover{
+.addcart a:hover{
     background-color: #311c00;
 }
 

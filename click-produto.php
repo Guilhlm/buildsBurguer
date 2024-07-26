@@ -54,7 +54,7 @@ if (isset($_GET['id']) && !empty($_GET['id'])) {
                 <div class="mais">+</div>
             </div>
 
-            <div class="addcart">🛒 Adicionar ao carrinho</div>
+            <div class="addcart"><a href="carrinho.php">🛒 Adicionar ao carrinho</a></div>
         </section>
 
         <div class="grid-4">

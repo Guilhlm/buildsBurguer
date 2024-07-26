@@ -175,8 +175,6 @@ body {
 }
 
 .secaoForm {
-  display: flex;
-  justify-content: space-around;
   align-items: center;
 }
 
@@ -185,8 +183,10 @@ body {
   height: 35vh;
   display: flex;
   justify-content: center;
-  align-items: center;
   border: 0.4vh solid black;
+  flex-wrap: wrap;
+  margin-left: 100px;
+  margin-right: 50px;
 }
 
 .fomulariodeCADASTRO {
@@ -197,12 +197,7 @@ body {
 }
 
 .inserirFoto {
-  width: 17vw;
-  cursor: pointer;
-}
-
-.inserirFoto:hover {
-  transform: scale(1.02);
+  width: 15vw;
 }
 
 .input-group {
@@ -234,7 +229,6 @@ body {
   width: 100%;
   border: none;
   background-color: #ce7500;
-  padding: 10px;
   border-radius: 5px;
   cursor: pointer;
 }
@@ -248,4 +242,8 @@ body {
   font-size: 18px;
   font-weight: 500;
   color: #fff;
+}
+
+.improviso{
+  display: flex;
 }
