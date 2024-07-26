@@ -5,7 +5,7 @@
     display: flex;
     margin-top: 50px;
     margin-bottom: 50px;
-    margin-left: 20vh;
+    margin-left: 5vw;
 }
 
 #grid-principal {
@@ -17,6 +17,7 @@
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
     grid-template-rows: 100px 110px 120px 260px 160px;
     border-radius: 20px;
+    justify-content: space-around;
 }
 
 .grid-1 {
