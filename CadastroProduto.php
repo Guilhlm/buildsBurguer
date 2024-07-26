@@ -14,9 +14,10 @@ if (isset($_SESSION['nivel']) && !empty($_SESSION['nivel']) && isset($_POST) && 
         $preco = floatval($preco);
         $categoria = htmlspecialchars($categoria);
         $descricao = htmlspecialchars($descricao);
-
-        $nomeCaminho = round(microtime(true)) . '-' . basename($imagem['name']);
+        
+        $nomeCaminho = './assets/img/produtos/' . round(microtime(true)) . '-' . basename($imagem['name']);
         move_uploaded_file($imagem['tmp_name'], $nomeCaminho);
+        
 
         try {
 
