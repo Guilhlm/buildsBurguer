@@ -120,7 +120,7 @@ if (isset($_SESSION['nivel']) && !empty($_SESSION['nivel']) && isset($_POST) && 
 
                                             '<div class="user-input-box">
                                                 <label for="password">Nivel</label>
-                                                <input id="nivel" type="text" name="nivel" value="admin">
+                                                <input id="nivel" type="text" name="nivel" value="admin" readonly>
                                              </div>'
 
                                             : '' ?>
