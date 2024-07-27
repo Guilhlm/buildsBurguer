@@ -82,24 +82,24 @@
 
             <h2>Inicio de tudo: </h2>
             <p>
-                No começo do projeto eu e meu amigo pedro decidimos fazer uma hamburgueria e seu delivery, porem
+                No começo do projeto eu e meu amigo pedro decidimos fazer uma hamburgueria e seu delivery, porém,
                 meu
                 colega de equipe deixou o curso e restou apenas eu no projeto. No inicio eu senti que não seria
                 capaz de
-                fazer um site do zero, por ter uma visão ruim dasturmas anteriores, ademais eu me preparei
+                fazer um site do zero, por ter uma visão ruim das turmas anteriores, ademais, eu me preparei
                 mentalmente
-                para um projeto enorme e aceitei o desafio defazer tudo sozinho afim de conseguir aprender tudo
+                para um projeto enorme e aceitei o desafio de fazer tudo sozinho, afim de conseguir aprender tudo
                 e
                 superar cada obstaculo.
             </p>
 
             <h2>Start do projeto: </h2>
             <p>
-                Não me lembro o dia em que eu comecei porem, eu tinha uma missão em mente terminar tudo o mais
+                Não me lembro o dia em que eu comecei porém, eu tinha uma missão em mente terminar tudo o mais
                 rápido
-                possivel por ter um curto perioldo de tempo ao meu dispor, por haver diversos impecilios ao meu
+                possivel por ter um curto periodo de tempo ao meu dispor, por haver diversos empecilhos ao meu
                 caminho,
-                aja isto eu procurei meus professores e pedi uma ajuda no meus prazos para não faltar tempo no
+                aja isto, eu procurei meus professores e pedi uma ajuda no meus prazos para não faltar tempo no
                 final
                 de
                 tudo.
@@ -107,22 +107,21 @@
 
             <h2>Cronograma: </h2>
             <p>
-                Ao decorrer dos dias eu percebia que não tinha começado nada do meu projeto e meus amigos ja
-                tinha
-                começado os seus devidos projetos, com isso a pressão sobre mim aumentou cada vez mais. O paulin
+                Ao decorrer dos dias, eu percebia que não tinha começado nada do meu projeto e meus amigos já
+                haviam
+                começado os seus devidos projetos, com isso, a pressão sobre mim aumentou cada vez mais. O paulin,
                 o
-                brabo
+                brabo,
                 sugeriu uma planilha excel para termos controle de tempo e desenvolvimento do projeto, isso me
-                ajudou em
+                ajudou
                 muito por saber que meu projeto evoluia mesmo que pouco a pouco.
             </p>
 
             <h2>O despertar: </h2>
             <p>
-                Em um certo dia me peguei pensando o que eu gostaria para minha vida e como daria o start para
+                Em um certo dia, me peguei pensando o que eu gostaria para minha vida e como daria o start para
                 isso,
-                e
-                então peguei meu projeto da build's burguer e comecei a fazer a tela da home, porem mesmo
+                então, peguei meu projeto da build's burguer e comecei a fazer a tela da home, porém, mesmo
                 sabendo do
                 tempo curto não estava motivado para realizar essas atividades. E então vierao meus professores
                 e me

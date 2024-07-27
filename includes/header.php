@@ -83,7 +83,7 @@
                             <section class="SectionFotoNome">
                                 <!-- <img class="imagemPerfil" src="img/<?php echo $_SESSION['fotoPerfilLogado']; ?>"> -->
 
-                                <?php echo (isset($_SESSION['usuario']) && $_SESSION['nivel'] == "admin") ? '<img class="imagemPerfil" src="./assets/img/Perfil/perfilADM.png" width="150px">' : '<img class="imagemPerfil" src="./assets/img/Perfil/perfilUser.png" width="150px">' ?>
+                                <?php echo (isset($_SESSION['usuario']) && $_SESSION['nivel'] == "admin") ? '<img class="imagemPerfil" src="./assets/img/perfil/perfilADM.png" width="150px">' : '<img class="imagemPerfil" src="./assets/img/Perfil/perfilUser.png" width="150px">' ?>
 
                                 <h2 class="nomeLogin">
 
