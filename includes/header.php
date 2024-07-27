@@ -97,13 +97,26 @@
                                     ?>
                                 </h2>
 
-                            </section>
-
-                            <ul>
-                                <?php echo (isset($_SESSION['usuario'])) ? '<a class="nav-link" href="editarUsuario.php">Editar Usuario</a>' : '' ?>
-                                <?php echo (isset($_SESSION['usuario']) && $_SESSION['nivel'] == "admin") ? '<a class="nav-link" href="CadastroADM.php">Cadastrar ADM</a>' : '' ?>
-                                <?php echo (isset($_SESSION['usuario']) && $_SESSION['nivel'] == "admin") ? '<a class="nav-link" href="CadastroProduto.php">Cadastrar Produto</a>' : '' ?>
                                 <?php echo (isset($_SESSION['usuario'])) ? '<a class="nav-link red" href="logout.php">Logout</a>' : '' ?>
+
+                            </section>
+                            <ul>
+                                <h1 class="navTopicos">Edições</h1>
+                                <?php echo (isset($_SESSION['usuario'])) ? '<a class="nav-link" href="editarUsuario.php">Editar Usuario</a>' : '' ?>
+                                <?php echo (isset($_SESSION['usuario']) && $_SESSION['nivel'] == "admin") ? '<a class="nav-link" href="EditarProduto.php">Editar Produtos</a>' : '' ?>
+                                <?php echo (isset($_SESSION['usuario']) && $_SESSION['nivel'] == "admin") ? '<a class="nav-link" href="EditarProduto.php">Editar todos Usuarios</a>' : '' ?>
+
+                                <br><br>
+
+                                <h1 class="navTopicos">Cadastros</h1>
+                                <?php echo (isset($_SESSION['usuario']) && $_SESSION['nivel'] == "admin") ? '<a class="nav-link" href="CadastroADM.php">Cadastrar Administrador</a>' : '' ?>
+                                <?php echo (isset($_SESSION['usuario']) && $_SESSION['nivel'] == "admin") ? '<a class="nav-link" href="CadastroProduto.php">Cadastrar um novo Produto</a>' : '' ?>
+
+                                <br><br>
+
+                                <h1 class="navTopicos">Exclusões</h1>
+                                <?php echo (isset($_SESSION['usuario']) && $_SESSION['nivel'] == "admin") ? '<a class="nav-link" href="CadastroProduto.php">Excluir Produtos</a>' : '' ?>
+                                <?php echo (isset($_SESSION['usuario']) && $_SESSION['nivel'] == "admin") ? '<a class="nav-link" href="CadastroProduto.php">Excluir Usuarios</a>' : '' ?>
 
                             </ul>
 

@@ -244,6 +244,13 @@ input::placeholder {
     border: 2px solid rgb(255, 255, 255);
 }
 
+.navTopicos{
+    font-size: 14px;
+    padding: 0 0 10px;
+    border-bottom: 2px solid white;
+    width: 380px;
+}
+
 .xizinhoNav {
     display: flex;
     justify-content: end;
@@ -268,7 +275,7 @@ input::placeholder {
     display: flex;
     align-items: center;
     justify-content: start;
-    gap: 30px;
+    gap: 20px;
 }
 
 .sidebar {
@@ -277,7 +284,7 @@ input::placeholder {
     background-color: #2c2c2c;
     border-left: 5px solid rgb(134, 87, 0);
     color: white;
-    padding: 20px;
+    padding: 15px 20px 20px;
     position: fixed;
     right: -500px;
     transition: right 0.3s;
@@ -313,8 +320,7 @@ input::placeholder {
 }
 
 .sidebar ul a:hover {
-    width: 24vw;
-    background-color: #5c5c5c;
+    color: rgb(122, 122, 122);
 }
 
 .red:hover {
