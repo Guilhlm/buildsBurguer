@@ -10,7 +10,7 @@ if (isset($_SESSION['nivel']) && !empty($_SESSION['nivel']) && isset($_POST) && 
         $imagem = $_FILES['imagem'];
         $categoria = $_POST['categoria'];
         $descricao = $_POST['descricao'];
-        $titulo = htmlspecialchars($titulo);
+        $titulo = htmlspecialchars($titulo); // coverte em string
         $preco = floatval($preco);
         $categoria = htmlspecialchars($categoria);
         $descricao = htmlspecialchars($descricao);
@@ -123,22 +123,22 @@ if (isset($_SESSION['nivel']) && !empty($_SESSION['nivel']) && isset($_POST) && 
 
                                         <div class="input-box">
                                             <label for="titulo">Titulo Pd.</label>
-                                            <input id="titulo" type="text" name="titulo" placeholder="Digite o Titulo" required>
+                                            <input id="titulo" type="text" name="titulo" placeholder="Digite o Titulo" maxlength="15" required>
                                         </div>
 
                                         <div class="input-box">
                                             <label for="preco">Preço R$.</label>
-                                            <input id="preco" type="number" step="0.01" name="preco" placeholder="Digite o preço" required>
+                                            <input id="preco" type="text" step="0.01" name="preco" placeholder="Digite o preço" maxlength="7" required>
                                         </div>
 
                                         <div class="input-box">
                                             <label for="categoria">Categoria</label>
-                                            <input id="categoria" type="number" tep="0.01" name="categoria" placeholder="Digite a categoria" required>
+                                            <input id="categoria" type="text" tep="0.01" name="categoria" placeholder="Digite a categoria" maxlength="1" required>
                                         </div>
 
                                         <div class="input-box">
                                             <label for="descricao">Descrição</label>
-                                            <input id="descricao" type="text" name="descricao" placeholder="Digite a descrição" required>
+                                            <input id="descricao" type="text" name="descricao" placeholder="Digite a descrição" maxlength="255" required>
                                         </div>
 
                                         <button class="continue-button" type="submit">Confirmar alterações</button>

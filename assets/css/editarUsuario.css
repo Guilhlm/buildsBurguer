@@ -174,55 +174,51 @@ body {
   margin-left: 2vw;
 }
 
-.form {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.input-group {
+form {
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-evenly;
+  justify-content: center;
 }
 
-.input-box {
+.main-user-info {
   display: flex;
-  flex-direction: column;
-  width: 230px;
-  margin-bottom: 1.1rem;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding: 30px 0 40px;
 }
 
-.input-box input {
-  margin: 0.6rem 0;
-  padding: 0.8rem 1.2rem;
-  border: none;
+.user-input-box {
+  display: flex;
+  flex-wrap: wrap;
+  width: 50%;
+  padding-bottom: 15px;
+  justify-content: space-around;
+}
+
+.user-input-box input {
+  height: 40px;
+  width: 80%;
   border-radius: 10px;
-  box-shadow: 1px 1px 6px #0000001c;
-  font-size: 15px;
-}
-
-.input-box input::placeholder {
-  color: #00000050;
-}
-
-.continue-button {
-  width: 90%;
+  outline: none;
   border: none;
+  padding: 0 8px;
+  margin: 0 28px;
+}
+
+.form-submit-btn button {
+  display: block;
+  width: 48vw;
+  margin-top: 10px;
+  font-size: 20px;
+  padding: 8px;
+  border: none;
+  border-radius: 3px;
+  color: rgb(255, 255, 255);
   background-color: #ce7500;
-  padding: 10px;
-  border-radius: 5px;
+  border-radius: 10px;
   cursor: pointer;
-  margin: 0 0 0 40px;
 }
 
-.continue-button:hover {
-  background-color: #834a00;
-}
-
-.continue-button {
-  text-decoration: none;
-  font-size: 18px;
-  font-weight: 500;
-  color: #fff;
+.form-submit-btn button:hover {
+  background-color: #945400;
 }

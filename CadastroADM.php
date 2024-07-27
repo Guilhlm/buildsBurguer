@@ -1,5 +1,29 @@
-<?php session_start(); ?>
+<?php
+session_start();
 
+if (isset($_SESSION['nivel']) && !empty($_SESSION['nivel']) && isset($_POST) && !empty($_POST)) {
+
+    try {
+
+        $nome = $_POST['nome'];
+        $email = $_POST['email'];
+        $senha = $_POST['senha'];
+        $nivel = $_POST['nivel'];
+
+        $conn = new PDO("mysql:host=62.72.62.1;dbname=u687609827_gui", "u687609827_gui", "Ou]Q||Jr^7H");
+        $scriptCadastroPessoinha = "INSERT INTO tb_pessoas (nome) VALUE ('{$nome}')";
+        $resultadoCadastroADM = $conn->prepare($scriptCadastroPessoinha)->execute([]);
+        $pessoaID = $conn->lastInsertId();
+
+        $scriptCadastroADM = "INSERT INTO tb_usuarios (nome, usuario, senha, id_pessoa, nivel) VALUE ('{$nome}', '{$email}', '{$senha}', '{$pessoaID}', '{$nivel}')";
+        $resultadoCadastro = $conn->prepare($scriptCadastroADM)->execute([]);
+
+        echo "<script>alert('ADMIN cadastrado');</script>";
+    } catch (PDOException) {
+        echo "<script>alert('seguinte deu uma coisa no treco');</script>";
+    }
+}
+?>
 
 <!DOCTYPE html>
 <html lang="pt-br">
@@ -12,10 +36,9 @@
     <link rel="stylesheet" href="styles.css">
 
     <link rel="shortcut icon" href="assets/img/foto(logo)favicon.png" type="image/x-icon">
-    <link rel="stylesheet" href="assets/css/editarUsuario.css">
+    <link rel="stylesheet" href="assets/css/CadastroADM.css">
 
 </head>
-
 
 <body>
 
@@ -68,61 +91,59 @@
 
             <div class="grid-3">
                 <div class="ColUpdate">
-                    <h2 class="tituloForm">Editar Informações Pessoais</h2>
+                    <h2 class="tituloForm">Cadastrar Novo Administrador</h2>
 
                     <div class="secaoForm">
 
                         <section class="fomulariodeCADASTRO">
 
                             <div class="container">
-                                <form action="#">
+                                <form action="CadastroADM.php" method="POST">
                                     <div class="main-user-info">
 
                                         <div class="user-input-box">
                                             <label for="firstname">Nome</label>
-                                            <input id="firstname" type="text" name="nome" placeholder="Digite seu nome" value="<?php echo ($_SESSION['nome']); ?>" maxlength="20" required>
+                                            <input id="nome" type="text" name="nome" placeholder="Digite seu nome" maxlength="20" required>
                                         </div>
 
                                         <div class="user-input-box">
                                             <label for="email">E-mail</label>
-                                            <input id="email" type="email" name="email" placeholder="exemplo@gmail.com" <?php echo ($_SESSION['usuario']); ?> maxlength="30" title="Formato: exemplo@gmail.com" required>
-                                        </div>
-
-                                        <div class="user-input-box">
-                                            <label for="confirmPassword">Telefone</label>
-                                            <input id="confirmPassword" type="text" name="telefone_1" placeholder="(00) 00000-0000" value="<?php echo ($_SESSION['telefone_1']); ?>" maxlength="15" minlength="15" title="Formato: (00) 00000-0000" required>
-                                        </div>
-
-                                        <div class="user-input-box">
-                                            <label for="confirmPassword">Cpf</label>
-                                            <input id="confirmPassword" type="text" name="cpf" placeholder="000.000.000" value="<?php echo ($_SESSION['cpf']); ?>" title="Formato: 000.000.000" maxlength="11" required>
-                                        </div>
-
-                                        <div class="user-input-box">
-                                            <label for="confirmPassword">Ano Nascimento</label>
-                                            <input id="confirmPassword" type="text" name="ano_nascimento" placeholder="Digite o ano" value="<?php echo ($_SESSION['ano_nascimento']); ?>" maxlength="4" title="Formato: 0000" required>
+                                            <input id="email" type="email" name="email" placeholder="exemplo@gmail.com" maxlength="30" required>
                                         </div>
 
                                         <div class="user-input-box">
                                             <label for="confirmPassword">Senha</label>
-                                            <input id="confirmPassword" type="password" name="senha" placeholder="Digite sua senha">
+                                            <input id="senha" type="password" name="senha" placeholder="Digite sua senha" minlength="4" title="A senha deve ter pelo menos 8 caracteres e incluir letra maiúscula, letra minúscula, número e caractere especial." required>
                                         </div>
 
+                                        <?php echo (isset($_SESSION['usuario']) && $_SESSION['nivel'] == "admin") ?
+
+                                            '<div class="user-input-box">
+                                                <label for="password">Nivel</label>
+                                                <input id="nivel" type="text" name="nivel" value="admin">
+                                             </div>'
+
+                                            : '' ?>
                                     </div>
 
                                     <div class="form-submit-btn">
-                                    <button class="continue-button" type="submit">Confirmar alterações</button>
+                                        <button class="continue-button" type="submit">Cadastrar</button>
                                     </div>
 
                                 </form>
                             </div>
+
                         </section>
                     </div>
+
                 </div>
+
             </div>
+
         </div>
     </section>
     </div>
+
 </body>
 
 </html>
