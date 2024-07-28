@@ -48,13 +48,13 @@ $dados = $produto->ListarProdutos(); ?>
                     </tr>
                 </thead>
                 <tbody>
-
-                    <?php for ($i = 0; $i < 73; $i++) { ?>
+                    
+                    <?php foreach ($dados as $valor) { ?>
 
                         <tr>
-                            <td><?= $dados[$i]['id'] ?></td>
-                            <td> <img src="<?= $dados[$i]['imagem'] ?>" alt="produto"><?= $dados[$i]['titulo'] ?></td>
-                            <td><?= $dados[$i]['preco'] ?></td>
+                            <td><?= $valor['id'] ?></td>
+                            <td> <img src="<?= $valor['imagem'] ?>" alt="produto"><?= $valor['titulo'] ?></td>
+                            <td><?= $valor['preco'] ?></td>
                             <td>5 estrelas</td>
                             <td>
                                 <button class="editUser">

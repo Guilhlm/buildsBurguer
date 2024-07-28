@@ -41,7 +41,7 @@ $dados = $usuario->ListarUsuarios(); ?>
             <table>
                 <thead>
                     <tr>
-                        <th>Id</th>
+                        <th>Id Pessoa</th>
                         <th>Email</th>
                         <th>Nome</th>
                         <th>Ano Nascimento</th>
@@ -52,15 +52,16 @@ $dados = $usuario->ListarUsuarios(); ?>
                 </thead>
                 <tbody>
 
-                    <?php for ($i = 0; $i < 12; $i++) { ?>
+                    <?php foreach ($dados as $valor) { ?>
 
                         <tr>
-                            <td><?= $dados[$i]['id'] ?></td>
-                            <td> <img src="./assets/img/perfil/perfilADM.png" alt="foto perfil"><?= $dados[$i]['usuario'] ?></td>
-                            <td><?= $dados[$i]['nome'] ?></td>
-                            <td><?= $dados[$i]['ano_nascimento'] ?></td>
-                            <td><?= $dados[$i]['cpf'] ?></td>
-                            <td><?= $dados[$i]['nivel'] ?></td>
+                            <td><?= $valor['id'] ?></td>
+                            <td> <img src="./assets/img/perfil/perfilADM.png" alt="foto perfil"><?= $valor['usuario'] ?></td>
+                            <td><?= $valor['nome'] ?></td>
+                            <td><?= $valor['ano_nascimento'] ?></td>
+                            <td><?= $valor['cpf'] ?></td>
+                            <td><?= $valor['nivel'] ?></td>
+                            
                             <td>
                                 <button class="editUser">
                                     <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-pencil-square" viewBox="0 0 16 16">
