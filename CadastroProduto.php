@@ -34,8 +34,8 @@ if (isset($_SESSION['nivel']) && !empty($_SESSION['nivel']) && isset($_POST) && 
 
             echo "<script>alert('produto cadastrado');</script>";
 
-        } catch (PDOException $e) {
-            echo "Erro: " . $e->getMessage();
+        } catch (PDOException) {
+            echo "<script>alert('seguinte deu uma coisa no treco');</script>";
         }
     } else {
 

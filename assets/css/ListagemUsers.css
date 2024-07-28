@@ -18,7 +18,7 @@ body {
 }
 
 main.table {
-    width: 82vw;
+    width: 95vw;
     height: 90vh;
     background-color: #fff5;
     backdrop-filter: blur(7px);
@@ -69,7 +69,7 @@ td img {
 
 table,
 th,
-td {
+.td {
     border-collapse: collapse;
     padding: 1rem;
     text-align: left;
@@ -118,7 +118,7 @@ tbody tr:hover {
     position: relative;
 }
 
-.export__file .export__file-btn a{
+.export__file .export__file-btn a {
     width: 2.6rem;
     height: 2.6rem;
     background: rgb(167, 10, 10);
@@ -135,4 +135,13 @@ tbody tr:hover {
 
 .export__file input {
     display: none;
+}
+
+input {
+    all: unset;
+    width: 100px;
+}
+
+.EmailGrande {
+    width: 250px !important;
 }

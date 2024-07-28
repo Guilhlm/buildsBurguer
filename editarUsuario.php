@@ -3,10 +3,11 @@
 <?php
 
 if ($_SERVER['REQUEST_METHOD'] === 'POST' && !empty($_POST)) {
+
     try {
         $id = $_POST['id'];
         $nome = $_POST['nome'];
-        $telefone_1 = $_POST['telefone_1'];
+        $telefone_1 = $_POST['telefone_1']; 
         $cpf = $_POST['cpf'];
         $ano_nascimento = $_POST['ano_nascimento'];
 
@@ -24,9 +25,9 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST' && !empty($_POST)) {
             ':telefone_1' => $telefone_1
         ]);
 
-        echo "<script>alert('Update realizado');</script>";
-    } catch (PDOException $e) {
-        echo "<script>alert('Ocorreu um erro: " . $e->getMessage() . "');</script>";
+        echo "<script>alert('Update realizado, por favor deslogue');</script>";
+    } catch (PDOException) {
+        echo "<script>alert('seguinte deu uma coisa no treco');</script>";
     }
 }
 ?>
