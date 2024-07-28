@@ -30,7 +30,7 @@ $dados = $produto->ListarProdutos(); ?>
 <body>
     <main class="table" id="customers_table">
         <section class="table__header">
-            <h1>Todos Usuarios</h1>
+            <h1>Todos Produtos</h1>
             <div class="export__file">
                 <label for="export-file" class="export__file-btn" title="Export File"><a href="menu.php">x</a></label>
                 <input type="checkbox" id="export-file">
@@ -43,7 +43,7 @@ $dados = $produto->ListarProdutos(); ?>
                         <th>Id</th>
                         <th>Foto</th>
                         <th>Preço</th>
-                        <th>Avaliação</th>
+                        <th>Categoria</th>
                         <th>Edições</th>
                     </tr>
                 </thead>
@@ -55,7 +55,7 @@ $dados = $produto->ListarProdutos(); ?>
                             <td><?= $valor['id'] ?></td>
                             <td> <img src="<?= $valor['imagem'] ?>" alt="produto"><?= $valor['titulo'] ?></td>
                             <td><?= $valor['preco'] ?></td>
-                            <td>5 estrelas</td>
+                            <td><?= $valor['categoria'] ?></td>
                             <td>
                                 <button class="editUser">
                                     <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-pencil-square" viewBox="0 0 16 16">

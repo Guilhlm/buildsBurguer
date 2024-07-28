@@ -59,6 +59,7 @@ if (isset($_POST['nomeCadastro']) && !empty($_POST['nomeCadastro'])) {
             $cpf = $_POST['cpf'];
             $ano_nascimento = $_POST['ano_nascimento'];
             $telefone = $_POST['telefone_1'];
+            $id = $_POST['id'];
 
             $conn = new PDO("mysql:host=62.72.62.1;dbname=u687609827_gui", "u687609827_gui", "Ou]Q||Jr^7H");
             $script = "SELECT * FROM tb_usuarios INNER JOIN tb_pessoas ON tb_usuarios.id_pessoa = tb_pessoas.id WHERE usuario = '{$user}' AND senha = '{$password}'";
@@ -74,6 +75,7 @@ if (isset($_POST['nomeCadastro']) && !empty($_POST['nomeCadastro'])) {
 
                 // $_SESSION["fotoPerfilLogado"] = ['foto'];
 
+                $_SESSION['id'] = $resultado['id'];
                 $_SESSION['nome'] = $resultado['nome'];
                 $_SESSION['cpf'] = $resultado['cpf'];
                 $_SESSION['telefone_1'] = $resultado['telefone_1'];

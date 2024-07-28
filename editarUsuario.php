@@ -1,5 +1,36 @@
 <?php session_start(); ?>
 
+<?php
+
+if ($_SERVER['REQUEST_METHOD'] === 'POST' && !empty($_POST)) {
+    try {
+        $id = $_POST['id'];
+        $nome = $_POST['nome'];
+        $telefone_1 = $_POST['telefone_1'];
+        $cpf = $_POST['cpf'];
+        $ano_nascimento = $_POST['ano_nascimento'];
+
+        $conn = new PDO("mysql:host=62.72.62.1;dbname=u687609827_gui", "u687609827_gui", "Ou]Q||Jr^7H");
+        $conn->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
+
+        $scriptUpdatePessoa = "UPDATE tb_pessoas SET nome = :nome, ano_nascimento = :ano_nascimento, cpf = :cpf, telefone_1 = :telefone_1 WHERE id = :id";
+        $stmt = $conn->prepare($scriptUpdatePessoa);
+
+        $stmt->execute([
+            ':id' => $id,
+            ':nome' => $nome,
+            ':ano_nascimento' => $ano_nascimento,
+            ':cpf' => $cpf,
+            ':telefone_1' => $telefone_1
+        ]);
+
+        echo "<script>alert('Update realizado');</script>";
+    } catch (PDOException $e) {
+        echo "<script>alert('Ocorreu um erro: " . $e->getMessage() . "');</script>";
+    }
+}
+?>
+
 
 <!DOCTYPE html>
 <html lang="pt-br">
@@ -75,17 +106,14 @@
                         <section class="fomulariodeCADASTRO">
 
                             <div class="container">
-                                <form action="#">
+                                <form action="editarUsuario.php" method="POST">
                                     <div class="main-user-info">
+
+                                        <input type="hidden" name="id" value="<?php echo ($_SESSION['id']); ?>">
 
                                         <div class="user-input-box">
                                             <label for="firstname">Nome</label>
                                             <input id="firstname" type="text" name="nome" placeholder="Digite seu nome" value="<?php echo ($_SESSION['nome']); ?>" maxlength="20" required>
-                                        </div>
-
-                                        <div class="user-input-box">
-                                            <label for="email">E-mail</label>
-                                            <input id="email" type="email" name="email" placeholder="exemplo@gmail.com" <?php echo ($_SESSION['usuario']); ?> maxlength="30" title="Formato: exemplo@gmail.com" required>
                                         </div>
 
                                         <div class="user-input-box">
@@ -103,15 +131,10 @@
                                             <input id="confirmPassword" type="text" name="ano_nascimento" placeholder="Digite o ano" value="<?php echo ($_SESSION['ano_nascimento']); ?>" maxlength="4" title="Formato: 0000" required>
                                         </div>
 
-                                        <div class="user-input-box">
-                                            <label for="confirmPassword">Senha</label>
-                                            <input id="confirmPassword" type="password" name="senha" placeholder="Digite sua senha">
-                                        </div>
-
                                     </div>
 
                                     <div class="form-submit-btn">
-                                    <button class="continue-button" type="submit">Confirmar alterações</button>
+                                        <button class="continue-button" type="submit">Confirmar alterações</button>
                                     </div>
 
                                 </form>
