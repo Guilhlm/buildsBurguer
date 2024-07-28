@@ -7,7 +7,6 @@ class Usuario
     public function ListarUsuarios()
     {
         $conn = new PDO("mysql:host=62.72.62.1;dbname=u687609827_gui", "u687609827_gui", "Ou]Q||Jr^7H");
-        // $scriptUsuario = "SELECT * FROM tb_usuarios";
         $scriptUsuario = "SELECT * FROM tb_usuarios INNER JOIN tb_pessoas ON tb_usuarios.id_pessoa = tb_pessoas.id";
         $resultadoUsuario = $conn->query($scriptUsuario)->fetchAll();
         return $resultadoUsuario;
@@ -59,18 +58,18 @@ $dados = $usuario->ListarUsuarios(); ?>
 
                             <tr>
 
-                                <td class="td"><?=($valor['id']) ?></td>
-                                <td class="td"><input class="EmailGrande" type="text" name="email" value="<?=($valor['usuario']) ?>"></td>
-                                <td class="td"><input type="text" name="nome" value="<?=($valor['nome']) ?>"></td>
-                                <td class="td"><input type="password" name="nome" value="<?=($valor['senha']) ?>"></td>
-                                <td class="td"><input type="text" name="ano_nascimento" value="<?=($valor['ano_nascimento']) ?>"></td>
-                                <td class="td"><input type="text" name="cpf" value="<?=($valor['cpf']) ?>"></td>
-                                <td class="td"><input type="text" name="nome" value="<?=($valor['telefone_1']) ?>"></td>
-                                <td class="td"><input type="text" name="nivel" value="<?=($valor['nivel']) ?>"></td>
+                                <td class="td"><?= ($valor['id']) ?></td>
+                                <td class="td"><input class="EmailGrande" type="text" name="email" value="<?= ($valor['usuario']) ?>"></td>
+                                <td class="td"><input type="text" name="nome" value="<?= ($valor['nome']) ?>"></td>
+                                <td class="td"><input type="password" name="nome" value="<?= ($valor['senha']) ?>"></td>
+                                <td class="td"><input type="text" name="ano_nascimento" value="<?= ($valor['ano_nascimento']) ?>"></td>
+                                <td class="td"><input type="text" name="cpf" value="<?= ($valor['cpf']) ?>"></td>
+                                <td class="td"><input type="text" name="nome" value="<?= ($valor['telefone_1']) ?>"></td>
+                                <td class="td"><input type="text" name="nivel" value="<?= ($valor['nivel']) ?>"></td>
                                 <td>
 
                                     <form method="POST" action="menu.php" style="display:inline;">
-                                        <input type="hidden" name="id" value="<?=($valor['id']) ?>">
+                                        <input type="hidden" name="id" value="<?= ($valor['id']) ?>">
                                         <button type="submit" class="editUser">
 
                                             <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-clipboard-check" viewBox="0 0 16 16">
@@ -83,7 +82,7 @@ $dados = $usuario->ListarUsuarios(); ?>
                                     </form>
 
                                     <form method="POST" action="sobre.php" style="display:inline;">
-                                        <input type="hidden" name="id" value="<?=($valor['id']) ?>">
+                                        <input type="hidden" name="id" value="<?= ($valor['id']) ?>">
                                         <button type="submit" class="deleteUser">
 
                                             <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-trash3" viewBox="0 0 16 16">
