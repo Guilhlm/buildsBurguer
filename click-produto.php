@@ -11,7 +11,6 @@ class Produto
         $query = "SELECT * FROM tb_produtos WHERE id = {$id}";
         $resultado = $conn->query($query)->fetch();
         return $resultado;
-
     }
 }
 
@@ -21,7 +20,6 @@ if (isset($_GET['id']) && !empty($_GET['id'])) {
 
     $id = $_GET['id'];
     $dados = $produto->Listar1Produto($id);
-
 } ?>
 
 <section class="body-produto">
