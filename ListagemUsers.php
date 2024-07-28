@@ -46,6 +46,7 @@ $dados = $usuario->ListarUsuarios(); ?>
                         <th>Nome</th>
                         <th>Ano Nascimento</th>
                         <th>cpf</th>
+                        <th>Nivel</th>
                         <th>Edições</th>
                     </tr>
                 </thead>
@@ -55,10 +56,11 @@ $dados = $usuario->ListarUsuarios(); ?>
 
                         <tr>
                             <td><?= $dados[$i]['id'] ?></td>
-                            <td> <img src="./assets/img/perfil/perfilADM.png" alt=""><?= $dados[$i]['usuario'] ?></td>
+                            <td> <img src="./assets/img/perfil/perfilADM.png" alt="foto perfil"><?= $dados[$i]['usuario'] ?></td>
                             <td><?= $dados[$i]['nome'] ?></td>
                             <td><?= $dados[$i]['ano_nascimento'] ?></td>
                             <td><?= $dados[$i]['cpf'] ?></td>
+                            <td><?= $dados[$i]['nivel'] ?></td>
                             <td>
                                 <button class="editUser">
                                     <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-pencil-square" viewBox="0 0 16 16">
