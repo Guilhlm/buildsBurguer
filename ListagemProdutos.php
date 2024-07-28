@@ -2,20 +2,19 @@
 
 <?php
 
-class Usuario
+class Produto
 {
-    public function ListarUsuarios()
+    public function ListarProdutos()
     {
         $conn = new PDO("mysql:host=62.72.62.1;dbname=u687609827_gui", "u687609827_gui", "Ou]Q||Jr^7H");
-        // $scriptUsuario = "SELECT * FROM tb_usuarios";
-        $scriptUsuario = "SELECT * FROM tb_usuarios INNER JOIN tb_pessoas ON tb_usuarios.id_pessoa = tb_pessoas.id";
-        $resultadoUsuario = $conn->query($scriptUsuario)->fetchAll();
-        return $resultadoUsuario;
+        $query = "SELECT * FROM tb_produtos";
+        $resultado = $conn->query($query)->fetchAll();
+        return $resultado;
     }
 }
 
-$usuario = new Usuario();
-$dados = $usuario->ListarUsuarios(); ?>
+$produto = new Produto();
+$dados = $produto->ListarProdutos(); ?>
 
 <!DOCTYPE html>
 <html lang="pt-br">
@@ -25,7 +24,7 @@ $dados = $usuario->ListarUsuarios(); ?>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Tela de usuarios</title>
-    <link rel="stylesheet" href="assets/css/ListagemUsers.css">
+    <link rel="stylesheet" href="assets/css/ListagemProdutos.css">
 </head>
 
 <body>
@@ -42,23 +41,21 @@ $dados = $usuario->ListarUsuarios(); ?>
                 <thead>
                     <tr>
                         <th>Id</th>
-                        <th>Email</th>
-                        <th>Nome</th>
-                        <th>Ano Nascimento</th>
-                        <th>cpf</th>
+                        <th>Foto</th>
+                        <th>Preço</th>
+                        <th>Avaliação</th>
                         <th>Edições</th>
                     </tr>
                 </thead>
                 <tbody>
 
-                    <?php for ($i = 0; $i < 12; $i++) { ?>
+                    <?php for ($i = 0; $i < 73; $i++) { ?>
 
                         <tr>
                             <td><?= $dados[$i]['id'] ?></td>
-                            <td> <img src="./assets/img/perfil/perfilADM.png" alt=""><?= $dados[$i]['usuario'] ?></td>
-                            <td><?= $dados[$i]['nome'] ?></td>
-                            <td><?= $dados[$i]['ano_nascimento'] ?></td>
-                            <td><?= $dados[$i]['cpf'] ?></td>
+                            <td> <img src="<?= $dados[$i]['imagem'] ?>" alt="produto"><?= $dados[$i]['titulo'] ?></td>
+                            <td><?= $dados[$i]['preco'] ?></td>
+                            <td>5 estrelas</td>
                             <td>
                                 <button class="editUser">
                                     <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-pencil-square" viewBox="0 0 16 16">

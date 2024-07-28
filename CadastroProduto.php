@@ -116,7 +116,7 @@ if (isset($_SESSION['nivel']) && !empty($_SESSION['nivel']) && isset($_POST) && 
 
                                     <section class="Fotoupdate">
                                         <img src="./assets/img/perfil/inserirfoto.png" alt="foto upload" class="inserirFoto">
-                                        <input id="imagem" type="file" name="imagem" accept="image/png, image/jpeg" required>
+                                        <input id="imagem" type="file" name="imagem" accept="image/png, image/jpeg">
                                     </section>
 
                                     <div class="input-group">
