@@ -107,7 +107,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST' && !empty($_POST)) {
                         <section class="fomulariodeCADASTRO">
 
                             <div class="container">
-                                <form action="logout.php" method="POST">
+                                <form action="editarUsuario.php" method="POST">
                                     <div class="main-user-info">
 
                                         <input type="hidden" name="id" value="<?php echo ($_SESSION['id']); ?>">
