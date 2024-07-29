@@ -11,7 +11,6 @@ class Produto
         $query = "SELECT * FROM tb_produtos";
         $resultado = $conn->query($query)->fetch();
         return $resultado;
-
     }
 }
 
@@ -39,7 +38,7 @@ $dados = $produto->ListarProdutos(); ?>
             </div>
 
             <!-- Adicione mais produtos conforme necessário -->
-             
+
         </main>
         <section class="footer-carrinho">
             <div class="total">

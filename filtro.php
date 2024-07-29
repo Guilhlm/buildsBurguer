@@ -40,7 +40,7 @@
                                 </figure>
                             </a>
                         </div>
-                        
+
                     <?php } ?>
 
                 </div>

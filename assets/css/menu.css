@@ -200,8 +200,8 @@ header nav {
     background: none;
 }
 
-#lupa:hover{
-    
+#lupa:hover {
+
     color: white;
 }
 
@@ -244,7 +244,7 @@ input::placeholder {
     border: 2px solid rgb(255, 255, 255);
 }
 
-.navTopicos{
+.navTopicos {
     font-size: 14px;
     padding: 0 0 10px;
     border-bottom: 2px solid white;

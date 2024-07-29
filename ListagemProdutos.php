@@ -48,7 +48,7 @@ $dados = $produto->ListarProdutos(); ?>
                     </tr>
                 </thead>
                 <tbody>
-                    
+
                     <?php foreach ($dados as $valor) { ?>
 
                         <tr>

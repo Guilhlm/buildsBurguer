@@ -83,7 +83,6 @@ if (isset($_POST['nomeCadastro']) && !empty($_POST['nomeCadastro'])) {
 
                 header('location: editarUsuario.php');
                 sleep(1);
-                
             } else {
                 $erro_login = "Usuário ou senha incorretos.";
             }

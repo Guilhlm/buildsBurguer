@@ -121,7 +121,7 @@
     cursor: pointer;
 }
 
-.menos:hover{
+.menos:hover {
     background-color: #24242466;
 
 }
@@ -144,12 +144,12 @@
     cursor: pointer;
 }
 
-.mais:hover{
+.mais:hover {
     background-color: #24242466;
 
 }
 
-.addcart a{
+.addcart a {
     font-family: 'Croissant One';
     display: flex;
     align-items: center;
@@ -165,7 +165,7 @@
     color: white;
 }
 
-.addcart a:hover{
+.addcart a:hover {
     background-color: #311c00;
 }
 

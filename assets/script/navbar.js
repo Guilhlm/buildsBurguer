@@ -10,6 +10,6 @@ function toggleSidebar() {
     }
 }
 
-function fechar(){
+function fechar() {
     sidebar.style.right = '-500px';
 }

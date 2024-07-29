@@ -38,7 +38,7 @@
                 contra
                 tempos e transformamos cada desafio em uma oportunidade de crescimento.
             </p>
-            
+
             <h2>O Toque Especial: </h2>
             <p>
                 O que torna a Build's Burger verdadeiramente especial é o seu compromisso com a qualidade e a
@@ -65,11 +65,12 @@
 
             <h2>Conclusão: </h2>
             <p>
-                A história da Build's Burger é uma inspiração para empreendedores e amantes da comida em todo o
-                mundo.
-                Ela nos lembra que, com dedicação e uma visão clara, é possível transformar sonhos em realidade,
-                uma
-                mordida de cada vez.
+                A história da Build's Burger é uma verdadeira inspiração para empreendedores e amantes da boa comida em todo o mundo.
+                Ela nos ensina que, mesmo diante de adversidades e desafios aparentemente insuperáveis, é possível transformar sonhos em realidade
+                com dedicação, perseverança e uma visão clara. O Build's Burger não é apenas um negócio é um símbolo de resiliência e paixão.
+                Cada hambúrguer preparado com cuidado e cada entrega realizada com precisão são testemunhos de um compromisso inabalável com a qualidade
+                e a satisfação do cliente. Essa história nos lembra que grandes conquistas começam com pequenos passos e que, com trabalho árduo e dedicação,
+                é possível alcançar qualquer objetivo.
             </p>
         </div>
     </main>
@@ -82,122 +83,85 @@
 
             <h2>Inicio de tudo: </h2>
             <p>
-                No começo do projeto eu e meu amigo pedro decidimos fazer uma hamburgueria e seu delivery, porém,
-                meu
-                colega de equipe deixou o curso e restou apenas eu no projeto. No inicio eu senti que não seria
-                capaz de
-                fazer um site do zero, por ter uma visão ruim das turmas anteriores, ademais, eu me preparei
-                mentalmente
-                para um projeto enorme e aceitei o desafio de fazer tudo sozinho, afim de conseguir aprender tudo
-                e
-                superar cada obstaculo.
+                No começo do projeto, eu e meu amigo Pedro decidimos abrir uma hamburgueria e oferecer serviço de delivery.
+                No entanto, meu colega deixou o curso, e eu fiquei sozinho no projeto. Inicialmente, senti que não seria capaz
+                de criar um site do zero, pois tinha uma visão negativa das turmas anteriores. Entretanto, me preparei
+                mentalmente para um grande desafio e aceitei a tarefa de fazer tudo sozinho, com o objetivo de aprender e superar cada obstáculo.
             </p>
 
             <h2>Start do projeto: </h2>
             <p>
-                Não me lembro o dia em que eu comecei porém, eu tinha uma missão em mente terminar tudo o mais
-                rápido
-                possivel por ter um curto periodo de tempo ao meu dispor, por haver diversos empecilhos ao meu
-                caminho,
-                aja isto, eu procurei meus professores e pedi uma ajuda no meus prazos para não faltar tempo no
-                final
-                de
-                tudo.
+                Não me lembro exatamente quando comecei, mas tinha uma missão em mente: terminar tudo o mais rápido possível,
+                devido ao curto prazo disponível e aos diversos empecilhos no caminho. Para isso, procurei meus professores e
+                pedi ajuda com os prazos para garantir que não faltaria tempo no final.
             </p>
 
             <h2>Cronograma: </h2>
             <p>
-                Ao decorrer dos dias, eu percebia que não tinha começado nada do meu projeto e meus amigos já
-                haviam
-                começado os seus devidos projetos, com isso, a pressão sobre mim aumentou cada vez mais. O paulin,
-                o
-                brabo,
-                sugeriu uma planilha excel para termos controle de tempo e desenvolvimento do projeto, isso me
-                ajudou
-                muito por saber que meu projeto evoluia mesmo que pouco a pouco.
+                Com o passar dos dias, percebi que não havia iniciado meu projeto, enquanto meus colegas já estavam avançando nos
+                deles. A pressão aumentava a cada dia. Foi então que o Paulin, um verdadeiro gênio, sugeriu que usássemos uma planilha
+                Excel para controlar o tempo e o desenvolvimento do projeto. Isso me ajudou bastante, pois pude acompanhar a evolução, mesmo que lenta.
             </p>
 
             <h2>O despertar: </h2>
             <p>
-                Em um certo dia, me peguei pensando o que eu gostaria para minha vida e como daria o start para
-                isso,
-                então, peguei meu projeto da build's burguer e comecei a fazer a tela da home, porém, mesmo
-                sabendo do
-                tempo curto não estava motivado para realizar essas atividades. E então vierao meus professores
-                e me
-                aconcelharam a procurar uma motivação para esse projeto, com isso consegui engajar no pi e
-                gostar do
-                que
-                eu estava fazendo.
+                Em certo dia, me peguei refletindo sobre o que queria para minha vida e como daria o primeiro passo. Decidi então pegar
+                o projeto da Build's Burger e começar a trabalhar na tela inicial. No entanto, mesmo ciente do tempo curto, faltava motivação
+                para realizar essas atividades. Meus professores me aconselharam a encontrar uma motivação para o projeto, o que me ajudou
+                a engajar no trabalho e a gostar do que estava fazendo.
             </p>
 
             <h2>Java Script </h2>
             <p>
-                E então veio o lindo javascript, eu ainda não sei dizer muito sobre essa linguagem por nao estar
-                confortavel o suficiente para realiar comandos com essa ela porem estou me desenvolvendo aos
-                poucos.
-            </p>
-
-            <h2>Finalização do Html: </h2>
-            <p>
-                Essa parte do meu projeto eu tinha convicção que teria acabado tudo, porem tive a incrivel supresa
-                do meu professor PAULIN que me dava inumeras tarefas a mais, para deixar o projeto mais completo e
-                funcional, ao completar todo o meu HTML percebi que tinha uma longa jornad atrás de mim e isso me
-                motivou ainda mais para enfrentar novos desafios propostos a mim, uma lição que aprendi com a
-                linguagem de marcação chamada HTML, é que as coisas são feitas de diversas formas mas alguns
-                modos são melhores que os outros, meu aprendizado com essa linguagem me ajudar e muito com o meu
-                proximo desafio que é o PHP.
+                Foi então que conheci o JavaScript. Ainda não estou totalmente confortável com a linguagem, mas estou me desenvolvendo aos poucos.
+                Com o tempo, percebi a importância do JS. Estudei mais sobre ele e vi que ele não está presente apenas em HTML e CSS; é um verdadeiro
+                braço direito em muitas áreas da programação. Agora, minha meta é aprender JS e aplicá-lo cada vez mais nos meus futuros projetos web.
             </p>
 
             <h2>Php: </h2>
             <p>
-                Enfim cheguei no finais do projeto, o PHP pessoalmente foi complicado de entender no começo
-                porem me pego hoje no meio da UC e vejo que não era um bixo de 7 cabeças e apenas estava muito no
-                começo da aula para enteder tudo de cara. Depois de algumas aulas e muitas madrugadas arcodado
-                consegui enteder até que bem o conceito dessa linguagem porem ainda sinto dificuldades, alem disso
-                o Paulin ajudou muito ao marcar dois dias de duvidas para fazer com que nós alunos entendessemos
-                melhor a forma de trabalhar com PHP, e minha sincera opinião sobre essa linguagem é que ela poupa
-                muita linha de codigo porem para montrar a estrutura inicial é complicada depois que montou o inicio
-                salva muito codigo (mas enche de arquivos viu pqp).
+                Enfim, cheguei ao final do projeto. O PHP foi complicado de entender no início, mas, ao avançar no curso, percebi que não era tão
+                difícil quanto parecia. Depois de algumas aulas e muitas madrugadas estudando, consegui entender bem o conceito da linguagem, embora
+                ainda encontre dificuldades. Além disso, Paulin ajudou bastante ao marcar sessões de dúvidas para nos ajudar a entender melhor o PHP.
+                Minha opinião sincera sobre essa linguagem é que ela economiza muitas linhas de código, mas a configuração inicial é complicada. Contudo,
+                depois de montada, economiza bastante código, apesar de gerar muitos arquivos (pqp).
+
+
             </p>
 
             <h2>Banco de Dados: </h2>
             <p>
-                Chegou a hora de montar meu banco, no começo do projeto temi muito ele por não lembrar muito do
-                conceito de UPDATE porem ao assistir uma aula de banco percebi que era totalmente diferente do meu
-                Pré-conceito, mas nem tudo são flores percebi um pequeno impecilio na minha frente que era 69 Arquivos
-                de fotos para inserir no meu Banco de dados, isso me gerou um trabalho enorme por ter que montar uma
-                plania no Excel e de la popular o banco mas no final de tudo certo.
+                Chegou a hora de montar meu banco de dados. No começo, temi essa etapa por não lembrar bem do conceito de UPDATE. Porém, após assistir
+                a uma aula sobre o tema, percebi que era diferente do que eu imaginava. No entanto, nem tudo são flores. Tive que inserir 69 arquivos de
+                fotos no banco de dados, o que deu bastante trabalho. Tive que criar uma planilha no Excel para popular o banco, mas, no final, tudo deu certo.
             </p>
-            
+
             <h2>Testes finais: </h2>
             <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur est aliquid beatae
-                adipisci
-                tempore labore consequatur fugit praesentium earum rem, dolores inventore nesciunt ut commodi,
-                qui
-                aperiam eum aliquam. Aut.
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur est aliquid beatae
-                adipisci
-                tempore labore consequatur fugit praesentium earum rem, dolores inventore nesciunt ut commodi,
-                qui
-                aperiam eum aliquam. Aut.
+                Percebi que os testes são uma parte muito importante do projeto, embora não goste muito dessa etapa por ser chata e detalhada. Tive alguns
+                problemas com o usuário ADM, que não cumpria os requisitos mínimos de senha, então desativei essa configuração. Mesmo assim, os testes são
+                essenciais para identificar e corrigir falhas no projeto.
+
+
             </p>
+
+            <h2>Finalização do Html: </h2>
+            <p>
+                Nessa etapa, achei que havia concluído tudo, mas meu professor Paulin me surpreendeu com inúmeras tarefas adicionais para deixar o projeto
+                mais completo e funcional. Ao finalizar todo o HTML, percebi a longa jornada que havia percorrido, o que me motivou ainda mais a enfrentar
+                novos desafios. Uma lição que aprendi com HTML é que há diversas maneiras de fazer as coisas, mas alguns métodos são melhores que outros.
+                Meu aprendizado com essa linguagem me ajudará bastante no próximo desafio: o PHP.
+            </p>
+
 
             <h2>Apresentação e Conclusão: </h2>
             <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam illum et quam! Quidem earum unde
-                eligendi
-                voluptates praesentium quasi! Alias totam nulla iure tempore, quae quod possimus ex voluptatibus
-                fuga?
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur est aliquid beatae
-                adipisci
-                tempore labore consequatur fugit praesentium earum rem, dolores inventore nesciunt ut commodi,
-                qui
-                aperiam eum aliquam. Aut.
+                MEDU DISSU
             </p>
+
             <!-- agradecer o paulin <3 -->
         </div>
+
     </main>
 </div>
 <br><br><br>

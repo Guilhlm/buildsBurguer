@@ -14,10 +14,10 @@ if (isset($_SESSION['nivel']) && !empty($_SESSION['nivel']) && isset($_POST) && 
         $preco = floatval($preco);
         $categoria = htmlspecialchars($categoria);
         $descricao = htmlspecialchars($descricao);
-        
+
         $nomeCaminho = './assets/img/produtos/' . round(microtime(true)) . '-' . basename($imagem['name']);
         move_uploaded_file($imagem['tmp_name'], $nomeCaminho);
-        
+
 
         try {
 
@@ -33,7 +33,6 @@ if (isset($_SESSION['nivel']) && !empty($_SESSION['nivel']) && isset($_POST) && 
             $variaveis->execute();
 
             echo "<script>alert('produto cadastrado');</script>";
-
         } catch (PDOException) {
             echo "<script>alert('seguinte deu uma coisa no treco');</script>";
         }
@@ -152,4 +151,5 @@ if (isset($_SESSION['nivel']) && !empty($_SESSION['nivel']) && isset($_POST) && 
     </section>
 
 </body>
+
 </html>

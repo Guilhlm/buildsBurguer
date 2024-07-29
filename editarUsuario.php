@@ -7,7 +7,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST' && !empty($_POST)) {
     try {
         $id = $_POST['id'];
         $nome = $_POST['nome'];
-        $telefone_1 = $_POST['telefone_1']; 
+        $telefone_1 = $_POST['telefone_1'];
         $cpf = $_POST['cpf'];
         $ano_nascimento = $_POST['ano_nascimento'];
 
@@ -114,12 +114,12 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST' && !empty($_POST)) {
 
                                         <div class="user-input-box">
                                             <label for="firstname">Nome</label>
-                                            <input id="firstname" type="text" name="nome" placeholder="Digite seu nome" value="<?php echo ($_SESSION['nome']); ?>" maxlength="20" required>
+                                            <input id="firstname" type="text" name="nome" placeholder="Digite seu nome" value="<?php echo ($_SESSION['nome']); ?>" maxlength="12" required>
                                         </div>
 
                                         <div class="user-input-box">
                                             <label for="confirmPassword">Telefone</label>
-                                            <input id="confirmPassword" type="text" name="telefone_1" placeholder="(00) 00000-0000" value="<?php echo ($_SESSION['telefone_1']); ?>" maxlength="15" minlength="15" title="Formato: (00) 00000-0000" required>
+                                            <input id="confirmPassword" type="text" name="telefone_1" placeholder="(00) 00000-0000" value="<?php echo ($_SESSION['telefone_1']); ?>" maxlength="11" minlength="11" title="Formato: (00) 00000-0000" required>
                                         </div>
 
                                         <div class="user-input-box">

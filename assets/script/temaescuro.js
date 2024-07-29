@@ -1,6 +1,6 @@
 var checkbox = document.getElementById("ChangeTheme");
 
-checkbox.addEventListener("change", function() {
+checkbox.addEventListener("change", function () {
   if (checkbox.checked) {
     darkmode();
   } else {
@@ -20,7 +20,7 @@ function nodark() {
   localStorage.setItem("mode", "light");
 }
 
-window.onload = function() {
+window.onload = function () {
   var mode = localStorage.getItem("mode");
   if (mode === "dark") {
     darkmode();
