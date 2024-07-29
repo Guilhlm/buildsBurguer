@@ -15,9 +15,9 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST' && !empty($_POST)) {
         $conn->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
 
         $scriptUpdatePessoa = "UPDATE tb_pessoas SET nome = :nome, ano_nascimento = :ano_nascimento, cpf = :cpf, telefone_1 = :telefone_1 WHERE id = :id";
-        $stmt = $conn->prepare($scriptUpdatePessoa);
+        $variaveis = $conn->prepare($scriptUpdatePessoa);
 
-        $stmt->execute([
+        $variaveis->execute([
             ':id' => $id,
             ':nome' => $nome,
             ':ano_nascimento' => $ano_nascimento,
@@ -107,7 +107,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST' && !empty($_POST)) {
                         <section class="fomulariodeCADASTRO">
 
                             <div class="container">
-                                <form action="editarUsuario.php" method="POST">
+                                <form action="logout.php" method="POST">
                                     <div class="main-user-info">
 
                                         <input type="hidden" name="id" value="<?php echo ($_SESSION['id']); ?>">

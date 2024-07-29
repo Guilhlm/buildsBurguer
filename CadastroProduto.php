@@ -24,13 +24,13 @@ if (isset($_SESSION['nivel']) && !empty($_SESSION['nivel']) && isset($_POST) && 
             $conn = new PDO("mysql:host=62.72.62.1;dbname=u687609827_gui", "u687609827_gui", "Ou]Q||Jr^7H");
             $conn->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
 
-            $stmt = $conn->prepare("INSERT INTO tb_produtos (titulo, imagem, preco, categoria, descricao) VALUES (:titulo, :imagem, :preco, :categoria, :descricao)");
-            $stmt->bindParam(':titulo', $titulo);
-            $stmt->bindParam(':imagem', $nomeCaminho);
-            $stmt->bindParam(':preco', $preco);
-            $stmt->bindParam(':categoria', $categoria);
-            $stmt->bindParam(':descricao', $descricao);
-            $stmt->execute();
+            $variaveis = $conn->prepare("INSERT INTO tb_produtos (titulo, imagem, preco, categoria, descricao) VALUES (:titulo, :imagem, :preco, :categoria, :descricao)");
+            $variaveis->bindParam(':titulo', $titulo);
+            $variaveis->bindParam(':imagem', $nomeCaminho);
+            $variaveis->bindParam(':preco', $preco);
+            $variaveis->bindParam(':categoria', $categoria);
+            $variaveis->bindParam(':descricao', $descricao);
+            $variaveis->execute();
 
             echo "<script>alert('produto cadastrado');</script>";
 
