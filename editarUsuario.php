@@ -119,7 +119,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST' && !empty($_POST)) {
 
                                         <div class="user-input-box">
                                             <label for="confirmPassword">Telefone</label>
-                                            <input id="confirmPassword" type="text" name="telefone_1" placeholder="(00) 00000-0000" value="<?php echo ($_SESSION['telefone_1']); ?>" maxlength="11" minlength="11" title="Formato: (00) 00000-0000" required>
+                                            <input id="confirmPassword" type="text" name="telefone_1" placeholder="00-00000000" value="<?php echo ($_SESSION['telefone_1']); ?>" maxlength="11" minlength="11" title="Formato: (00) 00000-0000" required>
                                         </div>
 
                                         <div class="user-input-box">

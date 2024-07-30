@@ -12,7 +12,7 @@ INSERT INTO tb_categorias (nome) VALUE ('doces');
 CREATE TABLE tb_produtos (
     id INT AUTO_INCREMENT PRIMARY KEY,
     titulo VARCHAR(150),
-    preco DECIMAL(4, 2),
+    preco DECIMAL(6, 2),
     imagem VARCHAR(200),
     categoria INT,
     descricao VARCHAR(255)

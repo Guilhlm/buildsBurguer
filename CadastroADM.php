@@ -1,28 +1,11 @@
 <?php
+
+require './classe/Usuario.php';
 session_start();
 
-if (isset($_SESSION['nivel']) && !empty($_SESSION['nivel']) && isset($_POST) && !empty($_POST)) {
+$adm = new Usuario();
+$dados = $adm->CadastroADM();
 
-    try {
-
-        $nome = $_POST['nome'];
-        $email = $_POST['email'];
-        $senha = $_POST['senha'];
-        $nivel = $_POST['nivel'];
-
-        $conn = new PDO("mysql:host=62.72.62.1;dbname=u687609827_gui", "u687609827_gui", "Ou]Q||Jr^7H");
-        $scriptCadastroPessoinha = "INSERT INTO tb_pessoas (nome) VALUE ('{$nome}')";
-        $resultadoCadastroADM = $conn->prepare($scriptCadastroPessoinha)->execute([]);
-        $pessoaID = $conn->lastInsertId();
-
-        $scriptCadastroADM = "INSERT INTO tb_usuarios (nome, usuario, senha, id_pessoa, nivel) VALUE ('{$nome}', '{$email}', '{$senha}', '{$pessoaID}', '{$nivel}')";
-        $resultadoCadastro = $conn->prepare($scriptCadastroADM)->execute([]);
-
-        echo "<script>alert('ADMIN cadastrado');</script>";
-    } catch (PDOException) {
-        echo "<script>alert('seguinte deu uma coisa no treco');</script>";
-    }
-}
 ?>
 
 <!DOCTYPE html>

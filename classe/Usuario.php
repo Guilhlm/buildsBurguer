@@ -66,7 +66,7 @@ class Usuario
         }
     }
 
-    public function CadastroADM()
+    public function CadastroADM() //
     {
         if (isset($_SESSION['nivel']) && !empty($_SESSION['nivel']) && isset($_POST) && !empty($_POST)) {
 
