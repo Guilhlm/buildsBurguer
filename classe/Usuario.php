@@ -9,11 +9,7 @@ class Usuario
 
                 $user = $_POST['usuario'];
                 $password = $_POST['senha'];
-                $nome = $_POST['nome'];
-                $cpf = $_POST['cpf'];
-                $ano_nascimento = $_POST['ano_nascimento'];
-                $telefone = $_POST['telefone_1'];
-                $id = $_POST['id'];
+
 
                 $conn = new PDO("mysql:host=62.72.62.1;dbname=u687609827_gui", "u687609827_gui", "Ou]Q||Jr^7H");
                 $scriptLogin = "SELECT * FROM tb_usuarios INNER JOIN tb_pessoas ON tb_usuarios.id_pessoa = tb_pessoas.id WHERE usuario = '{$user}' AND senha = '{$password}'";
@@ -37,7 +33,7 @@ class Usuario
                     header('location: editarUsuario.php');
                     sleep(1);
                 } else {
-                    $erro_login = "Usuário ou senha incorretos.";
+                    $erro = "Usuário ou senha incorretos.";
                 }
             }
             header('location:index.php');

@@ -81,9 +81,10 @@
                             </section>
 
                             <section class="SectionFotoNome">
-                                <?php echo $_SESSION['fotoPerfilLogado']; ?>">
 
-                                <?php echo (isset($_SESSION['usuario']) && $_SESSION['nivel'] == "admin") ? '<img class="imagemPerfil" src="./assets/img/perfil/perfilADM.png" width="150px">' : '<img class="imagemPerfil" src="./assets/img/perfil/perfilUser.png" width="150px">' ?>
+                                <?php echo (isset($_SESSION['usuario']) && $_SESSION['nivel'] == "admin")
+                                    ? '<img class="imagemPerfil" src="./assets/img/perfil/perfilADM.png" width="150px">'
+                                    : '<img class="imagemPerfil" src="./assets/img/perfil/perfilUser.png" width="150px">' ?>
 
                                 <h2 class="nomeLogin">
 
@@ -104,15 +105,27 @@
 
                                 <?php echo (isset($_SESSION['usuario']) && $_SESSION['nivel'] == "admin") ? '<br><h1 class="navTopicos">Edições</h1>' : '' ?>
                                 <?php echo (isset($_SESSION['usuario'])) ? '<a class="nav-link" href="editarUsuario.php">Editar Usuario</a>' : '' ?>
-                                <?php echo (isset($_SESSION['usuario']) && $_SESSION['nivel'] == "admin") ? '<a class="nav-link" href="ListagemProdutos.php">Editar Todos Produtos</a>' : '' ?>
-                                <?php echo (isset($_SESSION['usuario']) && $_SESSION['nivel'] == "admin") ? '<a class="nav-link" href="ListagemUsers.php">Editar todos Usuarios</a>' : '' ?>
-                                <?php echo (isset($_SESSION['usuario']) && $_SESSION['nivel'] == "") ? '<a class="nav-link red" href="logout.php">Logout</a>' : '' ?>
+                                <?php echo (isset($_SESSION['usuario']) && $_SESSION['nivel'] == "admin")
+                                    ? '<a class="nav-link" href="ListagemProdutos.php">Editar Todos Produtos</a>'
+                                    : '' ?>
+                                <?php echo (isset($_SESSION['usuario']) && $_SESSION['nivel'] == "admin")
+                                    ? '<a class="nav-link" href="ListagemUsers.php">Editar todos Usuarios</a>'
+                                    : '' ?>
+                                <?php echo (isset($_SESSION['usuario']) && $_SESSION['nivel'] == "")
+                                    ? '<a class="nav-link red" href="logout.php">Logout</a>'
+                                    : '' ?>
 
                                 <br><br>
 
-                                <?php echo (isset($_SESSION['usuario']) && $_SESSION['nivel'] == "admin") ? '<h1 class="navTopicos">Cadastros</h1>' : '' ?>
-                                <?php echo (isset($_SESSION['usuario']) && $_SESSION['nivel'] == "admin") ? '<a class="nav-link" href="CadastroADM.php">Cadastrar Administrador</a>' : '' ?>
-                                <?php echo (isset($_SESSION['usuario']) && $_SESSION['nivel'] == "admin") ? '<a class="nav-link" href="CadastroProduto.php">Cadastrar um novo Produto</a>' : '' ?>
+                                <?php echo (isset($_SESSION['usuario']) && $_SESSION['nivel'] == "admin")
+                                    ? '<h1 class="navTopicos">Cadastros</h1>'
+                                    : '' ?>
+                                <?php echo (isset($_SESSION['usuario']) && $_SESSION['nivel'] == "admin")
+                                    ? '<a class="nav-link" href="CadastroADM.php">Cadastrar Administrador</a>'
+                                    : '' ?>
+                                <?php echo (isset($_SESSION['usuario']) && $_SESSION['nivel'] == "admin")
+                                    ? '<a class="nav-link" href="CadastroProduto.php">Cadastrar um novo Produto</a>'
+                                    : '' ?>
 
                             </ul>
 

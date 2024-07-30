@@ -1,4 +1,9 @@
-<?php include "./includes/header.php"; ?>
+<?php
+
+include "./includes/header.php";
+require './classe/Produto.php';
+
+?>
 
 <section class="container" id="produtos">
     <section class="produtos">
@@ -8,21 +13,8 @@
 
                     <?php
 
-                    if (empty($_POST['buscar'])) {
-
-                        $buscar = "";
-                    } else {
-
-                        $buscar = $_POST['buscar'];
-                    }
-
-                    $conn = new PDO("mysql:host=62.72.62.1;dbname=u687609827_gui", "u687609827_gui", "Ou]Q||Jr^7H");
-                    $consulta = $conn->prepare("SELECT * FROM tb_produtos WHERE titulo LIKE :buscar ORDER BY RAND()");
-
-                    $buscaComCuringa = "%" . $buscar . "%";
-                    $consulta->bindParam(':buscar', $buscaComCuringa);
-                    $result = $consulta->execute();
-                    $result = $consulta->fetchAll(PDO::FETCH_ASSOC);
+                    $produto = new Produto();
+                    $result = $produto->FiltroProduto();
 
                     foreach ($result as $valor) { ?>
 

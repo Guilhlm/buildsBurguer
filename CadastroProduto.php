@@ -1,46 +1,11 @@
 <?php
+
+require './classe/Produto.php';
 session_start();
 
-if (isset($_SESSION['nivel']) && !empty($_SESSION['nivel']) && isset($_POST) && !empty($_POST)) {
+$produto = new Produto();
+$dados = $produto->CadastroProduto();
 
-    if (isset($_FILES['imagem']) && $_FILES['imagem']['error'] == 0) {
-
-        $titulo = $_POST['titulo'];
-        $preco = $_POST['preco'];
-        $imagem = $_FILES['imagem'];
-        $categoria = $_POST['categoria'];
-        $descricao = $_POST['descricao'];
-        $titulo = htmlspecialchars($titulo); // coverte em string
-        $preco = floatval($preco);
-        $categoria = htmlspecialchars($categoria);
-        $descricao = htmlspecialchars($descricao);
-
-        $nomeCaminho = './assets/img/produtos/' . round(microtime(true)) . '-' . basename($imagem['name']);
-        move_uploaded_file($imagem['tmp_name'], $nomeCaminho);
-
-
-        try {
-
-            $conn = new PDO("mysql:host=62.72.62.1;dbname=u687609827_gui", "u687609827_gui", "Ou]Q||Jr^7H");
-            $conn->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
-
-            $variaveis = $conn->prepare("INSERT INTO tb_produtos (titulo, imagem, preco, categoria, descricao) VALUES (:titulo, :imagem, :preco, :categoria, :descricao)");
-            $variaveis->bindParam(':titulo', $titulo);
-            $variaveis->bindParam(':imagem', $nomeCaminho);
-            $variaveis->bindParam(':preco', $preco);
-            $variaveis->bindParam(':categoria', $categoria);
-            $variaveis->bindParam(':descricao', $descricao);
-            $variaveis->execute();
-
-            echo "<script>alert('produto cadastrado');</script>";
-        } catch (PDOException) {
-            echo "<script>alert('seguinte deu uma coisa no treco');</script>";
-        }
-    } else {
-
-        echo "<script>alert('seguinte deu erro');</script>";
-    }
-}
 ?>
 
 <!DOCTYPE html>

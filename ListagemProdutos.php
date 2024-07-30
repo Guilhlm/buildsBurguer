@@ -1,17 +1,7 @@
-<?php session_start(); ?>
+<?php 
 
-<?php
-
-class Produto
-{
-    public function ListarProdutos()
-    {
-        $conn = new PDO("mysql:host=62.72.62.1;dbname=u687609827_gui", "u687609827_gui", "Ou]Q||Jr^7H");
-        $query = "SELECT * FROM tb_produtos";
-        $resultado = $conn->query($query)->fetchAll();
-        return $resultado;
-    }
-}
+require './classe/Produto.php'; 
+session_start();
 
 $produto = new Produto();
 $dados = $produto->ListarProdutos(); ?>

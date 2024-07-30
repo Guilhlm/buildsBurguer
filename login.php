@@ -73,8 +73,7 @@ if (isset($_POST['nomeCadastro']) && !empty($_POST['nomeCadastro'])) {
                 $nivel = $resultado['nivel'];
                 $_SESSION["nivel"] = $nivel;
 
-                // $_SESSION["fotoPerfilLogado"] = ['foto'];
-
+                $_SESSION["fotoPerfilLogado"] = ['foto'];
                 $_SESSION['id'] = $resultado['id'];
                 $_SESSION['nome'] = $resultado['nome'];
                 $_SESSION['cpf'] = $resultado['cpf'];
