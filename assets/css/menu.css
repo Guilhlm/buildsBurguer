@@ -342,7 +342,6 @@ input::placeholder {
 }
 
 #produtos figure {
-    /* background-color: rgb(116, 68, 5); */
     background: linear-gradient(to top, rgb(54, 31, 1), rgb(0, 0, 0));
     border: 4px solid rgba(233, 136, 57, 0.6);
     text-align: center;

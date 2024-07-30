@@ -90,10 +90,15 @@ tbody tr:hover {
 
 .deleteUser {
     border: none;
+    color: #000;
     background-color: white;
     padding: 10px;
     border-radius: 8px;
     cursor: pointer;
+    text-decoration: none;
+    display: flex;
+    justify-content: center;
+    width: 40px;
 }
 
 .deleteUser:hover {
@@ -103,10 +108,15 @@ tbody tr:hover {
 
 .editUser {
     border: none;
+    color: #000;
     background-color: white;
     padding: 10px;
     border-radius: 8px;
     cursor: pointer;
+    text-decoration: none;
+    display: flex;
+    justify-content: center;
+    width: 40px;
 }
 
 .editUser:hover {
@@ -135,4 +145,9 @@ tbody tr:hover {
 
 .export__file input {
     display: none;
+}
+
+.teste{
+    display: flex;
+    gap: 5px;
 }

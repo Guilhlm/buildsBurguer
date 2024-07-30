@@ -63,13 +63,12 @@
 }
 
 .fotinha {
-    background-position: center;
-    background-size: cover;
     border: 5px solid black;
     border-radius: 5px;
     width: 620px;
     height: 750px;
     border-radius: 20px;
+    object-fit: cover;
 }
 
 .titulo-produto {

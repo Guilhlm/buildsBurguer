@@ -81,16 +81,16 @@ class Produto
         return $result;
     }
 
-    public function DeletarProduto()
+    public function DeletarProduto($id_delete)
     {
         $conn = new PDO("mysql:host=62.72.62.1;dbname=u687609827_gui", "u687609827_gui", "Ou]Q||Jr^7H");
         $scriptDeleteProduto = "DELETE FROM tb_produtos WHERE id = :id";
 
-        $preparo = $conn->prepare($scriptDeleteProduto);
+        $resultadoDelete = $conn->prepare($scriptDeleteProduto);
 
-        $preparo->execute([
+        $resultadoDelete->execute([
 
-            // ":id" => $id_delete
+            ":id" => $id_delete
         ]);
     }
 }
