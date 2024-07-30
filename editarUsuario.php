@@ -1,35 +1,11 @@
-<?php session_start(); ?>
-
 <?php
 
-if ($_SERVER['REQUEST_METHOD'] === 'POST' && !empty($_POST)) {
+require './classe/Usuario.php';
+session_start();
 
-    try {
-        $id = $_POST['id'];
-        $nome = $_POST['nome'];
-        $telefone_1 = $_POST['telefone_1'];
-        $cpf = $_POST['cpf'];
-        $ano_nascimento = $_POST['ano_nascimento'];
+$user = new Usuario();
+$dados = $user->AtualizarUsuario();
 
-        $conn = new PDO("mysql:host=62.72.62.1;dbname=u687609827_gui", "u687609827_gui", "Ou]Q||Jr^7H");
-        $conn->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
-
-        $scriptUpdatePessoa = "UPDATE tb_pessoas SET nome = :nome, ano_nascimento = :ano_nascimento, cpf = :cpf, telefone_1 = :telefone_1 WHERE id = :id";
-        $variaveis = $conn->prepare($scriptUpdatePessoa);
-
-        $variaveis->execute([
-            ':id' => $id,
-            ':nome' => $nome,
-            ':ano_nascimento' => $ano_nascimento,
-            ':cpf' => $cpf,
-            ':telefone_1' => $telefone_1
-        ]);
-
-        echo "<script>alert('Update realizado, por favor deslogue');</script>";
-    } catch (PDOException) {
-        echo "<script>alert('seguinte deu uma coisa no treco');</script>";
-    }
-}
 ?>
 
 

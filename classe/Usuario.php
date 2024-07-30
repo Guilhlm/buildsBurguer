@@ -100,7 +100,7 @@ class Usuario
         return $resultadoListagemUsuario;
     }
 
-    public function AtualizarUsuario()
+    public function AtualizarUsuario() //
     {
 
         if ($_SERVER['REQUEST_METHOD'] === 'POST' && !empty($_POST)) {
