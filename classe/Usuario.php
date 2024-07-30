@@ -23,7 +23,7 @@ class Usuario
                     $nivel = $resultadoLogin['nivel'];
                     $_SESSION["nivel"] = $nivel;
 
-                    
+
                     $_SESSION['id'] = $resultadoLogin['id'];
                     $_SESSION['nome'] = $resultadoLogin['nome'];
                     $_SESSION['cpf'] = $resultadoLogin['cpf'];
@@ -92,10 +92,10 @@ class Usuario
         }
     }
 
-    public function ListarUsuarios()
+    public function ListarUsuarios() //
     {
         $conn = new PDO("mysql:host=62.72.62.1;dbname=u687609827_gui", "u687609827_gui", "Ou]Q||Jr^7H");
-        $scriptListarUsuario = "SELECT * FROM tb_usuarios INNER JOIN tb_pessoas ON tb_usuarios.id_pessoa = tb_pessoas.id";
+        $scriptListarUsuario = "SELECT *, tb_usuarios.id AS id_usuario FROM tb_usuarios INNER JOIN tb_pessoas ON tb_usuarios.id_pessoa = tb_pessoas.id";
         $resultadoListagemUsuario = $conn->query($scriptListarUsuario)->fetchAll();
         return $resultadoListagemUsuario;
     }
@@ -133,16 +133,16 @@ class Usuario
         }
     }
 
-    public function usuarioDelete()
+    public function DeletarUser($id_deleteUser) //
     {
         $conn = new PDO("mysql:host=62.72.62.1;dbname=u687609827_gui", "u687609827_gui", "Ou]Q||Jr^7H");
         $scriptDeleteUser = "DELETE FROM tb_usuarios WHERE id = :id";
 
-        $preparo = $conn->prepare($scriptDeleteUser);
+        $resultadoDeleteUser = $conn->prepare($scriptDeleteUser);
 
-        $preparo->execute([
+        $resultadoDeleteUser->execute([
 
-            // ":id" => $id_delete
+            ":id" => $id_deleteUser
         ]);
     }
 }

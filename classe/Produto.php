@@ -1,7 +1,7 @@
 <?php
 class Produto
 {
-    public function CadastroProduto() //
+    public function CadastroProduto()
     {
         if (isset($_SESSION['nivel']) && !empty($_SESSION['nivel']) && isset($_POST) && !empty($_POST)) {
 
@@ -45,7 +45,7 @@ class Produto
         }
     }
 
-    public function ListarProdutos() //
+    public function ListarProdutos()
     {
         $conn = new PDO("mysql:host=62.72.62.1;dbname=u687609827_gui", "u687609827_gui", "Ou]Q||Jr^7H");
         $scriptListagemProduto = "SELECT * FROM tb_produtos";
@@ -53,7 +53,7 @@ class Produto
         return $resultadoListagemProduto;
     }
 
-    public function Listar1Produto($id) //
+    public function Listar1Produto($id)
     {
         $conn = new PDO("mysql:host=62.72.62.1;dbname=u687609827_gui", "u687609827_gui", "Ou]Q||Jr^7H");
         $scriptListar1Produto = "SELECT * FROM tb_produtos WHERE id = {$id}";
@@ -61,7 +61,7 @@ class Produto
         return $resultado;
     }
 
-    public function FiltroProduto() //
+    public function FiltroProduto()
     {
         if (empty($_POST['buscar'])) {
 
