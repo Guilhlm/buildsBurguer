@@ -16,15 +16,20 @@ $resultadoLista = $Listaruser->ListarUsuarios();
 
 // --------------- editar ---------------
 
-if (isset($_GET['id_editarUser']) && !empty($_GET['id_editarUser'])) {
+// if (isset($_GET['enviar']) && !empty($_GET['enviar'])) {
 
-    $id_editarUser = $_GET['id_editarUser'];
+//     $id_editarUser = $_GET['id_editarUser'];
+//     $nome = $_GET['nome'];
+//     $cpf = $_GET['cpf'];
+//     $telefone_1 = $_GET['nome'];
+//     $ano_nascimento = $_GET['nome'];
 
-    $Editusuario = new Usuario();
-    $resultadoEdit = $Editusuario->AtualizarUsuario($id_editarUser);
+//     $usuario = new Usuario();
+//     $resultado = $usuario->AtualizarUsuarioLista($id_editarUser, $nome, $telefone_1, $cpf, $ano_nascimento);
 
-    header('location: ListagemUsers.php');
-}
+
+//     header('location: ListagemUsers.php');
+// }
 
 // --------------- editar ---------------
 
@@ -84,28 +89,30 @@ if (isset($_GET['id_deleteUser']) && !empty($_GET['id_deleteUser'])) {
                     </tr>
                 </thead>
                 <tbody>
-                    <?php foreach ($dados as $valor) { ?>
+
+                    <?php foreach ($resultadoLista as $valor) { ?>
 
                         <tr>
 
                             <td class="td"><?= ($valor['id_usuario']) ?></td>
-                            <td class="td"><input class="EmailGrande" type="text" name="email" value="<?= ($valor['usuario']) ?>"></td>
+                            <td class="td"><input class="EmailGrande" type="text" name="usuario" value="<?= ($valor['usuario']) ?>"></td>
                             <td class="td"><input type="text" name="nome" value="<?= ($valor['nome']) ?>"></td>
-                            <td class="td"><input type="password" name="nome" value="<?= ($valor['senha']) ?>"></td>
+                            <td class="td"><input type="password" name="senha" value="<?= ($valor['senha']) ?>"></td>
                             <td class="td"><input type="text" name="ano_nascimento" value="<?= ($valor['ano_nascimento']) ?>"></td>
                             <td class="td"><input type="text" name="cpf" value="<?= ($valor['cpf']) ?>"></td>
-                            <td class="td"><input type="text" name="nome" value="<?= ($valor['telefone_1']) ?>"></td>
+                            <td class="td"><input type="text" name="telefone_1" value="<?= ($valor['telefone_1']) ?>"></td>
                             <td class="td"><input type="text" name="nivel" value="<?= ($valor['nivel']) ?>"></td>
                             <td class="teste">
 
-                                <a class="editUser" href="ListagemUsers.php?id_editarUser=<?= $valor['id_usuario'] ?> ">
+                                <a class="editUser">
 
-                                    <svg xmlns= "http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-pencil-square" viewBox="0 0 16 16">
-                                    <path d="M15.502 1.94a.5.5 0 0 1 0 .706L14.459 3.69l-2-2L13.502.646a.5.5 0 0 1 .707 0l1.293 1.293zm-1.75 2.456-2-2L4.939 9.21a.5.5 0 0 0-.121.196l-.805 2.414a.25.25 0 0 0 .316.316l2.414-.805a.5.5 0 0 0 .196-.12l6.813-6.814z" />
-                                    <path fill-rule="evenodd" d="M1 13.5A1.5 1.5 0 0 0 2.5 15h11a1.5 1.5 0 0 0 1.5-1.5v-6a.5.5 0 0 0-1 0v6a.5.5 0 0 1-.5.5h-11a.5.5 0 0 1-.5-.5v-11a.5.5 0 0 1 .5-.5H9a.5.5 0 0 0 0-1H2.5A1.5 1.5 0 0 0 1 2.5z" />
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-pencil-square" viewBox="0 0 16 16">
+                                        <path d="M15.502 1.94a.5.5 0 0 1 0 .706L14.459 3.69l-2-2L13.502.646a.5.5 0 0 1 .707 0l1.293 1.293zm-1.75 2.456-2-2L4.939 9.21a.5.5 0 0 0-.121.196l-.805 2.414a.25.25 0 0 0 .316.316l2.414-.805a.5.5 0 0 0 .196-.12l6.813-6.814z" />
+                                        <path fill-rule="evenodd" d="M1 13.5A1.5 1.5 0 0 0 2.5 15h11a1.5 1.5 0 0 0 1.5-1.5v-6a.5.5 0 0 0-1 0v6a.5.5 0 0 1-.5.5h-11a.5.5 0 0 1-.5-.5v-11a.5.5 0 0 1 .5-.5H9a.5.5 0 0 0 0-1H2.5A1.5 1.5 0 0 0 1 2.5z" />
                                     </svg>
 
                                 </a>
+
 
                                 <a class="deleteUser" href="ListagemUsers.php?id_deleteUser=<?= $valor['id_usuario'] ?>">
 
