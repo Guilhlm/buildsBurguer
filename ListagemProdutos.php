@@ -11,20 +11,17 @@ $dados = $produto->ListarProdutos();
 
 // --------------- editar ---------------
 
+if ($_SERVER['REQUEST_METHOD'] == 'POST' && isset($_GET['id_editarProduto'])) {
 
+    $id_editarProduto = $_GET['id_editarProduto'];
+    $nome = $_POST['nome'];
 
+    $editarProdutoLista = new Produto();
+    $editarUserLista->AtualizarUsuarioLista($id_editarUser, $nome, $telefone_1, $cpf, $ano_nascimento);
 
-
-
-
-
-
-
-
-
-
-
-
+    header('location: ListagemUsers.php');
+    exit();
+}
 
 
 // --------------- excluir ---------------

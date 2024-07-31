@@ -138,7 +138,6 @@ class Usuario
         $scriptUpdatePessoaLista = "UPDATE tb_pessoas SET nome = '$nome', ano_nascimento = '$ano_nascimento', cpf = '$cpf', telefone_1 = '$telefone_1' WHERE id = '$id_editarUser'";
         $conn->prepare($scriptUpdatePessoaLista)->execute();
 
-        
         // $conexao = null;
 
     }

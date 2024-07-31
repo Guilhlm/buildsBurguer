@@ -8,11 +8,9 @@ session_start();
 $Listaruser = new Usuario();
 $resultadoLista = $Listaruser->ListarUsuarios();
 
-
 // --------------- editar ---------------
 
 if ($_SERVER['REQUEST_METHOD'] == 'POST' && isset($_GET['id_editarUser'])) {
-
     $id_editarUser = $_GET['id_editarUser'];
     $nome = $_POST['nome'];
     $cpf = $_POST['cpf'];
@@ -22,10 +20,9 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST' && isset($_GET['id_editarUser'])) {
     $editarUserLista = new Usuario();
     $editarUserLista->AtualizarUsuarioLista($id_editarUser, $nome, $telefone_1, $cpf, $ano_nascimento);
 
-    header('location: ListagemUsers.php');
+    header('Location: ListagemUsers.php?status=success_edit');
     exit();
 }
-
 
 // --------------- excluir ---------------
 
@@ -35,7 +32,7 @@ if (isset($_GET['id_deleteUser']) && !empty($_GET['id_deleteUser'])) {
     $usuario = new Usuario();
     $resultado = $usuario->DeletarUser($id_deleteUser);
 
-    header('location: ListagemUsers.php');
+    header('Location: ListagemUsers.php?status=success_delete');
     exit();
 }
 ?>
@@ -49,6 +46,38 @@ if (isset($_GET['id_deleteUser']) && !empty($_GET['id_deleteUser'])) {
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Tela de usuarios</title>
     <link rel="stylesheet" href="assets/css/ListagemUsers.css">
+
+    <style>
+        .alert {
+            padding: 20px;
+            margin: 10px 300px 10px 300px;
+            border: 1px solid transparent;
+            border-radius: 8px;
+            display: flex;
+            justify-content: center;
+            position: relative;
+        }
+
+        .alert-success {
+            background-color: #98FB98;
+            color: darkgreen;
+            border-color: #c3e6cb;
+        }
+
+        .alert-danger {
+            color: black;
+            background-color: #B22222;
+            border-color: #f5c6cb;
+        }
+
+        .alert .close-btn {
+            position: absolute;
+            top: 10px;
+            right: 10px;
+            cursor: pointer;
+        }
+    </style>
+
 </head>
 
 <body>
@@ -62,7 +91,29 @@ if (isset($_GET['id_deleteUser']) && !empty($_GET['id_deleteUser'])) {
             </div>
 
         </section>
+
         <section class="table__body">
+
+            <?php if (isset($_GET['status'])) : ?>
+
+                <div id="alert-box" class="alert 
+                    <?= $_GET['status'] === 'success_edit' ? 'alert-success' : '' ?>
+                    <?= $_GET['status'] === 'success_delete' ? 'alert-success' : '' ?>
+                    <?= $_GET['status'] === 'error' ? 'alert-danger' : '' ?> ">
+
+                    <?php
+                    if ($_GET['status'] === 'success_edit') {
+                        echo 'Usuário editado com sucesso!';
+                    } elseif ($_GET['status'] === 'success_delete') {
+                        echo 'Usuário excluído com sucesso!';
+                    } elseif ($_GET['status'] === 'error') {
+                        echo 'Ocorreu um erro ao processar sua solicitação.';
+                    }
+                    ?>
+
+                </div>
+
+            <?php endif; ?>
 
             <table>
                 <thead>
@@ -70,7 +121,6 @@ if (isset($_GET['id_deleteUser']) && !empty($_GET['id_deleteUser'])) {
                         <th>Id Pessoa</th>
                         <th>Email</th>
                         <th>Nome</th>
-                        <th>Senha</th>
                         <th>Ano Nasc.</th>
                         <th>cpf</th>
                         <th>Telefone</th>
@@ -87,15 +137,14 @@ if (isset($_GET['id_deleteUser']) && !empty($_GET['id_deleteUser'])) {
                             <tr>
 
                                 <td class="td"><?= ($valor['id_usuario']) ?></td>
-                                <td class="td"><input class="EmailGrande" type="text" name="usuario" value="<?= ($valor['usuario']) ?>"></td>
+                                <td class="td"><input class="EmailGrande" type="text" name="usuario" value="<?= ($valor['usuario']) ?>" readonly></td>
                                 <td class="td"><input type="text" name="nome" value="<?= ($valor['nome']) ?>"></td>
-                                <td class="td"><input type="password" name="senha" value="<?= ($valor['senha']) ?>"></td>
                                 <td class="td"><input type="text" name="ano_nascimento" value="<?= ($valor['ano_nascimento']) ?>"></td>
                                 <td class="td"><input type="text" name="cpf" value="<?= ($valor['cpf']) ?>"></td>
                                 <td class="td"><input type="text" name="telefone_1" value="<?= ($valor['telefone_1']) ?>"></td>
-                                <td class="td"><input type="text" name="nivel" value="<?= ($valor['nivel']) ?>"></td>
+                                <td class="td"><input type="text" name="nivel" value="<?= ($valor['nivel']) ?>" readonly></td>
                                 <td class="teste">
-
+                                    
                                     <button class="editUser" type="submit">
 
                                         <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-pencil-square" viewBox="0 0 16 16">
@@ -121,6 +170,16 @@ if (isset($_GET['id_deleteUser']) && !empty($_GET['id_deleteUser'])) {
             </table>
         </section>
     </main>
+
+    <script>
+        setTimeout(function() {
+            var alertBox = document.getElementById('alert-box');
+            if (alertBox) {
+                alertBox.style.display = 'none';
+            }
+        }, 3000);
+    </script>
+
 </body>
 
 </html>
