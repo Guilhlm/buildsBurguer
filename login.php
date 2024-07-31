@@ -53,8 +53,8 @@
                 <h1 id="logarais">Login</h1>
 
                 <?php
-                
-                 $Usuario->LoginUser();
+
+                $Usuario->LoginUser();
 
                 ?>
 

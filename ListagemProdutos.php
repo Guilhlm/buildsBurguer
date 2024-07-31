@@ -3,22 +3,26 @@
 require './classe/Produto.php';
 session_start();
 
-
 // --------------- listagem ---------------
 
 $produto = new Produto();
 $dados = $produto->ListarProdutos();
 
-// --------------- listagem ---------------
-
-
-
 
 // --------------- editar ---------------
 
 
 
-// --------------- editar ---------------
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -32,9 +36,8 @@ if (isset($_GET['id_delete']) && !empty($_GET['id_delete'])) {
     $resultado = $produto->DeletarProduto($id_delete);
 
     header('location: ListagemProdutos.php');
+    exit();
 }
-
-// --------------- excluir ---------------
 
 ?>
 

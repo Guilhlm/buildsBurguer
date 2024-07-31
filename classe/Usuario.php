@@ -131,23 +131,17 @@ class Usuario
         }
     }
 
-    // public function AtualizarUsuarioLista($id_editarUser, $nome, $telefone_1, $cpf, $ano_nascimento) //
-    // {
+    public function AtualizarUsuarioLista($id_editarUser, $nome, $telefone_1, $cpf, $ano_nascimento)
+    {
 
-    //     $conn = new PDO("mysql:host=62.72.62.1;dbname=u687609827_gui", "u687609827_gui", "Ou]Q||Jr^7H");
-    //     $scriptUpdatePessoaLista = "UPDATE tb_pessoas SET nome = :nome, ano_nascimento = :ano_nascimento, cpf = :cpf, telefone_1 = :telefone_1 WHERE id = :id";
-    //     $resultadoUpdateUserLista = $conn->prepare($scriptUpdatePessoaLista);
+        $conn = new PDO("mysql:host=62.72.62.1;dbname=u687609827_gui", "u687609827_gui", "Ou]Q||Jr^7H");
+        $scriptUpdatePessoaLista = "UPDATE tb_pessoas SET nome = '$nome', ano_nascimento = '$ano_nascimento', cpf = '$cpf', telefone_1 = '$telefone_1' WHERE id = '$id_editarUser'";
+        $conn->prepare($scriptUpdatePessoaLista)->execute();
 
-    //     $resultadoUpdateUserLista->execute([
+        
+        // $conexao = null;
 
-    //         ":id" => $id_editarUser,
-    //         ":nome" => $nome,
-    //         ":telefone_1" => $telefone_1,
-    //         ":cpf" => $cpf,
-    //         ":ano_nascimento" => $ano_nascimento
-
-    //     ]);
-    // }
+    }
 
     public function DeletarUser($id_deleteUser)
     {
