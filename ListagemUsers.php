@@ -47,37 +47,6 @@ if (isset($_GET['id_deleteUser']) && !empty($_GET['id_deleteUser'])) {
     <title>Tela de usuarios</title>
     <link rel="stylesheet" href="assets/css/ListagemUsers.css">
 
-    <style>
-        .alert {
-            padding: 20px;
-            margin: 10px 300px 10px 300px;
-            border: 1px solid transparent;
-            border-radius: 8px;
-            display: flex;
-            justify-content: center;
-            position: relative;
-        }
-
-        .alert-success {
-            background-color: #98FB98;
-            color: darkgreen;
-            border-color: #c3e6cb;
-        }
-
-        .alert-danger {
-            color: black;
-            background-color: #B22222;
-            border-color: #f5c6cb;
-        }
-
-        .alert .close-btn {
-            position: absolute;
-            top: 10px;
-            right: 10px;
-            cursor: pointer;
-        }
-    </style>
-
 </head>
 
 <body>
@@ -144,7 +113,7 @@ if (isset($_GET['id_deleteUser']) && !empty($_GET['id_deleteUser'])) {
                                 <td class="td"><input type="text" name="telefone_1" value="<?= ($valor['telefone_1']) ?>"></td>
                                 <td class="td"><input type="text" name="nivel" value="<?= ($valor['nivel']) ?>" readonly></td>
                                 <td class="teste">
-                                    
+
                                     <button class="editUser" type="submit">
 
                                         <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-pencil-square" viewBox="0 0 16 16">
@@ -171,14 +140,7 @@ if (isset($_GET['id_deleteUser']) && !empty($_GET['id_deleteUser'])) {
         </section>
     </main>
 
-    <script>
-        setTimeout(function() {
-            var alertBox = document.getElementById('alert-box');
-            if (alertBox) {
-                alertBox.style.display = 'none';
-            }
-        }, 3000);
-    </script>
+   <script src="./assets/script/alert.js"></script>
 
 </body>
 

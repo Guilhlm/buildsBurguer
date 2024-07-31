@@ -162,3 +162,32 @@ input {
     flex-wrap: wrap;
     justify-content: space-evenly;
 }
+
+.alert {
+    padding: 20px;
+    margin: 10px 300px 10px 300px;
+    border: 1px solid transparent;
+    border-radius: 8px;
+    display: flex;
+    justify-content: center;
+    position: relative;
+}
+
+.alert-success {
+    background-color: #98FB98;
+    color: darkgreen;
+    border-color: #c3e6cb;
+}
+
+.alert-danger {
+    color: black;
+    background-color: #B22222;
+    border-color: #f5c6cb;
+}
+
+.alert .close-btn {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    cursor: pointer;
+}
