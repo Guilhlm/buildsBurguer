@@ -64,12 +64,6 @@
 
                 <?php
 
-                if (isset($login_sucess)) {
-                    echo '<div id="campo-sucess" style="color:green;">' . $login_sucess . '</div>';
-                } else {
-                    echo '<div id="campo-sucess"></div>';
-                }
-
                 if (isset($erro_login)) {
                     echo '<div id="campo-erro" style="color:red;">' . $erro_login . '</div>';
                 } else {

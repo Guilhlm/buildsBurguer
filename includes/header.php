@@ -18,7 +18,9 @@
     <link rel="stylesheet" href="assets/css/sobre.css">
     <link rel="stylesheet" href="assets/css/carrinho.css">
     <link rel="stylesheet" href="assets/css/click-produto.css">
-    <link rel="stylesheet" href="assets/css/filtro.css">
+    <link rel="stylesheet" href="assets/css/filtro.css">    
+    <link rel="stylesheet" href="../assets/css/boostrap/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="../assets/css/boostrap/bootstrap.min.css">
 </head>
 
 <body>
