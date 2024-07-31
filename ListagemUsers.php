@@ -30,6 +30,9 @@ if (isset($_GET['id_deleteUser']) && !empty($_GET['id_deleteUser'])) {
     $id_deleteUser = $_GET['id_deleteUser'];
     $usuario = new Usuario();
     $resultado = $usuario->DeletarUser($id_deleteUser);
+
+
+    header('location: ListagemUsers.php');
 }
 
 // --------------- excluir ---------------

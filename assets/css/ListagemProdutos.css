@@ -135,7 +135,7 @@ tbody tr:hover {
     border-radius: 50%;
     display: flex;
     flex-wrap: wrap;
-    align-content: space-around;
+    align-content: space-evenly;
     justify-content: center;
     cursor: pointer;
     color: white;
@@ -147,9 +147,10 @@ tbody tr:hover {
     display: none;
 }
 
-.teste{
+.teste {
     display: flex;
     margin-top: 5px;
+    gap: 10px;
     flex-wrap: wrap;
-    justify-content: space-around;
+    justify-content: start;
 }
