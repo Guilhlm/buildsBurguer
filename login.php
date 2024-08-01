@@ -62,16 +62,6 @@
                 <input type="email" name="usuario" placeholder="Email">
                 <input type="password" name="senha" placeholder="Senha">
 
-                <?php
-
-                if (isset($erro_login)) {
-                    echo '<div id="campo-erro" style="color:red;">' . $erro_login . '</div>';
-                } else {
-                    echo '<div id="campo-erro"></div>';
-                }
-
-                ?>
-
                 <a href="https://accounts.google.com/v3/signin/challenge/kpp" class="esqueceu">Esqueceu tua senha?</a>
                 <input type="submit" class="botaoLogar" value="Logar"></input>
             </form>

@@ -18,9 +18,8 @@
     <link rel="stylesheet" href="assets/css/sobre.css">
     <link rel="stylesheet" href="assets/css/carrinho.css">
     <link rel="stylesheet" href="assets/css/click-produto.css">
-    <link rel="stylesheet" href="assets/css/filtro.css">    
-    <link rel="stylesheet" href="../assets/css/boostrap/bootstrap-icons.min.css">
-    <link rel="stylesheet" href="../assets/css/boostrap/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/css/filtro.css">
+
 </head>
 
 <body>
@@ -108,10 +107,10 @@
                                 <?php echo (isset($_SESSION['usuario']) && $_SESSION['nivel'] == "admin") ? '<br><h1 class="navTopicos">Edições</h1>' : '' ?>
                                 <?php echo (isset($_SESSION['usuario'])) ? '<a class="nav-link" href="editarUsuario.php">Editar Usuario</a>' : '' ?>
                                 <?php echo (isset($_SESSION['usuario']) && $_SESSION['nivel'] == "admin")
-                                    ? '<a class="nav-link" href="ListagemProdutos.php">Editar Todos Produtos</a>'
+                                    ? '<a class="nav-link" href="ListagemUsers.php">Editar todos Usuarios</a>'
                                     : '' ?>
                                 <?php echo (isset($_SESSION['usuario']) && $_SESSION['nivel'] == "admin")
-                                    ? '<a class="nav-link" href="ListagemUsers.php">Editar todos Usuarios</a>'
+                                    ? '<a class="nav-link" href="ListagemProdutos.php">Editar Todos Produtos</a>'
                                     : '' ?>
                                 <?php echo (isset($_SESSION['usuario']) && $_SESSION['nivel'] == "")
                                     ? '<a class="nav-link red" href="logout.php">Logout</a>'

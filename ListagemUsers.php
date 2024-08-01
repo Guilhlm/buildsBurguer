@@ -11,6 +11,7 @@ $resultadoLista = $Listaruser->ListarUsuarios();
 // --------------- editar ---------------
 
 if ($_SERVER['REQUEST_METHOD'] == 'POST' && isset($_GET['id_editarUser'])) {
+    
     $id_editarUser = $_GET['id_editarUser'];
     $nome = $_POST['nome'];
     $cpf = $_POST['cpf'];
@@ -61,28 +62,30 @@ if (isset($_GET['id_deleteUser']) && !empty($_GET['id_deleteUser'])) {
 
         </section>
 
-        <section class="table__body">
+        <?php if (isset($_GET['status'])) : ?>
 
-            <?php if (isset($_GET['status'])) : ?>
+            <div id="alert-box" class="alert 
 
-                <div id="alert-box" class="alert 
                     <?= $_GET['status'] === 'success_edit' ? 'alert-success' : '' ?>
-                    <?= $_GET['status'] === 'success_delete' ? 'alert-success' : '' ?>
+                    <?= $_GET['status'] === 'success_delete' ? 'alert-danger' : '' ?>
                     <?= $_GET['status'] === 'error' ? 'alert-danger' : '' ?> ">
 
-                    <?php
-                    if ($_GET['status'] === 'success_edit') {
-                        echo 'Usuário editado com sucesso!';
-                    } elseif ($_GET['status'] === 'success_delete') {
-                        echo 'Usuário excluído com sucesso!';
-                    } elseif ($_GET['status'] === 'error') {
-                        echo 'Ocorreu um erro ao processar sua solicitação.';
-                    }
-                    ?>
+                <?php
 
-                </div>
+                if ($_GET['status'] === 'success_edit') {
+                    echo 'Usuário editado com sucesso!';
+                } elseif ($_GET['status'] === 'success_delete') {
+                    echo 'Usuário excluído com sucesso!';
+                } elseif ($_GET['status'] === 'error') {
+                    echo 'Ocorreu um erro ao processar sua solicitação.';
+                }
+                ?>
 
-            <?php endif; ?>
+            </div>
+
+        <?php endif; ?>
+
+        <section class="table__body">
 
             <table>
                 <thead>
@@ -140,7 +143,7 @@ if (isset($_GET['id_deleteUser']) && !empty($_GET['id_deleteUser'])) {
         </section>
     </main>
 
-   <script src="./assets/script/alert.js"></script>
+    <script src="./assets/script/alert.js"></script>
 
 </body>
 

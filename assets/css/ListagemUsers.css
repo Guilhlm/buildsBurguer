@@ -174,15 +174,13 @@ input {
 }
 
 .alert-success {
-    background-color: #98FB98;
-    color: darkgreen;
-    border-color: #c3e6cb;
+    color: rgb(255, 255, 255);
+    background-color: #41cf60bd;
 }
 
 .alert-danger {
-    color: black;
-    background-color: #B22222;
-    border-color: #f5c6cb;
+    color: rgb(255, 255, 255);
+    background-color: #cf4141bd;
 }
 
 .alert .close-btn {

@@ -18,7 +18,7 @@ body {
 }
 
 main.table {
-    width: 75vw;
+    width: 90vw;
     height: 90vh;
     background-color: #fff5;
     backdrop-filter: blur(7px);
@@ -147,10 +147,55 @@ tbody tr:hover {
     display: none;
 }
 
+input {
+    all: unset;
+    width: 100px;
+}
+
+.tituloForm {
+    width: 220px !important;
+}
+
+.tituloDesc {
+    width: 400px !important;
+}
+
+.fotoEdit {
+    width: 80px !important;
+    height: 80px !important;
+}
+
 .teste {
     display: flex;
     margin-top: 5px;
     gap: 10px;
     flex-wrap: wrap;
     justify-content: start;
+}
+
+.alert {
+    padding: 20px;
+    margin: 10px 300px 10px 300px;
+    border: 1px solid transparent;
+    border-radius: 8px;
+    display: flex;
+    justify-content: center;
+    position: relative;
+}
+
+.alert-success {
+    color: rgb(255, 255, 255);
+    background-color: #41cf60bd;
+}
+
+.alert-danger {
+    color: rgb(255, 255, 255);
+    background-color: #cf4141bd;
+}
+
+.alert .close-btn {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    cursor: pointer;
 }

@@ -206,7 +206,7 @@ body {
 .input-group {
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-evenly;
+  margin-left: 40px;
 }
 
 .input-box {
@@ -229,7 +229,7 @@ body {
 }
 
 .continue-button {
-  width: 85%;
+  width: 365px;
   border: none;
   background-color: #ce7500;
   border-radius: 5px;
@@ -250,4 +250,18 @@ body {
 
 .improviso {
   display: flex;
+}
+
+.Fotoupdate {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 500px;
+  height: 370px;
+}
+
+.Fotoupdate img {
+  width: 90%;
+  height: 90%;
+  object-fit: cover;
 }

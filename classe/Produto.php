@@ -4,25 +4,19 @@ class Produto
     public function CadastroProduto()
     {
         if (isset($_SESSION['nivel']) && !empty($_SESSION['nivel']) && isset($_POST) && !empty($_POST)) {
-
             if (isset($_FILES['imagem']) && $_FILES['imagem']['error'] == 0) {
+                $titulo = htmlspecialchars($_POST['titulo']);
+                $preco = floatval($_POST['preco']);
+                $categoria = htmlspecialchars($_POST['categoria']);
+                $descricao = htmlspecialchars($_POST['descricao']);
 
-                $titulo = $_POST['titulo'];
-                $preco = $_POST['preco'];
-                $imagem = $_FILES['imagem'];
-                $categoria = $_POST['categoria'];
-                $descricao = $_POST['descricao'];
-                $titulo = htmlspecialchars($titulo); // coverte em string
-                $preco = floatval($preco);
-                $categoria = htmlspecialchars($categoria);
-                $descricao = htmlspecialchars($descricao);
+                $nomeCaminho = './assets/img/produtos/' . round(microtime(true)) . '-' . basename($_FILES['imagem']['name']);
+                move_uploaded_file($_FILES['imagem']['tmp_name'], $nomeCaminho);
 
-                $nomeCaminho = './assets/img/produtos/' . round(microtime(true)) . '-' . basename($imagem['name']);
-                move_uploaded_file($imagem['tmp_name'], $nomeCaminho);
-
+                // Salva o caminho da imagem na sessão
+                $_SESSION['uploaded_image'] = $nomeCaminho;
 
                 try {
-
                     $conn = new PDO("mysql:host=62.72.62.1;dbname=u687609827_gui", "u687609827_gui", "Ou]Q||Jr^7H");
                     $conn->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
 
@@ -34,13 +28,12 @@ class Produto
                     $ScriptCadastro->bindParam(':descricao', $descricao);
                     $ScriptCadastro->execute();
 
-                    echo "<script>alert('produto cadastrado');</script>";
+                    echo "<script>alert('Produto cadastrado');</script>";
                 } catch (PDOException) {
-                    echo "<script>alert('seguinte deu uma coisa no treco');</script>";
+                    echo "<script>alert('Ocorreu um erro ao cadastrar o produto');</script>";
                 }
             } else {
-
-                echo "<script>alert('seguinte deu erro');</script>";
+                echo "<script>alert('Erro no upload da imagem');</script>";
             }
         }
     }
@@ -79,6 +72,17 @@ class Produto
         $result = $consulta->execute();
         $result = $consulta->fetchAll(PDO::FETCH_ASSOC);
         return $result;
+    }
+
+    public function AtualizarProdutoLista($id, $titulo, $preco, $imagem, $categoria, $descricao)
+    {
+
+        $conn = new PDO("mysql:host=62.72.62.1;dbname=u687609827_gui", "u687609827_gui", "Ou]Q||Jr^7H");
+        $scriptUpdateProdutoLista = "UPDATE tb_produtos SET titulo = '$titulo', preco = '$preco', imagem = '$imagem', categoria = '$categoria', descricao = '$descricao' WHERE id = '$id'";
+        $conn->prepare($scriptUpdateProdutoLista)->execute();
+
+        // $conexao = null;
+
     }
 
     public function DeletarProduto($id_delete)
