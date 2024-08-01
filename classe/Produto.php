@@ -49,8 +49,11 @@ class Produto
     public function Listar1Produto($id)
     {
         $conn = new PDO("mysql:host=62.72.62.1;dbname=u687609827_gui", "u687609827_gui", "Ou]Q||Jr^7H");
-        $scriptListar1Produto = "SELECT * FROM tb_produtos WHERE id = {$id}";
-        $resultado = $conn->query($scriptListar1Produto)->fetch();
+        $scriptListar1Produto = "SELECT * FROM tb_produtos WHERE id = :id";
+        $resultado = $conn->prepare($scriptListar1Produto);
+        $resultado->bindParam(':id', $id, PDO::PARAM_INT);
+        $resultado->execute();
+        $resultado = $resultado->fetch(PDO::FETCH_ASSOC);
         return $resultado;
     }
 

@@ -1,32 +1,46 @@
 <?php
 
-include './includes/header.php';
 require './classe/Produto.php';
 
 $produto = new Produto();
 
 if (isset($_GET['id']) && !empty($_GET['id'])) {
-
-    $id = $_GET['id'];
-    $dados = $produto->Listar1Produto($id);
     
-} ?>
+    $id = (int)$_GET['id'];
+    $dados = $produto->Listar1Produto($id);
+
+    if (!$dados) {
+        header('Location: menu.php');
+        exit();
+    }
+} else {
+    header('Location: menu.php');
+    exit();
+}
+
+include './includes/header.php';
+?>
 
 <section class="body-produto">
 
-    <figcaption><img class="fotinha" alt="foto individual do produto" src="<?= $dados['imagem'] ?>"></figcaption>
+    <figcaption>
+        <img class="fotinha" alt="foto individual do produto" src="<?= htmlspecialchars($dados['imagem']) ?>">
+    </figcaption>
 
     <div class="container" id="grid-principal">
 
         <section class="grid-1">
-            <h1 class="titulo-produto"><?= $dados['titulo'] ?></h1>
+
+            <h1 class="titulo-produto"><?= htmlspecialchars($dados['titulo']) ?></h1>
+
         </section>
 
         <section class="grid-2">
+
             <div id="tamanho">Médio</div>
             <div id="tamanho">Grande</div>
+            <p class="preco-produto">R$ <?= htmlspecialchars($dados['preco']) ?></p>
 
-            <p class="preco-produto">R$ <?= $dados['preco'] ?></p>
         </section>
 
         <section class="grid-3">
@@ -40,17 +54,19 @@ if (isset($_GET['id']) && !empty($_GET['id'])) {
 
                 <div class="numero">2</div>
                 <div class="mais">+</div>
-            </div>
 
+            </div>
             <div class="addcart"><a href="carrinho.php">🛒 Adicionar ao carrinho</a></div>
+
         </section>
 
         <div class="grid-4">
             <h2 class="titulo-desc">Descrição:</h2>
 
             <section class="texto-desc">
-                <p><?= $dados['descricao'] ?></p>
+                <p><?= htmlspecialchars($dados['descricao']) ?></p>
             </section>
+
         </div>
 
         <div class="grid-5">
