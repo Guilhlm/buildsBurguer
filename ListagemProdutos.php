@@ -20,7 +20,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST' && isset($_GET['id'])) {
     $descricao = $_POST['descricao'];
 
     $editarProdutoLista = new Produto();
-    $editarProdutoLista->AtualizarProdutoLista($id, $titulo, $preco, $imagem, $categoria, $descricao);
+    $editarProdutoLista->AtualizarProdutoLista($id, $titulo, $preco, $categoria, $descricao);
 
     header('Location: ListagemProdutos.php?status=success_edit');
     exit();
@@ -75,9 +75,9 @@ if (isset($_GET['id_delete']) && !empty($_GET['id_delete'])) {
                 <?php
 
                 if ($_GET['status'] === 'success_edit') {
-                    echo 'Usuário editado com sucesso!';
+                    echo 'Produto editado com sucesso';
                 } elseif ($_GET['status'] === 'success_delete') {
-                    echo 'Usuário excluído com sucesso!';
+                    echo 'Produto excluído com sucesso';
                 } elseif ($_GET['status'] === 'error') {
                     echo 'Ocorreu um erro ao processar sua solicitação.';
                 }
@@ -112,7 +112,7 @@ if (isset($_GET['id_delete']) && !empty($_GET['id_delete'])) {
 
                                 <td class="td"><?= $valor['id'] ?>
                                 <td> <img src="<?= $valor['imagem'] ?>" alt="produto" class="fotoEdit"></td>
-                                <td class="td"><input type="text" name="titulo" value="<?= ($valor['titulo']) ?>" class="tituloForm" ></td>
+                                <td class="td"><input type="text" name="titulo" value="<?= ($valor['titulo']) ?>" class="tituloForm"></td>
                                 <td class="td"><input type="text" name="preco" value="<?= ($valor['preco']) ?>"></td>
                                 <td class="td"><input type="number" name="categoria" value="<?= ($valor['categoria']) ?>"></td>
                                 <td class="td"><input type="text" name="descricao" value="<?= ($valor['descricao']) ?>" class="tituloDesc"></td>

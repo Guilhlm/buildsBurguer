@@ -74,11 +74,11 @@ class Produto
         return $result;
     }
 
-    public function AtualizarProdutoLista($id, $titulo, $preco, $imagem, $categoria, $descricao)
+    public function AtualizarProdutoLista($id, $titulo, $preco, $categoria, $descricao)
     {
 
         $conn = new PDO("mysql:host=62.72.62.1;dbname=u687609827_gui", "u687609827_gui", "Ou]Q||Jr^7H");
-        $scriptUpdateProdutoLista = "UPDATE tb_produtos SET titulo = '$titulo', preco = '$preco', imagem = '$imagem', categoria = '$categoria', descricao = '$descricao' WHERE id = '$id'";
+        $scriptUpdateProdutoLista = "UPDATE tb_produtos SET titulo = '$titulo', preco = '$preco', categoria = '$categoria', descricao = '$descricao' WHERE id = '$id'";
         $conn->prepare($scriptUpdateProdutoLista)->execute();
 
         // $conexao = null;
