@@ -1,4 +1,10 @@
 <?php
+
+if($_SESSION["nivel"] != 'admin'){
+
+    header('location: login.php');
+}
+
 require './classe/Produto.php';
 session_start();
 
