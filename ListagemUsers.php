@@ -1,9 +1,5 @@
 <?php
 
-if($_SESSION["nivel"] != 'admin'){
-
-    header('location: login.php');
-}
 
 require './classe/Usuario.php';
 session_start();
