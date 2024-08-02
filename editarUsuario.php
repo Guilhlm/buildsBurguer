@@ -83,30 +83,36 @@ $dados = $user->AtualizarUsuario();
                         <section class="fomulariodeCADASTRO">
 
                             <div class="container">
-                                <form action="editarUsuario.php" method="POST">
+
+                                <form action="editarUsuario.php" method="POST" id="form">
                                     <div class="main-user-info">
 
                                         <input type="hidden" name="id" value="<?php echo ($_SESSION['id']); ?>">
 
                                         <div class="user-input-box">
                                             <label for="firstname">Nome</label>
-                                            <input id="firstname" type="text" name="nome" placeholder="Digite seu nome" value="<?php echo ($_SESSION['nome']); ?>" maxlength="12" required>
+                                            <input class="required" id="nome" type="text" name="nome" placeholder="Digite seu nome" value="<?php echo ($_SESSION['nome']); ?>" maxlength="12" oninput="validarNome()" required>
+                                            <span class="span-required">Nome deve ter no minimo 3 Caracteres</span>
                                         </div>
 
                                         <div class="user-input-box">
-                                            <label for="confirmPassword">Telefone</label>
-                                            <input id="confirmPassword" type="text" name="telefone_1" placeholder="00-00000000" value="<?php echo ($_SESSION['telefone_1']); ?>" maxlength="11" minlength="11" title="Formato: (00) 00000-0000" required>
+                                            <label for="telefone">Telefone</label>
+                                            <input class="required" id="telefone" type="text" name="telefone_1" placeholder="00-00000-0000" value="<?php echo ($_SESSION['telefone_1']); ?>" oninput="validarTelefone()" maxlength="14" required pattern="\d{2}-\d{5}-\d{4}">
+                                            <span class="span-required">Número de telefone inválido</span>
                                         </div>
 
                                         <div class="user-input-box">
-                                            <label for="confirmPassword">Cpf</label>
-                                            <input id="confirmPassword" type="text" name="cpf" placeholder="000.000.000" value="<?php echo ($_SESSION['cpf']); ?>" title="Formato: 000.000.000" maxlength="11" required>
+                                            <label for="cpf">Cpf</label>
+                                            <input class="required" id="cpf" type="text" name="cpf" placeholder="000.000.000-00" value="<?php echo ($_SESSION['cpf']); ?>" minlength="14" oninput="validarCpf()" maxlength="14" required pattern="\d{3}\.\d{3}\.\d{3}-\d{2}">
+                                            <span class="span-required">CPF inválido</span>
                                         </div>
 
                                         <div class="user-input-box">
-                                            <label for="confirmPassword">Ano Nascimento</label>
-                                            <input id="confirmPassword" type="text" name="ano_nascimento" placeholder="Digite o ano" value="<?php echo ($_SESSION['ano_nascimento']); ?>" maxlength="4" title="Formato: 0000" required>
+                                            <label for="ano_nascimento">Ano Nascimento</label>
+                                            <input class="required" id="ano_nascimento" type="text" name="ano_nascimento" placeholder="Digite o ano" value="<?php echo ($_SESSION['ano_nascimento']); ?>" oninput="validarAno()" maxlength="4" required pattern="\d{4}">
+                                            <span class="span-required">Ano de nascimento inválido</span>
                                         </div>
+
 
                                     </div>
 
@@ -123,6 +129,9 @@ $dados = $user->AtualizarUsuario();
         </div>
     </section>
     </div>
+
+    <script src="assets/script/editarUsuario.js"></script>
+
 </body>
 
 </html>

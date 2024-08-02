@@ -218,4 +218,4 @@ $dados = $produto->ListarProdutos();
 
 <?php include './includes/footer.php' ?>
 <script src="assets/script/temaescuro.js"></script>
-<script src="assets/script/script.js"></script>
+<script src="assets/script/carrossel.js"></script>

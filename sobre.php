@@ -159,12 +159,46 @@
                 MEDU DISSU
             </p>
 
-            <!-- agradecer o paulin <3 -->
         </div>
 
     </main>
 </div>
+
 <br><br><br>
+
+<?php echo (isset($_SESSION['usuario']) && $_SESSION['id'] == "2")
+
+    ?
+    '
+    <div class="centralizar">
+        <main class="fundinho3" id="experiencia">
+            <div>
+                <H3>Obrigado Paulin <3</H3>
+
+                <h2>Agradecimentos</h2>
+             <p>
+                Fessor obrigado por tudo o que você me proporcionou durante esse curso, vou lembrar de você por toda minha vida não somente como professor mas como um amigo 
+                de verdade. O meu intuito com essa mensagem é realmente te agradecer por me dar um rumo na VIDA, sem você eu teria desistido de verdade, você me ajudou a me 
+                descobrir nessa area, eu realmente encontrei algo na vida que quero fazer pelo resto de minha vida muito obrigado. E queria dizer para você fazer com as 
+                proximas turmas o que fez comigo... com a TI21, sempre propondo novos desafios e nunca perder a sua essencia que faz você ser você. Sem duvidas você foi o melhor 
+                professor que tive na minha vida é uma honra ser um dos seus primeiros alunos e conseguir finalizar meu curso com você meus parabens paulo <3, sentirei sua falta... 
+                e claro das suas musicas incriveis que animavam as segundas feiras de qualquer um.
+                
+                <br><br><br><br>
+
+                Adeus paulin espero um dia te reencontrar de novo :)
+                
+             </p>
+
+             </div>
+
+        </main>
+    </div>
+    <br><br><br>
+' : ''
+
+?>
+
 
 <?php include './includes/footer.php' ?>
 

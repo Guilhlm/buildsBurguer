@@ -189,3 +189,7 @@ input {
     right: 10px;
     cursor: pointer;
 }
+
+.naopodeEdit{
+    color: rgba(56, 56, 56, 0.644);
+}

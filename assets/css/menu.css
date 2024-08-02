@@ -169,7 +169,7 @@ header nav {
     font-size: 15px;
     line-height: 20px;
     width: 0;
-    transition: 1s;
+    transition: width 0.7s, padding 0.7s;
     color: white;
 }
 
@@ -182,17 +182,20 @@ header nav {
     justify-content: center;
     align-items: center;
     color: rgb(0, 0, 0);
+    border: none;
 }
 
 .procurar-botao:hover {
     color: rgb(255, 255, 255);
 }
 
-.procurar-box:hover>.procurar-texto {
+.procurar-box:hover .procurar-texto,
+.procurar-texto:focus {
     width: 130px;
     padding: 0 8px;
-    transition: .7s;
+    transition: width 0.7s, padding 0.7s;
 }
+
 
 #lupa {
     font-size: 20px;

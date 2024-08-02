@@ -184,14 +184,14 @@ form {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
-  padding: 30px 0 110px;
+  padding: 30px 0 40px;
 }
 
 .user-input-box {
   display: flex;
   flex-wrap: wrap;
   width: 50%;
-  padding-bottom: 15px;
+  padding-bottom: 35px;
   justify-content: space-around;
 }
 
@@ -221,4 +221,10 @@ form {
 
 .form-submit-btn button:hover {
   background-color: #945400;
+}
+
+.span-required{
+  display: none;
+  font-size: 12px;
+  color: darkred;
 }

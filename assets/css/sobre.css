@@ -9,7 +9,8 @@
 }
 
 .fundinho p,
-.fundinho2 p {
+.fundinho2 p,
+.fundinho3 p {
     display: flex;
     font-size: 20px;
     margin-top: 50px;
@@ -19,7 +20,8 @@
 }
 
 .fundinho h2,
-.fundinho2 h2 {
+.fundinho2 h2,
+.fundinho3 h2 {
     display: flex;
     margin-top: 20px;
     margin-left: 50px;
@@ -27,7 +29,8 @@
 }
 
 .fundinho h3,
-.fundinho2 h3 {
+.fundinho2 h3,
+.fundinho3 h3  {
     display: flex;
     margin-top: 70px;
     margin-bottom: 100px;
@@ -58,6 +61,19 @@
     display: flex;
     margin-top: 40PX;
     height: 2750px;
+    width: 100%;
+    max-width: 1300px;
+    background: linear-gradient(rgba(185, 132, 63, 0.3), rgba(90, 39, 7, 0.8)), url(../img/fundo/hambuerguerzinhos.png);
+    background-position: center;
+    background-color: rgb(170, 137, 94);
+    border-radius: 20px;
+    border: 10px solid rgb(0, 0, 0);
+}
+
+.fundinho3 {
+    display: flex;
+    margin-top: 40PX;
+    height: 750px;
     width: 100%;
     max-width: 1300px;
     background: linear-gradient(rgba(185, 132, 63, 0.3), rgba(90, 39, 7, 0.8)), url(../img/fundo/hambuerguerzinhos.png);

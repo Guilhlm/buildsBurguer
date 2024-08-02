@@ -20,7 +20,8 @@
 
     <div class="container container-login" id="box-marrom">
         <div class="form-container criar">
-            <form action="#" method="POST">
+
+            <form action="#" method="POST" id="form">
                 <h1>Crie sua conta</h1>
 
                 <?php
@@ -32,10 +33,18 @@
                 ?>
 
                 <span>Use seu Email para registro</span>
-                <input type="text" name="nomeCadastro" placeholder="Nome">
-                <input type="email" name="usuarioCadastro" placeholder="Email">
-                <input type="password" name="senhaCadastro" placeholder="Senha">
-                <input type="password" name="ConfirmarCadastro" placeholder="Confirmar Senha">
+                <input type="text" name="nomeCadastro" placeholder="Nome" class="required" oninput="validarNome()" required>
+                <span class="span-required">Nome deve ter no minimo 3 Caracteres</span>
+
+                <input type="email" name="usuarioCadastro" placeholder="Email" class="required" oninput="validarEmail()" required>
+                <span class="span-required">Email invalido</span>
+
+                <input type="password" name="senhaCadastro" placeholder="Senha" class="required" oninput="validarSenha()" required>
+                <span class="span-required">Senha deve ter no minimo 5 Caracteres</span>
+
+                <input type="password" name="ConfirmarCadastro" placeholder="Confirmar Senha" class="required" oninput="compararSenhas()" required>
+                <span class="span-required">As senhas devem ser iguais</span>
+
                 <input type="submit" class="botaoCriar">
             </form>
         </div>
@@ -59,10 +68,9 @@
                 ?>
 
                 <span>Use seu Email e Senha</span>
-                <input type="email" name="usuario" placeholder="Email">
-                <input type="password" name="senha" placeholder="Senha">
+                <input type="email" name="usuario" placeholder="Email" required>
+                <input type="password" name="senha" placeholder="Senha" required>
 
-                <a href="https://accounts.google.com/v3/signin/challenge/kpp" class="esqueceu">Esqueceu tua senha?</a>
                 <input type="submit" class="botaoLogar" value="Logar"></input>
             </form>
         </div>
@@ -88,6 +96,7 @@
             </div>
         </div>
     </div>
+
     <script src="assets/script/login.js"></script>
 
 </body>

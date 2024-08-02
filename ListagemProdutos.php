@@ -112,7 +112,7 @@ if (isset($_GET['id_delete']) && !empty($_GET['id_delete'])) {
 
                             <tr>
 
-                                <td class="td"><?= $valor['id'] ?>
+                                <td class="td naopodeEdit"><?= $valor['id'] ?>
                                 <td> <img src="<?= $valor['imagem'] ?>" alt="produto" class="fotoEdit"></td>
                                 <td class="td"><input type="text" name="titulo" value="<?= ($valor['titulo']) ?>" class="tituloForm"></td>
                                 <td class="td"><input type="text" name="preco" value="<?= ($valor['preco']) ?>"></td>

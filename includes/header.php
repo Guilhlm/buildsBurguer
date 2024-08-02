@@ -44,14 +44,14 @@
                     <ul class="menu-icons" id="Menu-fim">
 
                         <form action="filtro.php" method="post">
+
                             <div class="procurar-box">
 
                                 <input type="text" class="procurar-texto" placeholder="Pesquisar" name="buscar">
 
-                                <a href="#" class="procurar-botao">
-
-                                    <button id="lupa" type="submit"><i class="bi bi-search" id="lupa"></i></button>
-                                </a>
+                                <button id="lupa" type="submit" class="procurar-botao">
+                                    <i class="bi bi-search" id="lupa"></i>
+                                </button>
 
                             </div>
                         </form>
@@ -74,6 +74,7 @@
 
                         <?php echo (isset($_SESSION['usuario'])) ? '<button class="menu-icons" id="AcionarNavbar" onclick="toggleSidebar()">☰</button>' : '' ?>
 
+                        <!-- ///////////////////////////// MELHOR CODIGO  ///////////////////////////// -->
 
                         <div class="sidebar" id="sidebar">
 
@@ -131,6 +132,9 @@
                             </ul>
 
                         </div>
+
+                        <!-- ///////////////////////////// MELHOR CODIGO  ///////////////////////////// -->
+
                         <script src="assets/script/navbar.js"></script>
 
                     </ul>
