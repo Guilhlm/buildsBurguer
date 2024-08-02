@@ -258,12 +258,6 @@ body {
   object-fit: cover;
 }
 
-.span-required {
-  display: none;
-  font-size: 12px;
-  color: red;
-}
-
 .checkCategoria{
   margin: 0 30px 23px;
   padding: 10px 1.2rem;
@@ -271,4 +265,12 @@ body {
   border-radius: 10px;
   font-size: 14.4px;
   color: #363636;
+}
+
+
+.span-required {
+  display: none;
+  font-size: 12px;
+  color: darkred;
+  margin: -20px 0 5px 100px;
 }

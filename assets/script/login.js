@@ -28,6 +28,7 @@ form.removeEventListener('submit', (event) => {
 function erro(index) {
 
     campos[index].style.border = '2px solid #e63636';
+    campos[index].style.color = '#e63636';
     spans[index].style.display = 'block';
 
 }
@@ -35,6 +36,7 @@ function erro(index) {
 function removeErro(index) {
 
     campos[index].style.border = '';
+    campos[index].style.color = '#000';
     spans[index].style.display = 'none';
 
 }

@@ -76,12 +76,12 @@ $dados = $produto->CadastroProduto();
 
                             <div class="form">
 
-                                <form action="CadastroProduto.php" method="POST" class="improviso" enctype="multipart/form-data" onsubmit="resetImage()">
+                                <form action="CadastroProduto.php" method="POST" class="improviso" enctype="multipart/form-data" onsubmit="resetImage()" id="form">
 
                                     <section class="Fotoupdate">
 
                                         <img id="imagemPreview" src="./assets/img/perfil/inserirfoto.png" alt="foto upload" class="inserirFoto">
-                                        <input id="imagem" type="file" name="imagem" accept="image/png, image/jpeg" onchange="previewImage(event)">
+                                        <input id="imagem" type="file" name="imagem" accept="image/png, image/jpeg" onchange="previewImage(event)" required>>
 
                                     </section>
 
@@ -90,22 +90,25 @@ $dados = $produto->CadastroProduto();
                                         <div class="input-box">
 
                                             <label for="titulo">Titulo Pd.</label>
-                                            <input id="titulo" type="text" name="titulo" placeholder="Digite o Titulo" maxlength="15" required>
+                                            <input id="titulo" type="text" name="titulo" placeholder="Digite o Titulo" maxlength="15" class="required" oninput="validarTitulo()" required>
+
 
                                         </div>
+                                        <span class="span-required">Numero nao é permitido</span>
 
                                         <div class="input-box">
 
                                             <label for="preco">Preço R$.</label>
-                                            <input id="preco" type="text" step="0.01" name="preco" placeholder="Digite o preço" maxlength="7" required>
+                                            <input id="preco" type="text" step="0.01" name="preco" placeholder="Digite o preço" maxlength="7" class="required" oninput="validarPreco()" required>
 
                                         </div>
+                                        <span class="span-required">Letra nao é permitido</span>
 
                                         <div class="input-box">
 
                                             <label for="categoria">Categoria</label>
 
-                                            <select id="categoria" name="categoria" class="checkCategoria" required>
+                                            <select id="categoria" name="categoria" class="checkCategoria required" oninput="validarCategoria()" required>
                                                 <option value="">Selecione uma categoria</option>
                                                 <option value="1">Lanche</option>
                                                 <option value="2">Combo</option>
@@ -115,15 +118,22 @@ $dados = $produto->CadastroProduto();
                                             </select>
 
                                         </div>
+                                        <span class="span-required">Categoria invalida</span>
 
                                         <div class="input-box">
 
                                             <label for="descricao">Descrição</label>
-                                            <input id="descricao" type="text" name="descricao" placeholder="Digite a descrição" maxlength="255" required>
+                                            <input id="descricao" type="text" name="descricao" placeholder="Digite a descrição" maxlength="255" class="required" oninput="validarDesc()" required>
 
                                         </div>
+                                        <span class="span-required">Numero nao é permitido</span>
 
-                                        <button class="continue-button" type="submit">Confirmar alterações</button>
+                                        <div class="form-submit-btn">
+
+                                            <button class="continue-button" type="submit">Cadastrar</button>
+                                            
+                                        </div>
+
                                     </div>
                                 </form>
                             </div>
