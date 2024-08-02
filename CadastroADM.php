@@ -1,14 +1,18 @@
 <?php
 
-
-
 require './classe/Usuario.php';
 session_start();
 
 $adm = new Usuario();
 $dados = $adm->CadastroADM();
 
-?>
+
+if (!isset($_SESSION['usuario']) || $_SESSION['nivel'] != "admin"){
+    
+    header("location: login.php");
+    
+} ?>
+
 
 <!DOCTYPE html>
 <html lang="pt-br">

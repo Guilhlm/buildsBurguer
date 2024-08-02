@@ -228,7 +228,7 @@ body {
 }
 
 .continue-button {
-  width: 335px;
+  width: 100%;
   border: none;
   background-color: #ce7500;
   border-radius: 5px;

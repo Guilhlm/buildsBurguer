@@ -37,7 +37,12 @@ if (isset($_GET['id_deleteUser']) && !empty($_GET['id_deleteUser'])) {
     header('Location: ListagemUsers.php?status=success_delete');
     exit();
 }
-?>
+
+if (!isset($_SESSION['usuario']) || $_SESSION['nivel'] != "admin"){
+
+    header("location: login.php");
+
+} ?>
 
 <!DOCTYPE html>
 <html lang="pt-br">

@@ -41,7 +41,11 @@ if (isset($_GET['id_delete']) && !empty($_GET['id_delete'])) {
     exit();
 }
 
-?>
+if (!isset($_SESSION['usuario']) || $_SESSION['nivel'] != "admin"){
+
+    header("location: login.php");
+
+} ?>
 
 <!DOCTYPE html>
 <html lang="pt-br">

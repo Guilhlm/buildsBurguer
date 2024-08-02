@@ -6,7 +6,13 @@ session_start();
 
 $produto = new Produto();
 $dados = $produto->CadastroProduto();
-?>
+
+if (!isset($_SESSION['usuario']) || $_SESSION['nivel'] != "admin"){
+
+    header("location: login.php");
+
+} ?>
+
 
 <!DOCTYPE html>
 <html lang="pt-br">
