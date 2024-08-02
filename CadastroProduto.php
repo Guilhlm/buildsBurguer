@@ -104,7 +104,15 @@ $dados = $produto->CadastroProduto();
                                         <div class="input-box">
 
                                             <label for="categoria">Categoria</label>
-                                            <input id="categoria" type="text" name="categoria" placeholder="Digite a categoria" maxlength="1" required>
+
+                                            <select id="categoria" name="categoria" class="checkCategoria" required>
+                                                <option value="">Selecione uma categoria</option>
+                                                <option value="1">Lanche</option>
+                                                <option value="2">Combo</option>
+                                                <option value="3">Acompanhamento</option>
+                                                <option value="4">Bebidas</option>
+                                                <option value="5">Doces</option>
+                                            </select>
 
                                         </div>
 

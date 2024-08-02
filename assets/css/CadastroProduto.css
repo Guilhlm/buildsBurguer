@@ -180,15 +180,14 @@ body {
 
 .Fotoupdate {
   width: 20vw;
-  height: 36vh;
   display: flex;
   justify-content: center;
   border: 0.4vh solid black;
   flex-wrap: wrap;
   margin-left: 25px;
-  margin-right: 20px;
-  align-content: space-around;
   padding: 0 10px;
+  height: 300px;
+
 }
 
 .fomulariodeCADASTRO {
@@ -202,11 +201,11 @@ body {
   width: 15vw;
 }
 
-
 .input-group {
   display: flex;
   flex-wrap: wrap;
   margin-left: 40px;
+  flex-direction: column;
 }
 
 .input-box {
@@ -229,12 +228,12 @@ body {
 }
 
 .continue-button {
-  width: 365px;
+  width: 335px;
   border: none;
   background-color: #ce7500;
   border-radius: 5px;
   cursor: pointer;
-  padding: 6px;
+  padding: 11px;
 }
 
 .continue-button:hover {
@@ -242,6 +241,7 @@ body {
 }
 
 .continue-button {
+  margin-top: 6px;
   text-decoration: none;
   font-size: 15px;
   font-weight: 500;
@@ -252,16 +252,23 @@ body {
   display: flex;
 }
 
-.Fotoupdate {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 500px;
-  height: 300px;
-}
-
 .Fotoupdate img {
   width: 90%;
   height: 90%;
   object-fit: cover;
+}
+
+.span-required {
+  display: none;
+  font-size: 12px;
+  color: red;
+}
+
+.checkCategoria{
+  margin: 0 30px 23px;
+  padding: 10px 1.2rem;
+  border: none;
+  border-radius: 10px;
+  font-size: 14.4px;
+  color: #363636;
 }

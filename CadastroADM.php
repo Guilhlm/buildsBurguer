@@ -83,22 +83,25 @@ $dados = $adm->CadastroADM();
                         <section class="fomulariodeCADASTRO">
 
                             <div class="container">
-                                <form action="CadastroADM.php" method="POST">
+                                <form action="CadastroADM.php" method="POST" id="form">
                                     <div class="main-user-info">
 
                                         <div class="user-input-box">
                                             <label for="firstname">Nome</label>
-                                            <input id="nome" type="text" name="nome" placeholder="Digite seu nome" maxlength="20" required>
+                                            <input id="nome" type="text" name="nome" placeholder="Digite seu nome" maxlength="20" class="required" oninput="validarNome()" required>
+                                            <span class="span-required">Nome deve ter no minimo 3 Caracteres</span>
                                         </div>
 
                                         <div class="user-input-box">
                                             <label for="email">E-mail</label>
-                                            <input id="email" type="email" name="email" placeholder="exemplo@gmail.com" maxlength="30" required>
+                                            <input id="email" type="email" name="email" placeholder="exemplo@gmail.com" maxlength="30" class="required" oninput="validarEmail()" required>
+                                            <span class="span-required">Email invalido</span>
                                         </div>
 
                                         <div class="user-input-box">
                                             <label for="confirmPassword">Senha</label>
-                                            <input id="senha" type="password" name="senha" placeholder="Digite sua senha" minlength="4" title="A senha deve ter pelo menos 8 caracteres e incluir letra maiúscula, letra minúscula, número e caractere especial." required>
+                                            <input id="senha" type="password" name="senha" placeholder="Digite sua senha" minlength="4" class="required" oninput="validarSenha()" required>
+                                            <span class="span-required">Senha deve ter no minimo 5 Caracteres</span>
                                         </div>
 
                                         <?php echo (isset($_SESSION['usuario']) && $_SESSION['nivel'] == "admin") ?
@@ -129,6 +132,7 @@ $dados = $adm->CadastroADM();
     </section>
     </div>
 
+    <script src="assets/script/validarADM.js"></script>
 </body>
 
 </html>
