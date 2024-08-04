@@ -91,7 +91,7 @@ $dados = $user->AtualizarUsuario();
 
                                         <div class="user-input-box">
                                             <label for="firstname">Nome</label>
-                                            <input class="required" id="nome" type="text" name="nome" placeholder="Digite seu nome" value="<?php echo ($_SESSION['nome']); ?>" maxlength="12" oninput="validarNome()" required>
+                                            <input class="required" id="nome" type="text" name="nome" placeholder="Digite seu nome" value="<?php echo ($_SESSION['nome']); ?>" maxlength="12" oninput="validarNome()">
                                             <span class="span-required">Nome deve ter no minimo 3 Caracteres</span>
                                         </div>
 

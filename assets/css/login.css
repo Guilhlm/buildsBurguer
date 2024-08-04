@@ -32,7 +32,6 @@
 .container-login form a.voltardireita:hover {
     display: flex;
     color: #684005;
-    margin-right: 285px;
     cursor: pointer;
 }
 

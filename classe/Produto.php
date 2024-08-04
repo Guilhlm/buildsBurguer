@@ -59,24 +59,46 @@ class Produto
 
     public function FiltroProduto()
     {
-        if (empty($_POST['buscar'])) {
+        $buscar = isset($_POST['buscar']) ? $_POST['buscar'] : '';
+    
+        try {
+            $conn = new PDO("mysql:host=62.72.62.1;dbname=u687609827_gui", "u687609827_gui", "Ou]Q||Jr^7H");
+            $conn->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
+    
+            if (empty($buscar)) {
 
-            $buscar = "";
-        } else {
+                $consulta = $conn->prepare("SELECT * FROM tb_produtos ORDER BY RAND()");
 
-            $buscar = $_POST['buscar'];
+            } else {
+
+                $consulta = $conn->prepare("SELECT * FROM tb_produtos WHERE titulo LIKE :buscar ORDER BY RAND()");
+                $buscaComCuringa = "%" . $buscar . "%";
+                $consulta->bindParam(':buscar', $buscaComCuringa);
+                $consulta->execute();
+                $result = $consulta->fetchAll(PDO::FETCH_ASSOC);
+    
+                if (empty($result)) {
+
+                    $consulta = $conn->prepare("SELECT * FROM tb_produtos ORDER BY RAND()");
+                    $consulta->execute();
+                    $result = $consulta->fetchAll(PDO::FETCH_ASSOC);
+                }
+    
+                return $result;
+            }
+    
+            $consulta->execute();
+            $result = $consulta->fetchAll(PDO::FETCH_ASSOC);
+    
+            return $result;
+
+        } catch (PDOException ) {
+
+            return $result;
+
         }
-
-        $conn = new PDO("mysql:host=62.72.62.1;dbname=u687609827_gui", "u687609827_gui", "Ou]Q||Jr^7H");
-        $consulta = $conn->prepare("SELECT * FROM tb_produtos WHERE titulo LIKE :buscar ORDER BY RAND()");
-
-        $buscaComCuringa = "%" . $buscar . "%";
-        $consulta->bindParam(':buscar', $buscaComCuringa);
-        $result = $consulta->execute();
-        $result = $consulta->fetchAll(PDO::FETCH_ASSOC);
-        return $result;
     }
-
+    
     public function AtualizarProdutoLista($id, $titulo, $preco, $categoria, $descricao)
     {
 

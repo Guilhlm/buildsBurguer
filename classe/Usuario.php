@@ -131,15 +131,42 @@ class Usuario
         }
     }
 
+    public function AtualizarSenha()
+    {
+        if ($_SERVER['REQUEST_METHOD'] === 'POST' && !empty($_POST)) {
+
+            try {
+
+                $nome = $_POST['nome'];
+                $usuario = $_POST['usuario'];
+                $senha = $_POST['senha'];
+
+                $conn = new PDO("mysql:host=62.72.62.1;dbname=u687609827_gui", "u687609827_gui", "Ou]Q||Jr^7H");
+                $conn->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
+
+                $scriptUpdateSenha = "UPDATE tb_usuarios SET nome = :nome, senha = :senha WHERE usuario = :usuario";
+                $variaveisenha = $conn->prepare($scriptUpdateSenha);
+
+                $variaveisenha->execute([
+                    ':nome' => $nome,
+                    ':usuario' => $usuario,
+                    ':senha' => $senha
+                ]);
+
+                echo "<script>alert('Senha atualizada com sucesso. Por favor, deslogue.');</script>";
+            } catch (PDOException $e) {
+                echo "<script>alert('Erro: " . $e->getMessage() . "');</script>";
+            }
+        }
+    }
+
     public function AtualizarUsuarioLista($id_editarUser, $nome, $telefone_1, $cpf, $ano_nascimento)
     {
 
         $conn = new PDO("mysql:host=62.72.62.1;dbname=u687609827_gui", "u687609827_gui", "Ou]Q||Jr^7H");
         $scriptUpdatePessoaLista = "UPDATE tb_pessoas SET nome = '$nome', ano_nascimento = '$ano_nascimento', cpf = '$cpf', telefone_1 = '$telefone_1' WHERE id = '$id_editarUser'";
         $conn->prepare($scriptUpdatePessoaLista)->execute();
-
         $conn = null;
-
     }
 
     public function DeletarUser($id_deleteUser)

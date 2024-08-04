@@ -71,6 +71,8 @@
                 <input type="email" name="usuario" placeholder="Email" required>
                 <input type="password" name="senha" placeholder="Senha" required>
 
+                <p><a href="esqueceuSenha.php">Esqueceu sua senha?</a></p>
+
                 <input type="submit" class="botaoLogar" value="Logar"></input>
             </form>
         </div>

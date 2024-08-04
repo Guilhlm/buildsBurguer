@@ -1,0 +1,136 @@
+* {
+    margin: 0;
+}
+
+.ideia {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(61, 41, 15);
+    border-radius: 20px;
+    border: 3px solid rgb(255, 255, 255);
+    width: 80vw;
+    height: 85vh;
+    box-shadow: 0px 10px 40px #000000;
+}
+
+.voltar a {
+    display: flex;
+    justify-content: flex-start;
+    width: 320px;
+    margin-bottom: 20px;
+    color: white;
+    cursor: pointer;
+}
+
+.voltar a:hover {
+    color: rgba(255, 255, 255, 0.767);
+    padding-right: 5px;
+}
+
+.form-reset {
+    width: 100%;
+}
+
+.main-login {
+    width: 100vw;
+    height: 100vh;
+    background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(55, 23, 1, 0.8)), url(../img/fundo/final\(login\).png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.esquerdo-login {
+    width: 50vw;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.direito-login {
+    width: 50vw;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.card-login {
+    width: 60%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 30px 35px;
+    background: #4d3219;
+    border-radius: 20px;
+    box-shadow: 0px 10px 40px #00000056;
+}
+
+.card-login>h1 {
+    color: #ffa600;
+    font-weight: 800;
+    margin-bottom: 20px;
+}
+
+.imagem {
+    width: 35vw;
+}
+
+.textfiled {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+}
+
+.textfiled>input {
+    width: 100%;
+    border: none;
+    border-radius: 10px;
+    padding: 15px;
+    background: #696348;
+    color: #f0ffffde;
+    font-size: 12pt;
+    box-shadow: 0px 10px 40px #00000056;
+    outline: none;
+    box-sizing: border-box;
+    margin-bottom: 20px;
+}
+
+.textfiled>label {
+    color: #ffffff;
+    margin-bottom: 10px;
+}
+
+.textfiled>input::placeholder {
+    color: #ffffff48;
+}
+
+.botao-login {
+    width: 100%;
+    padding: 16px 0px;
+    margin: 25px 0 25px 0;
+    border: none;
+    border-radius: 8px;
+    outline: none;
+    text-transform: uppercase;
+    font-weight: 800;
+    letter-spacing: 3px;
+    color: #2b134b;
+    background-color: #a8812d;
+    cursor: pointer;
+    box-shadow: 0px 10px 40px -12px #00000052;
+}
+
+.botao-login:hover {
+    background-color: #5e4309;
+    color: white;
+}

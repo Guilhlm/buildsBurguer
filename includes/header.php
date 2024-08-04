@@ -105,17 +105,27 @@
                             </section>
                             <ul>
 
-                                <?php echo (isset($_SESSION['usuario']) && $_SESSION['nivel'] == "admin") ? '<br><h1 class="navTopicos">Edições</h1>' : '' ?>
-                                <?php echo (isset($_SESSION['usuario'])) ? '<a class="nav-link" href="editarUsuario.php">Editar Usuario</a>' : '' ?>
+                                <?php echo (isset($_SESSION['usuario']) && $_SESSION['nivel'] == "admin")
+                                    ? '<br><h1 class="navTopicos">Edições</h1>'
+                                    : '' ?>
+                                <?php echo (isset($_SESSION['usuario']))
+                                    ? '<a class="nav-link" href="editarUsuario.php">Editar Usuario</a>'
+                                    : '' ?>
                                 <?php echo (isset($_SESSION['usuario']) && $_SESSION['nivel'] == "admin")
                                     ? '<a class="nav-link" href="ListagemUsers.php">Editar todos Usuarios</a>'
                                     : '' ?>
                                 <?php echo (isset($_SESSION['usuario']) && $_SESSION['nivel'] == "admin")
                                     ? '<a class="nav-link" href="ListagemProdutos.php">Editar Todos Produtos</a>'
                                     : '' ?>
+
+                                <!-- ////////////////////// USER BASICO ////////////////////// -->
+                                <?php echo (isset($_SESSION['usuario']) && $_SESSION['nivel'] == "")
+                                    ? '<a class="nav-link" href="esqueceuSenha.php">Redefinir sua Senha</a>'
+                                    : '' ?>
                                 <?php echo (isset($_SESSION['usuario']) && $_SESSION['nivel'] == "")
                                     ? '<a class="nav-link red" href="logout.php">Logout</a>'
                                     : '' ?>
+                                <!-- ////////////////////// USER BASICO ////////////////////// -->
 
                                 <br><br>
 
@@ -127,6 +137,15 @@
                                     : '' ?>
                                 <?php echo (isset($_SESSION['usuario']) && $_SESSION['nivel'] == "admin")
                                     ? '<a class="nav-link" href="CadastroProduto.php">Cadastrar um novo Produto</a>'
+                                    : '' ?>
+
+                                <br><br>
+
+                                <?php echo (isset($_SESSION['usuario']) && $_SESSION['nivel'] == "admin")
+                                    ? '<h1 class="navTopicos">Resetar Senha</h1>'
+                                    : '' ?>
+                                <?php echo (isset($_SESSION['usuario']) && $_SESSION['nivel'] == "admin")
+                                    ? '<a class="nav-link" href="esqueceuSenha.php">Redefinir sua Senha</a>'
                                     : '' ?>
 
                             </ul>
