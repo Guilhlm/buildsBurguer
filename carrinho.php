@@ -18,38 +18,50 @@ $produto = new Produto();
 $dados = $produto->ListarProdutos(); ?>
 
 <section class="fundo-centro">
+
     <div class="container container-carrinho">
+
         <section id="header-compra">
             <h1>Carrinho</h1>
         </section>
+
         <main class="main-carrinho">
+
             <div class="produto">
+                
                 <div class="produto-imagem"><img src="<?= $dados['imagem'] ?>" alt="foto individual do produto"></div>
+
                 <div class="produto-detalhes">
                     <h2><?= $dados['titulo'] ?></h2>
                     <p><?= $dados['descricao'] ?></p>
                     <span class="produto-preco">Valor: R$ <?= $dados['preco'] ?></span>
                 </div>
+
                 <div class="produto-acao">
-                    <span class="produto-quantidade" data-produto="Produto 1">0x</span>
-                    <button class="add-button" onclick="addCarrinho('Produto 1', <?= $dados['preco'] ?>)">Adicionar</button>
-                    <button class="remove-button" onclick="removeItemCarrinho('Produto 1')">Remover</button>
+                    <span class="produto-quantidade">1x</span>
+                    <button class="add-button">Adicionar</button>
+                    <button class="remove-button">Remover</button>
                 </div>
+
             </div>
 
-            <!-- Adicione mais produtos conforme necessário -->
+
 
         </main>
+
         <section class="footer-carrinho">
+
             <div class="total">
                 <div id="carrinho-itens"></div>
-                <span>Total: R$ <span id="carrinho-total">0.00</span></span>
-                <button class="finalizar-button" onclick="fecharPedido()">Finalizar</button>
+                <span>Total: R$ 0.00</span>
+                <button class="finalizar-button">Finalizar</button>
             </div>
+
         </section>
+
     </div>
 </section>
 
-<script src="assets/script/carrinho.js"></script>
+<script async src="assets/script/carrinho.js"></script>
 <script src="assets/script/temaescuro.js"></script>
 <?php include "./includes/footer.php"; ?>

@@ -5,7 +5,7 @@ require './classe/Produto.php';
 $produto = new Produto();
 
 if (isset($_GET['id']) && !empty($_GET['id'])) {
-    
+
     $id = (int)$_GET['id'];
     $dados = $produto->Listar1Produto($id);
 
@@ -52,12 +52,12 @@ include './includes/header.php';
                     </svg>
                 </div>
 
-                <div class="numero">2</div>
+                <div class="numero">1</div>
                 <div class="mais">+</div>
 
             </div>
-            <div class="addcart"><a href="carrinho.php">🛒 Adicionar ao carrinho</a></div>
-
+            <div class="addcart">🛒 Adicionar ao carrinho</div>
+            
         </section>
 
         <div class="grid-4">
@@ -90,5 +90,6 @@ include './includes/header.php';
     </div>
 </section>
 
+<script async src="assets/script/carrinho.js"></script>
 <script src="assets/script/temaescuro.js"></script>
 <?php include './includes/footer.php' ?>

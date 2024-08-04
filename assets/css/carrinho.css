@@ -117,8 +117,8 @@
 
 .total {
     display: flex;
-    justify-content: space-between;
     align-items: center;
+    justify-content: space-between;
     width: 100%;
 }
 
@@ -126,7 +126,7 @@
     font-size: 25px;
     color: #ffa500;
     display: flex;
-    margin-right: 375px;
+    margin-right: 730px;
 }
 
 .finalizar-button {
