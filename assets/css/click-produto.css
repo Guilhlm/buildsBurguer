@@ -95,59 +95,6 @@
     color: #000000;
 }
 
-#adicionar {
-    font-family: 'Croissant One';
-    display: flex;
-    align-items: center;
-    justify-content: space-evenly;
-    background-color: #d1d1d1;
-    border: 2px solid black;
-    height: 50px;
-    width: 140px;
-    border-radius: 15px;
-    font-size: 17px;
-}
-
-.menos {
-    background-color: #66666666;
-    height: 35px;
-    width: 35px;
-    border-radius: 50%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    color: black;
-    cursor: pointer;
-}
-
-.menos:hover {
-    background-color: #24242466;
-
-}
-
-.numero {
-    font-size: 30px;
-    color: #000000;
-}
-
-.mais {
-    background-color: #66666666;
-    height: 35px;
-    width: 35px;
-    border-radius: 50%;
-    display: flex;
-    font-size: 30px;
-    align-items: center;
-    justify-content: center;
-    color: black;
-    cursor: pointer;
-}
-
-.mais:hover {
-    background-color: #24242466;
-
-}
-
 .addcart {
     font-family: 'Croissant One';
     display: flex;
@@ -156,7 +103,7 @@
     background-color: #5c3400;
     border: 2px solid black;
     height: 50px;
-    width: 350px;
+    width: 500px;
     border-radius: 15px;
     font-size: 15px;
     cursor: pointer;

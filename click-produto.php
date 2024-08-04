@@ -44,18 +44,7 @@ include './includes/header.php';
         </section>
 
         <section class="grid-3">
-            <div id="adicionar">
-
-                <div class="menos">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="40" height="30" fill="currentColor" class="bi bi-dash" viewBox="0 0 16 16">
-                        <path d="M4 8a.5.5 0 0 1 .5-.5h7a.5.5 0 0 1 0 1h-7A.5.5 0 0 1 4 8" />
-                    </svg>
-                </div>
-
-                <div class="numero">1</div>
-                <div class="mais">+</div>
-
-            </div>
+            
             <div class="addcart">🛒 Adicionar ao carrinho</div>
             
         </section>
