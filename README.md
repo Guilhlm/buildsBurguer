@@ -9,7 +9,7 @@ $user = "root";
 $password = "";  // Deixe em branco se não houver senha
 ```
 
-![image](https://github.com/user-attachments/assets/b3e2fbf6-d342-4f1b-bb71-1e8ad9427e2a)
+![image](https://github.com/user-attachments/assets/28462273-c8cc-4feb-8ea5-146268010ae0)
 
 # Script de Conexão
 
