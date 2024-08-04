@@ -134,3 +134,10 @@
     background-color: #5e4309;
     color: white;
 }
+
+.span-required{
+    display: none;
+    font-size: 12px;
+    color: darkred;
+    margin: -5px 0 15px 15px;
+  }

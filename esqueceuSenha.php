@@ -13,6 +13,7 @@ error_reporting(E_ALL);
 
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -20,14 +21,18 @@ error_reporting(E_ALL);
     <link rel="shortcut icon" href="assets/img/foto(logo)favicon.png" type="image/x-icon">
     <link rel="stylesheet" href="assets/css/esqueceuSenha.css">
 </head>
+
 <body>
     <div class="main-login">
         <main class="ideia">
+
             <div class="esquerdo-login">
                 <img src="./assets/img/senhaanimation.svg" alt="recuperar senha" class="imagem">
             </div>
+
             <div class="direito-login">
                 <div class="card-login">
+
                     <div class="voltar">
                         <a href="login.php">
                             <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-arrow-left-square" viewBox="0 0 16 16">
@@ -35,23 +40,37 @@ error_reporting(E_ALL);
                             </svg>
                         </a>
                     </div>
+
                     <h1>Resetar Senha</h1>
+
                     <form action="esqueceuSenha.php" method="POST" id="form" class="form-reset">
+
                         <div class="textfiled">
                             <label for="cpf">CPF</label>
-                            <input type="text" id="cpf" name="cpf" placeholder="Digite seu CPF" maxlength="14" required>
+                            <input class="required" id="cpf" type="text" name="cpf" placeholder="000.000.000-00" minlength="14" oninput="validarCpf()" maxlength="14" required pattern="\d{3}\.\d{3}\.\d{3}-\d{2}">
+                            <span class="span-required">CPF inválido</span>
                         </div>
+
                         <div class="textfiled">
                             <label for="usuario">Email</label>
-                            <input type="text" id="usuario" name="usuario" placeholder="Digite seu Email" required>
+                            <input class="required" type="text" id="usuario" name="usuario" placeholder="exmplo@gmail.com" oninput="validarEmail()" required>
+                            <span class="span-required">Email inválido</span>
+
                             <label for="senha">Senha Nova</label>
-                            <input type="password" id="senha" name="senha" placeholder="Digite sua nova senha" required>
+                            <input class="required" type="password" id="senha" name="senha" placeholder="Digite sua nova senha" oninput="validarSenha()" required>
+                            <span class="span-required">Senha muito pequena</span>
                         </div>
+
                         <button class="botao-login" type="submit">Atualizar Senha</button>
                     </form>
+
                 </div>
             </div>
         </main>
     </div>
+
+
+    <script src="assets/script/redefinirSenha.js"></script>
 </body>
+
 </html>
