@@ -1,13 +1,16 @@
 if (document.readyState == "loading") {
     document.addEventListener("DOMContentLoaded", () => {
+
         funcoesCD();
         atualizarCarrinho();
     });
 } else {
+
     funcoesCD();
     atualizarCarrinho();
 }
 
+totalPreco = "0.00";
 
 function funcoesCD() {
 
@@ -25,6 +28,9 @@ function funcoesCD() {
     for (var i = 0; i < addBotao.length; i++) {
         addBotao[i].addEventListener("click", addaocarrinho);
     }
+
+    const botaoEnviar = document.getElementsByClassName("finalizar-button")[0];
+    botaoEnviar.addEventListener("click", fazerEnvio);
 
     updateTotal();
 }
@@ -66,7 +72,7 @@ function removerProdutoCarrinho(event) {
 
 function updateTotal() {
 
-    let totalPreco = 0;
+    totalPreco = 0;
     let carrinho = JSON.parse(localStorage.getItem("carrinho")) || [];
 
     carrinho.forEach(produto => {
@@ -146,4 +152,18 @@ function addaocarrinho(event) {
     localStorage.setItem("carrinho", JSON.stringify(carrinho));
 
     window.location.href = "carrinho.php";
+}
+
+function fazerEnvio() {
+    
+    if (parseFloat(totalPreco) === 0) {
+        alert("O carrinho está vazio!");
+    } else {
+        alert(`Sua compra deu: R$ ${totalPreco}, volte sempre :]`);
+    }
+
+    localStorage.removeItem("carrinho");
+
+    atualizarCarrinho();
+    updateTotal();
 }

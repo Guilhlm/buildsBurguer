@@ -27,25 +27,8 @@ $dados = $produto->ListarProdutos(); ?>
 
         <main class="main-carrinho">
 
-            <div class="produto">
-                
-                <div class="produto-imagem"><img src="<?= $dados['imagem'] ?>" alt="foto individual do produto"></div>
-
-                <div class="produto-detalhes">
-                    <h2><?= $dados['titulo'] ?></h2>
-                    <p><?= $dados['descricao'] ?></p>
-                    <span class="produto-preco">Valor: R$ <?= $dados['preco'] ?></span>
-                </div>
-
-                <div class="produto-acao">
-                    <span class="produto-quantidade">1x</span>
-                    <button class="add-button">Adicionar</button>
-                    <button class="remove-button">Remover</button>
-                </div>
-
-            </div>
-
-
+            <!-- js adiciona o produto -->
+            <!-- js adiciona o produto -->
 
         </main>
 
