@@ -117,8 +117,8 @@ if (!isset($_SESSION['usuario']) || $_SESSION['nivel'] != "admin"){
                                 <td class="td naopodeEdit"><?= ($valor['id_usuario']) ?></td>
                                 <td class="td naopodeEdit"><input class="EmailGrande" type="text" name="usuario" value="<?= ($valor['usuario']) ?>" readonly></td>
                                 <td class="td"><input type="text" name="nome" value="<?= ($valor['nome']) ?>" minlength="3" maxlength="12"></td>
-                                <td class="td"><input type="text" name="ano_nascimento" value="<?= ($valor['ano_nascimento']) ?>" minlenght="4" maxlength="4"></td>
-                                <td class="td"><input type="text" name="cpf" value="<?= ($valor['cpf']) ?>" minlength="14" maxlength="14"></td>
+                                <td class="td"><input type="number" name="ano_nascimento" value="<?= ($valor['ano_nascimento']) ?>" minlenght="4" maxlength="4"></td>
+                                <td class="td"><input type="text" name="cpf" value="<?= ($valor['cpf']) ?>" minlength="14" maxlength="16"></td>
                                 <td class="td"><input type="text" name="telefone_1" value="<?= ($valor['telefone_1']) ?>" maxlength="14"></td>
                                 <td class="td naopodeEdit"><input type="text" name="nivel" value="<?= ($valor['nivel']) ?>" readonly></td>
                                 <td class="teste">

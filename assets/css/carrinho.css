@@ -3,11 +3,11 @@
     justify-content: center;
     height: 100%;
     align-items: center;
+    margin-top: 30px;
+    margin-bottom: 17.3vh;
 }
 
 .container-carrinho {
-    width: 100%;
-    width: 1200px;
     background-color: #333;
     padding: 20px;
     border-radius: 10px;
