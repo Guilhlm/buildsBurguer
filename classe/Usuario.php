@@ -136,37 +136,42 @@ class Usuario
         if ($_SERVER['REQUEST_METHOD'] === 'POST' && !empty($_POST)) {
 
             try {
-
-                $nome = $_POST['nome'];
+                
+                $cpf = $_POST['cpf'];
                 $usuario = $_POST['usuario'];
                 $senha = $_POST['senha'];
 
                 $conn = new PDO("mysql:host=62.72.62.1;dbname=u687609827_gui", "u687609827_gui", "Ou]Q||Jr^7H");
                 $conn->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
-
-                $scriptCheckUsuario = "SELECT COUNT(*) FROM tb_usuarios WHERE nome = :nome AND usuario = :usuario";
-                $scriptCheck = $conn->prepare($scriptCheckUsuario);
-                $scriptCheck->execute([
-                    ':nome' => $nome,
+    
+                $scriptCheckEmail = "SELECT id_pessoa FROM tb_usuarios WHERE usuario = :usuario";
+                $stmtCheckEmail = $conn->prepare($scriptCheckEmail);
+                $stmtCheckEmail->execute([
                     ':usuario' => $usuario
                 ]);
+                $id_pessoa_email = $stmtCheckEmail->fetchColumn();
+    
+                $scriptCheckCPF = "SELECT id FROM tb_pessoas WHERE cpf = :cpf";
+                $stmtCheckCPF = $conn->prepare($scriptCheckCPF);
+                $stmtCheckCPF->execute([
+                    ':cpf' => $cpf
+                ]);
+                $id_pessoa_cpf = $stmtCheckCPF->fetchColumn();
+    
+                if ($id_pessoa_email && $id_pessoa_cpf && $id_pessoa_email == $id_pessoa_cpf) {
 
-                if ($scriptCheck->fetchColumn() > 0) {
+                    $scriptUpdateSenha = "UPDATE tb_usuarios SET senha = :senha WHERE usuario = :usuario";
+                    $stmtUpdate = $conn->prepare($scriptUpdateSenha);
+    
+                    $stmtUpdate->execute([
 
-                    $scriptUpdateSenha = "UPDATE tb_usuarios SET senha = :senha WHERE nome = :nome AND usuario = :usuario";
-                    $scriptUpdate = $conn->prepare($scriptUpdateSenha);
-
-                    $senhareset = $senha;
-
-                    $scriptUpdate->execute([
-                        ':nome' => $nome,
                         ':usuario' => $usuario,
-                        ':senha' => $senhareset
+                        ':senha' => $senha
                     ]);
-
-                    echo "<script>alert('Senha atualizada com sucesso.');</script>";
+    
+                    echo "<script>alert('Senha atualizada com sucesso. Por favor, deslogue.');</script>";
                 } else {
-                    echo "<script>alert('Usuário não encontrado.');</script>";
+                    echo "<script>alert('E-mail ou CPF não encontrado, ou não correspondem.');</script>";
                 }
             } catch (PDOException $e) {
                 echo "<script>alert('Erro: " . $e->getMessage() . "');</script>";

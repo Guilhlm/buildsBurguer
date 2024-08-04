@@ -4,29 +4,30 @@ session_start();
 
 $senha = new Usuario();
 $senha->AtualizarSenha();
+
+ini_set('display_errors', 1);
+ini_set('display_startup_errors', 1);
+error_reporting(E_ALL);
+
 ?>
 
 <!DOCTYPE html>
 <html lang="pt-br">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Resetar Senha</title>
+    <title>Build's Burguer</title>
+    <link rel="shortcut icon" href="assets/img/foto(logo)favicon.png" type="image/x-icon">
     <link rel="stylesheet" href="assets/css/esqueceuSenha.css">
 </head>
-
 <body>
     <div class="main-login">
         <main class="ideia">
-
             <div class="esquerdo-login">
                 <img src="./assets/img/senhaanimation.svg" alt="recuperar senha" class="imagem">
             </div>
-
             <div class="direito-login">
                 <div class="card-login">
-
                     <div class="voltar">
                         <a href="login.php">
                             <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-arrow-left-square" viewBox="0 0 16 16">
@@ -34,32 +35,23 @@ $senha->AtualizarSenha();
                             </svg>
                         </a>
                     </div>
-
                     <h1>Resetar Senha</h1>
-
                     <form action="esqueceuSenha.php" method="POST" id="form" class="form-reset">
-
                         <div class="textfiled">
-                            <label for="nome">Nome</label>
-                            <input type="text" id="nome" name="nome" placeholder="Digite seu Nome" maxlength="12" required>
+                            <label for="cpf">CPF</label>
+                            <input type="text" id="cpf" name="cpf" placeholder="Digite seu CPF" maxlength="14" required>
                         </div>
-
                         <div class="textfiled">
-
                             <label for="usuario">Email</label>
                             <input type="text" id="usuario" name="usuario" placeholder="Digite seu Email" required>
                             <label for="senha">Senha Nova</label>
                             <input type="password" id="senha" name="senha" placeholder="Digite sua nova senha" required>
-
                         </div>
-
                         <button class="botao-login" type="submit">Atualizar Senha</button>
                     </form>
-                    
                 </div>
             </div>
         </main>
     </div>
 </body>
-
 </html>
