@@ -25,7 +25,6 @@ $senha->AtualizarSenha();
             </div>
 
             <div class="direito-login">
-
                 <div class="card-login">
 
                     <div class="voltar">
@@ -46,10 +45,12 @@ $senha->AtualizarSenha();
                         </div>
 
                         <div class="textfiled">
+
                             <label for="usuario">Email</label>
                             <input type="text" id="usuario" name="usuario" placeholder="Digite seu Email" required>
                             <label for="senha">Senha Nova</label>
                             <input type="password" id="senha" name="senha" placeholder="Digite sua nova senha" required>
+
                         </div>
 
                         <button class="botao-login" type="submit">Atualizar Senha</button>

@@ -144,16 +144,30 @@ class Usuario
                 $conn = new PDO("mysql:host=62.72.62.1;dbname=u687609827_gui", "u687609827_gui", "Ou]Q||Jr^7H");
                 $conn->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
 
-                $scriptUpdateSenha = "UPDATE tb_usuarios SET nome = :nome, senha = :senha WHERE usuario = :usuario";
-                $variaveisenha = $conn->prepare($scriptUpdateSenha);
-
-                $variaveisenha->execute([
+                $scriptCheckUsuario = "SELECT COUNT(*) FROM tb_usuarios WHERE nome = :nome AND usuario = :usuario";
+                $scriptCheck = $conn->prepare($scriptCheckUsuario);
+                $scriptCheck->execute([
                     ':nome' => $nome,
-                    ':usuario' => $usuario,
-                    ':senha' => $senha
+                    ':usuario' => $usuario
                 ]);
 
-                echo "<script>alert('Senha atualizada com sucesso. Por favor, deslogue.');</script>";
+                if ($scriptCheck->fetchColumn() > 0) {
+
+                    $scriptUpdateSenha = "UPDATE tb_usuarios SET senha = :senha WHERE nome = :nome AND usuario = :usuario";
+                    $scriptUpdate = $conn->prepare($scriptUpdateSenha);
+
+                    $senhareset = $senha;
+
+                    $scriptUpdate->execute([
+                        ':nome' => $nome,
+                        ':usuario' => $usuario,
+                        ':senha' => $senhareset
+                    ]);
+
+                    echo "<script>alert('Senha atualizada com sucesso.');</script>";
+                } else {
+                    echo "<script>alert('Usuário não encontrado.');</script>";
+                }
             } catch (PDOException $e) {
                 echo "<script>alert('Erro: " . $e->getMessage() . "');</script>";
             }
