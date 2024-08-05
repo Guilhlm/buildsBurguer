@@ -12,6 +12,7 @@
     padding: 20px;
     border-radius: 10px;
     margin: 50px 0 50px;
+    box-shadow: 0px 10px 40px #000000;
 }
 
 #header-compra {
@@ -42,6 +43,7 @@
     align-items: center;
     position: relative;
     border: 5px solid rgba(146, 82, 29, 0.6);
+    box-shadow: 0px 5px 20px #000000;
 }
 
 .produto-imagem img {

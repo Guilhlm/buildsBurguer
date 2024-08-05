@@ -22,6 +22,7 @@ body {
   grid-template-rows: 25vh 42vh 16vh;
   border-radius: 1vw;
   gap: 1vw;
+  box-shadow: 0px 10px 40px #000000;
 }
 
 .grid-1 {

@@ -7,8 +7,7 @@
 
 body {
     min-height: 100vh;
-
-    background-image: linear-gradient(rgba(130, 61, 12, 0.3), rgba(0, 0, 0, 0.7)), url(../img/fundo/final\(login\).png);
+    background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(55, 23, 1, 0.8)), url(../img/fundo/final\(login\).png);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -22,7 +21,7 @@ main.table {
     height: 90vh;
     background-color: #fff5;
     backdrop-filter: blur(7px);
-    box-shadow: 0 .4rem .8rem #0005;
+    box-shadow: 0px 10px 40px #000000;
     border-radius: .8rem;
     overflow: hidden;
 }
