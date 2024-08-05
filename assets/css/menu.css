@@ -426,6 +426,7 @@ footer {
     color: rgb(233, 136, 57);
     padding: 40px 0;
     border-top: 5px solid rgba(233, 136, 57, 0.6);
+    box-shadow: 0px 10px 40px #000000;
 }
 
 footer h5 {
