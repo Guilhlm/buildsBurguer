@@ -1,4 +1,4 @@
-# Como clonar através do GIT
+# Como clonar atraves do GIT
 
 1- Baixe e instale o [GIT](https://git-scm.com/)
 
@@ -12,10 +12,10 @@ git config --global user.name "seu nome"
 3- Copie o link do repositorio requerido
 
 4- Clone o repositorio pelo CMD
-    ```git
-    git clone link-repositorio
-    ```
-5. Após a clonagem abra o repositorio no [VsCode](https://code.visualstudio.com/)
+
+```
+git clone "link-repositorio"
+```
 
 ***
 
