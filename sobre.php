@@ -156,7 +156,10 @@
 
             <h2>Apresentação e Conclusão: </h2>
             <p>
-                MEDU DISSU
+                Sobre minha apresentação eu tive medo por não saber se meu site iria dar problema na hora, porém adquiri muita experiência com essa etapa, apresentei meu
+                site para minha turma e uma turma nova (ti24). Depois da primeira apresentação peguei confiança e o resto foi facíl. Conclusão adorei ter esse desafio
+                de construir um site inteiro sozinho, ja tenho outros projetos em mente que adoraria realizar, meus agradecimentos a todos que me ajudaram, especialmente a
+                TI21 e os professores VAGNER e PAULO. Com isso me despeço de todos meus amigos e espero reencontra-los algum dia... ATT: gui <3
             </p>
 
         </div>
